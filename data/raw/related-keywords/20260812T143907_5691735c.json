@@ -1,0 +1,1363 @@
+{
+  "version": "0.1.20260806",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "0.1693 sec.",
+  "cost": 0.01308,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "08121439-2208-0387-0000-49471e15be4c",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "0.1033 sec.",
+      "cost": 0.01308,
+      "result_count": 1,
+      "path": [
+        "v3",
+        "dataforseo_labs",
+        "google",
+        "related_keywords",
+        "live"
+      ],
+      "data": {
+        "api": "dataforseo_labs",
+        "function": "related_keywords",
+        "se_type": "google",
+        "location_name": "United States",
+        "language_name": "English",
+        "keyword": "pickleball",
+        "limit": 30
+      },
+      "result": [
+        {
+          "se_type": "google",
+          "seed_keyword": "pickleball",
+          "seed_keyword_data": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "total_count": 9,
+          "items_count": 9,
+          "items": [
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "pickleball",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-10 09:26:18 +00:00",
+                  "competition": 0.84,
+                  "competition_level": "HIGH",
+                  "cpc": 0.69,
+                  "search_volume": 673000,
+                  "low_top_of_page_bid": 0.05,
+                  "high_top_of_page_bid": 1.21,
+                  "categories": [
+                    10014,
+                    10121,
+                    10642
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 823000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 823000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 823000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 823000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 673000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 673000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 673000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 823000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 823000
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 0,
+                    "yearly": 0
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 77,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=pickleball&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "product_considerations",
+                    "people_also_ask",
+                    "video",
+                    "popular_products",
+                    "short_videos",
+                    "perspectives",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 169,
+                  "last_updated_time": "2026-07-30 03:40:17 +00:00",
+                  "previous_updated_time": "2026-05-14 18:19:18 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 6194.4,
+                  "dofollow": 4983.9,
+                  "referring_pages": 5129.9,
+                  "referring_domains": 619.5,
+                  "referring_main_domains": 582.7,
+                  "rank": 275.6,
+                  "main_domain_rank": 563.8,
+                  "last_updated_time": "2026-07-30 03:40:18 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "informational",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 17:41:04 +00:00"
+                }
+              },
+              "depth": 0,
+              "related_keywords": [
+                "pickleball ball",
+                "pickleball near me",
+                "pickleball vs padel",
+                "pickleball court",
+                "pickleball wiki",
+                "pickleball invented",
+                "pickleball vs tennis",
+                "pickleball court size"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "pickleball ball",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-10 09:20:00 +00:00",
+                  "competition": 0.84,
+                  "competition_level": "HIGH",
+                  "cpc": 0.69,
+                  "search_volume": 673000,
+                  "low_top_of_page_bid": 0.05,
+                  "high_top_of_page_bid": 1.21,
+                  "categories": [
+                    10014,
+                    13605,
+                    13630
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 823000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 823000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 823000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 823000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 673000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 673000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 673000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 823000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 823000
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 0,
+                    "yearly": 0
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "pickleball balls",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 8,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=pickleball%20ball&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "popular_products",
+                    "people_also_ask",
+                    "product_considerations",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 196,
+                  "last_updated_time": "2026-07-30 03:40:57 +00:00",
+                  "previous_updated_time": "2026-05-14 18:16:41 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 27.6,
+                  "dofollow": 16.2,
+                  "referring_pages": 25.5,
+                  "referring_domains": 7.6,
+                  "referring_main_domains": 7.1,
+                  "rank": 100.8,
+                  "main_domain_rank": 425.6,
+                  "last_updated_time": "2026-07-30 03:40:57 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 18:38:13 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "pickleball ball indoor",
+                "what is the official pickleball ball",
+                "pickleball balls difference",
+                "pickleball ball paddle",
+                "best pickleball ball",
+                "pickleball ball amazon",
+                "pickleball ball vs wiffle ball",
+                "pickleball ball outdoor"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "pickleball court",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-14 23:34:01 +00:00",
+                  "competition": 0.16,
+                  "competition_level": "LOW",
+                  "cpc": 0.93,
+                  "search_volume": 301000,
+                  "low_top_of_page_bid": 0.81,
+                  "high_top_of_page_bid": 5.03,
+                  "categories": [
+                    10014,
+                    10121,
+                    10642
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 368000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 368000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 301000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 301000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 246000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 165000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 165000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 165000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 246000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 301000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 301000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 368000
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 22,
+                    "yearly": -18
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 13,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=pickleball%20court&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "local_pack",
+                    "product_considerations",
+                    "people_also_ask",
+                    "images",
+                    "organic",
+                    "related_searches"
+                  ],
+                  "se_results_count": 70300000,
+                  "last_updated_time": "2026-07-30 03:43:02 +00:00",
+                  "previous_updated_time": "2026-05-14 18:24:49 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 796.3,
+                  "dofollow": 624.5,
+                  "referring_pages": 626.8,
+                  "referring_domains": 18,
+                  "referring_main_domains": 16.9,
+                  "rank": 121.3,
+                  "main_domain_rank": 431.9,
+                  "last_updated_time": "2026-07-30 03:43:03 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 17:05:31 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "pickleball court price",
+                "pickleball court size meters",
+                "pickleball court dimension",
+                "pickleball court cost",
+                "pickleball court size in feet",
+                "pickleball court dimensions cm",
+                "pickleball court surface",
+                "pickleball court construction"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "pickleball near me",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-11 19:56:19 +00:00",
+                  "competition": 0.2,
+                  "competition_level": "LOW",
+                  "cpc": 0.78,
+                  "search_volume": 165000,
+                  "low_top_of_page_bid": 0.65,
+                  "high_top_of_page_bid": 2.97,
+                  "categories": [
+                    10008
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 165000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 201000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 165000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 201000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 135000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 165000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 135000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 135000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 135000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 165000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 201000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 201000
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -18,
+                    "quarterly": 0,
+                    "yearly": -18
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 46,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=pickleball%20near%20me&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "local_pack",
+                    "organic",
+                    "people_also_ask",
+                    "related_searches"
+                  ],
+                  "se_results_count": 98700000,
+                  "last_updated_time": "2026-07-30 03:52:08 +00:00",
+                  "previous_updated_time": "2026-05-14 18:35:53 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 381.1,
+                  "dofollow": 288.9,
+                  "referring_pages": 320.2,
+                  "referring_domains": 146.7,
+                  "referring_main_domains": 137.4,
+                  "rank": 234.9,
+                  "main_domain_rank": 314.9,
+                  "last_updated_time": "2026-07-30 03:52:08 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": [
+                    "commercial",
+                    "navigational"
+                  ],
+                  "last_updated_time": "2026-04-29 18:31:54 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "pickleball near california",
+                "pickleball near texas",
+                "indoor pickleball near me",
+                "pickleball near me within 20 mi",
+                "pickleball near me for beginners",
+                "pickleball near me free",
+                "pickleball near me for beginners adults",
+                "pickleball near me within 5 mi"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "pickleball court size",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-11 02:35:39 +00:00",
+                  "competition": 0.33,
+                  "competition_level": "MEDIUM",
+                  "cpc": 0.88,
+                  "search_volume": 12100,
+                  "low_top_of_page_bid": 0.03,
+                  "high_top_of_page_bid": 0.62,
+                  "categories": [
+                    10014,
+                    10121,
+                    10642
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 12100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 12100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 12100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 12100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 8100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 8100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 12100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 12100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 14800
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 14800
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 0,
+                    "yearly": -18
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "pickleball size court",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 3,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=pickleball%20court%20size&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "short_videos",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 171,
+                  "last_updated_time": "2026-07-30 09:43:40 +00:00",
+                  "previous_updated_time": "2026-05-15 07:05:40 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 17.5,
+                  "dofollow": 13.8,
+                  "referring_pages": 16.9,
+                  "referring_domains": 8.2,
+                  "referring_main_domains": 8,
+                  "rank": 71.4,
+                  "main_domain_rank": 477.3,
+                  "last_updated_time": "2026-07-30 09:43:41 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "informational",
+                  "foreign_intent": [
+                    "transactional"
+                  ],
+                  "last_updated_time": "2026-04-30 00:40:03 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "pickleball court cost",
+                "pickleball court size meters",
+                "pickleball court size in feet",
+                "pickleball court size vs tennis",
+                "indoor pickleball court size",
+                "pickleball court size singles",
+                "pickleball court size cm",
+                "pickleball court size vs badminton"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "pickleball vs tennis",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-13 03:27:58 +00:00",
+                  "competition": 0.01,
+                  "competition_level": "LOW",
+                  "cpc": 0.51,
+                  "search_volume": 6600,
+                  "low_top_of_page_bid": 0.01,
+                  "high_top_of_page_bid": 0.24,
+                  "categories": [
+                    10014,
+                    10121,
+                    10651
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 8100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 8100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 8100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 5400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 5400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 6600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 8100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 8100
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -18,
+                    "quarterly": 0,
+                    "yearly": 0
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 2,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=pickleball%20vs%20tennis&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "discussions_and_forums",
+                    "video",
+                    "short_videos",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 123,
+                  "last_updated_time": "2026-07-30 14:17:30 +00:00",
+                  "previous_updated_time": "2026-05-15 18:29:07 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 2.7,
+                  "dofollow": 2.6,
+                  "referring_pages": 2.7,
+                  "referring_domains": 1.7,
+                  "referring_main_domains": 1.7,
+                  "rank": 73.1,
+                  "main_domain_rank": 427.9,
+                  "last_updated_time": "2026-07-30 14:17:31 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "informational",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 21:49:24 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "pickleball vs tennis reddit",
+                "pickleball vs tennis rules",
+                "difference between tennis and pickleball courts",
+                "pickleball vs tennis popularity",
+                "pickleball vs tennis vs padel",
+                "pickleball vs tennis ball size",
+                "pickleball vs tennis racket",
+                "pickleball vs tennis players"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "pickleball vs padel",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-13 13:47:02 +00:00",
+                  "competition": 0.04,
+                  "competition_level": "LOW",
+                  "cpc": 0.07,
+                  "search_volume": 1900,
+                  "low_top_of_page_bid": 0.02,
+                  "high_top_of_page_bid": 0.07,
+                  "categories": [
+                    10014,
+                    10121,
+                    10642
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 1300
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 2400
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 0,
+                    "yearly": 26
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "padel vs pickleball",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 0,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=pickleball%20vs%20padel&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "video",
+                    "discussions_and_forums",
+                    "images",
+                    "related_searches"
+                  ],
+                  "se_results_count": 98,
+                  "last_updated_time": "2026-06-30 12:27:41 +00:00",
+                  "previous_updated_time": "2026-03-14 14:48:35 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 19.4,
+                  "dofollow": 4.4,
+                  "referring_pages": 14.4,
+                  "referring_domains": 11.9,
+                  "referring_main_domains": 11.7,
+                  "rank": 35.8,
+                  "main_domain_rank": 375.8,
+                  "last_updated_time": "2026-06-30 12:28:23 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "informational",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 18:31:54 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "pickleball vs padel popularity",
+                "pickleball vs padel which is easier",
+                "pickleball vs padel reddit",
+                "pickleball vs padel court",
+                "pickleball vs padel vs tennis",
+                "pickleball vs padel for beginners",
+                "padel ball",
+                "pickleball paddles"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "pickleball invented",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-12 02:38:34 +00:00",
+                  "competition": 0.05,
+                  "competition_level": "LOW",
+                  "cpc": 0.17,
+                  "search_volume": 880,
+                  "low_top_of_page_bid": 0.04,
+                  "high_top_of_page_bid": 0.25,
+                  "categories": [
+                    10014,
+                    13605,
+                    13630
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 1000
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 14,
+                    "yearly": -23
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 17,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=pickleball%20invented&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "images",
+                    "people_also_ask",
+                    "organic",
+                    "video",
+                    "perspectives",
+                    "related_searches"
+                  ],
+                  "se_results_count": 123,
+                  "last_updated_time": "2026-08-01 20:33:48 +00:00",
+                  "previous_updated_time": "2026-05-20 04:27:46 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 354.5,
+                  "dofollow": 293.5,
+                  "referring_pages": 322.2,
+                  "referring_domains": 122.7,
+                  "referring_main_domains": 117.2,
+                  "rank": 147.1,
+                  "main_domain_rank": 387.2,
+                  "last_updated_time": "2026-08-01 20:33:53 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "informational",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 20:45:25 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "pickleball invented in america",
+                "why is it called pickleball",
+                "who invented pickleball and why was it called pickleball",
+                "pickleball invented in the united states",
+                "when was pickleball invented and when did it become popular",
+                "what state was pickleball invented in",
+                "was pickleball invented for old people",
+                "pickleball history timeline"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "pickleball wiki",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-10 07:29:29 +00:00",
+                  "competition": 0,
+                  "competition_level": "LOW",
+                  "cpc": 3.47,
+                  "search_volume": 590,
+                  "low_top_of_page_bid": null,
+                  "high_top_of_page_bid": null,
+                  "categories": [
+                    10014,
+                    10121,
+                    10642
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 880
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -18,
+                    "quarterly": 0,
+                    "yearly": -18
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 33,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=pickleball%20wiki&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 118,
+                  "last_updated_time": "2026-08-02 21:46:18 +00:00",
+                  "previous_updated_time": "2026-05-20 20:02:42 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 594.6,
+                  "dofollow": 512,
+                  "referring_pages": 553.4,
+                  "referring_domains": 240.9,
+                  "referring_main_domains": 229.2,
+                  "rank": 194.2,
+                  "main_domain_rank": 595.5,
+                  "last_updated_time": "2026-08-02 21:46:53 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "informational",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 21:43:10 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "why is it called pickleball",
+                "professional pickleball wiki",
+                "when did pickleball become popular",
+                "pickleball game",
+                "pickleball rules",
+                "pickleball near me",
+                "pickleball court",
+                "pickleball for beginners"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

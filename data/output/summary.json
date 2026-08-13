@@ -1,0 +1,17 @@
+{
+  "seeds": [
+    "online clothing ",
+    "women's clothing ",
+    "men's clothing online",
+    "streetwear",
+    "activewear"
+  ],
+  "raw_items_collected": 151,
+  "items_with_metrics": 151,
+  "informational_dropped": 7,
+  "dedup_merged": 81,
+  "active_keywords": 63,
+  "clusters": 2,
+  "recommended_keywords": 38,
+  "recommended_clusters": 1
+}

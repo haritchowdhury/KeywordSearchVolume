@@ -1,0 +1,151 @@
+# Keyword Intelligence Pipeline configuration
+# All tunable weights and thresholds live here (nothing hardcoded in code).
+
+api:
+  base_url: "https://api.dataforseo.com/v3"
+  timeout_seconds: 120
+  # DataForSEO enforces per-account rate limits. Google Ads Live = 12 req/min.
+  # DataForSEO Labs is more generous but we stay conservative to be safe.
+  rate_limit:
+    requests_per_minute: 30
+  retry:
+    max_attempts: 4
+    backoff_base_seconds: 2.0
+    backoff_max_seconds: 60.0
+    retryable_status: [429, 500, 502, 503, 504]
+    retryable_api_codes: [40601, 40602, 50001, 50002, 40107]  # rate/queue/server
+
+search:
+  location_name: "United States"
+  language_name: "English"
+
+endpoints:
+  # Single source for metrics: gives volume, cpc, competition, difficulty,
+  # full monthly history (trend), and search_intent in one call.
+  keyword_overview: "/dataforseo_labs/google/keyword_overview/live"
+  # Used for expansion (related + suggested keywords).
+  keyword_suggestions: "/dataforseo_labs/google/keyword_suggestions/live"
+  related_keywords: "/dataforseo_labs/google/related_keywords/live"
+
+expansion:
+  enabled: true
+  max_keywords_per_seed: 60        # cap on expanded terms pulled per seed
+  suggestions_limit: 30
+  related_limit: 30
+  related_depth: 2                 # expand direct related searches one level further
+
+# ---------------------------------------------------------------------------
+# Intent classification. main_intent values come from DataForSEO
+# search_intent_info.main_intent: transactional | commercial | informational |
+# navigational. "commercial_intent" modifiers are detected in the text too.
+# ---------------------------------------------------------------------------
+intent:
+  commercial_labels: ["transactional", "commercial"]
+  informational_labels: ["informational"]   # dropped as irrelevant
+  keep_navigational: true
+  # text-based commercial-intent modifiers (boost commercial_intent score)
+  commercial_modifiers:
+    - "buy"
+    - "best"
+    - "cheap"
+    - "deal"
+    - "sale"
+    - "discount"
+    - "review"
+    - "reviews"
+    - "price"
+    - "cost"
+    - "for sale"
+    - "online"
+    - "shop"
+    - "store"
+    - "order"
+    - "shipping"
+    - "premium"
+    - "professional"
+    - "pro"
+    - "top"
+    - "vs"
+    - "comparison"
+    - "near me"
+  # informational stopwords that strongly indicate non-commercial queries
+  informational_modifiers:
+    - "what is"
+    - "how to"
+    - "why"
+    - "history of"
+    - "wiki"
+    - "meaning"
+    - "definition"
+    - "rules"
+    - "reddit"
+
+# ---------------------------------------------------------------------------
+# Filtering / flagging thresholds
+# ---------------------------------------------------------------------------
+filters:
+  min_volume_keep: 100             # below -> flagged too_little_traffic, dropped from recommendation
+  too_broad_max_words: 1           # 1-word generic seeds flagged too_broad
+  too_broad_min_volume: 200000     # AND very high volume -> too_broad
+  declining_periods: 6             # months of history used to compute slope
+  declining_slope_threshold: -0.05 # normalized slope below this -> declining_traffic
+
+# ---------------------------------------------------------------------------
+# Dedup of close variants
+# ---------------------------------------------------------------------------
+dedup:
+  # tokens that are stripped before computing similarity (stopwords/plurals handled loosely)
+  strip_tokens: ["a", "an", "the", "for", "and", "of", "with", "to", "in", "on"]
+  similarity_threshold: 0.88       # >= this (0-1) -> merge into a canonical keyword
+
+# ---------------------------------------------------------------------------
+# Clustering by token overlap
+# ---------------------------------------------------------------------------
+clustering:
+  method: "jaccard"                # jaccard token overlap
+  similarity_threshold: 0.34       # two keywords join a cluster if overlap >= this
+  min_cluster_size: 2              # smaller clusters are kept but marked singleton
+  cluster_label_strategy: "highest_volume"  # how to name a cluster
+
+# ---------------------------------------------------------------------------
+# Opportunity scoring (all weights sum is irrelevant; they are normalised).
+# Each component is normalised to 0..1 before blending.
+# ---------------------------------------------------------------------------
+scoring:
+  weights:
+    volume: 0.25
+    commercial_intent: 0.25
+    trend: 0.20
+    inverse_difficulty: 0.15
+    inverse_competition: 0.10
+    cpc: 0.05
+  difficulty_max: 100              # keyword_difficulty scaled 0..100
+  competition_max: 1.0             # competition scaled 0..1
+  # volume normalisation: log-scaled
+  volume_log_base: 10
+  # trend normalisation: clamp slope to [-1, 1]
+  # final opportunity_score is 0..100 (weighted sum * 100)
+  recommend_threshold: 55          # opportunity_score >= this AND not flagged -> recommend
+  # cluster recommendation
+  cluster_recommend_threshold: 60
+
+cache:
+  db_path: "data/cache.sqlite"
+  ttl_seconds: 604800              # 7 days
+  # endpoints whose results are stable enough to cache (overview yes; suggestions yes)
+  enabled: true
+
+paths:
+  raw_dir: "data/raw"              # verbatim API responses (per call)
+  normalized_dir: "data/normalized"
+  output_dir: "data/output"
+
+run:
+  # when true and credentials are missing/unauthorized, use bundled fixtures
+  offline_mode: false
+  seeds:
+    - "online clothing "
+    - "women's clothing "
+    - "men's clothing online"
+    - "streetwear"
+    - "activewear"

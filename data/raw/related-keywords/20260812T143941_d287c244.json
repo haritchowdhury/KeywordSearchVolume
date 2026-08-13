@@ -1,0 +1,1074 @@
+{
+  "version": "0.1.20260806",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "0.0575 sec.",
+  "cost": 0.01284,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "08121439-2208-0387-0000-aa6e0a580ca8",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "0.0471 sec.",
+      "cost": 0.01284,
+      "result_count": 1,
+      "path": [
+        "v3",
+        "dataforseo_labs",
+        "google",
+        "related_keywords",
+        "live"
+      ],
+      "data": {
+        "api": "dataforseo_labs",
+        "function": "related_keywords",
+        "se_type": "google",
+        "location_name": "United States",
+        "language_name": "English",
+        "keyword": "pet supplements",
+        "limit": 30
+      },
+      "result": [
+        {
+          "se_type": "google",
+          "seed_keyword": "pet supplements",
+          "seed_keyword_data": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "total_count": 7,
+          "items_count": 7,
+          "items": [
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "dog supplements for homemade food",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-16 10:51:37 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 2.79,
+                  "search_volume": 2400,
+                  "low_top_of_page_bid": 1.03,
+                  "high_top_of_page_bid": 4.15,
+                  "categories": [
+                    10015,
+                    10015,
+                    10130,
+                    10130,
+                    10683,
+                    10683,
+                    11963
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 1900
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": -21,
+                    "yearly": 19
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "supplements for homemade dog food",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 16,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=dog%20supplements%20for%20homemade%20food&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "discussions_and_forums",
+                    "popular_products",
+                    "related_searches"
+                  ],
+                  "se_results_count": 19900000,
+                  "last_updated_time": "2026-03-14 09:23:36 +00:00",
+                  "previous_updated_time": "2025-04-13 18:05:59 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 294.4,
+                  "dofollow": 242.5,
+                  "referring_pages": 261.2,
+                  "referring_domains": 92.3,
+                  "referring_main_domains": 78.2,
+                  "rank": 61.1,
+                  "main_domain_rank": 363.1,
+                  "last_updated_time": "2026-03-14 09:23:39 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "informational",
+                  "foreign_intent": [
+                    "transactional",
+                    "commercial"
+                  ],
+                  "last_updated_time": "2026-04-29 10:17:24 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "natural dog supplements for homemade food",
+                "best homemade dog food supplement powder",
+                "vet approved supplements for homemade dog food",
+                "dog nutrient mix for homemade food",
+                "best multivitamin for homemade dog food",
+                "dr harvey dog supplements",
+                "farmers dog nutrient mix",
+                "dr harvey's dog food for kidney disease reviews"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "pet supplements for dogs",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-13 04:31:26 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 6.26,
+                  "search_volume": 1900,
+                  "low_top_of_page_bid": 1.95,
+                  "high_top_of_page_bid": 7.09,
+                  "categories": [
+                    10015,
+                    10130,
+                    10683
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 6600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 6600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 3600
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -19,
+                    "quarterly": -34,
+                    "yearly": -87
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "dog pet supplement",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 22,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=pet%20supplements%20for%20dogs&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "popular_products",
+                    "people_also_ask",
+                    "local_pack",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 193,
+                  "last_updated_time": "2026-06-30 12:08:52 +00:00",
+                  "previous_updated_time": "2026-03-14 14:51:40 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 71.3,
+                  "dofollow": 62.6,
+                  "referring_pages": 65.2,
+                  "referring_domains": 20,
+                  "referring_main_domains": 19.2,
+                  "rank": 101.9,
+                  "main_domain_rank": 444.3,
+                  "last_updated_time": "2026-06-30 12:09:37 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 20:47:31 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "vet recommended supplements for dogs",
+                "dog supplements for homemade food",
+                "best pet supplements for dogs",
+                "natural pet supplements for dogs",
+                "best dog supplements for homemade food",
+                "best dog vitamin and mineral supplement",
+                "pet honesty dog vitamins",
+                "dog supplement powder"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "pet supplements",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-11 05:25:20 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 3.56,
+                  "search_volume": 1600,
+                  "low_top_of_page_bid": 1.92,
+                  "high_top_of_page_bid": 5.95,
+                  "categories": [
+                    10015,
+                    10130,
+                    10683
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 1300
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 8100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 880
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 22,
+                    "quarterly": -32,
+                    "yearly": -12
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 27,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=pet%20supplements&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "popular_products",
+                    "organic",
+                    "people_also_ask",
+                    "local_pack",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 195,
+                  "last_updated_time": "2026-07-31 19:02:05 +00:00",
+                  "previous_updated_time": "2026-05-17 23:16:44 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 241.3,
+                  "dofollow": 179.5,
+                  "referring_pages": 195.1,
+                  "referring_domains": 72.5,
+                  "referring_main_domains": 69.5,
+                  "rank": 147.2,
+                  "main_domain_rank": 489.4,
+                  "last_updated_time": "2026-07-31 19:02:07 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": [
+                    "commercial"
+                  ],
+                  "last_updated_time": "2026-04-29 19:55:52 +00:00"
+                }
+              },
+              "depth": 0,
+              "related_keywords": [
+                "pet supplements for humans",
+                "pet supplements for cats",
+                "pet supplements for dogs",
+                "pet supplements brands",
+                "pet supplements reviews",
+                "best pet supplements",
+                "dog supplements for homemade food",
+                "vet recommended supplements for dogs"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "pet supplements brands",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-15 19:49:19 +00:00",
+                  "competition": 0.11,
+                  "competition_level": "LOW",
+                  "cpc": 2.18,
+                  "search_volume": 880,
+                  "low_top_of_page_bid": 1.58,
+                  "high_top_of_page_bid": 4.99,
+                  "categories": [
+                    10015,
+                    10130,
+                    10683
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 70
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 110
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 50,
+                    "quarterly": 400,
+                    "yearly": 2018
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "pet supplement brands",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 24,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=pet%20supplements%20brands&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "popular_products",
+                    "organic",
+                    "people_also_ask",
+                    "discussions_and_forums",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 187,
+                  "last_updated_time": "2026-05-24 13:58:38 +00:00",
+                  "previous_updated_time": "2026-03-20 07:20:48 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 242.4,
+                  "dofollow": 37.8,
+                  "referring_pages": 41.4,
+                  "referring_domains": 20.2,
+                  "referring_main_domains": 19.1,
+                  "rank": 103.9,
+                  "main_domain_rank": 450.7,
+                  "last_updated_time": "2026-05-24 13:58:40 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 23:00:32 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "best pet supplements brands",
+                "pet supplements brands for humans",
+                "pet supplements brands for cats",
+                "fera pet supplements",
+                "vet recommended supplements for dogs",
+                "best dog vitamin and mineral supplement",
+                "dog supplements for homemade food",
+                "best dog supplements for homemade food"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "vet recommended supplements for dogs",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-15 08:50:48 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 4.2,
+                  "search_volume": 480,
+                  "low_top_of_page_bid": 1.35,
+                  "high_top_of_page_bid": 4.27,
+                  "categories": [
+                    10015,
+                    10130,
+                    10683
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 720
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -19,
+                    "quarterly": -33,
+                    "yearly": -64
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 23,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=vet%20recommended%20supplements%20for%20dogs&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "related_searches"
+                  ],
+                  "se_results_count": 145,
+                  "last_updated_time": "2026-08-03 05:34:48 +00:00",
+                  "previous_updated_time": "2026-05-20 22:29:24 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 96.4,
+                  "dofollow": 72,
+                  "referring_pages": 79.8,
+                  "referring_domains": 34.1,
+                  "referring_main_domains": 32.2,
+                  "rank": 131.4,
+                  "main_domain_rank": 362.4,
+                  "last_updated_time": "2026-08-03 05:35:35 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "informational",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-30 00:47:34 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "best dog vitamin and mineral supplement",
+                "veterinarian recommended solutions",
+                "vet recommended dog multivitamin",
+                "best dog supplements for homemade food",
+                "fda pet supplements",
+                "vet recommended dog food",
+                "vet recommended omega 3 for dogs",
+                "vet approved dog products"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "best pet supplements",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-15 06:55:34 +00:00",
+                  "competition": 0.92,
+                  "competition_level": "HIGH",
+                  "cpc": 1.6,
+                  "search_volume": 50,
+                  "low_top_of_page_bid": 1.82,
+                  "high_top_of_page_bid": 5.14,
+                  "categories": [
+                    10015,
+                    10130,
+                    10683
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 30
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 40
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 50
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 50
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 30
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 50
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 40
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 40
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 40
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 30
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 40
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 90
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -25,
+                    "quarterly": -40,
+                    "yearly": -88
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 14,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=best%20pet%20supplements&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "discussions_and_forums",
+                    "video",
+                    "related_searches",
+                    "popular_products"
+                  ],
+                  "se_results_count": 177,
+                  "last_updated_time": "2026-05-31 20:32:07 +00:00",
+                  "previous_updated_time": "2026-04-07 04:47:13 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 81.4,
+                  "dofollow": 69.4,
+                  "referring_pages": 73.9,
+                  "referring_domains": 27.5,
+                  "referring_main_domains": 25.8,
+                  "rank": 104.7,
+                  "main_domain_rank": 498.7,
+                  "last_updated_time": "2026-05-31 20:32:23 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 05:29:39 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "vet recommended supplements for dogs",
+                "best pet supplements for dogs",
+                "best dog vitamin and mineral supplement",
+                "best dog supplements for homemade food",
+                "best pet supplements for large dogs",
+                "best pet supplements for small dogs",
+                "pet supplements brands",
+                "best pet supplements for puppies"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "pet supplements for cats",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-15 10:19:45 +00:00",
+                  "competition": 0.5,
+                  "competition_level": "MEDIUM",
+                  "cpc": null,
+                  "search_volume": 40,
+                  "low_top_of_page_bid": null,
+                  "high_top_of_page_bid": null,
+                  "categories": [
+                    10015,
+                    10130,
+                    10683
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 10
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 20
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 40
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 70
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 40
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 50
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 40
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 10
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 20
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 50
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 10
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -50,
+                    "quarterly": -75,
+                    "yearly": -50
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": null,
+                  "keyword_difficulty": 0,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=pet%20supplements%20for%20cats&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "popular_products",
+                    "ai_overview",
+                    "people_also_ask",
+                    "organic",
+                    "discussions_and_forums",
+                    "related_searches"
+                  ],
+                  "se_results_count": 43000000,
+                  "last_updated_time": "2026-05-11 15:58:52 +00:00",
+                  "previous_updated_time": "2026-03-28 11:56:04 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 8.7,
+                  "dofollow": 6.3,
+                  "referring_pages": 7.9,
+                  "referring_domains": 4.3,
+                  "referring_main_domains": 3.8,
+                  "rank": 41.8,
+                  "main_domain_rank": 420.7,
+                  "last_updated_time": "2026-05-11 15:58:54 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": [
+                    "commercial"
+                  ],
+                  "last_updated_time": "2026-04-30 00:30:05 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "cat supplements for homemade food",
+                "homemade pet supplements for cats",
+                "natural pet supplements for cats",
+                "best cat vitamins and supplements",
+                "best vitamins for cats immune system",
+                "best pet supplements for cats",
+                "best cat vitamins for indoor cats",
+                "cat supplement powder"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

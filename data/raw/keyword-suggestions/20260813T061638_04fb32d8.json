@@ -1,0 +1,3597 @@
+{
+  "version": "0.1.20260806",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "47.3550 sec.",
+  "cost": 0.0156,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "08130615-2208-0399-0000-3a254355c6ce",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "47.2970 sec.",
+      "cost": 0.0156,
+      "result_count": 1,
+      "path": [
+        "v3",
+        "dataforseo_labs",
+        "google",
+        "keyword_suggestions",
+        "live"
+      ],
+      "data": {
+        "api": "dataforseo_labs",
+        "function": "keyword_suggestions",
+        "se_type": "google",
+        "location_name": "United States",
+        "language_name": "English",
+        "keyword": "online clothing ",
+        "limit": 30
+      },
+      "result": [
+        {
+          "se_type": "google",
+          "seed_keyword": "online clothing",
+          "seed_keyword_data": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "total_count": 25010,
+          "items_count": 30,
+          "offset": 0,
+          "offset_token": "eyJDdXJyZW50T2Zmc2V0IjozMCwiUmVxdWVzdERhdGEiOnsia2V5d29yZCI6Im9ubGluZSBjbG90aGluZyIsImluY2x1ZGVfc2VlZF9rZXl3b3JkIjpmYWxzZSwiZnVsbF9tYXRjaCI6ZmFsc2UsImxvYWRfc2VycF9pbmZvIjpmYWxzZSwic2VhcmNoX2FmdGVyX3Rva2VuIjpudWxsLCJpZ25vcmVfc3lub255bXMiOmZhbHNlLCJsYW5ndWFnZSI6ImVuIiwic2VhcmNoX2VuZ2luZSI6Imdvb2dsZSIsImxvY2F0aW9uIjoyODQwLCJ1c2VfbmV3X2NhdGVnb3JpZXMiOnRydWUsIm9yZGVyX2J5Ijp7Im9yZGVyX2ZpZWxkIjoia2V5d29yZF9pbmZvLnNlYXJjaF92b2x1bWUiLCJvcmRlcl90eXBlIjoiRGVzYyIsIm5leHQiOm51bGx9LCJsaW1pdCI6MzAsIm9mZnNldCI6MCwiYWlkIjoyMjA4MjMsInVzZV9jYWNoZSI6dHJ1ZSwidGFza19pZCI6IjA4MTMwNjE1LTIyMDgtMDM5OS0wMDAwLTNhMjU0MzU1YzZjZSIsImZsYWdzIjpudWxsfSwiUmF3UXVlcnkiOm51bGwsIklkIjoiOTk2MTViNzEtNjdlYi00Y2ZhLWJmYjEtY2Q5MjliYjljNjc5IiwiU2VhcmNoQWZ0ZXJEYXRhIjpbMTQ4MDAsImQyMzc3OWExLTQyNDYtODVmMy00YWJiLWQwYWYwNjJlOTE3ZSJdLCJFeGVjdXRvciI6LTkxODQ0MDU5NDA0NDQ1MTc2MzN9",
+          "items": [
+            {
+              "se_type": "google",
+              "keyword": "women's clothing online amazon",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-12 01:31:32 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 0.66,
+                "search_volume": 27100,
+                "low_top_of_page_bid": 0.35,
+                "high_top_of_page_bid": 1.27,
+                "categories": [
+                  13575,
+                  13860
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 33100
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -55
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "amazon clothes for women",
+                "synonym_clustering_algorithm": "keyword_metrics",
+                "keyword_difficulty": 3,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 4
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 38.1,
+                "dofollow": 13.5,
+                "referring_pages": 36.9,
+                "referring_domains": 15.2,
+                "referring_main_domains": 14.3,
+                "rank": 50.4,
+                "main_domain_rank": 881,
+                "last_updated_time": "2024-10-04 13:22:08 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "transactional",
+                "foreign_intent": null,
+                "last_updated_time": "2026-05-07 10:08:30 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "ross online clothing",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-13 05:19:18 +00:00",
+                "competition": 0.97,
+                "competition_level": "HIGH",
+                "cpc": 1.2,
+                "search_volume": 22200,
+                "low_top_of_page_bid": 0.21,
+                "high_top_of_page_bid": 2.06,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 40500
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -70
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": null,
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 24,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 5539.2,
+                "dofollow": 2754.1,
+                "referring_pages": 5105,
+                "referring_domains": 313.5,
+                "referring_main_domains": 286.1,
+                "rank": 137.7,
+                "main_domain_rank": 746,
+                "last_updated_time": "2026-03-28 17:56:10 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "navigational",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-29 19:51:23 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "ross clothing online",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-12 18:43:19 +00:00",
+                "competition": 0.97,
+                "competition_level": "HIGH",
+                "cpc": 1.2,
+                "search_volume": 22200,
+                "low_top_of_page_bid": 0.21,
+                "high_top_of_page_bid": 2.06,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 40500
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -70
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "ross online clothing",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 23,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 6495.6,
+                "dofollow": 3815.1,
+                "referring_pages": 6016.3,
+                "referring_domains": 378.7,
+                "referring_main_domains": 355.2,
+                "rank": 150.9,
+                "main_domain_rank": 557.1,
+                "last_updated_time": "2026-01-27 04:20:07 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "navigational",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-29 19:22:33 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "ross clothing online shopping",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-12 14:32:56 +00:00",
+                "competition": 0.97,
+                "competition_level": "HIGH",
+                "cpc": 1.2,
+                "search_volume": 22200,
+                "low_top_of_page_bid": 0.21,
+                "high_top_of_page_bid": 2.06,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 40500
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -70
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": null,
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 16,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 4
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 6976.2,
+                "dofollow": 5574.1,
+                "referring_pages": 6487.7,
+                "referring_domains": 319.4,
+                "referring_main_domains": 291.1,
+                "rank": 103.9,
+                "main_domain_rank": 628.8,
+                "last_updated_time": "2024-09-14 21:51:22 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "navigational",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-29 20:33:46 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "ross online clothing store",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-13 00:33:53 +00:00",
+                "competition": 0.97,
+                "competition_level": "HIGH",
+                "cpc": 1.2,
+                "search_volume": 22200,
+                "low_top_of_page_bid": 0.21,
+                "high_top_of_page_bid": 2.06,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 40500
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -70
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "ross clothing store online",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 17,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 4
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 6806.6,
+                "dofollow": 5321.6,
+                "referring_pages": 6216.7,
+                "referring_domains": 339.3,
+                "referring_main_domains": 315.7,
+                "rank": 158.9,
+                "main_domain_rank": 791.4,
+                "last_updated_time": "2025-06-14 11:01:09 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "navigational",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-29 19:31:43 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "ross clothing store online",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-15 19:08:36 +00:00",
+                "competition": 0.97,
+                "competition_level": "HIGH",
+                "cpc": 1.2,
+                "search_volume": 22200,
+                "low_top_of_page_bid": 0.21,
+                "high_top_of_page_bid": 2.06,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 40500
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -70
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": null,
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 17,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 4
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 4318,
+                "dofollow": 1889.1,
+                "referring_pages": 3906.1,
+                "referring_domains": 303.5,
+                "referring_main_domains": 275.3,
+                "rank": 112.7,
+                "main_domain_rank": 690.9,
+                "last_updated_time": "2026-07-30 06:33:29 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "navigational",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-29 20:21:56 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "clothing online woman",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-13 20:33:25 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "woman clothing online",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 89,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 26952.5,
+                "dofollow": 24278.7,
+                "referring_pages": 25105.6,
+                "referring_domains": 1121.1,
+                "referring_main_domains": 980.6,
+                "rank": 255.6,
+                "main_domain_rank": 479.8,
+                "last_updated_time": "2024-10-04 13:28:52 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "transactional",
+                "foreign_intent": null,
+                "last_updated_time": "2026-05-03 10:19:52 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "clothing woman online",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-12 10:35:51 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "woman clothing online",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 18,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 2780.6,
+                "dofollow": 2263.8,
+                "referring_pages": 2486.3,
+                "referring_domains": 272.1,
+                "referring_main_domains": 248.4,
+                "rank": 142.9,
+                "main_domain_rank": 440.4,
+                "last_updated_time": "2026-06-18 11:46:43 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-27 00:17:16 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "online clothing womens",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-10 09:17:00 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "online clothing for women",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 43,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 2786.6,
+                "dofollow": 1871,
+                "referring_pages": 2180.4,
+                "referring_domains": 244.9,
+                "referring_main_domains": 202.8,
+                "rank": 253.9,
+                "main_domain_rank": 410.5,
+                "last_updated_time": "2024-10-04 13:26:40 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-29 17:07:19 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "online clothing for woman",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-14 10:55:20 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "woman clothing online",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 89,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 4
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 27204.2,
+                "dofollow": 24386.6,
+                "referring_pages": 25268.4,
+                "referring_domains": 1167.1,
+                "referring_main_domains": 1017.2,
+                "rank": 302.1,
+                "main_domain_rank": 468.3,
+                "last_updated_time": "2024-10-04 13:26:45 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-29 16:45:08 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "clothing ladies online",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-11 12:01:18 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "online ladies clothing",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 3,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 3369.5,
+                "dofollow": 1749.1,
+                "referring_pages": 2137.8,
+                "referring_domains": 243.5,
+                "referring_main_domains": 201.5,
+                "rank": 231.8,
+                "main_domain_rank": 471.9,
+                "last_updated_time": "2024-10-04 13:28:45 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-29 05:49:23 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "women online clothing",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-13 16:40:33 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "online clothing for women",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 43,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 5539.4,
+                "dofollow": 3216.2,
+                "referring_pages": 3927.3,
+                "referring_domains": 727.9,
+                "referring_main_domains": 640.8,
+                "rank": 199.9,
+                "main_domain_rank": 445.6,
+                "last_updated_time": "2024-10-04 13:24:59 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-30 01:13:05 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "female clothing online",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-12 22:01:48 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "online female clothing",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 88,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 11796.7,
+                "dofollow": 7541.7,
+                "referring_pages": 8323.2,
+                "referring_domains": 460.8,
+                "referring_main_domains": 426.4,
+                "rank": 320.5,
+                "main_domain_rank": 538.6,
+                "last_updated_time": "2026-07-30 08:53:58 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-29 13:43:30 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "clothing online for women",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-14 15:49:39 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "online clothing for women",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 43,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 4
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 26523.5,
+                "dofollow": 23585.3,
+                "referring_pages": 24465.3,
+                "referring_domains": 1053.2,
+                "referring_main_domains": 925.1,
+                "rank": 240.4,
+                "main_domain_rank": 453.4,
+                "last_updated_time": "2024-10-04 13:28:56 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-27 07:25:30 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "online clothing for ladies",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-15 16:21:52 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "online ladies clothing",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 3,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 4
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 35616.2,
+                "dofollow": 29226.7,
+                "referring_pages": 31509.6,
+                "referring_domains": 1403.4,
+                "referring_main_domains": 1254.6,
+                "rank": 233.7,
+                "main_domain_rank": 427.8,
+                "last_updated_time": "2024-09-14 23:10:30 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-29 16:45:08 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "online clothing for women",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-10 23:56:07 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": null,
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 92,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 4
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 8666.5,
+                "dofollow": 5503.8,
+                "referring_pages": 6101.7,
+                "referring_domains": 1010.1,
+                "referring_main_domains": 962.5,
+                "rank": 228.8,
+                "main_domain_rank": 430.1,
+                "last_updated_time": "2026-01-27 05:43:06 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-29 19:44:28 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "clothing women's online",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-10 07:00:58 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "online clothing for women",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 43,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 5893.5,
+                "dofollow": 3401,
+                "referring_pages": 3971.4,
+                "referring_domains": 601.2,
+                "referring_main_domains": 528.6,
+                "rank": 227.3,
+                "main_domain_rank": 431.5,
+                "last_updated_time": "2024-10-04 13:28:44 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": [
+                  "transactional"
+                ],
+                "last_updated_time": "2026-05-07 12:45:09 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "clothing online women's",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-13 18:41:50 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "online clothing for women",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 43,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 27857.9,
+                "dofollow": 22771.4,
+                "referring_pages": 24134.5,
+                "referring_domains": 877.7,
+                "referring_main_domains": 759,
+                "rank": 356.5,
+                "main_domain_rank": 425.5,
+                "last_updated_time": "2024-10-04 13:28:39 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "transactional",
+                "foreign_intent": [
+                  "commercial"
+                ],
+                "last_updated_time": "2026-05-03 15:14:48 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "clothing for women online",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-14 12:41:49 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "online clothing for women",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 43,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 4
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 26033.5,
+                "dofollow": 23174.9,
+                "referring_pages": 24090.6,
+                "referring_domains": 1040,
+                "referring_main_domains": 916.7,
+                "rank": 256.9,
+                "main_domain_rank": 418.8,
+                "last_updated_time": "2024-10-04 13:28:56 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-29 04:50:23 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "woman clothing online",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-13 08:24:05 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": null,
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 89,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 19828.3,
+                "dofollow": 12188.7,
+                "referring_pages": 13802.1,
+                "referring_domains": 1192.3,
+                "referring_main_domains": 1122.6,
+                "rank": 434.8,
+                "main_domain_rank": 434.3,
+                "last_updated_time": "2026-07-30 07:58:03 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-30 02:45:47 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "online female clothing",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-14 10:34:32 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": null,
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 99,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 6618.2,
+                "dofollow": 3886.6,
+                "referring_pages": 4457.8,
+                "referring_domains": 910.4,
+                "referring_main_domains": 863.4,
+                "rank": 164.7,
+                "main_domain_rank": 446,
+                "last_updated_time": "2026-03-28 23:04:07 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": [
+                  "transactional"
+                ],
+                "last_updated_time": "2026-04-29 17:23:02 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "online clothing ladies",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-11 15:42:09 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "online ladies clothing",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 3,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 35200.1,
+                "dofollow": 31400.6,
+                "referring_pages": 32588.7,
+                "referring_domains": 1084,
+                "referring_main_domains": 999.8,
+                "rank": 254.6,
+                "main_domain_rank": 481.6,
+                "last_updated_time": "2025-04-12 14:13:11 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-28 21:20:50 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "women clothing online",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-15 03:24:02 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "online clothing for women",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 43,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 29772.3,
+                "dofollow": 18851.7,
+                "referring_pages": 21487.2,
+                "referring_domains": 1548.6,
+                "referring_main_domains": 1371,
+                "rank": 356.8,
+                "main_domain_rank": 459.4,
+                "last_updated_time": "2024-09-14 22:59:15 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-30 08:34:37 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "women's online clothing",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-14 14:23:47 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "online clothing for women",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 43,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 2077.5,
+                "dofollow": 1208.2,
+                "referring_pages": 1481.2,
+                "referring_domains": 147.4,
+                "referring_main_domains": 126,
+                "rank": 235,
+                "main_domain_rank": 418,
+                "last_updated_time": "2024-10-04 13:25:58 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": [
+                  "transactional"
+                ],
+                "last_updated_time": "2026-05-03 18:55:45 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "online clothing woman",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-11 00:38:51 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "woman clothing online",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 89,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 33588.9,
+                "dofollow": 29390.8,
+                "referring_pages": 30795.8,
+                "referring_domains": 1419.8,
+                "referring_main_domains": 1341.1,
+                "rank": 264.3,
+                "main_domain_rank": 465.1,
+                "last_updated_time": "2025-11-09 04:32:59 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-29 16:57:10 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "ladies online clothing",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-11 04:45:52 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "online ladies clothing",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 56,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 1719.7,
+                "dofollow": 808.7,
+                "referring_pages": 1174.4,
+                "referring_domains": 72.1,
+                "referring_main_domains": 66.1,
+                "rank": 172,
+                "main_domain_rank": 495,
+                "last_updated_time": "2025-11-09 04:38:27 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-28 14:08:32 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "ultima online clothing",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-11 16:48:58 +00:00",
+                "competition": 0.05,
+                "competition_level": "LOW",
+                "cpc": 0.41,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.15,
+                "high_top_of_page_bid": 1.1,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 1900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 1900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 1900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 2900
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 5400
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 5400
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 4400
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 4400
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 4400
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -33,
+                  "quarterly": 2032,
+                  "yearly": 1588
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": null,
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 0,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 21.1,
+                "dofollow": 20.9,
+                "referring_pages": 20.9,
+                "referring_domains": 0.7,
+                "referring_main_domains": 0.5,
+                "rank": 20.9,
+                "main_domain_rank": 379.5,
+                "last_updated_time": "2024-09-26 01:44:45 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "navigational",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-30 02:17:36 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "online ladies clothing",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-13 17:55:59 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": null,
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 3,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 787.5,
+                "dofollow": 467.4,
+                "referring_pages": 615.5,
+                "referring_domains": 47,
+                "referring_main_domains": 44.7,
+                "rank": 78.9,
+                "main_domain_rank": 419.4,
+                "last_updated_time": "2026-04-18 09:17:04 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-29 19:29:20 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "clothing for ladies online",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-11 12:26:49 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "online ladies clothing",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 0,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 4
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 231.3,
+                "dofollow": 223.9,
+                "referring_pages": 226.6,
+                "referring_domains": 11.4,
+                "referring_main_domains": 10.4,
+                "rank": 59,
+                "main_domain_rank": 440.9,
+                "last_updated_time": "2026-06-18 11:47:15 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-26 17:22:23 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "online clothing women",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-16 06:27:43 +00:00",
+                "competition": 1,
+                "competition_level": "HIGH",
+                "cpc": 2.33,
+                "search_volume": 14800,
+                "low_top_of_page_bid": 0.84,
+                "high_top_of_page_bid": 5.92,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 27100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 14800
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -18,
+                  "quarterly": -18,
+                  "yearly": -33
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "online clothing for women",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 43,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 35601.8,
+                "dofollow": 29126.7,
+                "referring_pages": 31556.7,
+                "referring_domains": 1531.6,
+                "referring_main_domains": 1370.4,
+                "rank": 269.6,
+                "main_domain_rank": 405.1,
+                "last_updated_time": "2024-09-14 23:10:31 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-29 17:07:48 +00:00"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

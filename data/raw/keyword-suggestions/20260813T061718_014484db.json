@@ -1,0 +1,3611 @@
+{
+  "version": "0.1.20260806",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "0.3497 sec.",
+  "cost": 0.0156,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "08130617-2208-0399-0000-db69cbc9d819",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "0.3384 sec.",
+      "cost": 0.0156,
+      "result_count": 1,
+      "path": [
+        "v3",
+        "dataforseo_labs",
+        "google",
+        "keyword_suggestions",
+        "live"
+      ],
+      "data": {
+        "api": "dataforseo_labs",
+        "function": "keyword_suggestions",
+        "se_type": "google",
+        "location_name": "United States",
+        "language_name": "English",
+        "keyword": "activewear",
+        "limit": 30
+      },
+      "result": [
+        {
+          "se_type": "google",
+          "seed_keyword": "activewear",
+          "seed_keyword_data": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "total_count": 15306,
+          "items_count": 30,
+          "offset": 0,
+          "offset_token": "eyJDdXJyZW50T2Zmc2V0IjozMCwiUmVxdWVzdERhdGEiOnsia2V5d29yZCI6ImFjdGl2ZXdlYXIiLCJpbmNsdWRlX3NlZWRfa2V5d29yZCI6ZmFsc2UsImZ1bGxfbWF0Y2giOmZhbHNlLCJsb2FkX3NlcnBfaW5mbyI6ZmFsc2UsInNlYXJjaF9hZnRlcl90b2tlbiI6bnVsbCwiaWdub3JlX3N5bm9ueW1zIjpmYWxzZSwibGFuZ3VhZ2UiOiJlbiIsInNlYXJjaF9lbmdpbmUiOiJnb29nbGUiLCJsb2NhdGlvbiI6Mjg0MCwidXNlX25ld19jYXRlZ29yaWVzIjp0cnVlLCJvcmRlcl9ieSI6eyJvcmRlcl9maWVsZCI6ImtleXdvcmRfaW5mby5zZWFyY2hfdm9sdW1lIiwib3JkZXJfdHlwZSI6IkRlc2MiLCJuZXh0IjpudWxsfSwibGltaXQiOjMwLCJvZmZzZXQiOjAsImFpZCI6MjIwODIzLCJ1c2VfY2FjaGUiOnRydWUsInRhc2tfaWQiOiIwODEzMDYxNy0yMjA4LTAzOTktMDAwMC1kYjY5Y2JjOWQ4MTkiLCJmbGFncyI6bnVsbH0sIlJhd1F1ZXJ5IjpudWxsLCJJZCI6IjQwZjQwMGY0LWRjMDQtNDc4NC05YjVhLTU3YTQwMGNjZDViZiIsIlNlYXJjaEFmdGVyRGF0YSI6WzMzMTAwLCI5ZDlhZGU2Ni1kZTdjLTEyOTItMWMxOC0wNjYzMDY5NzMxNGEiXSwiRXhlY3V0b3IiOi05MTg0NDA1OTQwNDQ0NTE3NjMzfQ==",
+          "items": [
+            {
+              "se_type": "google",
+              "keyword": "ss activewear",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-13 06:58:03 +00:00",
+                "competition": 0.32,
+                "competition_level": "LOW",
+                "cpc": 0.2,
+                "search_volume": 201000,
+                "low_top_of_page_bid": 0.06,
+                "high_top_of_page_bid": 0.7,
+                "categories": [
+                  10014,
+                  10115
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 246000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 201000
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 22,
+                  "quarterly": 22,
+                  "yearly": 0
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": null,
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 30,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 2
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 88059.8,
+                "dofollow": 76901.7,
+                "referring_pages": 77407.3,
+                "referring_domains": 409.6,
+                "referring_main_domains": 371.7,
+                "rank": 160.7,
+                "main_domain_rank": 696.5,
+                "last_updated_time": "2025-09-25 10:21:26 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "navigational",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-29 23:18:41 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "s & s activewear",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-10 06:26:32 +00:00",
+                "competition": 0.32,
+                "competition_level": "LOW",
+                "cpc": 0.2,
+                "search_volume": 201000,
+                "low_top_of_page_bid": 0.06,
+                "high_top_of_page_bid": 0.7,
+                "categories": [
+                  10014,
+                  10115
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 246000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 201000
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 22,
+                  "quarterly": 22,
+                  "yearly": 0
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "s&s activewear",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 27,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 4
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 13055.8,
+                "dofollow": 8588.9,
+                "referring_pages": 8923.2,
+                "referring_domains": 285.5,
+                "referring_main_domains": 262.8,
+                "rank": 149.9,
+                "main_domain_rank": 753,
+                "last_updated_time": "2026-06-17 02:12:44 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "navigational",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-29 23:15:36 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "s&s activewear",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-15 12:32:40 +00:00",
+                "competition": 0.32,
+                "competition_level": "LOW",
+                "cpc": 0.2,
+                "search_volume": 201000,
+                "low_top_of_page_bid": 0.06,
+                "high_top_of_page_bid": 0.7,
+                "categories": [
+                  10014,
+                  10115
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 246000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 201000
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 22,
+                  "quarterly": 22,
+                  "yearly": 0
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": null,
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 34,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 2
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 13429.3,
+                "dofollow": 8869.7,
+                "referring_pages": 9256.3,
+                "referring_domains": 288.2,
+                "referring_main_domains": 264.8,
+                "rank": 176.6,
+                "main_domain_rank": 777.4,
+                "last_updated_time": "2026-04-18 03:29:17 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "navigational",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-29 23:27:26 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "s s activewear",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-16 01:26:06 +00:00",
+                "competition": 0.32,
+                "competition_level": "LOW",
+                "cpc": 0.2,
+                "search_volume": 201000,
+                "low_top_of_page_bid": 0.06,
+                "high_top_of_page_bid": 0.7,
+                "categories": [
+                  10014,
+                  10115
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 246000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 201000
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 22,
+                  "quarterly": 22,
+                  "yearly": 0
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "s&s activewear",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 27,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 48531.2,
+                "dofollow": 37481,
+                "referring_pages": 38055.4,
+                "referring_domains": 418.1,
+                "referring_main_domains": 380.3,
+                "rank": 144.8,
+                "main_domain_rank": 661.4,
+                "last_updated_time": "2026-01-11 12:31:55 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "navigational",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-29 23:11:23 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "women activewear apparel",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-15 19:23:03 +00:00",
+                "competition": 0.22,
+                "competition_level": "LOW",
+                "cpc": 1.82,
+                "search_volume": 90500,
+                "low_top_of_page_bid": 0.81,
+                "high_top_of_page_bid": 4.45,
+                "categories": [
+                  10014,
+                  10121,
+                  10660
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 74000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 110000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 22200
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 0,
+                  "quarterly": 22,
+                  "yearly": 812
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": null,
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 35,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 2384.9,
+                "dofollow": 1630.2,
+                "referring_pages": 1796.8,
+                "referring_domains": 320.1,
+                "referring_main_domains": 306,
+                "rank": 218.3,
+                "main_domain_rank": 460,
+                "last_updated_time": "2026-07-30 04:05:33 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "transactional",
+                "foreign_intent": [
+                  "navigational",
+                  "commercial"
+                ],
+                "last_updated_time": "2026-04-30 01:31:45 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "activewear clothes for women",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-11 09:29:43 +00:00",
+                "competition": 0.22,
+                "competition_level": "LOW",
+                "cpc": 1.82,
+                "search_volume": 90500,
+                "low_top_of_page_bid": 0.81,
+                "high_top_of_page_bid": 4.45,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 74000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 110000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 22200
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 0,
+                  "quarterly": 22,
+                  "yearly": 812
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "activewear clothing women",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 13,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 4
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 2773.6,
+                "dofollow": 1962.5,
+                "referring_pages": 2151,
+                "referring_domains": 340.9,
+                "referring_main_domains": 327.6,
+                "rank": 121.9,
+                "main_domain_rank": 452.8,
+                "last_updated_time": "2026-06-17 02:26:19 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "transactional",
+                "foreign_intent": [
+                  "commercial"
+                ],
+                "last_updated_time": "2026-04-28 23:52:56 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "women's activewear apparel",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-16 03:12:37 +00:00",
+                "competition": 0.22,
+                "competition_level": "LOW",
+                "cpc": 1.82,
+                "search_volume": 90500,
+                "low_top_of_page_bid": 0.81,
+                "high_top_of_page_bid": 4.45,
+                "categories": [
+                  10014,
+                  10115,
+                  10621
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 74000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 110000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 22200
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 0,
+                  "quarterly": 22,
+                  "yearly": 812
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "women activewear apparel",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 35,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 691.8,
+                "dofollow": 647.2,
+                "referring_pages": 668.6,
+                "referring_domains": 68.4,
+                "referring_main_domains": 67.8,
+                "rank": 61.4,
+                "main_domain_rank": 321.9,
+                "last_updated_time": "2024-10-12 14:47:11 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": null,
+                "last_updated_time": "2026-05-05 04:01:57 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "activewear women's clothing",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-14 20:19:30 +00:00",
+                "competition": 0.22,
+                "competition_level": "LOW",
+                "cpc": 1.82,
+                "search_volume": 90500,
+                "low_top_of_page_bid": 0.81,
+                "high_top_of_page_bid": 4.45,
+                "categories": [
+                  10021,
+                  10176
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 74000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 110000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 22200
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 0,
+                  "quarterly": 22,
+                  "yearly": 812
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "activewear clothing women",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 54,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 3053,
+                "dofollow": 2185.8,
+                "referring_pages": 2370.5,
+                "referring_domains": 349.4,
+                "referring_main_domains": 334.1,
+                "rank": 104.7,
+                "main_domain_rank": 401.3,
+                "last_updated_time": "2026-03-11 23:39:50 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": null,
+                "last_updated_time": "2026-05-05 01:55:04 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "women activewear clothing",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-10 15:39:23 +00:00",
+                "competition": 0.22,
+                "competition_level": "LOW",
+                "cpc": 1.82,
+                "search_volume": 90500,
+                "low_top_of_page_bid": 0.81,
+                "high_top_of_page_bid": 4.45,
+                "categories": [
+                  10014,
+                  10121,
+                  10660
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 74000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 110000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 22200
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 0,
+                  "quarterly": 22,
+                  "yearly": 22817
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "activewear clothing women",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 37,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 2359,
+                "dofollow": 1617.3,
+                "referring_pages": 1775.4,
+                "referring_domains": 309.6,
+                "referring_main_domains": 295.4,
+                "rank": 224.4,
+                "main_domain_rank": 487.9,
+                "last_updated_time": "2026-07-30 04:04:18 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": [
+                  "transactional"
+                ],
+                "last_updated_time": "2026-04-29 23:54:25 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "women's activewear clothes",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-11 11:11:59 +00:00",
+                "competition": 0.22,
+                "competition_level": "LOW",
+                "cpc": 1.82,
+                "search_volume": 90500,
+                "low_top_of_page_bid": 0.81,
+                "high_top_of_page_bid": 4.45,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 74000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 110000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 22200
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 0,
+                  "quarterly": 22,
+                  "yearly": 812
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "activewear clothing women",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 7,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 979.5,
+                "dofollow": 797.9,
+                "referring_pages": 941.1,
+                "referring_domains": 127.5,
+                "referring_main_domains": 117.1,
+                "rank": 176,
+                "main_domain_rank": 370.1,
+                "last_updated_time": "2024-10-12 14:47:09 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": null,
+                "last_updated_time": "2026-05-04 21:35:50 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "activewear clothing for women",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-15 03:55:50 +00:00",
+                "competition": 0.22,
+                "competition_level": "LOW",
+                "cpc": 1.82,
+                "search_volume": 90500,
+                "low_top_of_page_bid": 0.81,
+                "high_top_of_page_bid": 4.45,
+                "categories": [
+                  10014,
+                  10121,
+                  10660
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 74000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 110000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 22200
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 0,
+                  "quarterly": 22,
+                  "yearly": 812
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "activewear clothing women",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 7,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 4
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 796.3,
+                "dofollow": 687.2,
+                "referring_pages": 765.2,
+                "referring_domains": 100.8,
+                "referring_main_domains": 99,
+                "rank": 118.5,
+                "main_domain_rank": 471.8,
+                "last_updated_time": "2024-10-12 15:06:03 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "transactional",
+                "foreign_intent": [
+                  "commercial"
+                ],
+                "last_updated_time": "2026-04-28 23:56:53 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "women activewear",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-11 01:03:54 +00:00",
+                "competition": 0.22,
+                "competition_level": "LOW",
+                "cpc": 1.82,
+                "search_volume": 90500,
+                "low_top_of_page_bid": 0.81,
+                "high_top_of_page_bid": 4.45,
+                "categories": [
+                  10014,
+                  10121,
+                  10660
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 74000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 110000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 22200
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 0,
+                  "quarterly": 22,
+                  "yearly": 812
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "women's activewear",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 0,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 2
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 2.5,
+                "dofollow": 1.8,
+                "referring_pages": 2.5,
+                "referring_domains": 1.7,
+                "referring_main_domains": 1.6,
+                "rank": 15,
+                "main_domain_rank": 542,
+                "last_updated_time": "2026-06-17 02:25:10 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "transactional",
+                "foreign_intent": [
+                  "commercial"
+                ],
+                "last_updated_time": "2026-04-30 08:34:37 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "activewear clothing women",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-13 09:37:00 +00:00",
+                "competition": 0.22,
+                "competition_level": "LOW",
+                "cpc": 1.82,
+                "search_volume": 90500,
+                "low_top_of_page_bid": 0.81,
+                "high_top_of_page_bid": 4.45,
+                "categories": [
+                  10014,
+                  10121,
+                  10660
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 74000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 110000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 22200
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 0,
+                  "quarterly": 22,
+                  "yearly": 812
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": null,
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 7,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 2341.6,
+                "dofollow": 1579.8,
+                "referring_pages": 1739.8,
+                "referring_domains": 285.5,
+                "referring_main_domains": 272.4,
+                "rank": 100.1,
+                "main_domain_rank": 389.4,
+                "last_updated_time": "2026-05-14 19:50:03 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "navigational",
+                "foreign_intent": [
+                  "transactional",
+                  "commercial"
+                ],
+                "last_updated_time": "2026-04-25 12:04:25 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "activewear female",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-13 15:42:03 +00:00",
+                "competition": 0.22,
+                "competition_level": "LOW",
+                "cpc": 1.82,
+                "search_volume": 90500,
+                "low_top_of_page_bid": 0.81,
+                "high_top_of_page_bid": 4.45,
+                "categories": [
+                  10014,
+                  10121,
+                  10660
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 74000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 110000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 22200
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 0,
+                  "quarterly": 22,
+                  "yearly": 812
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": null,
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 28,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 2
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 994.2,
+                "dofollow": 856.5,
+                "referring_pages": 939.3,
+                "referring_domains": 114.1,
+                "referring_main_domains": 109.9,
+                "rank": 109.7,
+                "main_domain_rank": 421.8,
+                "last_updated_time": "2024-09-15 03:06:49 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "transactional",
+                "foreign_intent": [
+                  "commercial"
+                ],
+                "last_updated_time": "2026-04-29 06:04:27 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "women's activewear clothing",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-14 02:11:50 +00:00",
+                "competition": 0.22,
+                "competition_level": "LOW",
+                "cpc": 1.82,
+                "search_volume": 90500,
+                "low_top_of_page_bid": 0.81,
+                "high_top_of_page_bid": 4.45,
+                "categories": [
+                  10021,
+                  10176,
+                  13779
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 74000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 110000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 22200
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 0,
+                  "quarterly": 22,
+                  "yearly": 22817
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "activewear clothing women",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 7,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 6467.1,
+                "dofollow": 2877.7,
+                "referring_pages": 3239.8,
+                "referring_domains": 308.9,
+                "referring_main_domains": 294.6,
+                "rank": 133.8,
+                "main_domain_rank": 451.1,
+                "last_updated_time": "2025-01-22 21:19:29 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": null,
+                "last_updated_time": "2026-05-08 03:09:46 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "women's activewear",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-15 20:35:59 +00:00",
+                "competition": 0.22,
+                "competition_level": "LOW",
+                "cpc": 1.82,
+                "search_volume": 90500,
+                "low_top_of_page_bid": 0.81,
+                "high_top_of_page_bid": 4.45,
+                "categories": [
+                  10014,
+                  10115
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 74000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 110000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 22200
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 0,
+                  "quarterly": 22,
+                  "yearly": 812
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": null,
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 6,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 2
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 85.5,
+                "dofollow": 57.6,
+                "referring_pages": 73.3,
+                "referring_domains": 27,
+                "referring_main_domains": 25,
+                "rank": 77.8,
+                "main_domain_rank": 550.5,
+                "last_updated_time": "2026-06-17 02:18:21 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": [
+                  "informational"
+                ],
+                "last_updated_time": "2026-05-04 13:29:45 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "woman activewear",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-12 12:30:05 +00:00",
+                "competition": 0.22,
+                "competition_level": "LOW",
+                "cpc": 1.82,
+                "search_volume": 90500,
+                "low_top_of_page_bid": 0.81,
+                "high_top_of_page_bid": 4.45,
+                "categories": [
+                  10014,
+                  10121,
+                  10660
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 74000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 110000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 22200
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 0,
+                  "quarterly": 22,
+                  "yearly": 812
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": null,
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 29,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 2
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 719.8,
+                "dofollow": 657.9,
+                "referring_pages": 694.7,
+                "referring_domains": 82.6,
+                "referring_main_domains": 81.5,
+                "rank": 96.5,
+                "main_domain_rank": 411.6,
+                "last_updated_time": "2024-10-12 14:47:13 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "transactional",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-30 03:23:52 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "activewear for ladies",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-11 09:56:30 +00:00",
+                "competition": 0.22,
+                "competition_level": "LOW",
+                "cpc": 1.82,
+                "search_volume": 90500,
+                "low_top_of_page_bid": 0.81,
+                "high_top_of_page_bid": 4.45,
+                "categories": [
+                  10014,
+                  10121,
+                  10660
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 74000
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 201000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 110000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 22200
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 0,
+                  "quarterly": 22,
+                  "yearly": 812
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": null,
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 0,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 31.3,
+                "dofollow": 13,
+                "referring_pages": 23.2,
+                "referring_domains": 16.2,
+                "referring_main_domains": 15.7,
+                "rank": 29.2,
+                "main_domain_rank": 477.3,
+                "last_updated_time": "2026-05-14 19:49:57 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "transactional",
+                "foreign_intent": [
+                  "commercial"
+                ],
+                "last_updated_time": "2026-04-29 02:42:17 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "activewear",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-10 19:36:09 +00:00",
+                "competition": 0.9,
+                "competition_level": "HIGH",
+                "cpc": 1.79,
+                "search_volume": 49500,
+                "low_top_of_page_bid": 0.82,
+                "high_top_of_page_bid": 4.62,
+                "categories": [
+                  10014,
+                  10121,
+                  10660
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 49500
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 49500
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 49500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 60500
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 0,
+                  "quarterly": 22,
+                  "yearly": -18
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": null,
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 39,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 1
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 16244.9,
+                "dofollow": 11007.1,
+                "referring_pages": 11649.6,
+                "referring_domains": 737.6,
+                "referring_main_domains": 693.9,
+                "rank": 236.4,
+                "main_domain_rank": 402.1,
+                "last_updated_time": "2026-05-14 20:38:44 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "transactional",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-29 01:20:08 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "activewear clothes",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-15 10:33:20 +00:00",
+                "competition": 0.9,
+                "competition_level": "HIGH",
+                "cpc": 1.79,
+                "search_volume": 49500,
+                "low_top_of_page_bid": 0.82,
+                "high_top_of_page_bid": 4.62,
+                "categories": [
+                  10014,
+                  10121,
+                  10660
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 49500
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 49500
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 49500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 60500
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 0,
+                  "quarterly": 22,
+                  "yearly": -18
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": null,
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 25,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 2
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 3193,
+                "dofollow": 2115.7,
+                "referring_pages": 2408.7,
+                "referring_domains": 469.6,
+                "referring_main_domains": 450,
+                "rank": 179.3,
+                "main_domain_rank": 391.5,
+                "last_updated_time": "2026-05-14 20:38:32 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "transactional",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-29 07:21:09 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "active activewear",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-13 19:27:09 +00:00",
+                "competition": 0.9,
+                "competition_level": "HIGH",
+                "cpc": 1.79,
+                "search_volume": 49500,
+                "low_top_of_page_bid": 0.82,
+                "high_top_of_page_bid": 4.62,
+                "categories": [
+                  10014,
+                  10121,
+                  10660
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 49500
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 49500
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 49500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 60500
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 0,
+                  "quarterly": 22,
+                  "yearly": -18
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": null,
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 34,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 2
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 20.7,
+                "dofollow": 20.5,
+                "referring_pages": 20.7,
+                "referring_domains": 0.6,
+                "referring_main_domains": 0.6,
+                "rank": 7.4,
+                "main_domain_rank": 275.4,
+                "last_updated_time": "2024-10-12 13:55:08 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "transactional",
+                "foreign_intent": [
+                  "navigational"
+                ],
+                "last_updated_time": "2026-04-29 13:55:29 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "activewear activewear",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-12 05:10:49 +00:00",
+                "competition": 0.9,
+                "competition_level": "HIGH",
+                "cpc": 1.79,
+                "search_volume": 49500,
+                "low_top_of_page_bid": 0.82,
+                "high_top_of_page_bid": 4.62,
+                "categories": [
+                  10014,
+                  10121,
+                  10660
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 49500
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 49500
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 33100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 49500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 60500
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 0,
+                  "quarterly": 22,
+                  "yearly": -18
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "activewear",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 39,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 2
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 39967.8,
+                "dofollow": 31360.3,
+                "referring_pages": 32457.9,
+                "referring_domains": 420.8,
+                "referring_main_domains": 375.1,
+                "rank": 151.4,
+                "main_domain_rank": 357.6,
+                "last_updated_time": "2024-11-28 10:15:52 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "navigational",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-29 07:15:03 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "yoga and activewear",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-14 15:03:29 +00:00",
+                "competition": 0.99,
+                "competition_level": "HIGH",
+                "cpc": 1.61,
+                "search_volume": 40500,
+                "low_top_of_page_bid": 0.86,
+                "high_top_of_page_bid": 3.99,
+                "categories": [
+                  10014,
+                  10123,
+                  13486
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 260
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 2900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 260
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 590
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 49500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 720
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 1900
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 90500
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -91,
+                  "quarterly": 0,
+                  "yearly": -99
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "activewear for yoga",
+                "synonym_clustering_algorithm": "keyword_metrics",
+                "keyword_difficulty": 19,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 120.9,
+                "dofollow": 60.6,
+                "referring_pages": 93.1,
+                "referring_domains": 37.6,
+                "referring_main_domains": 33.9,
+                "rank": 82.3,
+                "main_domain_rank": 251.4,
+                "last_updated_time": "2024-10-13 07:26:01 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": [
+                  "transactional"
+                ],
+                "last_updated_time": "2026-04-30 02:47:11 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "activewear yoga",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-13 22:10:21 +00:00",
+                "competition": 0.99,
+                "competition_level": "HIGH",
+                "cpc": 1.61,
+                "search_volume": 40500,
+                "low_top_of_page_bid": 0.86,
+                "high_top_of_page_bid": 3.99,
+                "categories": [
+                  10014,
+                  10014,
+                  10123,
+                  10123,
+                  13486
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 260
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 2900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 260
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 590
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 49500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 720
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 1900
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 90500
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -91,
+                  "quarterly": 0,
+                  "yearly": -99
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "yoga activewear",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 40,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 2
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 3359.7,
+                "dofollow": 2480.9,
+                "referring_pages": 2721.7,
+                "referring_domains": 291,
+                "referring_main_domains": 275.2,
+                "rank": 76.3,
+                "main_domain_rank": 405,
+                "last_updated_time": "2026-03-28 17:51:18 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "transactional",
+                "foreign_intent": [
+                  "commercial"
+                ],
+                "last_updated_time": "2026-04-29 06:47:00 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "yogaya activewear",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-15 04:30:45 +00:00",
+                "competition": 0.99,
+                "competition_level": "HIGH",
+                "cpc": 1.61,
+                "search_volume": 40500,
+                "low_top_of_page_bid": 0.86,
+                "high_top_of_page_bid": 3.99,
+                "categories": [
+                  10014,
+                  10123,
+                  13486
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 260
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 2900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 260
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 590
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 49500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 720
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 1900
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 90500
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -91,
+                  "quarterly": 0,
+                  "yearly": -99
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "activewear for yoga",
+                "synonym_clustering_algorithm": "keyword_metrics",
+                "keyword_difficulty": 19,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 2
+              },
+              "serp_info": null,
+              "avg_backlinks_info": null,
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "transactional",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-30 02:25:58 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "yoga activewear clothing",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-12 05:12:16 +00:00",
+                "competition": 0.99,
+                "competition_level": "HIGH",
+                "cpc": 1.61,
+                "search_volume": 40500,
+                "low_top_of_page_bid": 0.86,
+                "high_top_of_page_bid": 3.99,
+                "categories": [
+                  10014,
+                  10121,
+                  10660
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 260
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 2900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 260
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 590
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 49500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 720
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 1900
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 90500
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -91,
+                  "quarterly": 0,
+                  "yearly": -99
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "activewear for yoga",
+                "synonym_clustering_algorithm": "keyword_metrics",
+                "keyword_difficulty": 19,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 879.5,
+                "dofollow": 333.9,
+                "referring_pages": 501.8,
+                "referring_domains": 161.9,
+                "referring_main_domains": 151.4,
+                "rank": 84.8,
+                "main_domain_rank": 296.7,
+                "last_updated_time": "2024-10-05 23:07:33 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "transactional",
+                "foreign_intent": [
+                  "commercial"
+                ],
+                "last_updated_time": "2026-04-30 03:41:07 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "yoga activewear",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-13 19:01:56 +00:00",
+                "competition": 0.99,
+                "competition_level": "HIGH",
+                "cpc": 1.61,
+                "search_volume": 40500,
+                "low_top_of_page_bid": 0.86,
+                "high_top_of_page_bid": 3.99,
+                "categories": [
+                  10014,
+                  10123,
+                  13486
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 260
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 2900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 260
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 590
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 49500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 720
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 1900
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 90500
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -91,
+                  "quarterly": 0,
+                  "yearly": -99
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": null,
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 40,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 2
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 3300.7,
+                "dofollow": 2115.4,
+                "referring_pages": 2297.9,
+                "referring_domains": 368.4,
+                "referring_main_domains": 353.7,
+                "rank": 254.3,
+                "main_domain_rank": 311.7,
+                "last_updated_time": "2026-07-30 05:04:10 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "commercial",
+                "foreign_intent": [
+                  "informational"
+                ],
+                "last_updated_time": "2026-05-07 12:51:35 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "activewear for yoga",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-15 09:56:42 +00:00",
+                "competition": 0.99,
+                "competition_level": "HIGH",
+                "cpc": 1.61,
+                "search_volume": 40500,
+                "low_top_of_page_bid": 0.86,
+                "high_top_of_page_bid": 3.99,
+                "categories": [
+                  10014,
+                  10014,
+                  10121,
+                  10123,
+                  10660,
+                  13486
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 260
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 2900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 260
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 590
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 49500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 720
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 1900
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 135000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 90500
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": -91,
+                  "quarterly": 0,
+                  "yearly": -99
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "yoga activewear",
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 19,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 5816.9,
+                "dofollow": 4122.5,
+                "referring_pages": 4600,
+                "referring_domains": 630.1,
+                "referring_main_domains": 601.5,
+                "rank": 146.3,
+                "main_domain_rank": 456.7,
+                "last_updated_time": "2026-05-14 21:39:35 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "transactional",
+                "foreign_intent": null,
+                "last_updated_time": "2026-04-28 23:55:08 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "activewear apparel brands",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-10 15:14:44 +00:00",
+                "competition": 0.62,
+                "competition_level": "MEDIUM",
+                "cpc": 1.78,
+                "search_volume": 33100,
+                "low_top_of_page_bid": 0.86,
+                "high_top_of_page_bid": 3.78,
+                "categories": [
+                  10014,
+                  10115
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 6600
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 6600
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 12100
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 22,
+                  "quarterly": 124,
+                  "yearly": 311
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": "activewear brands",
+                "synonym_clustering_algorithm": "keyword_metrics",
+                "keyword_difficulty": 14,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 3
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 1285.9,
+                "dofollow": 558.4,
+                "referring_pages": 993,
+                "referring_domains": 263.6,
+                "referring_main_domains": 240.5,
+                "rank": 102.9,
+                "main_domain_rank": 478.3,
+                "last_updated_time": "2024-10-12 17:49:04 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "informational",
+                "foreign_intent": [
+                  "navigational"
+                ],
+                "last_updated_time": "2026-04-24 16:29:51 +00:00"
+              }
+            },
+            {
+              "se_type": "google",
+              "keyword": "activewear brands",
+              "location_code": 2840,
+              "language_code": "en",
+              "keyword_info": {
+                "se_type": "google",
+                "last_updated_time": "2026-07-14 02:44:56 +00:00",
+                "competition": 0.62,
+                "competition_level": "MEDIUM",
+                "cpc": 1.78,
+                "search_volume": 33100,
+                "low_top_of_page_bid": 0.86,
+                "high_top_of_page_bid": 3.78,
+                "categories": [
+                  10014,
+                  10115
+                ],
+                "monthly_searches": [
+                  {
+                    "year": 2026,
+                    "month": 6,
+                    "search_volume": 14800
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "search_volume": 12100
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "search_volume": 6600
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "search_volume": 22200
+                  },
+                  {
+                    "year": 2026,
+                    "month": 2,
+                    "search_volume": 6600
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "search_volume": 9900
+                  },
+                  {
+                    "year": 2025,
+                    "month": 12,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "search_volume": 165000
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "search_volume": 60500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "search_volume": 40500
+                  },
+                  {
+                    "year": 2025,
+                    "month": 8,
+                    "search_volume": 18100
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "search_volume": 12100
+                  }
+                ],
+                "search_volume_trend": {
+                  "monthly": 22,
+                  "quarterly": 124,
+                  "yearly": 311
+                }
+              },
+              "keyword_info_normalized_with_bing": null,
+              "keyword_info_normalized_with_clickstream": null,
+              "clickstream_keyword_info": null,
+              "keyword_properties": {
+                "se_type": "google",
+                "core_keyword": null,
+                "synonym_clustering_algorithm": "text_processing",
+                "keyword_difficulty": 14,
+                "detected_language": "en",
+                "is_another_language": false,
+                "words_count": 2
+              },
+              "serp_info": null,
+              "avg_backlinks_info": {
+                "se_type": "google",
+                "backlinks": 2350.8,
+                "dofollow": 1582.3,
+                "referring_pages": 1745.1,
+                "referring_domains": 290.4,
+                "referring_main_domains": 278,
+                "rank": 117.2,
+                "main_domain_rank": 537.6,
+                "last_updated_time": "2026-05-14 22:49:37 +00:00"
+              },
+              "search_intent_info": {
+                "se_type": "google",
+                "main_intent": "informational",
+                "foreign_intent": [
+                  "commercial"
+                ],
+                "last_updated_time": "2026-04-29 03:26:37 +00:00"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

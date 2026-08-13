@@ -1,0 +1,4194 @@
+{
+  "version": "0.1.20260806",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "0.1967 sec.",
+  "cost": 0.01548,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "08130602-2208-0387-0000-d609bd38bf80",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "0.1818 sec.",
+      "cost": 0.01548,
+      "result_count": 1,
+      "path": [
+        "v3",
+        "dataforseo_labs",
+        "google",
+        "related_keywords",
+        "live"
+      ],
+      "data": {
+        "api": "dataforseo_labs",
+        "function": "related_keywords",
+        "se_type": "google",
+        "location_name": "United States",
+        "language_name": "English",
+        "keyword": "men's clothing stores online",
+        "limit": 30,
+        "depth": 2
+      },
+      "result": [
+        {
+          "se_type": "google",
+          "seed_keyword": "men's clothing stores online",
+          "seed_keyword_data": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "total_count": 29,
+          "items_count": 29,
+          "items": [
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "men's clothing",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-10 15:08:23 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 2.72,
+                  "search_volume": 246000,
+                  "low_top_of_page_bid": 1.17,
+                  "high_top_of_page_bid": 6.55,
+                  "categories": [
+                    10021,
+                    10176,
+                    13778
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 201000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 201000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 165000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 165000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 135000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 165000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 301000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 368000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 201000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 368000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 450000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 165000
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 22,
+                    "yearly": 49
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "mens clothing",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 12,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=men%27s%20clothing&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "popular_products",
+                    "local_pack",
+                    "people_also_ask",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 200,
+                  "last_updated_time": "2026-06-17 02:06:11 +00:00",
+                  "previous_updated_time": "2026-04-18 03:35:02 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 1102.6,
+                  "dofollow": 853.8,
+                  "referring_pages": 975.7,
+                  "referring_domains": 320.2,
+                  "referring_main_domains": 304.7,
+                  "rank": 122.5,
+                  "main_domain_rank": 403.5,
+                  "last_updated_time": "2026-06-17 02:06:11 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "informational",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-03 03:32:28 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "men's clothing online",
+                "stylish men's clothing",
+                "stylish men's clothing online",
+                "top 10 men's clothing brands",
+                "stylish men's clothing stores",
+                "stylish men's clothing brands",
+                "top 100 men's clothing brands",
+                "men's clothing nearby"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "men's clothing business casual",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-15 05:59:02 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 2.89,
+                  "search_volume": 22200,
+                  "low_top_of_page_bid": 0.84,
+                  "high_top_of_page_bid": 6.39,
+                  "categories": [
+                    10021,
+                    10176,
+                    13778
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 12100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 14800
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 14800
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 14800
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 18100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 22200
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 27100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 40500
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 18100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 18100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 27100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 18100
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -18,
+                    "quarterly": -18,
+                    "yearly": -55
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "casual business clothes men",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 11,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=men%27s%20clothing%20business%20casual&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "popular_products",
+                    "video",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 82400000,
+                  "last_updated_time": "2026-05-15 00:58:52 +00:00",
+                  "previous_updated_time": null
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 102.9,
+                  "dofollow": 96.9,
+                  "referring_pages": 98.7,
+                  "referring_domains": 10.2,
+                  "referring_main_domains": 9.7,
+                  "rank": 83.4,
+                  "main_domain_rank": 481.3,
+                  "last_updated_time": "2026-05-15 00:58:53 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": [
+                    "informational"
+                  ],
+                  "last_updated_time": "2026-05-05 16:19:43 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "men's clothing business casual sale",
+                "men's clothing business casual pants",
+                "men's clothing business casual brands",
+                "men's clothing business casual online",
+                "best men's clothing business casual",
+                "business casual examples",
+                "men's clothing business casual near me",
+                "men's business casual shirts"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "best men's clothing brands",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-12 01:35:33 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 3.71,
+                  "search_volume": 3600,
+                  "low_top_of_page_bid": 1.17,
+                  "high_top_of_page_bid": 5.4,
+                  "categories": [
+                    10021,
+                    10176,
+                    13778
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 5400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 5400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 2900
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -17,
+                    "quarterly": -17,
+                    "yearly": -33
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "best clothing brands for men",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 7,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=best%20men%27s%20clothing%20brands&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "perspectives",
+                    "related_searches",
+                    "popular_products",
+                    "images"
+                  ],
+                  "se_results_count": 198,
+                  "last_updated_time": "2026-05-17 06:14:22 +00:00",
+                  "previous_updated_time": "2026-03-13 17:07:49 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 45.7,
+                  "dofollow": 34.2,
+                  "referring_pages": 38,
+                  "referring_domains": 14,
+                  "referring_main_domains": 13.4,
+                  "rank": 82.9,
+                  "main_domain_rank": 553.5,
+                  "last_updated_time": "2026-05-17 06:14:23 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-07 17:42:50 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "top 10 best men's clothing brands",
+                "top 100 men's clothing brands",
+                "best men's clothing brands reddit",
+                "best men's clothing brands europe",
+                "best men's clothing brands streetwear",
+                "best men's clothing brands luxury",
+                "best men's clothing brands affordable",
+                "unique men's clothing brands"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "men's clothing sale clearance",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-13 16:09:40 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 0.74,
+                  "search_volume": 1900,
+                  "low_top_of_page_bid": 0.35,
+                  "high_top_of_page_bid": 2.06,
+                  "categories": [
+                    10021,
+                    10176,
+                    13778
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 1300
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 1900
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -19,
+                    "quarterly": -19,
+                    "yearly": -19
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "clearance sale mens clothes",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 0,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=men%27s%20clothing%20sale%20clearance&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "popular_products",
+                    "local_pack",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 186,
+                  "last_updated_time": "2026-05-17 19:32:38 +00:00",
+                  "previous_updated_time": "2026-03-14 15:45:26 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 11.9,
+                  "dofollow": 8.3,
+                  "referring_pages": 10.6,
+                  "referring_domains": 5.7,
+                  "referring_main_domains": 5.2,
+                  "rank": 60.3,
+                  "main_domain_rank": 467,
+                  "last_updated_time": "2026-05-17 19:32:39 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-07 14:20:21 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "men's clothing sale clearance online",
+                "men's clothing sale clearance cheap",
+                "men's clearance clothes under $5",
+                "best men's clothing sales right now",
+                "men's clearance clothes walmart",
+                "men's clothing sale clearance near me",
+                "best men's clothing sales online",
+                "jcpenney men's clothing sale"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "top 10 men's clothing brands",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-12 04:50:44 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 2.3,
+                  "search_volume": 1300,
+                  "low_top_of_page_bid": 0.68,
+                  "high_top_of_page_bid": 4.62,
+                  "categories": [
+                    10021,
+                    10176,
+                    13778
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 1300
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 1300
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 1000
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 14,
+                    "yearly": 14
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 7,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=top%2010%20men%27s%20clothing%20brands&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "perspectives",
+                    "discussions_and_forums",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 164,
+                  "last_updated_time": "2026-07-31 21:47:40 +00:00",
+                  "previous_updated_time": "2026-05-18 22:23:03 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 40.1,
+                  "dofollow": 24,
+                  "referring_pages": 30.5,
+                  "referring_domains": 16,
+                  "referring_main_domains": 15.3,
+                  "rank": 75.9,
+                  "main_domain_rank": 605.7,
+                  "last_updated_time": "2026-07-31 21:47:41 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-02 22:53:32 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "top 10 men's clothing brands in the world",
+                "top 10 men's clothing brands in usa",
+                "top 10 men's clothing brands online",
+                "top 100 men's clothing brands",
+                "list of men's clothing brands",
+                "top 100 men's clothing brands online",
+                "unique men's clothing brands",
+                "men brands clothing luxury"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "best men's clothing websites",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-10 14:22:12 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 3.7,
+                  "search_volume": 1000,
+                  "low_top_of_page_bid": 1.2,
+                  "high_top_of_page_bid": 6.46,
+                  "categories": [
+                    10007,
+                    10021,
+                    10176,
+                    11493,
+                    13418,
+                    13778
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 1300
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 1300
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 1300
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 1300
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 1000
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -12,
+                    "quarterly": -12,
+                    "yearly": -12
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "best mens clothing websites",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 53,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=best%20men%27s%20clothing%20websites&num=100&hl=en&gl=US&gws_rd=cr&ie=UTF-8&oe=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "people_also_ask",
+                    "explore_brands",
+                    "people_also_search",
+                    "related_searches"
+                  ],
+                  "se_results_count": 60300000,
+                  "last_updated_time": "2023-10-12 13:06:55 +00:00",
+                  "previous_updated_time": "2023-09-06 18:52:32 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 1929.4,
+                  "dofollow": 583.7,
+                  "referring_pages": 1446.2,
+                  "referring_domains": 125.4,
+                  "referring_main_domains": 226.8,
+                  "rank": 169.9,
+                  "main_domain_rank": 502.7,
+                  "last_updated_time": "2023-10-12 13:06:56 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-06 00:27:47 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "best men's clothing brands",
+                "top 10 online clothing stores",
+                "stylish men's clothing",
+                "best men's clothing websites for men",
+                "cheap men's clothing websites",
+                "top 10 men's clothing brands",
+                "designer men's clothing online",
+                "best online clothing stores"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "stylish men's clothing online",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-15 11:29:58 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 2.12,
+                  "search_volume": 880,
+                  "low_top_of_page_bid": 0.91,
+                  "high_top_of_page_bid": 4.65,
+                  "categories": [
+                    10021,
+                    10176,
+                    13778
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 1300
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 1300
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 110
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": -12,
+                    "yearly": 700
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 49,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=stylish%20men%27s%20clothing%20online&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "popular_products",
+                    "people_also_ask",
+                    "perspectives",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 210,
+                  "last_updated_time": "2026-08-01 19:46:20 +00:00",
+                  "previous_updated_time": "2026-05-21 03:43:34 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 4283.2,
+                  "dofollow": 3769.6,
+                  "referring_pages": 4004.5,
+                  "referring_domains": 454.2,
+                  "referring_main_domains": 429.8,
+                  "rank": 253,
+                  "main_domain_rank": 528,
+                  "last_updated_time": "2026-08-01 19:46:20 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-03 07:42:31 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "stylish men's clothing online usa",
+                "stylish men's clothing online shopping",
+                "stylish men's clothing stores",
+                "stylish men's clothing brands",
+                "stylish men's clothing online cheap",
+                "top 5 men's online clothing stores",
+                "men's clothing business casual",
+                "list of men's clothing catalogs"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "men's clothing online sale",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-16 08:14:41 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.37,
+                  "search_volume": 880,
+                  "low_top_of_page_bid": 0.47,
+                  "high_top_of_page_bid": 3.92,
+                  "categories": [
+                    10021,
+                    10176,
+                    13778
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 1000
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": -18,
+                    "yearly": -41
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "men's online clothing sales",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 18,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=men%27s%20clothing%20online%20sale&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "popular_products",
+                    "organic",
+                    "people_also_ask",
+                    "related_searches"
+                  ],
+                  "se_results_count": 131000000,
+                  "last_updated_time": "2026-03-15 22:45:49 +00:00",
+                  "previous_updated_time": null
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 12.1,
+                  "dofollow": 9.6,
+                  "referring_pages": 11,
+                  "referring_domains": 5.1,
+                  "referring_main_domains": 5,
+                  "rank": 33.8,
+                  "main_domain_rank": 490.7,
+                  "last_updated_time": "2026-03-15 22:45:52 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-05 00:18:19 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "men's clothing sale clearance",
+                "men's clothing online sale clearance",
+                "men's clothing online sale near me",
+                "best men's clothing sales right now",
+                "best men's clothing online sale",
+                "men's clothing sale nearby",
+                "men's clothing sale ralph lauren",
+                "uniqlo sale online"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "men's clothing sale online",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-12 10:35:51 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.37,
+                  "search_volume": 880,
+                  "low_top_of_page_bid": 0.47,
+                  "high_top_of_page_bid": 3.92,
+                  "categories": [
+                    10021,
+                    10176,
+                    13778
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 1000
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": -18,
+                    "yearly": -41
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "men's online clothing sales",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 19,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=men%27s%20clothing%20sale%20online&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "ai_overview",
+                    "popular_products",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 196,
+                  "last_updated_time": "2026-08-01 21:41:07 +00:00",
+                  "previous_updated_time": "2026-05-19 07:11:43 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 79.8,
+                  "dofollow": 59,
+                  "referring_pages": 64.5,
+                  "referring_domains": 9.9,
+                  "referring_main_domains": 9.1,
+                  "rank": 107.3,
+                  "main_domain_rank": 452.6,
+                  "last_updated_time": "2026-08-01 21:41:10 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-03 00:25:10 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "men's clothing sale online usa",
+                "men's clothing sale online clearance",
+                "best men's clothing sale online",
+                "men's clothing sale clearance",
+                "best men's clothing sales right now",
+                "men's clothing sale online nearby",
+                "men clothes on sale",
+                "jcpenney mens clothing sale"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "stylish men's clothing brands",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-12 01:07:51 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.51,
+                  "search_volume": 480,
+                  "low_top_of_page_bid": 0.7,
+                  "high_top_of_page_bid": 3.59,
+                  "categories": [
+                    10005,
+                    10021,
+                    10176,
+                    13636,
+                    13778
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 170
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": -19,
+                    "yearly": 129
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "stylish clothing brands for men",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 25,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=stylish%20men%27s%20clothing%20brands&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "video",
+                    "popular_products",
+                    "related_searches"
+                  ],
+                  "se_results_count": 204,
+                  "last_updated_time": "2026-08-03 06:36:20 +00:00",
+                  "previous_updated_time": "2026-05-21 17:30:39 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 262.9,
+                  "dofollow": 152.2,
+                  "referring_pages": 169.8,
+                  "referring_domains": 61.1,
+                  "referring_main_domains": 56.1,
+                  "rank": 121.7,
+                  "main_domain_rank": 522.9,
+                  "last_updated_time": "2026-08-03 06:36:29 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-03 16:04:39 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "stylish men's clothing brands online",
+                "top 100 men's clothing brands",
+                "top 10 men's clothing brands",
+                "best stylish men's clothing brands",
+                "stylish men's clothing stores",
+                "list of men's clothing brands",
+                "men's designer clothing brands list",
+                "unique men's clothing brands"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "best men's clothing sales right now",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-15 14:15:42 +00:00",
+                  "competition": 0.85,
+                  "competition_level": "HIGH",
+                  "cpc": 1.62,
+                  "search_volume": 480,
+                  "low_top_of_page_bid": 0.57,
+                  "high_top_of_page_bid": 3.8,
+                  "categories": [
+                    10021,
+                    10176,
+                    13778
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 590
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 23,
+                    "yearly": 50
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "best clothing sales right now men",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 2,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=best%20men%27s%20clothing%20sales%20right%20now&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "popular_products",
+                    "related_searches"
+                  ],
+                  "se_results_count": 152,
+                  "last_updated_time": "2026-07-03 09:02:49 +00:00",
+                  "previous_updated_time": "2026-04-21 14:31:41 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 57,
+                  "dofollow": 37.8,
+                  "referring_pages": 46.9,
+                  "referring_domains": 12.6,
+                  "referring_main_domains": 11.9,
+                  "rank": 60.6,
+                  "main_domain_rank": 562.8,
+                  "last_updated_time": "2026-07-03 09:03:36 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-05 13:33:35 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "men's clothing sale clearance",
+                "best men's clothing sales right now usa",
+                "best men's clothing sales online",
+                "men's clothing sale online",
+                "men's clothing sale nearby",
+                "mens clothing sale sweatpants",
+                "men's adidas clothing sale",
+                "men's clothing sale ralph lauren"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "top 5 men's online clothing stores",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-15 01:11:14 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 4.05,
+                  "search_volume": 390,
+                  "low_top_of_page_bid": 1.24,
+                  "high_top_of_page_bid": 5.52,
+                  "categories": [
+                    13575
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 90
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 22,
+                    "yearly": 700
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": null,
+                  "keyword_difficulty": 23,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=top%205%20men%27s%20online%20clothing%20stores&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 110,
+                  "last_updated_time": "2026-07-03 17:34:45 +00:00",
+                  "previous_updated_time": "2026-07-03 16:32:28 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 217.5,
+                  "dofollow": 165.9,
+                  "referring_pages": 186.6,
+                  "referring_domains": 76.4,
+                  "referring_main_domains": 68,
+                  "rank": 128.1,
+                  "main_domain_rank": 573.6,
+                  "last_updated_time": "2026-07-03 17:35:09 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-08 08:56:44 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "top 5 men's online clothing stores usa",
+                "top 5 men's online clothing stores reddit",
+                "stylish men's clothing online",
+                "stylish men's clothing stores",
+                "stylish men's clothing brands",
+                "men's clothing online sale",
+                "best men's clothing websites",
+                "young men's clothing online"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "best men's clothing stores online",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-16 07:00:26 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 4.32,
+                  "search_volume": 390,
+                  "low_top_of_page_bid": 1.48,
+                  "high_top_of_page_bid": 7.54,
+                  "categories": [
+                    13575
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 480
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -33,
+                    "quarterly": -33,
+                    "yearly": -33
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "best online clothing stores for men",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 40,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=best%20men%27s%20clothing%20stores%20online&num=100&hl=en&gl=US&gws_rd=cr&ie=UTF-8&oe=UTF-8&glp=1&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "found_on_web",
+                    "organic",
+                    "discussions_and_forums",
+                    "explore_brands",
+                    "images",
+                    "related_searches"
+                  ],
+                  "se_results_count": 190000000,
+                  "last_updated_time": "2024-09-17 00:05:20 +00:00",
+                  "previous_updated_time": "2024-08-06 14:11:34 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 665.8,
+                  "dofollow": 521.4,
+                  "referring_pages": 649.6,
+                  "referring_domains": 71.3,
+                  "referring_main_domains": 62,
+                  "rank": 150.1,
+                  "main_domain_rank": 533.8,
+                  "last_updated_time": "2024-09-17 00:05:20 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-03 06:36:14 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "best men's clothing stores online usa",
+                "best men's clothing stores online reddit",
+                "top 5 men's online clothing stores",
+                "best european men's clothing stores online",
+                "men's clothing",
+                "cheap men's clothing online free shipping",
+                "designer men's clothing online",
+                "best men's clothing brands"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "cheap men's clothes near me",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-12 22:49:01 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 0.75,
+                  "search_volume": 390,
+                  "low_top_of_page_bid": 0.56,
+                  "high_top_of_page_bid": 5.54,
+                  "categories": [
+                    10021,
+                    10176,
+                    13778
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 390
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 0,
+                    "yearly": -19
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 13,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=cheap%20men%27s%20clothes%20near%20me&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "local_pack",
+                    "people_also_ask",
+                    "organic",
+                    "popular_products",
+                    "related_searches"
+                  ],
+                  "se_results_count": 151000000,
+                  "last_updated_time": "2026-07-04 06:06:39 +00:00",
+                  "previous_updated_time": "2026-07-04 05:01:59 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 920.4,
+                  "dofollow": 672,
+                  "referring_pages": 816.3,
+                  "referring_domains": 325.4,
+                  "referring_main_domains": 307.7,
+                  "rank": 114.3,
+                  "main_domain_rank": 524,
+                  "last_updated_time": "2026-07-04 06:07:07 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": [
+                    "commercial"
+                  ],
+                  "last_updated_time": "2026-05-02 16:12:33 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "cheap men's clothing online free shipping",
+                "cheap men's clothes near me online",
+                "cheap men's clothes near me free shipping",
+                "men's clearance clothes under 5",
+                "men's clothing sale clearance online",
+                "cheap men's clothes amazon",
+                "stylish men's clothing",
+                "men cheap clothes"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "top 100 men's clothing brands",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-14 22:24:41 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 3,
+                  "search_volume": 320,
+                  "low_top_of_page_bid": 0.45,
+                  "high_top_of_page_bid": 2.62,
+                  "categories": [
+                    10021,
+                    10176,
+                    13778
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 320
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 0,
+                    "yearly": -56
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 26,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=top%20100%20men%27s%20clothing%20brands&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "images",
+                    "related_searches"
+                  ],
+                  "se_results_count": 125,
+                  "last_updated_time": "2026-07-04 13:54:32 +00:00",
+                  "previous_updated_time": "2026-05-23 09:16:58 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 125.1,
+                  "dofollow": 85.2,
+                  "referring_pages": 101.8,
+                  "referring_domains": 49.8,
+                  "referring_main_domains": 44,
+                  "rank": 132.8,
+                  "main_domain_rank": 544.2,
+                  "last_updated_time": "2026-07-04 13:54:48 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-03 14:53:32 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "top 100 men's clothing brands in usa",
+                "top 100 men's clothing brands in the world",
+                "top 10 men's clothing brands",
+                "top 100 men's clothing brands online",
+                "top 100 clothing brands in the world",
+                "top 100 clothing brands in usa",
+                "top 100 men's clothing brands in the world 2022",
+                "top 100 men's clothing brands 2022"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "designer men's clothing online",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-10 21:49:36 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.52,
+                  "search_volume": 320,
+                  "low_top_of_page_bid": 0.67,
+                  "high_top_of_page_bid": 3.66,
+                  "categories": [
+                    10021,
+                    10176,
+                    13778
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 140
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 23,
+                    "quarterly": 23,
+                    "yearly": 129
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 8,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=designer%20men%27s%20clothing%20online&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "popular_products",
+                    "related_searches"
+                  ],
+                  "se_results_count": 201,
+                  "last_updated_time": "2026-07-06 06:37:23 +00:00",
+                  "previous_updated_time": "2026-07-06 04:36:43 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 176.1,
+                  "dofollow": 119.2,
+                  "referring_pages": 138.6,
+                  "referring_domains": 46.3,
+                  "referring_main_domains": 43.8,
+                  "rank": 100.4,
+                  "main_domain_rank": 428.3,
+                  "last_updated_time": "2026-07-06 06:38:08 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-04 18:59:19 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "luxury designer men's clothing online",
+                "designer men's clothing online sale",
+                "luxury designer clothes for men",
+                "cheap designer men's clothing online",
+                "designer men's clothing online clearance",
+                "top 10 men's luxury clothing brands",
+                "latest designer clothes for guys",
+                "high end men's clothing stores"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "men's clothing sale nearby",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-11 14:47:06 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 0.36,
+                  "search_volume": 210,
+                  "low_top_of_page_bid": 0.36,
+                  "high_top_of_page_bid": 1.97,
+                  "categories": [
+                    10021,
+                    10176,
+                    13575,
+                    13778,
+                    13810
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 210
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": -21,
+                    "yearly": -48
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "men clothes sale nearby",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 0,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=men%27s%20clothing%20sale%20nearby&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "local_pack",
+                    "organic",
+                    "popular_products",
+                    "people_also_ask",
+                    "related_searches"
+                  ],
+                  "se_results_count": 206,
+                  "last_updated_time": "2026-07-07 10:46:51 +00:00",
+                  "previous_updated_time": "2026-05-24 16:11:27 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 11.5,
+                  "dofollow": 9.7,
+                  "referring_pages": 10.6,
+                  "referring_domains": 6.2,
+                  "referring_main_domains": 6.2,
+                  "rank": 45.2,
+                  "main_domain_rank": 495.5,
+                  "last_updated_time": "2026-07-07 10:46:52 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-05 23:18:19 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "men's clothing sale near california",
+                "men's clothing sale near texas",
+                "men's clothing sale clearance",
+                "best men's clothing sales right now",
+                "men's clothing sale online",
+                "men's clothing sale nearby online",
+                "men's clothing sale nearby cheap",
+                "best men's clothing sales online"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "stylish men's clothing stores",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-11 12:54:00 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.57,
+                  "search_volume": 170,
+                  "low_top_of_page_bid": 0.91,
+                  "high_top_of_page_bid": 3.56,
+                  "categories": [
+                    13575
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 90
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -19,
+                    "quarterly": 0,
+                    "yearly": 189
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 15,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=stylish%20men%27s%20clothing%20stores&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "local_pack",
+                    "organic",
+                    "video",
+                    "people_also_ask",
+                    "perspectives",
+                    "related_searches",
+                    "popular_products",
+                    "images"
+                  ],
+                  "se_results_count": 215,
+                  "last_updated_time": "2026-05-01 11:23:17 +00:00",
+                  "previous_updated_time": "2026-03-21 19:22:28 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 221.9,
+                  "dofollow": 144.6,
+                  "referring_pages": 170.2,
+                  "referring_domains": 84.7,
+                  "referring_main_domains": 75.6,
+                  "rank": 126.4,
+                  "main_domain_rank": 490.8,
+                  "last_updated_time": "2026-05-01 11:25:47 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-11 09:16:24 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "stylish men's clothing stores near california",
+                "stylish men's clothing stores near texas",
+                "stylish men's clothing stores online",
+                "stylish men's clothing stores near me",
+                "stylish men's clothing stores in usa",
+                "men stylish men's clothing stores",
+                "top 5 men's online clothing stores",
+                "stylish men's clothing brands"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "men's designer clothing brands list",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-11 03:21:53 +00:00",
+                  "competition": 0.89,
+                  "competition_level": "HIGH",
+                  "cpc": 1.47,
+                  "search_volume": 170,
+                  "low_top_of_page_bid": 0.5,
+                  "high_top_of_page_bid": 1.78,
+                  "categories": [
+                    10005,
+                    13636,
+                    13637
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 210
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -18,
+                    "quarterly": 0,
+                    "yearly": -72
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 0,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=men%27s%20designer%20clothing%20brands%20list&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "perspectives",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 70000000,
+                  "last_updated_time": "2026-04-28 09:38:13 +00:00",
+                  "previous_updated_time": "2025-07-25 01:41:56 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 6.5,
+                  "dofollow": 4.3,
+                  "referring_pages": 5.4,
+                  "referring_domains": 3.3,
+                  "referring_main_domains": 3.3,
+                  "rank": 17.1,
+                  "main_domain_rank": 460.6,
+                  "last_updated_time": "2026-04-28 09:38:13 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-02 21:38:14 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "men's designer clothing brands list in usa",
+                "top 10 men's luxury clothing brands",
+                "best men's designer clothing brands list",
+                "top 100 men's clothing brands",
+                "top 10 men's clothing brands",
+                "popular clothing brands for men",
+                "designer men's clothing online",
+                "luxury clothing brands for men list"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "unique men's clothing brands",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-16 03:04:42 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.38,
+                  "search_volume": 170,
+                  "low_top_of_page_bid": 0.72,
+                  "high_top_of_page_bid": 3.83,
+                  "categories": [
+                    10021,
+                    10176,
+                    13778
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 170
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -18,
+                    "quarterly": -36,
+                    "yearly": -47
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "unique mens clothing brands",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 15,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=unique%20men%27s%20clothing%20brands&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "discussions_and_forums",
+                    "perspectives",
+                    "video",
+                    "people_also_search",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 149000000,
+                  "last_updated_time": "2025-09-29 19:25:27 +00:00",
+                  "previous_updated_time": "2025-08-08 19:25:47 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 1935,
+                  "dofollow": 885.7,
+                  "referring_pages": 1129.9,
+                  "referring_domains": 341.6,
+                  "referring_main_domains": 319.9,
+                  "rank": 97,
+                  "main_domain_rank": 398.7,
+                  "last_updated_time": "2025-09-29 19:25:29 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-03 02:44:42 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "unique men's clothing brands in usa",
+                "unique men's clothing brands online",
+                "best unique men's clothing brands",
+                "most unique men's clothing brands",
+                "top 100 men's clothing brands",
+                "top 10 men's clothing brands",
+                "popular clothing brands for men",
+                "stylish men's clothing brands"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "cheap men's clothing online free shipping",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-10 22:30:40 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 4.42,
+                  "search_volume": 170,
+                  "low_top_of_page_bid": 0.99,
+                  "high_top_of_page_bid": 8.84,
+                  "categories": [
+                    10021,
+                    10176,
+                    13575,
+                    13778
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 210
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 56,
+                    "quarterly": 56,
+                    "yearly": -46
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 23,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=cheap%20men%27s%20clothing%20online%20free%20shipping&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "popular_products",
+                    "related_searches"
+                  ],
+                  "se_results_count": 198,
+                  "last_updated_time": "2026-07-10 12:36:36 +00:00",
+                  "previous_updated_time": "2026-04-29 15:37:57 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 2386.1,
+                  "dofollow": 1286.8,
+                  "referring_pages": 1398.7,
+                  "referring_domains": 304.4,
+                  "referring_main_domains": 285.4,
+                  "rank": 151,
+                  "main_domain_rank": 585.6,
+                  "last_updated_time": "2026-07-10 12:36:38 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-07 12:21:40 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "cheap men's clothing online free shipping usa",
+                "cheap men's clothing online free shipping amazon",
+                "cheap men's clothing online free shipping near me",
+                "stylish men's clothing online",
+                "men's clothing online sale",
+                "top 5 men's online clothing stores",
+                "young men's clothing online",
+                "stylish men's clothing stores"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "uniqlo sale online",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-13 20:20:21 +00:00",
+                  "competition": 0.94,
+                  "competition_level": "HIGH",
+                  "cpc": 0.41,
+                  "search_volume": 170,
+                  "low_top_of_page_bid": 0.12,
+                  "high_top_of_page_bid": 0.66,
+                  "categories": [
+                    13575,
+                    13860
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 110
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 0,
+                    "yearly": 55
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "uniqlo online sale",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 0,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=uniqlo%20sale%20online&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "popular_products",
+                    "people_also_ask",
+                    "related_searches"
+                  ],
+                  "se_results_count": 178,
+                  "last_updated_time": "2026-07-08 12:55:44 +00:00",
+                  "previous_updated_time": "2026-05-01 10:19:56 +00:00"
+                },
+                "avg_backlinks_info": null,
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "navigational",
+                  "foreign_intent": [
+                    "commercial"
+                  ],
+                  "last_updated_time": "2026-04-29 22:49:23 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "uniqlo sale online women's",
+                "uniqlo winter sale dates",
+                "uniqlo sale until when",
+                "uniqlo sale online men's",
+                "uniqlo sale dates 2026",
+                "uniqlo summer sale dates",
+                "uniqlo usa sale",
+                "uniqlo usa online"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "men's clothing stores online",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-14 11:29:25 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 3.1,
+                  "search_volume": 140,
+                  "low_top_of_page_bid": 0.98,
+                  "high_top_of_page_bid": 4.5,
+                  "categories": [
+                    13575
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 70
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 70
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 70
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 110
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 0,
+                    "yearly": -59
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "online clothing stores for men",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 27,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=men%27s%20clothing%20stores%20online&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "popular_products",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 202,
+                  "last_updated_time": "2026-07-11 06:41:58 +00:00",
+                  "previous_updated_time": "2026-04-30 06:33:17 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 1178.5,
+                  "dofollow": 767.1,
+                  "referring_pages": 886.3,
+                  "referring_domains": 333.7,
+                  "referring_main_domains": 314.5,
+                  "rank": 167.7,
+                  "main_domain_rank": 592.4,
+                  "last_updated_time": "2026-07-11 06:43:20 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-06 05:28:04 +00:00"
+                }
+              },
+              "depth": 0,
+              "related_keywords": [
+                "stylish men's clothing online",
+                "men's clothing stores online usa",
+                "stylish men's clothing stores",
+                "top 5 men's online clothing stores",
+                "stylish men's clothing brands",
+                "cheap men's clothing stores online",
+                "best men's clothing stores online",
+                "men's clothing online sale"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "list of men's clothing catalogs",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-16 04:05:20 +00:00",
+                  "competition": 0.97,
+                  "competition_level": "HIGH",
+                  "cpc": 1.22,
+                  "search_volume": 140,
+                  "low_top_of_page_bid": 0.71,
+                  "high_top_of_page_bid": 3.09,
+                  "categories": [
+                    10021,
+                    10176,
+                    13778
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 70
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 140
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -22,
+                    "quarterly": -22,
+                    "yearly": -59
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": null,
+                  "keyword_difficulty": 0,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=list%20of%20men%27s%20clothing%20catalogs&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "images",
+                    "related_searches"
+                  ],
+                  "se_results_count": 163,
+                  "last_updated_time": "2026-07-11 08:01:25 +00:00",
+                  "previous_updated_time": "2026-05-27 01:43:41 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 1.8,
+                  "dofollow": 1.8,
+                  "referring_pages": 1.8,
+                  "referring_domains": 1.1,
+                  "referring_main_domains": 1.1,
+                  "rank": 16.5,
+                  "main_domain_rank": 522.3,
+                  "last_updated_time": "2026-07-11 08:01:25 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "informational",
+                  "foreign_intent": [
+                    "navigational"
+                  ],
+                  "last_updated_time": "2026-05-05 14:49:40 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "list of men's clothing catalogs by mail",
+                "list of men's clothing catalogs free",
+                "list of men's clothing catalogs online",
+                "list of men's clothing catalogs pdf",
+                "haband men's clothing catalog",
+                "lands end men's catalog",
+                "blair men's clothing",
+                "mail order clothing catalogs"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "young men's clothing online",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-10 19:54:52 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 4.57,
+                  "search_volume": 140,
+                  "low_top_of_page_bid": 0.67,
+                  "high_top_of_page_bid": 4.29,
+                  "categories": [
+                    10021,
+                    10176,
+                    13778
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 70
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 70
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 70
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 70
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 170
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 29,
+                    "quarterly": 0,
+                    "yearly": 0
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "young men's clothes online",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 31,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=young%20men%27s%20clothing%20online&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "popular_products",
+                    "organic",
+                    "people_also_ask",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 206,
+                  "last_updated_time": "2026-08-11 10:54:44 +00:00",
+                  "previous_updated_time": "2026-05-01 05:48:03 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 449.8,
+                  "dofollow": 252.6,
+                  "referring_pages": 274.1,
+                  "referring_domains": 75.6,
+                  "referring_main_domains": 68.1,
+                  "rank": 156.6,
+                  "main_domain_rank": 505.4,
+                  "last_updated_time": "2026-08-11 10:54:47 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-02 20:48:25 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "trendy young men's clothing online",
+                "stylish men's clothing",
+                "young men's clothing stores",
+                "stylish men's clothing online",
+                "best young men's clothing online",
+                "stylish men's clothing brands",
+                "young men's clothes on sale",
+                "cheap young men's clothing online"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "list of men's clothing brands",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-13 00:10:32 +00:00",
+                  "competition": 0.98,
+                  "competition_level": "HIGH",
+                  "cpc": 1.79,
+                  "search_volume": 140,
+                  "low_top_of_page_bid": 0.23,
+                  "high_top_of_page_bid": 4.05,
+                  "categories": [
+                    10021,
+                    10176,
+                    13778
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 70
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 110
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 27,
+                    "yearly": 0
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "mens clothing brands list",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 3,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=list%20of%20men%27s%20clothing%20brands&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "images",
+                    "discussions_and_forums",
+                    "related_searches"
+                  ],
+                  "se_results_count": 187000000,
+                  "last_updated_time": "2026-05-01 18:13:19 +00:00",
+                  "previous_updated_time": "2026-02-01 17:24:58 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 58.8,
+                  "dofollow": 35.4,
+                  "referring_pages": 42.3,
+                  "referring_domains": 12.6,
+                  "referring_main_domains": 12.5,
+                  "rank": 67.2,
+                  "main_domain_rank": 532.3,
+                  "last_updated_time": "2026-05-01 18:13:19 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "informational",
+                  "foreign_intent": [
+                    "commercial"
+                  ],
+                  "last_updated_time": "2026-05-05 03:59:23 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "top 100 men's clothing brands",
+                "top 10 men's clothing brands",
+                "list of men's clothing brands in usa",
+                "top 100 men's clothing brands online",
+                "unique men's clothing brands",
+                "men's clothing brand name ideas",
+                "popular clothing brands for men",
+                "men's designer clothing brands list"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "cheap men's clothing stores online",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-13 00:27:34 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 4.71,
+                  "search_volume": 40,
+                  "low_top_of_page_bid": 1.92,
+                  "high_top_of_page_bid": 3.8,
+                  "categories": [
+                    13575
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 10
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 30
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 30
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 50
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 20
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 30
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 70
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 40
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 40
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 30
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 50
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 50
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -67,
+                    "quarterly": -67,
+                    "yearly": -80
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "mens cheap clothing stores online",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 20,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=cheap%20men%27s%20clothing%20stores%20online&num=100&hl=en&gl=US&gws_rd=cr&ie=UTF-8&oe=UTF-8&glp=1&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "popular_products",
+                    "discussions_and_forums",
+                    "images",
+                    "paid",
+                    "related_searches"
+                  ],
+                  "se_results_count": 320000000,
+                  "last_updated_time": "2024-10-08 19:51:52 +00:00",
+                  "previous_updated_time": null
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 248,
+                  "dofollow": 90.4,
+                  "referring_pages": 119.2,
+                  "referring_domains": 35.5,
+                  "referring_main_domains": 31,
+                  "rank": 95.3,
+                  "main_domain_rank": 525.9,
+                  "last_updated_time": "2024-10-08 19:51:55 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-03 14:16:49 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "cheap men's clothing stores online usa",
+                "cheap men's clothing stores online free shipping",
+                "cheap men's clothing online free shipping",
+                "cheap men's clothing stores online near me",
+                "cheap men's clothes near me",
+                "men's clothing sale online"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "best european men's clothing stores online",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-16 10:11:01 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 3.26,
+                  "search_volume": 30,
+                  "low_top_of_page_bid": 1.3,
+                  "high_top_of_page_bid": 5.24,
+                  "categories": [
+                    13575
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 50
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 40
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 10
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 20
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 10
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 30
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 50
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 40
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 30
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 30
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 20
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 30
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 25,
+                    "quarterly": 400,
+                    "yearly": -44
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 36,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=best%20european%20men%27s%20clothing%20stores%20online&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "discussions_and_forums",
+                    "related_searches"
+                  ],
+                  "se_results_count": 133,
+                  "last_updated_time": "2026-06-13 12:13:46 +00:00",
+                  "previous_updated_time": "2026-04-16 14:09:57 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 662.8,
+                  "dofollow": 388.1,
+                  "referring_pages": 431.1,
+                  "referring_domains": 77.6,
+                  "referring_main_domains": 71.8,
+                  "rank": 217.8,
+                  "main_domain_rank": 499.4,
+                  "last_updated_time": "2026-06-13 12:13:46 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-04 23:18:11 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "best european men's clothing stores online usa",
+                "best european men's clothing stores online reddit",
+                "best european men's clothing stores online cheap",
+                "men's clothing online",
+                "stylish men's clothing online",
+                "stylish men's clothing stores",
+                "top 10 men's luxury clothing brands",
+                "stylish men's clothing brands"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "men's clothing stores online usa",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-11 04:04:27 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": null,
+                  "search_volume": 10,
+                  "low_top_of_page_bid": null,
+                  "high_top_of_page_bid": null,
+                  "categories": [
+                    13575
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 10
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 10
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 10
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 10
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 10
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 10
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 20
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 10
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 10
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 10
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 20
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 20
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 0,
+                    "yearly": 0
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "men's online clothing stores usa",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": null,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": null,
+                "avg_backlinks_info": null,
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-04 20:28:11 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

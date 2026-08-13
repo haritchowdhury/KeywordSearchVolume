@@ -1,0 +1,1353 @@
+{
+  "version": "0.1.20260806",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "0.2636 sec.",
+  "cost": 0.01308,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "08121454-2208-0387-0000-10d22752018a",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "0.1774 sec.",
+      "cost": 0.01308,
+      "result_count": 1,
+      "path": [
+        "v3",
+        "dataforseo_labs",
+        "google",
+        "related_keywords",
+        "live"
+      ],
+      "data": {
+        "api": "dataforseo_labs",
+        "function": "related_keywords",
+        "se_type": "google",
+        "location_name": "United States",
+        "language_name": "English",
+        "keyword": "Clothing",
+        "limit": 30
+      },
+      "result": [
+        {
+          "se_type": "google",
+          "seed_keyword": "clothing",
+          "seed_keyword_data": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "total_count": 9,
+          "items_count": 9,
+          "items": [
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "clothing",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-10 07:38:49 +00:00",
+                  "competition": 0.92,
+                  "competition_level": "HIGH",
+                  "cpc": 0.86,
+                  "search_volume": 550000,
+                  "low_top_of_page_bid": 0.76,
+                  "high_top_of_page_bid": 5.45,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 450000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 673000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 823000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 450000
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 0,
+                    "yearly": 22
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "clothes",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 62,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=clothing&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "local_pack",
+                    "product_considerations",
+                    "organic",
+                    "people_also_ask",
+                    "popular_products",
+                    "perspectives",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 240,
+                  "last_updated_time": "2026-07-30 03:41:39 +00:00",
+                  "previous_updated_time": "2026-05-14 18:19:00 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 1711042.6,
+                  "dofollow": 1708204.1,
+                  "referring_pages": 1709668.6,
+                  "referring_domains": 1236.4,
+                  "referring_main_domains": 1160.1,
+                  "rank": 321.6,
+                  "main_domain_rank": 595.3,
+                  "last_updated_time": "2026-07-30 03:41:39 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "informational",
+                  "foreign_intent": [
+                    "transactional"
+                  ],
+                  "last_updated_time": "2026-04-29 04:56:28 +00:00"
+                }
+              },
+              "depth": 0,
+              "related_keywords": [
+                "clothing nearby",
+                "clothing stores online",
+                "walmart clothing brand",
+                "walmart employee clothing",
+                "women's walmart clothing",
+                "popular walmart clothing brands",
+                "women's nordstrom clothing",
+                "trendy women's clothing online"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "women's walmart clothing",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-10 12:08:46 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 0.16,
+                  "search_volume": 22200,
+                  "low_top_of_page_bid": 0.1,
+                  "high_top_of_page_bid": 0.35,
+                  "categories": [
+                    10021,
+                    10176,
+                    10915,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 22200
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 22200
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 22200
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 22200
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 14800
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 14800
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 18100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 18100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 22200
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 40500
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 22200
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 18100
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 0,
+                    "yearly": 50
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "walmart womens clothing",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 5,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=women%27s%20walmart%20clothing&num=100&hl=en&gl=US&gws_rd=cr&ie=UTF-8&oe=UTF-8&glp=1&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "popular_products",
+                    "images",
+                    "related_searches"
+                  ],
+                  "se_results_count": 21700000,
+                  "last_updated_time": "2024-09-14 22:59:09 +00:00",
+                  "previous_updated_time": "2024-08-04 11:11:45 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 26.4,
+                  "dofollow": 17.6,
+                  "referring_pages": 23.5,
+                  "referring_domains": 14.3,
+                  "referring_main_domains": 13.3,
+                  "rank": 42.1,
+                  "main_domain_rank": 653,
+                  "last_updated_time": "2024-09-14 22:59:11 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-08 05:28:56 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "walmart women's clothing new arrivals",
+                "walmart women's clothes clearance",
+                "women's walmart clothing online",
+                "walmart women's clothes time and tru",
+                "walmart clothes clearance today",
+                "plus walmart women's clothes",
+                "women's walmart clothing pants",
+                "walmart womens tops"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "walmart clothing brand",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-16 02:03:36 +00:00",
+                  "competition": 0.9,
+                  "competition_level": "HIGH",
+                  "cpc": 0.22,
+                  "search_volume": 4400,
+                  "low_top_of_page_bid": 0.11,
+                  "high_top_of_page_bid": 0.32,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 5400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 3600
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 23,
+                    "quarterly": 23,
+                    "yearly": 50
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "walmart clothing brands",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 30,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=walmart%20clothing%20brand&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "images",
+                    "perspectives",
+                    "popular_products",
+                    "related_searches"
+                  ],
+                  "se_results_count": 78800000,
+                  "last_updated_time": "2026-03-13 11:53:10 +00:00",
+                  "previous_updated_time": null
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 226.3,
+                  "dofollow": 173,
+                  "referring_pages": 188.8,
+                  "referring_domains": 49.7,
+                  "referring_main_domains": 47.6,
+                  "rank": 124.6,
+                  "main_domain_rank": 651.9,
+                  "last_updated_time": "2026-03-13 11:53:16 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "navigational",
+                  "foreign_intent": [
+                    "informational"
+                  ],
+                  "last_updated_time": "2026-04-30 00:03:58 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "walmart clothing brand shirts",
+                "walmart clothing brands women",
+                "walmart clothing brands 2000s",
+                "popular walmart clothing brands",
+                "walmart clothing brands men",
+                "walmart clothing brand shoes",
+                "walmart women's clothing new arrivals",
+                "walmart clothing brands free assembly"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "clothing nearby",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-10 13:52:58 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 0.57,
+                  "search_volume": 2900,
+                  "low_top_of_page_bid": 0.53,
+                  "high_top_of_page_bid": 4.51,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 3600
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 26,
+                    "yearly": -17
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "clothes nearby",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 18,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=clothing%20nearby&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "local_pack",
+                    "organic",
+                    "people_also_ask",
+                    "related_searches",
+                    "google_reviews",
+                    "images"
+                  ],
+                  "se_results_count": 224,
+                  "last_updated_time": "2026-07-31 06:01:22 +00:00",
+                  "previous_updated_time": "2026-05-17 10:42:50 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 170.9,
+                  "dofollow": 107.7,
+                  "referring_pages": 161.2,
+                  "referring_domains": 98.6,
+                  "referring_main_domains": 83.3,
+                  "rank": 132.2,
+                  "main_domain_rank": 555.6,
+                  "last_updated_time": "2026-07-31 06:01:23 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 11:22:39 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "clothing near california",
+                "clothing near texas",
+                "clothing nearby online",
+                "cheap clothing nearby",
+                "women clothing nearby",
+                "women's clothing online",
+                "walmart womens clothing new arrivals",
+                "walmart women's clothing new arrivals pants"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "clothing stores online",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-12 11:37:28 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 2.29,
+                  "search_volume": 2900,
+                  "low_top_of_page_bid": 0.97,
+                  "high_top_of_page_bid": 5.58,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 3600
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 0,
+                    "yearly": 0
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "online clothing stores",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 14,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=clothing%20stores%20online&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "popular_products",
+                    "related_searches"
+                  ],
+                  "se_results_count": 201,
+                  "last_updated_time": "2026-05-17 06:16:47 +00:00",
+                  "previous_updated_time": "2026-03-13 16:26:34 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 8315.1,
+                  "dofollow": 5888.9,
+                  "referring_pages": 6298.2,
+                  "referring_domains": 562.4,
+                  "referring_main_domains": 534.6,
+                  "rank": 118.4,
+                  "main_domain_rank": 497.4,
+                  "last_updated_time": "2026-05-17 06:16:47 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 19:11:52 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "cheap clothing stores online",
+                "european clothing stores online",
+                "affordable clothing brands online",
+                "best clothing stores online",
+                "designer clothing stores online",
+                "top 10 online clothing stores",
+                "best online clothing stores usa",
+                "best european clothing stores online"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "trendy women's clothing online",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-14 02:16:31 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.56,
+                  "search_volume": 1900,
+                  "low_top_of_page_bid": 0.46,
+                  "high_top_of_page_bid": 4.05,
+                  "categories": [
+                    10021,
+                    10021,
+                    10176,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 480
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -19,
+                    "quarterly": 0,
+                    "yearly": 230
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "trendy women clothes online",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 92,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=trendy%20women%27s%20clothing%20online&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "perspectives",
+                    "discussions_and_forums",
+                    "people_also_ask",
+                    "popular_products",
+                    "related_searches"
+                  ],
+                  "se_results_count": 74600000,
+                  "last_updated_time": "2026-03-30 08:48:59 +00:00",
+                  "previous_updated_time": "2026-01-21 21:58:37 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 8111.6,
+                  "dofollow": 5310.4,
+                  "referring_pages": 5922.7,
+                  "referring_domains": 1010.2,
+                  "referring_main_domains": 958,
+                  "rank": 226.6,
+                  "main_domain_rank": 490.9,
+                  "last_updated_time": "2026-03-30 08:48:59 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-03 16:54:47 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "trendy women's clothing online usa",
+                "trendy women's clothing online shopping",
+                "trendy women's clothing online sale",
+                "top 10 women's online clothing stores",
+                "women's clothing trendy",
+                "women's clothing online sale",
+                "women's clothing business casual",
+                "women's clothing fashion nova"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "walmart employee clothing",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-17 03:49:18 +00:00",
+                  "competition": 0.39,
+                  "competition_level": "MEDIUM",
+                  "cpc": 1.66,
+                  "search_volume": 260,
+                  "low_top_of_page_bid": null,
+                  "high_top_of_page_bid": null,
+                  "categories": [
+                    10021,
+                    10021,
+                    10176,
+                    10176,
+                    10918,
+                    10926,
+                    12253
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 320
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 23,
+                    "quarterly": 23,
+                    "yearly": 23
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "walmart clothing for employees",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 0,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=walmart%20employee%20clothing&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "popular_products",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 231,
+                  "last_updated_time": "2026-07-05 16:49:45 +00:00",
+                  "previous_updated_time": "2026-07-05 15:03:21 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 117.8,
+                  "dofollow": 105.1,
+                  "referring_pages": 114,
+                  "referring_domains": 19.1,
+                  "referring_main_domains": 18,
+                  "rank": 55.4,
+                  "main_domain_rank": 523.7,
+                  "last_updated_time": "2026-07-05 16:50:25 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-30 09:06:12 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "walmart associate store online",
+                "women walmart employee clothing",
+                "walmart employee clothing online",
+                "walmart employee clothing sale",
+                "my walmart gear for employees shirts",
+                "my walmart gear clearance",
+                "walmart apparel shop",
+                "walmart junction apparel"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "popular walmart clothing brands",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-12 12:52:03 +00:00",
+                  "competition": 0.89,
+                  "competition_level": "HIGH",
+                  "cpc": 0.17,
+                  "search_volume": 140,
+                  "low_top_of_page_bid": null,
+                  "high_top_of_page_bid": null,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 90
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 27,
+                    "quarterly": 27,
+                    "yearly": 56
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": null,
+                  "keyword_difficulty": 12,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=popular%20walmart%20clothing%20brands&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "video",
+                    "related_searches",
+                    "popular_products",
+                    "images"
+                  ],
+                  "se_results_count": 152,
+                  "last_updated_time": "2026-08-11 11:48:20 +00:00",
+                  "previous_updated_time": "2026-05-27 20:59:18 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 104.9,
+                  "dofollow": 69.5,
+                  "referring_pages": 80,
+                  "referring_domains": 42.7,
+                  "referring_main_domains": 40.3,
+                  "rank": 93.8,
+                  "main_domain_rank": 659.3,
+                  "last_updated_time": "2026-08-11 11:48:21 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "informational",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 18:05:04 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "women popular walmart clothing brands",
+                "men popular walmart clothing brands",
+                "walmart clothing brands 2000s",
+                "walmart brands clothing women's",
+                "walmart clothing brands list",
+                "walmart women's clothing new arrivals",
+                "walmart clothing free assembly",
+                "walmart apparel for employees"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "women's nordstrom clothing",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-13 17:26:35 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 0.94,
+                  "search_volume": 110,
+                  "low_top_of_page_bid": 0.1,
+                  "high_top_of_page_bid": 0.76,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 70
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 70
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 70
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 170
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": -36,
+                    "yearly": -59
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "nordstrom's women's clothing",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 0,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=women%27s%20nordstrom%20clothing&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "popular_products",
+                    "perspectives",
+                    "local_pack",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 215,
+                  "last_updated_time": "2026-07-12 04:46:14 +00:00",
+                  "previous_updated_time": "2026-05-02 15:38:40 +00:00"
+                },
+                "avg_backlinks_info": null,
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "navigational",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-06 10:12:37 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "nordstrom women's clothing new arrivals",
+                "women's nordstrom clothing sale",
+                "women's nordstrom clothing online",
+                "women's clothing online",
+                "women's nordstrom clothing outlet",
+                "women's nordstrom clothing clearance",
+                "nordstrom clothing brands",
+                "high quality women's clothing brands"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

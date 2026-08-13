@@ -1,0 +1,1212 @@
+{
+  "version": "0.1.20260806",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "0.1079 sec.",
+  "cost": 0.01296,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "08121439-2208-0387-0000-78207e841f39",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "0.0580 sec.",
+      "cost": 0.01296,
+      "result_count": 1,
+      "path": [
+        "v3",
+        "dataforseo_labs",
+        "google",
+        "related_keywords",
+        "live"
+      ],
+      "data": {
+        "api": "dataforseo_labs",
+        "function": "related_keywords",
+        "se_type": "google",
+        "location_name": "United States",
+        "language_name": "English",
+        "keyword": "golf accessories",
+        "limit": 30
+      },
+      "result": [
+        {
+          "se_type": "google",
+          "seed_keyword": "golf accessories",
+          "seed_keyword_data": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "total_count": 8,
+          "items_count": 8,
+          "items": [
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "golf accessories",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-12 21:42:55 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.5,
+                  "search_volume": 18100,
+                  "low_top_of_page_bid": 0.25,
+                  "high_top_of_page_bid": 1.62,
+                  "categories": [
+                    10014,
+                    10121,
+                    10653,
+                    11918
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 22200
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 18100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 18100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 12100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 33100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 27100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 14800
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 14800
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 18100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 18100
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 23,
+                    "quarterly": 23,
+                    "yearly": 0
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 6,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=golf%20accessories&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "product_considerations",
+                    "perspectives",
+                    "popular_products",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 197,
+                  "last_updated_time": "2026-07-30 07:42:14 +00:00",
+                  "previous_updated_time": "2026-05-15 03:01:21 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 42.6,
+                  "dofollow": 40.2,
+                  "referring_pages": 40.7,
+                  "referring_domains": 4.8,
+                  "referring_main_domains": 4.6,
+                  "rank": 89.5,
+                  "main_domain_rank": 368.7,
+                  "last_updated_time": "2026-07-30 07:42:16 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": [
+                    "commercial"
+                  ],
+                  "last_updated_time": "2026-04-27 21:49:20 +00:00"
+                }
+              },
+              "depth": 0,
+              "related_keywords": [
+                "golf accessories for men",
+                "golf accessories for bag",
+                "golf accessories list",
+                "golf accessories women",
+                "golf accessories gifts",
+                "unique golf accessories",
+                "golf accessories amazon",
+                "golf accessories dick's"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "golf accessories for men",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-16 06:22:34 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.84,
+                  "search_volume": 6600,
+                  "low_top_of_page_bid": 0.29,
+                  "high_top_of_page_bid": 1.71,
+                  "categories": [
+                    10014,
+                    10121,
+                    10653,
+                    11918
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 5400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 18100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 12100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 5400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 5400
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 23,
+                    "quarterly": 23,
+                    "yearly": -33
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 0,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=golf%20accessories%20for%20men&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "popular_products",
+                    "perspectives",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 194,
+                  "last_updated_time": "2026-05-16 06:03:17 +00:00",
+                  "previous_updated_time": "2026-03-12 21:50:32 +00:00"
+                },
+                "avg_backlinks_info": null,
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-28 00:22:01 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "unique golf accessories for men",
+                "luxury golf accessories for men",
+                "must have golf accessories for men",
+                "golf accessories for bag",
+                "golf accessories for men gifts",
+                "golf accessories list",
+                "funny golf accessories for men",
+                "golf accessories for men near me"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "golf accessories women",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-14 13:36:40 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.22,
+                  "search_volume": 2900,
+                  "low_top_of_page_bid": 0.34,
+                  "high_top_of_page_bid": 1.47,
+                  "categories": [
+                    10014,
+                    10014,
+                    10121,
+                    10121,
+                    10653,
+                    10653,
+                    11918
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 1300
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 4400
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -18,
+                    "quarterly": 0,
+                    "yearly": -18
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "golf accessories for women",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 1,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=golf%20accessories%20women&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "popular_products",
+                    "discussions_and_forums",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 183000000,
+                  "last_updated_time": "2026-03-13 15:16:31 +00:00",
+                  "previous_updated_time": "2025-10-01 12:07:30 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 54.8,
+                  "dofollow": 6.9,
+                  "referring_pages": 7.7,
+                  "referring_domains": 1.9,
+                  "referring_main_domains": 1.8,
+                  "rank": 14.3,
+                  "main_domain_rank": 408.7,
+                  "last_updated_time": "2026-03-13 15:16:32 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-27 21:44:48 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "unique golf accessories women",
+                "luxury golf accessories women",
+                "women's golf accessories bag",
+                "cute golf accessories",
+                "cute golf accessories for women",
+                "best golf accessories women's",
+                "golf gifts for women who have everything",
+                "golf gifts for women amazon"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "golf accessories amazon",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-12 15:06:08 +00:00",
+                  "competition": 0.98,
+                  "competition_level": "HIGH",
+                  "cpc": 0.89,
+                  "search_volume": 590,
+                  "low_top_of_page_bid": 0.17,
+                  "high_top_of_page_bid": 1.66,
+                  "categories": [
+                    10014,
+                    10014,
+                    10121,
+                    10121,
+                    10653,
+                    11918
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 2900
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 22,
+                    "yearly": -19
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 0,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=golf%20accessories%20amazon&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "popular_products",
+                    "people_also_ask",
+                    "perspectives",
+                    "video",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 131,
+                  "last_updated_time": "2026-07-01 04:27:23 +00:00",
+                  "previous_updated_time": "2026-03-31 14:41:16 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 1,
+                  "dofollow": 0.6,
+                  "referring_pages": 0.6,
+                  "referring_domains": 0.5,
+                  "referring_main_domains": 0.5,
+                  "rank": 16.1,
+                  "main_domain_rank": 850.6,
+                  "last_updated_time": "2026-07-01 04:27:58 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-27 22:20:29 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "best golf accessories amazon",
+                "golf accessories list",
+                "golf accessories for bag",
+                "amazon golf sale clearance",
+                "golf accessories kit for men",
+                "golf accessories gifts",
+                "cool golf accessories amazon",
+                "walmart golf accessories"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "golf accessories gifts",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-12 13:26:26 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.94,
+                  "search_volume": 480,
+                  "low_top_of_page_bid": 0.34,
+                  "high_top_of_page_bid": 2.13,
+                  "categories": [
+                    10014,
+                    10014,
+                    10121,
+                    10121,
+                    10653,
+                    10653,
+                    11918
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 260
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": -19,
+                    "yearly": -46
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "golfing accessories gifts",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 0,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=golf%20accessories%20gifts&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "popular_products",
+                    "people_also_ask",
+                    "perspectives",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 203,
+                  "last_updated_time": "2026-08-03 18:34:20 +00:00",
+                  "previous_updated_time": "2026-05-21 07:24:37 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 13.2,
+                  "dofollow": 10.4,
+                  "referring_pages": 11.5,
+                  "referring_domains": 4,
+                  "referring_main_domains": 3.7,
+                  "rank": 55.4,
+                  "main_domain_rank": 509.3,
+                  "last_updated_time": "2026-08-03 18:34:21 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": [
+                    "transactional"
+                  ],
+                  "last_updated_time": "2026-04-27 23:20:31 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "unique golf accessories gifts",
+                "golf accessories gifts for men",
+                "luxury golf accessories gifts",
+                "luxury golf gifts for him",
+                "gifts for golfers who have everything",
+                "best golf accessories gifts",
+                "golf accessories gifts for her",
+                "luxury golf gifts for her"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "golf accessories list",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-16 08:03:51 +00:00",
+                  "competition": 0.94,
+                  "competition_level": "HIGH",
+                  "cpc": 0.66,
+                  "search_volume": 260,
+                  "low_top_of_page_bid": 0.17,
+                  "high_top_of_page_bid": 0.78,
+                  "categories": [
+                    10014,
+                    10121,
+                    10653,
+                    11918
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 320
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -19,
+                    "quarterly": 0,
+                    "yearly": -46
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "list of golf accessories",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 0,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=golf%20accessories%20list&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "popular_products",
+                    "people_also_ask",
+                    "images",
+                    "related_searches"
+                  ],
+                  "se_results_count": 179,
+                  "last_updated_time": "2026-05-23 00:04:38 +00:00",
+                  "previous_updated_time": "2026-03-18 20:11:40 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 58.2,
+                  "dofollow": 48.1,
+                  "referring_pages": 53,
+                  "referring_domains": 23.9,
+                  "referring_main_domains": 20.9,
+                  "rank": 56.4,
+                  "main_domain_rank": 518.4,
+                  "last_updated_time": "2026-05-23 00:08:12 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": [
+                    "transactional"
+                  ],
+                  "last_updated_time": "2026-04-28 00:15:41 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "golf accessories for bag",
+                "best golf accessories list",
+                "must have golf accessories for beginners",
+                "golf accessories kit for men",
+                "golf equipment list with pictures",
+                "unique golf accessories",
+                "golf bag accessories kit",
+                "golf accessories gifts"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "unique golf accessories",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-10 20:14:58 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.25,
+                  "search_volume": 260,
+                  "low_top_of_page_bid": 0.33,
+                  "high_top_of_page_bid": 1.06,
+                  "categories": [
+                    10014,
+                    10121,
+                    10653,
+                    11918
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 140
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 0,
+                    "yearly": -18
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "keyword_metrics",
+                  "keyword_difficulty": 0,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=unique%20golf%20accessories&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "video",
+                    "perspectives",
+                    "related_searches",
+                    "popular_products",
+                    "images"
+                  ],
+                  "se_results_count": 193,
+                  "last_updated_time": "2026-07-05 21:23:15 +00:00",
+                  "previous_updated_time": "2026-05-24 07:05:53 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 1.2,
+                  "dofollow": 0.5,
+                  "referring_pages": 0.6,
+                  "referring_domains": 0.3,
+                  "referring_main_domains": 0.3,
+                  "rank": 6.3,
+                  "main_domain_rank": 421.1,
+                  "last_updated_time": "2026-07-05 21:23:42 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": [
+                    "transactional"
+                  ],
+                  "last_updated_time": "2026-04-30 02:09:35 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "unique golf accessories for guys",
+                "best unique golf accessories",
+                "golf accessories for bag",
+                "golf accessories list",
+                "luxury golf gifts for him",
+                "unusual golf gifts for ladies",
+                "golf accessories kit",
+                "golf accessories websites"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "golf accessories for bag",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-16 07:52:51 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.29,
+                  "search_volume": 170,
+                  "low_top_of_page_bid": 0.23,
+                  "high_top_of_page_bid": 1.06,
+                  "categories": [
+                    10014,
+                    10121,
+                    10653,
+                    11918
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 70
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 40
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 50
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 70
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -19,
+                    "quarterly": 0,
+                    "yearly": 420
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "golf bag accessories",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 0,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=golf%20accessories%20for%20bag&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "popular_products",
+                    "perspectives",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 184,
+                  "last_updated_time": "2026-07-11 12:32:54 +00:00",
+                  "previous_updated_time": "2026-05-03 13:07:26 +00:00"
+                },
+                "avg_backlinks_info": null,
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-27 20:52:33 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "must have golf accessories for bag",
+                "golf bag accessories kit",
+                "best golf accessories for bag",
+                "golf accessories list",
+                "must have golf accessories for beginners",
+                "ghost golf bag accessories",
+                "golf bag accessories women",
+                "golf bag accessories for men"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

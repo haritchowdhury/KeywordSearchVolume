@@ -1,0 +1,2032 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keyword Research Analytics</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-treemap@2.0.0/dist/chartjs-chart-treemap.min.js"></script>
+<style>
+:root {
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --grid: #e2e8f0;
+  --primary: #6366f1;
+  --primary-soft: #eef2ff;
+  --green: #16a34a;
+  --green-soft: #dcfce7;
+  --red: #dc2626;
+  --red-soft: #fee2e2;
+  --amber: #d97706;
+  --amber-soft: #fef3c7;
+  --gray-soft: #f1f5f9;
+  --shadow: 0 1px 3px rgba(15, 23, 42, .08);
+  --radius: 12px;
+  --c-bg: var(--bg);
+  --c-card: var(--card);
+  --c-text: var(--text);
+  --c-muted: var(--muted);
+  --c-grid: var(--grid);
+  --c-primary: var(--primary);
+  --c-green: var(--green);
+  --c-red: var(--red);
+  --c-amber: var(--amber);
+}
+[data-theme="dark"] {
+  --bg: #0b1220;
+  --card: #131c30;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --border: #26334d;
+  --grid: #26334d;
+  --primary: #818cf8;
+  --primary-soft: #1e2440;
+  --green: #4ade80;
+  --green-soft: #123526;
+  --red: #f87171;
+  --red-soft: #3d1a1a;
+  --amber: #fbbf24;
+  --amber-soft: #3d2f10;
+  --gray-soft: #1a2338;
+  --shadow: 0 1px 3px rgba(0, 0, 0, .4);
+  --c-bg: var(--bg);
+  --c-card: var(--card);
+  --c-text: var(--text);
+  --c-muted: var(--muted);
+  --c-grid: var(--grid);
+  --c-primary: var(--primary);
+  --c-green: var(--green);
+  --c-red: var(--red);
+  --c-amber: var(--amber);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
+  transition: background .2s, color .2s;
+}
+header {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 18px 24px; background: var(--card); border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; z-index: 40;
+}
+header h1 { margin: 0; font-size: 20px; letter-spacing: -.02em; }
+header .subtitle { color: var(--muted); font-size: 12px; margin-top: 2px; }
+.header-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+#last-updated { color: var(--muted); font-size: 12px; }
+.btn {
+  border: 1px solid var(--border); background: var(--card); color: var(--text);
+  border-radius: 8px; padding: 7px 12px; font-size: 13px; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.btn:hover { background: var(--gray-soft); }
+.btn.primary { background: var(--primary); color: #fff; border-color: transparent; }
+.btn.primary:hover { opacity: .9; }
+.btn:disabled { opacity: .45; cursor: not-allowed; }
+main { padding: 20px 24px 48px; max-width: 1500px; margin: 0 auto; }
+.banner {
+  border: 1px solid var(--red); background: var(--red-soft); color: var(--red);
+  border-radius: var(--radius); padding: 12px 16px; margin-bottom: 18px;
+  display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;
+}
+.banner button { border-color: var(--red); color: var(--red); }
+.hidden { display: none !important; }
+
+section.filters {
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 14px 16px; margin-bottom: 18px; box-shadow: var(--shadow);
+}
+.filter-row { display: flex; flex-wrap: wrap; gap: 12px 18px; align-items: flex-end; }
+.filter { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--muted); }
+.filter.grow { flex: 1 1 220px; }
+.filter input[type="text"], .filter input[type="search"], .filter input[type="number"], .filter select {
+  border: 1px solid var(--border); background: var(--bg); color: var(--text);
+  border-radius: 8px; padding: 7px 10px; font-size: 13px; min-width: 130px; width: 100%;
+}
+.filter input[type="search"] { min-width: 200px; }
+.filter input:focus, .filter select:focus { outline: 2px solid var(--primary); outline-offset: 1px; }
+.filter.checkbox { flex-direction: row; align-items: center; gap: 7px; padding-bottom: 7px; cursor: pointer; user-select: none; }
+.flag-group { display: flex; flex-wrap: wrap; gap: 8px; max-width: 420px; }
+.flag-group label { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; color: var(--text); cursor: pointer; white-space: nowrap; }
+.flag-group input { accent-color: var(--primary); }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px; margin-bottom: 20px; }
+.card {
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 14px 16px; box-shadow: var(--shadow);
+}
+.card .card-label { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.card .card-value { font-size: 24px; font-weight: 700; margin-top: 6px; letter-spacing: -.02em; }
+.card .card-note { font-size: 11px; color: var(--muted); margin-top: 4px; }
+
+.decision-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-bottom: 20px; }
+.decision-panel {
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 14px 16px; box-shadow: var(--shadow); min-width: 0;
+}
+.decision-panel.wide { grid-column: 1 / -1; }
+.decision-panel h2 { margin: 0 0 4px; font-size: 15px; }
+.panel-note { color: var(--muted); font-size: 11px; margin-bottom: 12px; }
+.funnel { display: flex; align-items: stretch; gap: 7px; overflow-x: auto; padding-bottom: 3px; }
+.funnel-step { min-width: 125px; flex: 1; border: 1px solid var(--border); background: var(--bg); border-radius: 9px; padding: 10px; }
+.funnel-step strong { display: block; font-size: 21px; }
+.funnel-step span { color: var(--muted); font-size: 11px; }
+.funnel-arrow { align-self: center; color: var(--muted); font-size: 18px; }
+.segment-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.segment { background: var(--bg); border: 1px solid var(--border); border-radius: 9px; padding: 9px 10px; }
+.segment-name { font-size: 11px; color: var(--muted); }
+.segment-value { font-weight: 700; font-size: 17px; margin-top: 2px; }
+.segment-sub { color: var(--muted); font-size: 10px; }
+.compact-table { min-width: 700px; }
+.compact-table th, .compact-table td { padding: 7px 9px; }
+.warning-list { display: grid; gap: 7px; max-height: 220px; overflow: auto; }
+.warning-item { border-left: 3px solid var(--amber); background: var(--amber-soft); border-radius: 6px; padding: 7px 9px; font-size: 12px; }
+.history-toolbar { display: flex; gap: 10px; align-items: center; margin-bottom: 8px; }
+.history-toolbar select { flex: 1; min-width: 0; border: 1px solid var(--border); background: var(--bg); color: var(--text); border-radius: 8px; padding: 7px 10px; }
+.cluster-card { cursor: pointer; }
+.cluster-card.selected { outline: 2px solid var(--primary); outline-offset: 1px; }
+.cluster-inspector { border: 1px solid var(--border); background: var(--bg); border-radius: 9px; padding: 12px; margin-bottom: 14px; }
+.cluster-inspector strong { color: var(--primary); }
+
+.charts { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 14px; margin-bottom: 20px; }
+.chart-card {
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 14px 16px; box-shadow: var(--shadow); display: flex; flex-direction: column;
+}
+.chart-title { margin: 0 0 4px; font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 6px; }
+.chart-sub { color: var(--muted); font-size: 11px; margin: 0 0 10px; }
+.chart-wrap { position: relative; height: 300px; }
+.chart-wrap.tall { height: 380px; }
+.chart-empty {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  color: var(--muted); font-size: 13px; background: var(--card); border-radius: 8px; z-index: 5;
+}
+
+.table-section, .cluster-section {
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 14px 16px; margin-bottom: 20px; box-shadow: var(--shadow);
+}
+.section-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
+.section-head h2 { margin: 0; font-size: 16px; }
+.table-meta { color: var(--muted); font-size: 12px; }
+.table-scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 1200px; }
+thead th {
+  text-align: left; padding: 9px 10px; border-bottom: 2px solid var(--border);
+  color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .04em;
+  white-space: nowrap; cursor: pointer; user-select: none; position: sticky; top: 0; background: var(--card); z-index: 2;
+}
+thead th:hover { color: var(--text); }
+thead th .arrow { opacity: .5; margin-left: 3px; }
+thead th.sorted .arrow { opacity: 1; }
+tbody td { padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+tbody tr:hover { background: var(--gray-soft); }
+tbody tr.hl-vol { background: var(--amber-soft); }
+tbody tr.hl-vol:hover { background: var(--amber-soft); }
+tbody tr.hl-vol td:first-child { border-left: 3px solid var(--amber); }
+td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+th.num { text-align: right; }
+.kw-cell { font-weight: 600; max-width: 260px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.mono { font-variant-numeric: tabular-nums; }
+.trend-up { color: var(--green); }
+.trend-down { color: var(--red); }
+.trend-flat { color: var(--muted); }
+.badge {
+  display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 600;
+  background: var(--gray-soft); color: var(--muted); white-space: nowrap;
+}
+.badge.rec { background: var(--green-soft); color: var(--green); }
+.badge.no { background: var(--gray-soft); color: var(--muted); }
+.badge.flag-declining { background: var(--red-soft); color: var(--red); }
+.badge.flag-broad { background: var(--amber-soft); color: var(--amber); }
+.badge.flag-low { background: var(--gray-soft); color: var(--muted); }
+.pagination { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+.pagination button {
+  border: 1px solid var(--border); background: var(--card); color: var(--text);
+  border-radius: 8px; padding: 6px 11px; font-size: 13px; cursor: pointer;
+}
+.pagination button:disabled { opacity: .4; cursor: not-allowed; }
+.pagination select { border: 1px solid var(--border); background: var(--bg); color: var(--text); border-radius: 8px; padding: 5px 8px; }
+.page-info { color: var(--muted); font-size: 12px; }
+
+.cluster-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 14px; }
+.cluster-card {
+  border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px;
+  background: var(--bg);
+}
+.cluster-card h3 { margin: 0 0 10px; font-size: 14px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.cluster-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 14px; }
+.metric .metric-label { font-size: 11px; color: var(--muted); }
+.metric .metric-value { font-weight: 600; font-size: 13px; margin-top: 1px; }
+.bar-track { background: var(--border); border-radius: 999px; height: 6px; margin-top: 5px; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 999px; }
+.cluster-keywords { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 5px; }
+.cluster-keywords .chip {
+  font-size: 11px; background: var(--gray-soft); border: 1px solid var(--border);
+  border-radius: 999px; padding: 2px 8px; color: var(--muted);
+}
+footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px 0 30px; }
+.tip { position: relative; cursor: help; border-bottom: 1px dotted var(--muted); }
+.tip::after {
+  content: attr(data-tip); position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%);
+  background: var(--text); color: var(--bg); font-size: 11px; line-height: 1.45; font-weight: 400;
+  padding: 7px 10px; border-radius: 8px; width: max-content; max-width: 260px; text-align: left;
+  opacity: 0; pointer-events: none; transition: opacity .12s; z-index: 60;
+  box-shadow: var(--shadow); white-space: normal;
+}
+.tip:hover::after { opacity: 1; }
+@media (max-width: 640px) {
+  header { padding: 14px 16px; }
+  main { padding: 14px 14px 40px; }
+  .charts { grid-template-columns: 1fr; }
+  .card-value { font-size: 20px; }
+  .filter input[type="search"] { min-width: 100%; }
+  .decision-grid { grid-template-columns: 1fr; }
+  .decision-panel.wide { grid-column: auto; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>Keyword Research Analytics</h1>
+    <div class="subtitle">Store-discovery keyword pipeline · summary, clusters, and opportunities</div>
+  </div>
+  <div class="header-actions">
+    <span id="last-updated">Loading…</span>
+    <button id="theme-toggle" class="btn" data-tip="Switch between dark and light theme">Dark mode</button>
+    <button id="export-btn" class="btn primary" disabled data-tip="Download the currently filtered rows as a CSV file">Export CSV</button>
+  </div>
+</header>
+<main>
+  <div id="error-banner" class="banner hidden">
+    <span id="error-msg">Failed to load data.</span>
+    <button id="retry-btn" class="btn">Retry</button>
+  </div>
+
+  <section class="filters" aria-label="Global filters">
+    <div class="filter-row">
+      <label class="filter"><span class="tip" data-tip="Filter to a single seed keyword group (e.g. Clothing, Fashion, Dresses, Suits, Skirts)">Seed</span>
+        <select id="f-seed"></select></label>
+      <label class="filter"><span class="tip" data-tip="Filter to a single keyword cluster">Cluster</span>
+        <select id="f-cluster"></select></label>
+      <label class="filter"><span class="tip" data-tip="Filter by search intent: commercial, transactional, navigational or informational">Intent</span>
+        <select id="f-intent"></select></label>
+      <label class="filter"><span class="tip" data-tip="Only show keywords with a search volume at or above this value">Min volume</span>
+        <input type="number" id="f-minvol" min="0" step="1000" placeholder="0"></label>
+      <label class="filter"><span class="tip" data-tip="Only show keywords with an opportunity score at or above this value (0–100)">Min opportunity</span>
+        <input type="number" id="f-minopp" min="0" max="100" step="5" placeholder="0"></label>
+      <label class="filter checkbox"><input type="checkbox" id="f-rec"><span class="tip" data-tip="Show only recommended keywords">Recommended only</span></label>
+      <label class="filter"><span class="tip" data-tip="Show keywords carrying any of the selected flags">Flags</span>
+        <div id="f-flags" class="flag-group"></div></label>
+      <label class="filter grow"><span class="tip" data-tip="Free-text search across keyword, seed, cluster, intent and flags">Search</span>
+        <input type="search" id="f-search" placeholder="Search keywords…"></label>
+      <button id="f-reset" class="btn" data-tip="Clear every filter and restore the full dataset">Reset filters</button>
+    </div>
+  </section>
+
+  <div id="empty-state" class="banner hidden">
+    <span>No keywords match the current filters. Try widening the criteria or resetting the filters.</span>
+    <button id="empty-reset" class="btn">Reset filters</button>
+  </div>
+
+  <section class="cards" aria-label="Summary">
+    <div class="card"><div class="card-label tip" data-tip="Total keywords in the dataset, including merged duplicates">Total keywords</div><div class="card-value" id="c-total">—</div></div>
+    <div class="card"><div class="card-label tip" data-tip="Keywords that were not merged into a duplicate — the canonical research set">Active keywords</div><div class="card-value" id="c-active">—</div></div>
+    <div class="card"><div class="card-label tip" data-tip="Active keywords flagged as recommended by the scoring pipeline">Recommended</div><div class="card-value" id="c-rec">—</div></div>
+    <div class="card"><div class="card-label tip" data-tip="Number of keyword clusters present in the filtered set">Clusters</div><div class="card-value" id="c-clusters">—</div></div>
+    <div class="card"><div class="card-label tip" data-tip="Sum of search volume across active keywords (merged duplicates excluded to avoid double counting)">Combined search volume</div><div class="card-value" id="c-volume">—</div></div>
+    <div class="card"><div class="card-label tip" data-tip="Average CPC across active keywords that have a CPC value">Average CPC</div><div class="card-value" id="c-cpc">—</div></div>
+  </section>
+
+  <section class="decision-grid" aria-label="Decision summary">
+    <div class="decision-panel wide">
+      <h2>Collection funnel</h2>
+      <div class="panel-note">Shows what survived collection, intent filtering, deduplication, and recommendation.</div>
+      <div class="funnel" id="collection-funnel"></div>
+    </div>
+    <div class="decision-panel">
+      <h2>Store-discovery mix</h2>
+      <div class="panel-note">Separates local/store queries, known-brand searches, and product/category demand.</div>
+      <div class="segment-grid" id="discovery-segments"></div>
+    </div>
+    <div class="decision-panel">
+      <h2>Possible volume overlap</h2>
+      <div class="panel-note">Close variants with identical reported volume may share one Google volume bucket; do not blindly add them.</div>
+      <div class="warning-list" id="overlap-warnings"></div>
+    </div>
+    <div class="decision-panel wide">
+      <h2>Seed performance</h2>
+      <div class="panel-note">Compare which input seeds produce high-volume, commercially useful, non-declining keywords.</div>
+      <div class="table-scroll"><table class="compact-table">
+        <thead><tr><th>Seed</th><th class="num">Active</th><th class="num">Total volume</th><th class="num">Median volume</th><th class="num">Commercial</th><th class="num">Recommended</th><th class="num">Declining</th></tr></thead>
+        <tbody id="seed-performance"></tbody>
+      </table></div>
+    </div>
+    <div class="decision-panel wide">
+      <h2>Actual monthly search history</h2>
+      <div class="panel-note" id="history-note">Select a keyword to inspect its reported monthly volumes.</div>
+      <div class="history-toolbar"><select id="history-keyword" aria-label="Keyword for monthly history"></select></div>
+      <div class="chart-wrap"><canvas id="chartHistory"></canvas><div class="chart-empty hidden">Run the pipeline again to add monthly history to the output.</div></div>
+    </div>
+  </section>
+
+  <section class="charts" aria-label="Charts">
+    <div class="chart-card">
+      <h3 class="chart-title tip" data-tip="Top 20 active keywords ranked by monthly search volume (largest first). Amber bars mark high-volume commercial keywords.">Top 20 Keywords by Search Volume</h3>
+      <div class="chart-wrap tall"><canvas id="chartTopKeywords"></canvas><div class="chart-empty hidden">No data</div></div>
+    </div>
+    <div class="chart-card">
+      <h3 class="chart-title tip" data-tip="Combined search volume per cluster, computed from the filtered keyword set">Cluster Combined Search Volume</h3>
+      <div class="chart-wrap tall"><canvas id="chartClusterVolume"></canvas><div class="chart-empty hidden">No data</div></div>
+    </div>
+    <div class="chart-card">
+      <h3 class="chart-title tip" data-tip="Each bubble is a keyword: X = keyword difficulty (0–100), Y = search volume, bubble size = CPC, color = commercial intent (blue = low, red = high)">Volume vs Keyword Difficulty</h3>
+      <div class="chart-wrap"><canvas id="chartBubble"></canvas><div class="chart-empty hidden">No data</div></div>
+    </div>
+    <div class="chart-card">
+      <h3 class="chart-title tip" data-tip="Each point is a keyword: X = competition (0–1), Y = opportunity score (0–100). Points in the top-left quadrant are attractive low-competition opportunities.">Competition vs Opportunity Score</h3>
+      <div class="chart-wrap"><canvas id="chartScatter"></canvas><div class="chart-empty hidden">No data</div></div>
+    </div>
+    <div class="chart-card">
+      <h3 class="chart-title tip" data-tip="Monthly trend slope of the top 10 keywords by volume. Green points = rising demand, red = declining demand.">Trend Slope by Top Keyword</h3>
+      <div class="chart-wrap"><canvas id="chartTrend"></canvas><div class="chart-empty hidden">No data</div></div>
+    </div>
+    <div class="chart-card">
+      <h3 class="chart-title tip" data-tip="Share of active keywords by search intent label">Search Intent Mix</h3>
+      <div class="chart-wrap"><canvas id="chartIntent"></canvas><div class="chart-empty hidden">No data</div></div>
+    </div>
+    <div class="chart-card">
+      <h3 class="chart-title tip" data-tip="Share of active keywords that the pipeline recommends targeting vs rejects">Recommended vs Rejected</h3>
+      <div class="chart-wrap"><canvas id="chartRecommended"></canvas><div class="chart-empty hidden">No data</div></div>
+    </div>
+    <div class="chart-card">
+      <h3 class="chart-title tip" data-tip="Per seed group: keyword count and combined search volume. Read volume on the left axis, count on the right axis.">Keyword Count and Volume by Seed</h3>
+      <div class="chart-wrap"><canvas id="chartSeeds"></canvas><div class="chart-empty hidden">No data</div></div>
+    </div>
+    <div class="chart-card">
+      <h3 class="chart-title tip" data-tip="Distribution of opportunity scores in 10-point buckets (0–10 … 90–100)">Opportunity-Score Distribution</h3>
+      <div class="chart-sub" id="histogram-note"></div>
+      <div class="chart-wrap"><canvas id="chartHistogram"></canvas><div class="chart-empty hidden">No data</div></div>
+    </div>
+    <div class="chart-card">
+      <h3 class="chart-title tip" data-tip="Proportional share of each cluster in the total search volume of the filtered set. Larger tiles = larger share.">Cluster Share of Total Volume</h3>
+      <div class="chart-wrap tall"><canvas id="chartTreemap"></canvas><div class="chart-empty hidden">No data</div></div>
+    </div>
+    <div class="chart-card">
+      <h3 class="chart-title tip" data-tip="How many active keywords carry each quality flag: declining traffic, too broad, or too little traffic">Flag Breakdown</h3>
+      <div class="chart-wrap"><canvas id="chartFlags"></canvas><div class="chart-empty hidden">No data</div></div>
+    </div>
+  </section>
+
+  <section class="table-section" aria-label="Keyword table">
+    <div class="section-head">
+      <h2 class="tip" data-tip="Active keywords only (merged duplicates are excluded). Click a column header to sort; results are paginated.">Keyword Table</h2>
+      <div class="table-meta">
+        <span id="table-count"></span>
+        &nbsp;·&nbsp; <span class="tip" data-tip="Amber rows are high-volume commercial keywords: search volume ≥ 500K and commercial intent ≥ 80%">Amber rows = high-volume commercial</span>
+      </div>
+    </div>
+    <div class="table-scroll">
+      <table>
+        <thead id="table-head"></thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+    <div class="pagination">
+      <div class="page-info" id="page-info"></div>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <label class="tip" data-tip="Rows per page" style="font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px;">Rows
+          <select id="page-size">
+            <option value="10">10</option>
+            <option value="25" selected>25</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+        </label>
+        <button id="page-prev" class="btn">Prev</button>
+        <button id="page-next" class="btn">Next</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cluster-section" aria-label="Cluster view">
+    <div class="section-head">
+      <h2 class="tip" data-tip="Each cluster card shows combined volume, average CPC, commercial intent, trend score, opportunity score and recommendation. Volume/CPC/intent are recomputed from the filtered keywords; trend and opportunity come from the clustering output.">Clusters</h2>
+      <div class="table-meta" id="cluster-count"></div>
+    </div>
+    <div id="cluster-inspector" class="cluster-inspector hidden"></div>
+    <div id="empty-clusters" class="hidden" style="color:var(--muted);padding:12px 0;">No clusters match the current filters.</div>
+    <div class="cluster-grid" id="cluster-grid"></div>
+  </section>
+
+  <footer>Data loaded from <code>data/output/keywords.json</code> and <code>data/output/clusters.json</code> — rerun the pipeline and refresh to update.</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+
+  var DATA_URLS = {
+    keywords: '/data/output/keywords.json',
+    clusters: '/data/output/clusters.json'
+  };
+
+  var HVOL = 500000;
+  var HCI = 0.8;
+  var TOP_N = 20;
+  var TREND_N = 10;
+
+  var state = {
+    keywords: [],
+    clusters: [],
+    summary: null,
+    loadedAt: null,
+    selectedCluster: '',
+    filters: {
+      seed: '', cluster: '', intent: '', minVolume: 0, minOpportunity: 0,
+      flags: [], recommendedOnly: false, search: ''
+    },
+    sortKey: 'search_volume',
+    sortDir: 'desc',
+    page: 1,
+    pageSize: 25
+  };
+
+  var charts = {};
+
+  var FLAG_META = {
+    declining_traffic: { label: 'Declining', cls: 'flag-declining', tip: 'Trend slope below the declining threshold — demand is falling' },
+    too_broad: { label: 'Too broad', cls: 'flag-broad', tip: 'Short, high-volume keyword that is too generic to target' },
+    too_little_traffic: { label: 'Low traffic', cls: 'flag-low', tip: 'Search volume too low to be worth targeting' },
+    informational_dropped: { label: 'Informational', cls: 'flag-low', tip: 'Dropped from the pipeline as informational intent' }
+  };
+
+  function flagMeta(f) {
+    return FLAG_META[f] || { label: f, cls: 'flag-low', tip: 'Quality flag applied by the pipeline' };
+  }
+
+  var $ = function (id) { return document.getElementById(id); };
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+
+  function cssVar(name) {
+    return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  }
+
+  function palette() {
+    return {
+      text: cssVar('--c-text') || '#0f172a',
+      muted: cssVar('--c-muted') || '#64748b',
+      grid: cssVar('--c-grid') || '#e2e8f0',
+      primary: cssVar('--c-primary') || '#6366f1',
+      green: cssVar('--c-green') || '#16a34a',
+      red: cssVar('--c-red') || '#dc2626',
+      amber: cssVar('--c-amber') || '#d97706',
+      gray: cssVar('--c-muted') || '#64748b'
+    };
+  }
+
+  function hexToRgb(h) {
+    var m = h.replace('#', '');
+    if (m.length === 3) m = m.split('').map(function (c) { return c + c; }).join('');
+    var n = parseInt(m, 16);
+    return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+  }
+
+  function rgba(h, a) {
+    var c;
+    if (String(h).indexOf('rgb(') === 0) {
+      c = String(h).slice(4, -1).split(',').map(function (x) { return parseInt(x, 10); });
+    } else {
+      c = hexToRgb(h);
+    }
+    return 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ',' + a + ')';
+  }
+
+  function lerpColor(a, b, t) {
+    var ca = hexToRgb(a), cb = hexToRgb(b);
+    var r = Math.round(ca[0] + (cb[0] - ca[0]) * t);
+    var g = Math.round(ca[1] + (cb[1] - ca[1]) * t);
+    var bl = Math.round(ca[2] + (cb[2] - ca[2]) * t);
+    return 'rgb(' + r + ',' + g + ',' + bl + ')';
+  }
+
+  function isNum(v) { return typeof v === 'number' && isFinite(v); }
+
+  function fmtNum(n) {
+    if (!isNum(n)) return '—';
+    var abs = Math.abs(n);
+    var helper = function (x) {
+      var r = Math.round(x * 10) / 10;
+      return Number.isInteger(r) ? String(r) : r.toFixed(1);
+    };
+    if (abs >= 1e9) return helper(n / 1e9) + 'B';
+    if (abs >= 1e6) return helper(n / 1e6) + 'M';
+    if (abs >= 1e3) return helper(n / 1e3) + 'K';
+    return String(Math.round(n));
+  }
+
+  function fmtCPC(v) {
+    if (!isNum(v)) return '—';
+    return '$' + v.toFixed(2);
+  }
+
+  function fmtPct(v) {
+    if (!isNum(v)) return '—';
+    return Math.round(v * 100) + '%';
+  }
+
+  function fmtSlope(v) {
+    if (!isNum(v)) return '—';
+    var s = (v > 0 ? '+' : '') + v.toFixed(3);
+    return s;
+  }
+
+  function truncate(s, n) {
+    s = String(s == null ? '' : s);
+    return s.length > n ? s.slice(0, n - 1) + '…' : s;
+  }
+
+  function activeRows(rows) {
+    return rows.filter(function (r) { return !r.merged_into; });
+  }
+
+  function isHighVolumeCommercial(r) {
+    return (r.search_volume != null && r.search_volume >= HVOL) &&
+           (r.commercial_intent != null && r.commercial_intent >= HCI);
+  }
+
+  function haystack(r) {
+    return [
+      r.keyword, r.seed, r.cluster, r.main_intent,
+      (r.flags || []).join(' '), r.recommended ? 'recommended' : ''
+    ].join(' ').toLowerCase();
+  }
+
+  function getFiltered() {
+    var f = state.filters;
+    var q = f.search.trim().toLowerCase();
+    return state.keywords.filter(function (r) {
+      if (f.seed && r.seed !== f.seed) return false;
+      if (f.cluster && r.cluster !== f.cluster) return false;
+      if (f.intent && (r.main_intent || '').toLowerCase() !== f.intent) return false;
+      if (f.minVolume > 0 && (r.search_volume == null || r.search_volume < f.minVolume)) return false;
+      if (f.minOpportunity > 0 && (r.opportunity_score == null || r.opportunity_score < f.minOpportunity)) return false;
+      if (f.recommendedOnly && !r.recommended) return false;
+      if (f.flags.length && !f.flags.some(function (fl) { return (r.flags || []).indexOf(fl) !== -1; })) return false;
+      if (q && haystack(r).indexOf(q) === -1) return false;
+      return true;
+    });
+  }
+
+  function aggregateByCluster(rows) {
+    var map = {};
+    rows.filter(function (r) { return r.cluster; }).forEach(function (r) {
+      var k = r.cluster;
+      var g = map[k] || (map[k] = { volume: 0, cpcSum: 0, cpcN: 0, ciSum: 0, ciN: 0, count: 0 });
+      g.count++;
+      g.volume += isNum(r.search_volume) ? r.search_volume : 0;
+      if (isNum(r.cpc)) { g.cpcSum += r.cpc; g.cpcN++; }
+      if (isNum(r.commercial_intent)) { g.ciSum += r.commercial_intent; g.ciN++; }
+    });
+    return map;
+  }
+
+  function aggregateBySeed(rows) {
+    var map = {};
+    rows.forEach(function (r) {
+      var k = r.seed || 'Unknown';
+      var g = map[k] || (map[k] = { volume: 0, count: 0 });
+      g.count++;
+      g.volume += isNum(r.search_volume) ? r.search_volume : 0;
+    });
+    return map;
+  }
+
+  function median(values) {
+    if (!values.length) return 0;
+    var sorted = values.slice().sort(function (a, b) { return a - b; });
+    var mid = Math.floor(sorted.length / 2);
+    return sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+  }
+
+  function discoveryType(r) {
+    var text = String(r.keyword || '').toLowerCase();
+    if ((r.main_intent || '').toLowerCase() === 'navigational') return 'Brand / navigational';
+    if (/\b(near me|close to me|closest|nearest|in [a-z]+)\b/.test(text)) return 'Local store';
+    if (/\b(store|stores|shop|shops|boutique|boutiques|outlet|online)\b/.test(text)) return 'Store / online';
+    return 'Product / category';
+  }
+
+  function renderFunnel() {
+    var s = state.summary || {};
+    var total = state.keywords.length;
+    var active = activeRows(state.keywords).length;
+    var recommended = activeRows(state.keywords).filter(function (r) { return r.recommended; }).length;
+    var stages = [
+      { label: 'Raw collected', value: isNum(s.raw_items_collected) ? s.raw_items_collected : total, note: state.summary ? 'API rows' : 'output rows (summary unavailable)' },
+      { label: 'With metrics', value: isNum(s.items_with_metrics) ? s.items_with_metrics : total, note: 'usable volume data' },
+      { label: 'After intent filter', value: isNum(s.informational_dropped) && isNum(s.items_with_metrics) ? s.items_with_metrics - s.informational_dropped : total, note: (s.informational_dropped || 0) + ' informational removed' },
+      { label: 'After dedupe', value: isNum(s.active_keywords) ? s.active_keywords : active, note: (isNum(s.dedup_merged) ? s.dedup_merged : total - active) + ' variants merged' },
+      { label: 'Recommended', value: isNum(s.recommended_keywords) ? s.recommended_keywords : recommended, note: 'passed score + flags' }
+    ];
+    var root = $('collection-funnel');
+    root.innerHTML = '';
+    stages.forEach(function (stage, i) {
+      if (i) root.appendChild(el('div', 'funnel-arrow', '→'));
+      var box = el('div', 'funnel-step');
+      box.appendChild(el('strong', null, fmtNum(stage.value)));
+      box.appendChild(el('div', null, stage.label));
+      box.appendChild(el('span', null, stage.note));
+      root.appendChild(box);
+    });
+  }
+
+  function renderDiscoverySegments(rows) {
+    var map = {};
+    rows.forEach(function (r) {
+      var type = discoveryType(r);
+      var g = map[type] || (map[type] = { count: 0, volume: 0 });
+      g.count++;
+      g.volume += isNum(r.search_volume) ? r.search_volume : 0;
+    });
+    var order = ['Store / online', 'Local store', 'Product / category', 'Brand / navigational'];
+    var root = $('discovery-segments');
+    root.innerHTML = '';
+    order.forEach(function (type) {
+      var g = map[type] || { count: 0, volume: 0 };
+      var box = el('div', 'segment');
+      box.appendChild(el('div', 'segment-name', type));
+      box.appendChild(el('div', 'segment-value', fmtNum(g.volume)));
+      box.appendChild(el('div', 'segment-sub', g.count + ' keywords'));
+      root.appendChild(box);
+    });
+  }
+
+  function renderOverlapWarnings(rows) {
+    var groups = {};
+    rows.forEach(function (r) {
+      if (!isNum(r.search_volume) || r.search_volume <= 0) return;
+      var key = (r.seed || '') + '|' + r.search_volume;
+      (groups[key] || (groups[key] = [])).push(r);
+    });
+    var overlaps = Object.keys(groups).map(function (k) { return groups[k]; })
+      .filter(function (g) { return g.length >= 2; })
+      .sort(function (a, b) { return (b[0].search_volume * b.length) - (a[0].search_volume * a.length); })
+      .slice(0, 6);
+    var root = $('overlap-warnings');
+    root.innerHTML = '';
+    if (!overlaps.length) {
+      root.appendChild(el('div', 'panel-note', 'No identical-volume variant groups in the filtered data.'));
+      return;
+    }
+    overlaps.forEach(function (g) {
+      var item = el('div', 'warning-item');
+      item.appendChild(el('strong', null, fmtNum(g[0].search_volume) + ' each · ' + g.length + ' variants'));
+      item.appendChild(document.createTextNode(' — ' + g.map(function (r) { return r.keyword; }).slice(0, 4).join(', ') + (g.length > 4 ? '…' : '')));
+      root.appendChild(item);
+    });
+  }
+
+  function renderSeedPerformance(rows) {
+    var grouped = {};
+    rows.forEach(function (r) { (grouped[r.seed || 'Unknown'] || (grouped[r.seed || 'Unknown'] = [])).push(r); });
+    var body = $('seed-performance');
+    body.innerHTML = '';
+    Object.keys(grouped).map(function (seed) {
+      var rs = grouped[seed];
+      return {
+        seed: seed,
+        count: rs.length,
+        volume: rs.reduce(function (s, r) { return s + (r.search_volume || 0); }, 0),
+        median: median(rs.map(function (r) { return r.search_volume || 0; })),
+        commercial: rs.filter(function (r) { return ['commercial', 'transactional'].indexOf((r.main_intent || '').toLowerCase()) !== -1; }).length,
+        recommended: rs.filter(function (r) { return r.recommended; }).length,
+        declining: rs.filter(function (r) { return (r.flags || []).indexOf('declining_traffic') !== -1; }).length
+      };
+    }).sort(function (a, b) { return b.volume - a.volume; }).forEach(function (g) {
+      var tr = el('tr');
+      [g.seed, g.count, fmtNum(g.volume), fmtNum(g.median), Math.round(g.commercial / g.count * 100) + '%', g.recommended, g.declining].forEach(function (v, i) {
+        tr.appendChild(el('td', i ? 'num' : '', String(v)));
+      });
+      body.appendChild(tr);
+    });
+  }
+
+  function uniqueSorted(arr) {
+    return arr.filter(function (v, i, a) { return v && a.indexOf(v) === i; }).sort(function (a, b) { return a.localeCompare(b); });
+  }
+
+  function populateFilterOptions() {
+    var seeds = uniqueSorted(state.keywords.map(function (r) { return r.seed; }));
+    var clusters = uniqueSorted(state.clusters.map(function (c) { return c.cluster; }));
+    var intents = ['commercial', 'transactional', 'navigational', 'informational'];
+    var flags = uniqueSorted(state.keywords.reduce(function (acc, r) { return acc.concat(r.flags || []); }, []));
+
+    ['f-seed', 'f-cluster', 'f-intent'].forEach(function (id) {
+      var sel = $(id);
+      sel.innerHTML = '';
+      var def = el('option', '', 'All');
+      def.value = '';
+      sel.appendChild(def);
+    });
+    seeds.forEach(function (s) {
+      var o = el('option', '', s);
+      o.value = s;
+      $('f-seed').appendChild(o);
+    });
+    clusters.forEach(function (c) {
+      var o = el('option', '', c);
+      o.value = c;
+      $('f-cluster').appendChild(o);
+    });
+    intents.forEach(function (i) {
+      var o = el('option', '', i.charAt(0).toUpperCase() + i.slice(1));
+      o.value = i;
+      $('f-intent').appendChild(o);
+    });
+
+    var fg = $('f-flags');
+    fg.innerHTML = '';
+    flags.forEach(function (fl) {
+      var m = flagMeta(fl);
+      var lab = el('label');
+      var cb = document.createElement('input');
+      cb.type = 'checkbox';
+      cb.value = fl;
+      lab.appendChild(cb);
+      lab.appendChild(document.createTextNode(m.label));
+      lab.title = m.tip;
+      fg.appendChild(lab);
+    });
+  }
+
+  function readFilters() {
+    var f = state.filters;
+    f.seed = $('f-seed').value;
+    f.cluster = $('f-cluster').value;
+    f.intent = $('f-intent').value;
+    f.minVolume = parseInt($('f-minvol').value, 10) || 0;
+    f.minOpportunity = parseInt($('f-minopp').value, 10) || 0;
+    f.recommendedOnly = $('f-rec').checked;
+    f.search = $('f-search').value;
+    f.flags = Array.prototype.slice.call($('f-flags').querySelectorAll('input:checked')).map(function (i) { return i.value; });
+    state.page = 1;
+  }
+
+  function renderCards() {
+    var filtered = getFiltered();
+    var active = activeRows(filtered);
+    var recommended = active.filter(function (r) { return r.recommended; }).length;
+    var clusters = new Set(active.map(function (r) { return r.cluster; }).filter(Boolean)).size;
+    var volume = active.reduce(function (s, r) { return s + (isNum(r.search_volume) ? r.search_volume : 0); }, 0);
+    var cpcList = active.map(function (r) { return r.cpc; }).filter(isNum);
+    var avgCpc = cpcList.length ? cpcList.reduce(function (a, b) { return a + b; }, 0) / cpcList.length : null;
+
+    $('c-total').textContent = fmtNum(filtered.length);
+    $('c-active').textContent = fmtNum(active.length);
+    $('c-rec').textContent = fmtNum(recommended);
+    $('c-clusters').textContent = fmtNum(clusters);
+    $('c-volume').textContent = fmtNum(volume);
+    $('c-cpc').textContent = fmtCPC(avgCpc);
+  }
+
+  function renderDecisionPanels() {
+    var active = activeRows(getFiltered());
+    renderFunnel();
+    renderDiscoverySegments(active);
+    renderOverlapWarnings(active);
+    renderSeedPerformance(active);
+  }
+
+  function baseScales(colors) {
+    return {
+      x: { grid: { color: colors.grid }, ticks: { color: colors.muted } },
+      y: { grid: { color: colors.grid }, ticks: { color: colors.muted } }
+    };
+  }
+
+  function tooltipBase() {
+    return {
+      backgroundColor: cssVar('--text') || '#0f172a',
+      titleColor: cssVar('--bg') || '#fff',
+      bodyColor: cssVar('--bg') || '#fff',
+      cornerRadius: 8,
+      padding: 10,
+      boxPadding: 4
+    };
+  }
+
+  function chartTopKeywords(colors, rows) {
+    var top = rows.slice().sort(function (a, b) { return (b.search_volume || 0) - (a.search_volume || 0); }).slice(0, TOP_N);
+    if (!top.length) return;
+    var labels = top.map(function (r) { return truncate(r.keyword, 26); });
+    var data = top.map(function (r) { return r.search_volume || 0; });
+    var bg = top.map(function (r) { return isHighVolumeCommercial(r) ? colors.amber : colors.primary; });
+    charts.chartTopKeywords = new Chart($('chartTopKeywords'), {
+      type: 'bar',
+      data: {
+        labels: labels,
+        datasets: [{
+          data: data,
+          backgroundColor: bg,
+          borderRadius: 4,
+          barThickness: 'flex'
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: Object.assign({}, tooltipBase(), {
+            callbacks: {
+              title: function (items) { return top[items[0].dataIndex].keyword; },
+              label: function (item) {
+                var r = top[item.dataIndex];
+                var l = ['Volume: ' + fmtNum(r.search_volume)];
+                if (isNum(r.cpc)) l.push('CPC: ' + fmtCPC(r.cpc));
+                if (isNum(r.commercial_intent)) l.push('Commercial intent: ' + fmtPct(r.commercial_intent));
+                return l;
+              }
+            }
+          })
+        },
+        scales: {
+          x: { grid: { color: colors.grid }, ticks: { color: colors.muted, callback: function (v) { return fmtNum(v); } } },
+          y: { grid: { display: false }, ticks: { color: colors.text, autoSkip: false } }
+        }
+      }
+    });
+  }
+
+  function chartClusterVolume(colors, agg, clusterMeta) {
+    var entries = Object.keys(agg).map(function (k) {
+      return { name: k, volume: agg[k].volume };
+    }).sort(function (a, b) { return b.volume - a.volume; });
+    if (!entries.length) return;
+    var max = entries[0].volume || 1;
+    charts.chartClusterVolume = new Chart($('chartClusterVolume'), {
+      type: 'bar',
+      data: {
+        labels: entries.map(function (e) { return truncate(e.name, 22); }),
+        datasets: [{
+          data: entries.map(function (e) { return e.volume; }),
+          backgroundColor: entries.map(function (e) {
+            var t = Math.max(0.15, Math.min(1, e.volume / max));
+            return lerpColor(colors.primary, colors.amber, t);
+          }),
+          borderRadius: 4,
+          barThickness: 'flex'
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: Object.assign({}, tooltipBase(), {
+            callbacks: {
+              title: function (items) { return entries[items[0].dataIndex].name; },
+              label: function (item) {
+                var e = entries[item.dataIndex];
+                var g = agg[e.name];
+                var share = totalVolume(agg) ? (e.volume / totalVolume(agg) * 100).toFixed(1) + '% of filtered volume' : '';
+                return ['Combined volume: ' + fmtNum(e.volume), 'Keywords: ' + g.count, share].filter(Boolean);
+              }
+            }
+          })
+        },
+        scales: {
+          x: { grid: { color: colors.grid }, ticks: { color: colors.muted, callback: function (v) { return fmtNum(v); } } },
+          y: { grid: { display: false }, ticks: { color: colors.text, autoSkip: false, font: { size: 11 } } }
+        }
+      }
+    });
+  }
+
+  function totalVolume(agg) {
+    return Object.keys(agg).reduce(function (s, k) { return s + agg[k].volume; }, 0);
+  }
+
+  function chartBubble(colors, rows) {
+    var pts = rows.filter(function (r) {
+      return isNum(r.keyword_difficulty) && isNum(r.search_volume);
+    });
+    if (!pts.length) return;
+    charts.chartBubble = new Chart($('chartBubble'), {
+      type: 'bubble',
+      data: {
+        datasets: [{
+          data: pts.map(function (r) {
+            return {
+              x: r.keyword_difficulty,
+              y: r.search_volume,
+              r: isNum(r.cpc) ? Math.max(4, Math.sqrt(r.cpc) * 9) : 4,
+              _kw: r.keyword,
+              _cpc: r.cpc,
+              _ci: r.commercial_intent,
+              _vol: r.search_volume,
+              _diff: r.keyword_difficulty
+            };
+          }),
+          backgroundColor: pts.map(function (r) {
+            return rgba(lerpColor(colors.primary, colors.red, Math.max(0, Math.min(1, (r.commercial_intent || 0) / 1))), 0.55);
+          }),
+          borderColor: pts.map(function (r) {
+            return lerpColor(colors.primary, colors.red, Math.max(0, Math.min(1, (r.commercial_intent || 0) / 1)));
+          }),
+          borderWidth: 1
+        }]
+      },
+      options: {
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: Object.assign({}, tooltipBase(), {
+            callbacks: {
+              label: function (item) {
+                var d = item.raw;
+                return [
+                  d._kw,
+                  'Volume: ' + fmtNum(d._vol),
+                  'Difficulty: ' + d._diff,
+                  'CPC: ' + fmtCPC(d._cpc),
+                  'Commercial intent: ' + fmtPct(d._ci)
+                ];
+              }
+            }
+          })
+        },
+        scales: {
+          x: Object.assign({ title: { display: true, text: 'Keyword difficulty', color: colors.muted } }, baseScales(colors).x),
+          y: Object.assign({ title: { display: true, text: 'Search volume', color: colors.muted }, ticks: { color: colors.muted, callback: function (v) { return fmtNum(v); } } }, baseScales(colors).y)
+        }
+      }
+    });
+  }
+
+  function chartScatter(colors, rows) {
+    var pts = rows.filter(function (r) {
+      return isNum(r.competition) && isNum(r.opportunity_score);
+    });
+    if (!pts.length) return;
+    charts.chartScatter = new Chart($('chartScatter'), {
+      type: 'scatter',
+      data: {
+        datasets: [{
+          data: pts.map(function (r) {
+            return { x: r.competition, y: r.opportunity_score, _kw: r.keyword, _vol: r.search_volume, _ci: r.commercial_intent };
+          }),
+          backgroundColor: rgba(colors.primary, 0.55),
+          borderColor: colors.primary,
+          pointRadius: 5,
+          pointHoverRadius: 7
+        }]
+      },
+      options: {
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: Object.assign({}, tooltipBase(), {
+            callbacks: {
+              label: function (item) {
+                var d = item.raw;
+                return [
+                  d._kw,
+                  'Competition: ' + fmtPct(d.x),
+                  'Opportunity: ' + d.y,
+                  'Volume: ' + fmtNum(d._vol),
+                  'Commercial intent: ' + fmtPct(d._ci)
+                ];
+              }
+            }
+          })
+        },
+        scales: {
+          x: Object.assign({ title: { display: true, text: 'Competition (0–1)', color: colors.muted }, min: 0, max: 1 }, baseScales(colors).x),
+          y: Object.assign({ title: { display: true, text: 'Opportunity score', color: colors.muted }, min: 0, max: 100 }, baseScales(colors).y)
+        }
+      }
+    });
+  }
+
+  function chartTrend(colors, rows) {
+    var top = rows.slice().sort(function (a, b) { return (b.search_volume || 0) - (a.search_volume || 0); }).slice(0, TREND_N);
+    if (!top.length) return;
+    charts.chartTrend = new Chart($('chartTrend'), {
+      type: 'line',
+      data: {
+        labels: top.map(function (r) { return truncate(r.keyword, 20); }),
+        datasets: [{
+          data: top.map(function (r) { return isNum(r.trend_slope) ? r.trend_slope : null; }),
+          borderColor: colors.primary,
+          backgroundColor: rgba(colors.primary, 0.1),
+          pointBackgroundColor: top.map(function (r) {
+            if (!isNum(r.trend_slope)) return colors.muted;
+            return r.trend_slope > 0 ? colors.green : (r.trend_slope < 0 ? colors.red : colors.muted);
+          }),
+          pointBorderColor: top.map(function (r) {
+            if (!isNum(r.trend_slope)) return colors.muted;
+            return r.trend_slope > 0 ? colors.green : (r.trend_slope < 0 ? colors.red : colors.muted);
+          }),
+          pointRadius: 5,
+          pointHoverRadius: 7,
+          borderWidth: 2,
+          tension: 0.3,
+          spanGaps: true,
+          fill: true
+        }]
+      },
+      options: {
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: Object.assign({}, tooltipBase(), {
+            callbacks: {
+              title: function (items) { return top[items[0].dataIndex].keyword; },
+              label: function (item) {
+                var r = top[item.dataIndex];
+                var trend = 'Trend slope: ' + fmtSlope(r.trend_slope);
+                if (isNum(r.trend_slope)) trend += ' ' + (r.trend_slope > 0 ? '(rising)' : r.trend_slope < 0 ? '(declining)' : '(flat)');
+                return [trend, 'Volume: ' + fmtNum(r.search_volume)];
+              }
+            }
+          })
+        },
+        scales: {
+          x: { grid: { display: false }, ticks: { color: colors.text, maxRotation: 45, autoSkip: true, maxTicksLimit: 10 } },
+          y: { grid: { color: colors.grid }, ticks: { color: colors.muted } }
+        }
+      }
+    });
+  }
+
+  function doughnut(rows, colors, id, datasets, emptyEl) {
+    var total = datasets.reduce(function (s, d) { return s + d.value; }, 0);
+    if (!total) { emptyEl.classList.remove('hidden'); return; }
+    charts[id] = new Chart($(id), {
+      type: 'doughnut',
+      data: {
+        labels: datasets.map(function (d) { return d.label; }),
+        datasets: [{
+          data: datasets.map(function (d) { return d.value; }),
+          backgroundColor: datasets.map(function (d) { return d.color; }),
+          borderColor: cssVar('--c-card') || '#fff',
+          borderWidth: 2,
+          hoverOffset: 6
+        }]
+      },
+      options: {
+        maintainAspectRatio: false,
+        cutout: '62%',
+        plugins: {
+          legend: { position: 'bottom', labels: { color: colors.text, boxWidth: 12, padding: 12 } },
+          tooltip: Object.assign({}, tooltipBase(), {
+            callbacks: {
+              label: function (item) {
+                var d = datasets[item.dataIndex];
+                var pct = total ? (d.value / total * 100).toFixed(1) + '%' : '0%';
+                return ' ' + d.label + ': ' + fmtNum(d.value) + ' (' + pct + ')';
+              }
+            }
+          })
+        }
+      }
+    });
+  }
+
+  function chartIntent(colors, rows) {
+    var counts = { commercial: 0, transactional: 0, navigational: 0, informational: 0 };
+    rows.forEach(function (r) {
+      var i = (r.main_intent || '').toLowerCase();
+      if (counts[i] === undefined) counts[i] = 0;
+      counts[i]++;
+    });
+    var datasets = [
+      { label: 'Commercial', value: counts.commercial, color: colors.primary },
+      { label: 'Transactional', value: counts.transactional, color: colors.green },
+      { label: 'Navigational', value: counts.navigational, color: colors.amber },
+      { label: 'Informational', value: counts.informational, color: colors.gray }
+    ];
+    doughnut(rows, colors, 'chartIntent', datasets, $('chartIntent').parentElement.querySelector('.chart-empty'));
+  }
+
+  function chartRecommended(colors, rows) {
+    var rec = rows.filter(function (r) { return r.recommended; }).length;
+    var rej = rows.length - rec;
+    var datasets = [
+      { label: 'Recommended', value: rec, color: colors.green },
+      { label: 'Rejected', value: rej, color: colors.red }
+    ];
+    doughnut(rows, colors, 'chartRecommended', datasets, $('chartRecommended').parentElement.querySelector('.chart-empty'));
+  }
+
+  function chartSeeds(colors, rows) {
+    var agg = aggregateBySeed(rows);
+    var keys = Object.keys(agg).sort(function (a, b) { return agg[b].volume - agg[a].volume; });
+    if (!keys.length) return;
+    charts.chartSeeds = new Chart($('chartSeeds'), {
+      type: 'bar',
+      data: {
+        labels: keys,
+        datasets: [
+          {
+            label: 'Combined volume',
+            data: keys.map(function (k) { return agg[k].volume; }),
+            backgroundColor: rgba(colors.primary, 0.85),
+            borderRadius: 4,
+            yAxisID: 'y',
+            barThickness: 'flex'
+          },
+          {
+            label: 'Keyword count',
+            data: keys.map(function (k) { return agg[k].count; }),
+            backgroundColor: rgba(colors.amber, 0.85),
+            borderRadius: 4,
+            yAxisID: 'y1',
+            barThickness: 'flex'
+          }
+        ]
+      },
+      options: {
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'bottom', labels: { color: colors.text, boxWidth: 12, padding: 12 } },
+          tooltip: Object.assign({}, tooltipBase(), {
+            callbacks: {
+              label: function (item) {
+                var k = keys[item.dataIndex];
+                if (item.datasetIndex === 0) return 'Combined volume: ' + fmtNum(agg[k].volume);
+                return 'Keyword count: ' + agg[k].count;
+              }
+            }
+          })
+        },
+        scales: {
+          x: { grid: { display: false }, ticks: { color: colors.text, maxRotation: 45, autoSkip: false } },
+          y: { position: 'left', beginAtZero: true, grid: { color: colors.grid }, ticks: { color: colors.muted, callback: function (v) { return fmtNum(v); } } },
+          y1: { position: 'right', beginAtZero: true, grid: { display: false }, ticks: { color: colors.muted } }
+        }
+      }
+    });
+  }
+
+  function chartHistogram(colors, rows) {
+    var bins = [];
+    for (var i = 0; i < 10; i++) bins.push({ label: (i * 10) + '–' + (i * 10 + 10), n: 0 });
+    var nulls = 0;
+    rows.forEach(function (r) {
+      if (!isNum(r.opportunity_score)) { nulls++; return; }
+      var idx = Math.min(9, Math.floor(Math.max(0, r.opportunity_score) / 10));
+      bins[idx].n++;
+    });
+    var total = rows.length;
+    if (!total) return;
+    charts.chartHistogram = new Chart($('chartHistogram'), {
+      type: 'bar',
+      data: {
+        labels: bins.map(function (b) { return b.label; }),
+        datasets: [{
+          data: bins.map(function (b) { return b.n; }),
+          backgroundColor: colors.primary,
+          borderRadius: 4,
+          barThickness: 'flex'
+        }]
+      },
+      options: {
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: Object.assign({}, tooltipBase(), {
+            callbacks: {
+              label: function (item) {
+                var b = bins[item.dataIndex];
+                var pct = total ? (b.n / total * 100).toFixed(1) + '%' : '0%';
+                return b.label + ': ' + b.n + ' keywords (' + pct + ')';
+              }
+            }
+          })
+        },
+        scales: {
+          x: { grid: { display: false }, ticks: { color: colors.text, autoSkip: false } },
+          y: { beginAtZero: true, grid: { color: colors.grid }, ticks: { color: colors.muted, precision: 0 } }
+        }
+      }
+    });
+    $('histogram-note').textContent = nulls ? nulls + ' keyword(s) without an opportunity score are excluded' : '';
+  }
+
+  function shade(hex, f) {
+    var c = hexToRgb(hex);
+    return 'rgb(' + Math.round(c[0] * f) + ',' + Math.round(c[1] * f) + ',' + Math.round(c[2] * f) + ')';
+  }
+
+  function treemapAvailable() {
+    try {
+      return typeof Chart !== 'undefined' && typeof Chart.registry !== 'undefined' &&
+        typeof Chart.registry.getController('treemap') === 'function';
+    } catch (e) { return false; }
+  }
+
+  function chartTreemap(colors, agg) {
+    var entries = Object.keys(agg).map(function (k) { return { name: k, value: agg[k].volume, count: agg[k].count }; });
+    if (!entries.length) return;
+    var maxV = Math.max.apply(null, entries.map(function (e) { return e.value; }));
+    var tree = entries.map(function (e) {
+      var t = maxV ? e.value / maxV : 0.5;
+      return {
+        name: e.name,
+        value: e.value,
+        label: truncate(e.name, 20),
+        count: e.count,
+        color: lerpColor(shade(colors.primary, 0.85), shade(colors.amber, 0.55), Math.max(0.1, Math.min(1, t)))
+      };
+    });
+
+    var makeTooltip = function () {
+      return Object.assign({}, tooltipBase(), {
+        callbacks: {
+          title: function (items) {
+            var d = items[0].raw;
+            return (d._data && d._data.name) || '';
+          },
+          label: function (item) {
+            var d = item.raw._data || {};
+            var share = totalVolume(agg) ? (d.value / totalVolume(agg) * 100).toFixed(1) + '% of filtered volume' : '';
+            return ['Volume: ' + fmtNum(d.value), 'Keywords: ' + d.count, share].filter(Boolean);
+          }
+        }
+      });
+    };
+
+    if (treemapAvailable()) {
+      charts.chartTreemap = new Chart($('chartTreemap'), {
+        type: 'treemap',
+        data: {
+          datasets: [{
+            label: 'Cluster volume',
+            tree: tree,
+            key: 'value',
+            backgroundColor: function (ctx) {
+              if (ctx.type === 'data') return ctx.raw._data.color;
+              return colors.primary;
+            },
+            borderColor: cssVar('--c-card') || '#fff',
+            borderWidth: 2,
+            spacing: 2,
+            labels: {
+              display: true,
+              align: 'center',
+              position: 'middle',
+              color: '#fff',
+              font: { size: 11, weight: 'bold' },
+              formatter: function (ctx) {
+                return (ctx.raw._data && ctx.raw._data.label) || '';
+              }
+            }
+          }]
+        },
+        options: {
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false }, tooltip: makeTooltip() }
+        }
+      });
+    } else {
+      var labels = entries.map(function (e) { return truncate(e.name, 20); });
+      var values = entries.map(function (e) { return e.value; });
+      charts.chartTreemap = new Chart($('chartTreemap'), {
+        type: 'bar',
+        data: {
+          labels: labels,
+          datasets: [{
+            data: values,
+            backgroundColor: tree.map(function (t) { return t.color; }),
+            borderRadius: 4,
+            barThickness: 'flex'
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: Object.assign({}, tooltipBase(), {
+              callbacks: {
+                title: function (items) { return entries[items[0].dataIndex].name; },
+                label: function (item) {
+                  var e = entries[item.dataIndex];
+                  var share = totalVolume(agg) ? (e.value / totalVolume(agg) * 100).toFixed(1) + '% of filtered volume' : '';
+                  return ['Volume: ' + fmtNum(e.value), 'Keywords: ' + e.count, share].filter(Boolean);
+                }
+              }
+            })
+          },
+          scales: {
+            x: { stacked: true, display: false },
+            y: { stacked: true, grid: { display: false }, ticks: { color: colors.text, autoSkip: false } }
+          }
+        }
+      });
+    }
+  }
+
+  function chartFlags(colors, rows) {
+    var counts = {};
+    rows.forEach(function (r) {
+      (r.flags || []).forEach(function (f) { counts[f] = (counts[f] || 0) + 1; });
+    });
+    var keys = Object.keys(counts);
+    if (!keys.length) return;
+    charts.chartFlags = new Chart($('chartFlags'), {
+      type: 'bar',
+      data: {
+        labels: keys.map(function (k) { return flagMeta(k).label; }),
+        datasets: [{
+          data: keys.map(function (k) { return counts[k]; }),
+          backgroundColor: keys.map(function (k) {
+            if (k === 'declining_traffic') return colors.red;
+            if (k === 'too_broad') return colors.amber;
+            return colors.muted;
+          }),
+          borderRadius: 4,
+          barThickness: 'flex'
+        }]
+      },
+      options: {
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: Object.assign({}, tooltipBase(), {
+            callbacks: {
+              label: function (item) {
+                var k = keys[item.dataIndex];
+                return flagMeta(k).label + ': ' + counts[k] + ' keyword(s) — ' + flagMeta(k).tip;
+              }
+            }
+          })
+        },
+        scales: {
+          x: { grid: { display: false }, ticks: { color: colors.text, autoSkip: false } },
+          y: { beginAtZero: true, grid: { color: colors.grid }, ticks: { color: colors.muted, precision: 0 } }
+        }
+      }
+    });
+  }
+
+  function chartMonthlyHistory(colors, rows) {
+    var eligible = rows.filter(function (r) { return Array.isArray(r.monthly_history) && r.monthly_history.length; })
+      .sort(function (a, b) { return (b.search_volume || 0) - (a.search_volume || 0); });
+    var select = $('history-keyword');
+    var previous = select.value;
+    select.innerHTML = '';
+    if (!eligible.length) {
+      var emptyOpt = el('option', '', 'Monthly history is not in this output yet');
+      emptyOpt.value = '';
+      select.appendChild(emptyOpt);
+      select.disabled = true;
+      $('history-note').textContent = 'Run the updated pipeline once, then refresh. Future keywords.json files include the full monthly history.';
+      return;
+    }
+    select.disabled = false;
+    var allOpt = el('option', '', 'All filtered keywords · combined monthly volume');
+    allOpt.value = 'all';
+    select.appendChild(allOpt);
+    eligible.forEach(function (r, i) {
+      var opt = el('option', '', r.keyword + ' · ' + fmtNum(r.search_volume));
+      opt.value = String(state.keywords.indexOf(r));
+      select.appendChild(opt);
+      if (opt.value === previous) select.value = previous;
+    });
+    if (previous === 'all' || !previous) select.value = 'all';
+
+    var history;
+    var chartLabel;
+    if (select.value === 'all') {
+      var combined = {};
+      eligible.forEach(function (r) {
+        r.monthly_history.forEach(function (m) {
+          var key = m.year + '-' + String(m.month).padStart(2, '0');
+          combined[key] = (combined[key] || 0) + (m.search_volume || 0);
+        });
+      });
+      history = Object.keys(combined).sort().map(function (key) {
+        var parts = key.split('-');
+        return { year: parseInt(parts[0], 10), month: parseInt(parts[1], 10), search_volume: combined[key] };
+      });
+      chartLabel = 'Combined monthly search volume';
+      $('history-note').textContent = 'Combined monthly search volume across ' + eligible.length + ' filtered active keywords.';
+    } else {
+      var rec = state.keywords[parseInt(select.value, 10)];
+      if (!rec) return;
+      history = rec.monthly_history.slice();
+      chartLabel = 'Monthly search volume';
+      $('history-note').textContent = rec.keyword + ' — actual monthly search volumes returned by DataForSEO.';
+    }
+    history.sort(function (a, b) {
+      return (a.year * 12 + a.month) - (b.year * 12 + b.month);
+    });
+    charts.chartHistory = new Chart($('chartHistory'), {
+      type: 'line',
+      data: {
+        labels: history.map(function (m) { return m.year + '-' + String(m.month).padStart(2, '0'); }),
+        datasets: [{
+          label: chartLabel,
+          data: history.map(function (m) { return m.search_volume || 0; }),
+          borderColor: colors.primary,
+          backgroundColor: rgba(colors.primary, 0.14),
+          pointBackgroundColor: colors.primary,
+          pointRadius: 4,
+          tension: 0.25,
+          fill: true
+        }]
+      },
+      options: {
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: tooltipBase() },
+        scales: {
+          x: { grid: { display: false }, ticks: { color: colors.text } },
+          y: { beginAtZero: true, grid: { color: colors.grid }, ticks: { color: colors.muted, callback: function (v) { return fmtNum(v); } } }
+        }
+      }
+    });
+  }
+
+  function renderCharts() {
+    Object.keys(charts).forEach(function (k) {
+      if (charts[k]) { charts[k].destroy(); delete charts[k]; }
+    });
+
+    if (typeof Chart === 'undefined') return;
+
+    var colors = palette();
+    var filtered = getFiltered();
+    var active = activeRows(filtered);
+    var agg = aggregateByCluster(active);
+    var clusterMeta = {};
+    state.clusters.forEach(function (c) { clusterMeta[c.cluster] = c; });
+
+    document.querySelectorAll('.chart-empty').forEach(function (n) { n.classList.add('hidden'); });
+
+    chartTopKeywords(colors, active);
+    chartClusterVolume(colors, agg, clusterMeta);
+    chartBubble(colors, active);
+    chartScatter(colors, active);
+    chartTrend(colors, active);
+    chartIntent(colors, active);
+    chartRecommended(colors, active);
+    chartSeeds(colors, active);
+    chartHistogram(colors, active);
+    chartTreemap(colors, agg);
+    chartFlags(colors, active);
+    chartMonthlyHistory(colors, active);
+
+    ['chartTopKeywords', 'chartClusterVolume', 'chartBubble', 'chartScatter', 'chartTrend',
+     'chartIntent', 'chartRecommended', 'chartSeeds', 'chartHistogram', 'chartTreemap', 'chartFlags', 'chartHistory'].forEach(function (id) {
+      var canvas = $(id);
+      var empty = canvas.parentElement.querySelector('.chart-empty');
+      if (!charts[id]) empty.classList.remove('hidden');
+    });
+  }
+
+  var TABLE_COLS = [
+    { key: 'keyword', label: 'Keyword', type: 'string', tip: 'The keyword phrase' },
+    { key: 'seed', label: 'Seed', type: 'string', tip: 'Seed keyword group it was gathered from' },
+    { key: 'cluster', label: 'Cluster', type: 'string', tip: 'Semantic cluster assigned by the pipeline' },
+    { key: 'search_volume', label: 'Volume', type: 'number', tip: 'Monthly search volume' },
+    { key: 'cpc', label: 'CPC', type: 'number', tip: 'Average cost-per-click in USD' },
+    { key: 'competition', label: 'Competition', type: 'number', tip: 'Ad competition, 0–1' },
+    { key: 'keyword_difficulty', label: 'Difficulty', type: 'number', tip: 'Keyword difficulty, 0–100' },
+    { key: 'main_intent', label: 'Intent', type: 'string', tip: 'Dominant search intent label' },
+    { key: 'commercial_intent', label: 'Comm. intent', type: 'number', tip: 'Commercial intent strength, 0–1' },
+    { key: 'trend_slope', label: 'Trend', type: 'number', tip: 'Monthly trend slope — green is rising, red is declining' },
+    { key: 'opportunity_score', label: 'Opportunity', type: 'number', tip: 'Opportunity score, 0–100' },
+    { key: 'flags', label: 'Flags', type: 'string', tip: 'Quality flags: declining, too broad, low traffic' },
+    { key: 'recommended', label: 'Recommendation', type: 'boolean', tip: 'Whether the pipeline recommends targeting this keyword' }
+  ];
+
+  function buildTableHead() {
+    var head = $('table-head');
+    head.innerHTML = '';
+    var row = el('tr');
+    TABLE_COLS.forEach(function (col) {
+      var th = el('th');
+      if (col.type === 'number') th.classList.add('num');
+      th.classList.add('tip');
+      th.setAttribute('data-tip', col.tip);
+      th.dataset.key = col.key;
+      var span = el('span', null, col.label);
+      th.appendChild(span);
+      var arrow = el('span', 'arrow');
+      arrow.id = 'sort-arrow-' + col.key;
+      th.appendChild(arrow);
+      row.appendChild(th);
+    });
+    head.appendChild(row);
+
+    head.querySelectorAll('th').forEach(function (th) {
+      th.addEventListener('click', function () {
+        var k = th.dataset.key;
+        if (state.sortKey === k) {
+          state.sortDir = state.sortDir === 'desc' ? 'asc' : 'desc';
+        } else {
+          state.sortKey = k;
+          state.sortDir = TABLE_COLS.find(function (c) { return c.key === k; }).type === 'number' ? 'desc' : 'asc';
+        }
+        renderTable();
+      });
+    });
+  }
+
+  function updateSortArrows() {
+    TABLE_COLS.forEach(function (col) {
+      var a = $('sort-arrow-' + col.key);
+      if (!a) return;
+      if (state.sortKey === col.key) {
+        a.textContent = state.sortDir === 'desc' ? '▼' : '▲';
+        a.classList.add('sorted');
+      } else {
+        a.textContent = '';
+        a.classList.remove('sorted');
+      }
+    });
+  }
+
+  function compareRows(a, b) {
+    var k = state.sortKey;
+    var av = a[k], bv = b[k];
+    var res;
+    if (isNum(av) && isNum(bv)) res = av - bv;
+    else if (av == null && bv == null) res = 0;
+    else if (av == null) res = -1;
+    else if (bv == null) res = 1;
+    else if (typeof av === 'boolean') res = (av === bv) ? 0 : (av ? -1 : 1);
+    else res = String(av).localeCompare(String(bv));
+    return state.sortDir === 'desc' ? -res : res;
+  }
+
+  function trendCell(r) {
+    if (!isNum(r.trend_slope)) return el('span', 'mono', '—');
+    var cls = r.trend_slope > 0 ? 'trend-up' : (r.trend_slope < 0 ? 'trend-down' : 'trend-flat');
+    var arrow = r.trend_slope > 0 ? '▲' : (r.trend_slope < 0 ? '▼' : '•');
+    var span = el('span', 'mono ' + cls, arrow + ' ' + fmtSlope(r.trend_slope));
+    span.title = 'Trend slope: ' + fmtSlope(r.trend_slope) +
+      (r.trend_slope > 0 ? ' (rising demand)' : r.trend_slope < 0 ? ' (declining demand)' : ' (flat)');
+    return span;
+  }
+
+  function flagsCell(r) {
+    var wrap = el('span');
+    wrap.style.display = 'inline-flex';
+    wrap.style.flexWrap = 'wrap';
+    wrap.style.gap = '4px';
+    (r.flags || []).forEach(function (f) {
+      var m = flagMeta(f);
+      var b = el('span', 'badge ' + m.cls, m.label);
+      b.title = m.tip;
+      wrap.appendChild(b);
+    });
+    return wrap;
+  }
+
+  function renderTable() {
+    updateSortArrows();
+    var filtered = activeRows(getFiltered()).slice().sort(compareRows);
+    var total = filtered.length;
+    var pageCount = Math.max(1, Math.ceil(total / state.pageSize));
+    if (state.page > pageCount) state.page = pageCount;
+    var start = (state.page - 1) * state.pageSize;
+    var pageRows = filtered.slice(start, start + state.pageSize);
+
+    var body = $('table-body');
+    body.innerHTML = '';
+    if (!total) {
+      var tr = el('tr');
+      var td = el('td', null, 'No keywords match the current filters.');
+      td.colSpan = TABLE_COLS.length;
+      td.style.textAlign = 'center';
+      td.style.color = 'var(--muted)';
+      td.style.padding = '24px';
+      tr.appendChild(td);
+      body.appendChild(tr);
+    } else {
+      pageRows.forEach(function (r) {
+        var tr = el('tr');
+        if (isHighVolumeCommercial(r)) tr.classList.add('hl-vol');
+        TABLE_COLS.forEach(function (col) {
+          var td = el('td');
+          if (col.type === 'number') td.classList.add('num');
+          if (col.key === 'keyword') td.classList.add('kw-cell');
+          var v = r[col.key];
+          switch (col.key) {
+            case 'search_volume': td.textContent = fmtNum(v); break;
+            case 'cpc': td.textContent = fmtCPC(v); break;
+            case 'competition': td.textContent = isNum(v) ? fmtPct(v) : '—'; break;
+            case 'keyword_difficulty': td.textContent = isNum(v) ? v : '—'; break;
+            case 'main_intent': td.textContent = v ? v.charAt(0).toUpperCase() + v.slice(1) : '—'; break;
+            case 'commercial_intent': td.textContent = fmtPct(v); break;
+            case 'trend_slope': td.appendChild(trendCell(r)); break;
+            case 'opportunity_score': td.textContent = isNum(v) ? v : '—'; break;
+            case 'flags': td.appendChild(flagsCell(r)); break;
+            case 'recommended':
+              td.appendChild(el('span', 'badge ' + (v ? 'rec' : 'no'), v ? 'Recommended' : 'Rejected'));
+              break;
+            case 'cluster': td.textContent = v || '—'; break;
+            default: td.textContent = v == null ? '—' : String(v);
+          }
+          if (col.key === 'keyword') td.title = r.keyword;
+          tr.appendChild(td);
+        });
+        body.appendChild(tr);
+      });
+    }
+
+    $('table-count').textContent = total + ' row' + (total === 1 ? '' : 's');
+    $('page-info').textContent = 'Page ' + state.page + ' of ' + pageCount;
+    $('page-prev').disabled = state.page <= 1;
+    $('page-next').disabled = state.page >= pageCount;
+  }
+
+  function renderClusters() {
+    var filtered = activeRows(getFiltered());
+    var agg = aggregateByCluster(filtered);
+    var rows = [];
+    state.clusters.forEach(function (c) {
+      var g = agg[c.cluster];
+      if (!g) return;
+      rows.push({
+        name: c.cluster,
+        count: g.count,
+        volume: g.volume,
+        cpc: g.cpcN ? g.cpcSum / g.cpcN : c.avg_cpc,
+        ci: g.ciN ? g.ciSum / g.ciN : c.commercial_intent,
+        trendScore: c.trend_score,
+        opportunity: c.opportunity_score,
+        recommended: !!c.recommended_for_store_discovery,
+        keywords: c.keywords
+      });
+    });
+    rows.sort(function (a, b) { return b.volume - a.volume; });
+
+    if (rows.length && !rows.some(function (r) { return r.name === state.selectedCluster; })) {
+      state.selectedCluster = rows[0].name;
+    }
+
+    var grid = $('cluster-grid');
+    grid.innerHTML = '';
+    $('empty-clusters').classList.toggle('hidden', rows.length > 0);
+    $('cluster-count').textContent = rows.length + ' cluster' + (rows.length === 1 ? '' : 's');
+
+    var inspector = $('cluster-inspector');
+    inspector.innerHTML = '';
+    var selected = rows.find(function (r) { return r.name === state.selectedCluster; });
+    inspector.classList.toggle('hidden', !selected);
+    if (selected) {
+      var selectedRecords = filtered.filter(function (r) { return r.cluster === selected.name; });
+      var tokenCounts = {};
+      selectedRecords.forEach(function (r) {
+        var seen = {};
+        (String(r.keyword || '').toLowerCase().match(/[a-z0-9]+/g) || []).forEach(function (t) {
+          if (['a','an','the','for','and','of','with','to','in','on'].indexOf(t) === -1 && !seen[t]) {
+            tokenCounts[t] = (tokenCounts[t] || 0) + 1; seen[t] = true;
+          }
+        });
+      });
+      var threshold = Math.max(1, Math.ceil(selectedRecords.length / 2));
+      var shared = Object.keys(tokenCounts).filter(function (t) { return tokenCounts[t] >= threshold; })
+        .sort(function (a, b) { return tokenCounts[b] - tokenCounts[a]; });
+      inspector.appendChild(el('div', '', 'Selected cluster: '));
+      inspector.lastChild.appendChild(el('strong', '', selected.name));
+      inspector.appendChild(el('div', 'panel-note', 'Common words: ' + (shared.join(', ') || 'none across at least half the members') +
+        ' · ' + selectedRecords.length + ' filtered keywords · ' + fmtNum(selected.volume) + ' combined reported volume'));
+      var list = el('div', 'cluster-keywords');
+      selectedRecords.slice().sort(function (a, b) { return (b.search_volume || 0) - (a.search_volume || 0); }).forEach(function (r) {
+        var chip = el('span', 'chip', r.keyword + ' · ' + fmtNum(r.search_volume));
+        chip.title = 'Opportunity ' + (isNum(r.opportunity_score) ? r.opportunity_score : '—') +
+          ((r.flags || []).length ? ' · ' + r.flags.join(', ') : '');
+        list.appendChild(chip);
+      });
+      inspector.appendChild(list);
+    }
+
+    rows.forEach(function (c) {
+      var card = el('article', 'cluster-card');
+      if (c.name === state.selectedCluster) card.classList.add('selected');
+      card.addEventListener('click', function () { state.selectedCluster = c.name; renderClusters(); });
+      var h3 = el('h3');
+      h3.appendChild(el('span', null, truncate(c.name, 40)));
+      h3.title = c.name;
+      h3.appendChild(el('span', 'badge ' + (c.recommended ? 'rec' : 'no'), c.recommended ? 'Recommended' : 'Not recommended'));
+      card.appendChild(h3);
+
+      var metrics = el('div', 'cluster-metrics');
+      metrics.appendChild(metricItem('Combined volume', fmtNum(c.volume), 'Sum of search volume of the keywords in this cluster'));
+      metrics.appendChild(metricItem('Keywords', String(c.count), 'Number of active keywords in this cluster'));
+      metrics.appendChild(metricItem('Avg CPC', fmtCPC(c.cpc), 'Average cost-per-click across cluster keywords'));
+      metrics.appendChild(metricItem('Comm. intent', fmtPct(c.ci), 'Average commercial-intent strength, 0–1'));
+      metrics.appendChild(metricBar('Trend score', c.trendScore, 1, 'Trend strength, 0–1 — higher is better', c.trendScore >= 0.5 ? 'var(--c-green)' : 'var(--c-red)'));
+      metrics.appendChild(metricBar('Opportunity', c.opportunity, 100, 'Opportunity score, 0–100', 'var(--c-primary)'));
+      card.appendChild(metrics);
+
+      var chips = el('div', 'cluster-keywords');
+      c.keywords.forEach(function (k) {
+        chips.appendChild(el('span', 'chip', k));
+      });
+      card.appendChild(chips);
+      grid.appendChild(card);
+    });
+  }
+
+  function metricItem(label, value, tip) {
+    var m = el('div', 'metric');
+    var l = el('div', 'metric-label tip', label);
+    l.setAttribute('data-tip', tip);
+    m.appendChild(l);
+    m.appendChild(el('div', 'metric-value', value));
+    return m;
+  }
+
+  function metricBar(label, value, max, tip, color) {
+    var m = el('div', 'metric');
+    var l = el('div', 'metric-label tip', label);
+    l.setAttribute('data-tip', tip);
+    m.appendChild(l);
+    var v = el('div', 'metric-value', isNum(value) ? (max === 1 ? fmtPct(value) : String(Math.round(value))) : '—');
+    m.appendChild(v);
+    var track = el('div', 'bar-track');
+    var fill = el('div', 'bar-fill');
+    fill.style.width = (isNum(value) ? Math.max(0, Math.min(1, value / max)) * 100 : 0) + '%';
+    fill.style.background = color;
+    track.appendChild(fill);
+    m.appendChild(track);
+    return m;
+  }
+
+  function exportCSV() {
+    var rows = activeRows(getFiltered()).slice().sort(compareRows);
+    if (!rows.length) return;
+    var cols = ['keyword', 'seed', 'cluster', 'search_volume', 'cpc', 'competition',
+      'competition_level', 'keyword_difficulty', 'main_intent', 'commercial_intent',
+      'trend_slope', 'flags', 'opportunity_score', 'recommended'];
+    var esc = function (v) {
+      if (v == null) return '';
+      var s = String(v);
+      if (/[",\n]/.test(s)) s = '"' + s.replace(/"/g, '""') + '"';
+      return s;
+    };
+    var lines = [cols.join(',')];
+    rows.forEach(function (r) {
+      lines.push(cols.map(function (c) {
+        if (c === 'flags') return esc((r.flags || []).join(';'));
+        return esc(r[c]);
+      }).join(','));
+    });
+    var blob = new Blob([lines.join('\n')], { type: 'text/csv;charset=utf-8' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'keywords-filtered.csv';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(a.href);
+  }
+
+  function syncThemeButton() {
+    var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+    $('theme-toggle').textContent = dark ? 'Light mode' : 'Dark mode';
+  }
+
+  function toggleTheme() {
+    var current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', current);
+    try { localStorage.setItem('dashboard-theme', current); } catch (e) {}
+    syncThemeButton();
+    renderAll();
+  }
+
+  function applyFilters() {
+    readFilters();
+    renderAll();
+  }
+
+  function resetFilters() {
+    var f = state.filters;
+    f.seed = ''; f.cluster = ''; f.intent = ''; f.minVolume = 0; f.minOpportunity = 0;
+    f.flags = []; f.recommendedOnly = false; f.search = '';
+    $('f-seed').value = ''; $('f-cluster').value = ''; $('f-intent').value = '';
+    $('f-minvol').value = ''; $('f-minopp').value = ''; $('f-rec').checked = false;
+    $('f-search').value = '';
+    $('f-flags').querySelectorAll('input:checked').forEach(function (i) { i.checked = false; });
+    applyFilters();
+  }
+
+  function renderAll() {
+    var filtered = getFiltered();
+    var empty = filtered.length === 0;
+    $('empty-state').classList.toggle('hidden', !empty);
+    $('export-btn').disabled = activeRows(filtered).length === 0;
+    renderCards();
+    renderDecisionPanels();
+    renderCharts();
+    renderTable();
+    renderClusters();
+  }
+
+  function wireEvents() {
+    ['f-seed', 'f-cluster', 'f-intent'].forEach(function (id) {
+      $(id).addEventListener('change', applyFilters);
+    });
+    ['f-minvol', 'f-minopp'].forEach(function (id) {
+      $(id).addEventListener('input', applyFilters);
+    });
+    $('f-rec').addEventListener('change', applyFilters);
+    $('f-search').addEventListener('input', applyFilters);
+    $('f-flags').addEventListener('change', applyFilters);
+    $('history-keyword').addEventListener('change', renderCharts);
+    $('f-reset').addEventListener('click', resetFilters);
+    $('empty-reset').addEventListener('click', resetFilters);
+    $('theme-toggle').addEventListener('click', toggleTheme);
+    $('export-btn').addEventListener('click', exportCSV);
+    $('retry-btn').addEventListener('click', loadData);
+    $('page-prev').addEventListener('click', function () {
+      if (state.page > 1) { state.page--; renderTable(); }
+    });
+    $('page-next').addEventListener('click', function () {
+      var pageCount = Math.max(1, Math.ceil(activeRows(getFiltered()).length / state.pageSize));
+      if (state.page < pageCount) { state.page++; renderTable(); }
+    });
+    $('page-size').addEventListener('change', function () {
+      state.pageSize = parseInt(this.value, 10) || 25;
+      state.page = 1;
+      renderTable();
+    });
+  }
+
+  function applySavedTheme() {
+    var saved = null;
+    try { saved = localStorage.getItem('dashboard-theme'); } catch (e) {}
+    if (!saved) {
+      saved = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.documentElement.setAttribute('data-theme', saved);
+    syncThemeButton();
+  }
+
+  var SCRIPT_CANDIDATES = {
+    chart: [
+      'https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js',
+      'vendor/chart.min.js'
+    ],
+    treemap: [
+      'https://cdn.jsdelivr.net/npm/chartjs-chart-treemap@2.0.0/dist/chartjs-chart-treemap.min.js',
+      'vendor/chartjs-chart-treemap.min.js'
+    ]
+  };
+
+  function loadScript(url) {
+    return new Promise(function (resolve, reject) {
+      var s = document.createElement('script');
+      s.src = url;
+      s.onload = function () { resolve(); };
+      s.onerror = function () {
+        if (s.parentNode) s.parentNode.removeChild(s);
+        reject(new Error('Could not load ' + url));
+      };
+      document.head.appendChild(s);
+    });
+  }
+
+  function loadFirst(candidates) {
+    return new Promise(function (resolve, reject) {
+      var i = 0;
+      var next = function () {
+        if (i >= candidates.length) return reject(new Error('none of ' + candidates.join(', ')));
+        loadScript(candidates[i++]).then(resolve, next);
+      };
+      next();
+    });
+  }
+
+  function loadLibraries() {
+    var p = (typeof Chart !== 'undefined') ? Promise.resolve() : loadFirst(SCRIPT_CANDIDATES.chart);
+    return p.then(function () {
+      if (treemapAvailable()) return;
+      return loadFirst(SCRIPT_CANDIDATES.treemap);
+    }).catch(function (err) {
+      showError('The chart library could not be loaded (' + err.message + '). Cards, table, filters and export still work; charts are disabled.');
+      return Promise.resolve();
+    });
+  }
+
+  function showError(msg) {
+    $('error-msg').textContent = msg;
+    $('error-banner').classList.remove('hidden');
+  }
+
+  function hideError() {
+    $('error-banner').classList.add('hidden');
+  }
+
+  function dataUrls(file) {
+    return [
+      'data/output/' + file,
+      '../data/output/' + file,
+      '/data/output/' + file
+    ];
+  }
+
+  function fetchFirst(urls) {
+    return new Promise(function (resolve, reject) {
+      var i = 0;
+      var lastErr = null;
+      var next = function () {
+        if (i >= urls.length) return reject(lastErr || new Error('all candidate URLs failed'));
+        var url = urls[i++];
+        fetch(url, { cache: 'no-store' }).then(function (r) {
+          if (!r.ok) {
+            lastErr = new Error(url + ' returned HTTP ' + r.status);
+            return next();
+          }
+          resolve(r);
+        }, function (err) {
+          lastErr = err;
+          next();
+        });
+      };
+      next();
+    });
+  }
+
+  function loadData() {
+    hideError();
+    if (location.protocol === 'file:') {
+      showError('This page must be served over HTTP — the browser blocks data loading from file:// URLs. From the project root run: python3 -m http.server 8080, then open http://localhost:8080/dashboard/');
+      $('last-updated').textContent = 'Last updated: —';
+      ['c-total', 'c-active', 'c-rec', 'c-clusters', 'c-volume', 'c-cpc'].forEach(function (id) {
+        $(id).textContent = '—';
+      });
+      return;
+    }
+    var t0 = performance.now();
+    Promise.all([
+      fetchFirst(dataUrls('keywords.json')).then(function (r) { return r.json(); }),
+      fetchFirst(dataUrls('clusters.json')).then(function (r) { return r.json(); }),
+      fetchFirst(dataUrls('summary.json')).then(function (r) { return r.json(); }).catch(function () { return null; })
+    ]).then(function (res) {
+      state.keywords = Array.isArray(res[0]) ? res[0] : [];
+      state.clusters = Array.isArray(res[1]) ? res[1] : [];
+      state.summary = res[2] && typeof res[2] === 'object' ? res[2] : null;
+      if (!state.keywords.length && !state.clusters.length) {
+        throw new Error('both JSON files are empty or not arrays');
+      }
+      state.loadedAt = Date.now();
+      var ms = performance.now() - t0;
+      $('last-updated').textContent = 'Last updated: ' + state.loadedAt.toLocaleString() + ' (loaded in ' + Math.round(ms) + 'ms)';
+      populateFilterOptions();
+      renderAll();
+    }).catch(function (err) {
+      showError('Failed to load the data (' + (err && err.message || err) + '). Make sure the pipeline output files exist and serve the project root with: python3 -m http.server 8080, then open http://localhost:8080/dashboard/');
+      $('last-updated').textContent = 'Last updated: —';
+      ['c-total', 'c-active', 'c-rec', 'c-clusters', 'c-volume', 'c-cpc'].forEach(function (id) {
+        $(id).textContent = '—';
+      });
+    });
+  }
+
+  function surfaceRuntimeErrors() {
+    window.addEventListener('error', function (e) {
+      if (e && e.target && e.target.nodeType === 1) return;
+      if (e && e.message) showError('Unexpected error: ' + e.message);
+    });
+    window.addEventListener('unhandledrejection', function (e) {
+      var r = e && e.reason;
+      showError('Unhandled error: ' + (r && r.message || r));
+    });
+  }
+
+  function init() {
+    surfaceRuntimeErrors();
+    try { buildTableHead(); } catch (e) { showError('Table setup failed: ' + e.message); }
+    try { wireEvents(); } catch (e) { showError('Filter setup failed: ' + e.message); }
+    applySavedTheme();
+    loadLibraries().then(loadData);
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>

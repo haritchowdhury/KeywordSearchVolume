@@ -1,0 +1,1340 @@
+{
+  "version": "0.1.20260806",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "0.0527 sec.",
+  "cost": 0.01308,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "08121439-2208-0387-0000-187803efd8d9",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "0.0431 sec.",
+      "cost": 0.01308,
+      "result_count": 1,
+      "path": [
+        "v3",
+        "dataforseo_labs",
+        "google",
+        "related_keywords",
+        "live"
+      ],
+      "data": {
+        "api": "dataforseo_labs",
+        "function": "related_keywords",
+        "se_type": "google",
+        "location_name": "United States",
+        "language_name": "English",
+        "keyword": "running shoes",
+        "limit": 30
+      },
+      "result": [
+        {
+          "se_type": "google",
+          "seed_keyword": "running shoes",
+          "seed_keyword_data": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "total_count": 9,
+          "items_count": 9,
+          "items": [
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "running shoes",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-13 04:29:20 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.08,
+                  "search_volume": 368000,
+                  "low_top_of_page_bid": 0.46,
+                  "high_top_of_page_bid": 2.31,
+                  "categories": [
+                    10014,
+                    10014,
+                    10121,
+                    10657,
+                    13605,
+                    13616
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 201000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 246000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 246000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 301000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 246000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 246000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 246000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 301000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 368000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 550000
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -18,
+                    "quarterly": -18,
+                    "yearly": -55
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 43,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=running%20shoes&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "popular_products",
+                    "product_considerations",
+                    "organic",
+                    "local_pack",
+                    "people_also_ask",
+                    "perspectives",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 236,
+                  "last_updated_time": "2026-08-03 09:50:34 +00:00",
+                  "previous_updated_time": "2026-05-14 18:22:35 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 368.9,
+                  "dofollow": 204.9,
+                  "referring_pages": 264.8,
+                  "referring_domains": 96.8,
+                  "referring_main_domains": 87.3,
+                  "rank": 224.9,
+                  "main_domain_rank": 569.7,
+                  "last_updated_time": "2026-08-03 09:50:34 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 19:41:36 +00:00"
+                }
+              },
+              "depth": 0,
+              "related_keywords": [
+                "running shoes nike",
+                "running shoes men",
+                "running shoes women",
+                "running shoes for track",
+                "running shoes adidas",
+                "running shoes boys",
+                "running shoes new balance",
+                "running shoes black"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "running shoes new balance",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-13 18:55:36 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 0.62,
+                  "search_volume": 90500,
+                  "low_top_of_page_bid": 0.25,
+                  "high_top_of_page_bid": 0.99,
+                  "categories": [
+                    10014,
+                    10014,
+                    10021,
+                    10121,
+                    10177,
+                    10619,
+                    10657,
+                    11898,
+                    13605,
+                    13616
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 49500
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 60500
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 60500
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 74000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 49500
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 49500
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 60500
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 60500
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 49500
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 135000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 246000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 90500
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -18,
+                    "quarterly": -18,
+                    "yearly": -87
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "new balance running shoes",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 16,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=running%20shoes%20new%20balance&num=100&hl=en&gl=US&gws_rd=cr&ie=UTF-8&oe=UTF-8&glp=1&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "popular_products",
+                    "people_also_ask",
+                    "perspectives",
+                    "discussions_and_forums",
+                    "images",
+                    "people_also_search",
+                    "related_searches"
+                  ],
+                  "se_results_count": 207000000,
+                  "last_updated_time": "2025-06-14 10:45:17 +00:00",
+                  "previous_updated_time": "2024-09-14 21:23:38 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 48,
+                  "dofollow": 26.2,
+                  "referring_pages": 43.3,
+                  "referring_domains": 26.1,
+                  "referring_main_domains": 25,
+                  "rank": 83.5,
+                  "main_domain_rank": 531.1,
+                  "last_updated_time": "2025-06-14 10:45:17 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 19:09:43 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "nike running shoes",
+                "new balance 9060",
+                "new balance 530",
+                "new balance running shoes women",
+                "adidas running shoes",
+                "asics running shoes",
+                "new balance fresh foam",
+                "new balance fuelcell"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "running shoes women",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-13 14:37:45 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.14,
+                  "search_volume": 9900,
+                  "low_top_of_page_bid": 0.41,
+                  "high_top_of_page_bid": 1.86,
+                  "categories": [
+                    10014,
+                    10121,
+                    10657
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 12100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 12100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 8100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 9900
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 0,
+                    "yearly": 0
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "women's running shoes",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 30,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=running%20shoes%20women&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "popular_products",
+                    "organic",
+                    "product_considerations",
+                    "perspectives",
+                    "local_pack",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 266,
+                  "last_updated_time": "2026-07-30 11:03:06 +00:00",
+                  "previous_updated_time": "2026-05-15 11:25:00 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 138.9,
+                  "dofollow": 80.6,
+                  "referring_pages": 107.2,
+                  "referring_domains": 44.2,
+                  "referring_main_domains": 43.6,
+                  "rank": 170.4,
+                  "main_domain_rank": 493,
+                  "last_updated_time": "2026-07-30 11:03:09 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 18:57:48 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "running shoes women nike",
+                "running shoes women new balance",
+                "running shoes women adidas",
+                "running shoes women sale",
+                "running shoes women black",
+                "nike women's running shoes sale",
+                "running shoes women brooks",
+                "running shoes women hoka"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "running shoes men",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-12 07:17:03 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.23,
+                  "search_volume": 8100,
+                  "low_top_of_page_bid": 0.39,
+                  "high_top_of_page_bid": 1.89,
+                  "categories": [
+                    10014,
+                    10014,
+                    10121,
+                    10657,
+                    13605,
+                    13616
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 8100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 8100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 12100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 8100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 8100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 6600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 6600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 8100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 6600
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": -18,
+                    "yearly": 0
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "shoes men running",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 38,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=running%20shoes%20men&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "popular_products",
+                    "organic",
+                    "product_considerations",
+                    "perspectives",
+                    "people_also_ask",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 274,
+                  "last_updated_time": "2026-07-30 12:11:08 +00:00",
+                  "previous_updated_time": "2026-05-15 13:24:16 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 175.9,
+                  "dofollow": 81.1,
+                  "referring_pages": 99.9,
+                  "referring_domains": 33.6,
+                  "referring_main_domains": 32.9,
+                  "rank": 159.3,
+                  "main_domain_rank": 531.2,
+                  "last_updated_time": "2026-07-30 12:11:09 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 20:19:12 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "nike running shoes men",
+                "running shoes men new balance",
+                "adidas running shoes men",
+                "running shoes men best",
+                "running shoes men under armour",
+                "nike men's running shoes sale",
+                "running shoes men reddit",
+                "running shoes men hoka"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "running shoes nike",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-12 22:23:45 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 0.66,
+                  "search_volume": 6600,
+                  "low_top_of_page_bid": 0.39,
+                  "high_top_of_page_bid": 1.12,
+                  "categories": [
+                    10021,
+                    10177,
+                    10619
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 5400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 5400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 6600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 8100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 6600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 6600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 6600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 6600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 5400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 6600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 6600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 5400
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": -18,
+                    "yearly": 0
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "nike shoes running",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 34,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=running%20shoes%20nike&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "popular_products",
+                    "perspectives",
+                    "people_also_ask",
+                    "local_pack",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 211,
+                  "last_updated_time": "2026-07-30 14:07:43 +00:00",
+                  "previous_updated_time": "2026-05-15 18:03:05 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 1279.5,
+                  "dofollow": 1200.8,
+                  "referring_pages": 1237.1,
+                  "referring_domains": 93,
+                  "referring_main_domains": 87,
+                  "rank": 162.2,
+                  "main_domain_rank": 567.4,
+                  "last_updated_time": "2026-07-30 14:07:43 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 18:56:18 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "running shoes nike men",
+                "running shoes nike women",
+                "nike running shoes original",
+                "nike running shoes black",
+                "running shoes nike pink",
+                "running shoes nike vomero",
+                "running shoes nike kids",
+                "running shoes nike pegasus"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "running shoes for track",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-16 06:23:41 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 0.65,
+                  "search_volume": 4400,
+                  "low_top_of_page_bid": 0.28,
+                  "high_top_of_page_bid": 1.08,
+                  "categories": [
+                    10014,
+                    13605,
+                    13616
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 1300
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 5400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 14800
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 1600
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -46,
+                    "quarterly": -76,
+                    "yearly": -32
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "track shoes for running",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 0,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=running%20shoes%20for%20track&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "people_also_search",
+                    "popular_products",
+                    "perspectives",
+                    "discussions_and_forums",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 89100000,
+                  "last_updated_time": "2026-03-13 06:53:46 +00:00",
+                  "previous_updated_time": "2025-08-02 02:15:50 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 91.2,
+                  "dofollow": 58.4,
+                  "referring_pages": 80.7,
+                  "referring_domains": 47.5,
+                  "referring_main_domains": 41.4,
+                  "rank": 59.1,
+                  "main_domain_rank": 494.5,
+                  "last_updated_time": "2026-03-13 06:53:46 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 20:01:43 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "best running shoes for track practice",
+                "running shoes for track no spikes",
+                "best running shoes for track no spikes",
+                "nike track shoes no spikes",
+                "spikes shoes for track",
+                "nike running shoes for track",
+                "running shoes for track men",
+                "running shoes for track kids"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "running shoes black",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-11 20:23:14 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.03,
+                  "search_volume": 1900,
+                  "low_top_of_page_bid": 0.48,
+                  "high_top_of_page_bid": 2.14,
+                  "categories": [
+                    10021,
+                    10177,
+                    10619
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 1300
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 3600
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": -16,
+                    "yearly": -33
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "black shoes for running",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 0,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=running%20shoes%20black&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "popular_products",
+                    "organic",
+                    "images",
+                    "perspectives",
+                    "related_searches"
+                  ],
+                  "se_results_count": 224,
+                  "last_updated_time": "2026-06-30 12:05:11 +00:00",
+                  "previous_updated_time": "2026-03-02 19:08:04 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 2.3,
+                  "dofollow": 2.2,
+                  "referring_pages": 2.2,
+                  "referring_domains": 1.8,
+                  "referring_main_domains": 1.8,
+                  "rank": 6.3,
+                  "main_domain_rank": 587.9,
+                  "last_updated_time": "2026-06-30 12:05:46 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 19:36:34 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "running shoes black men",
+                "best running shoes black",
+                "running shoes black nike",
+                "nike black running shoes women's",
+                "running shoes black women",
+                "running shoes black and white",
+                "nike running shoes black and white",
+                "running shoes black new balance"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "running shoes adidas",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-13 17:16:36 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 0.57,
+                  "search_volume": 1600,
+                  "low_top_of_page_bid": 0.2,
+                  "high_top_of_page_bid": 0.73,
+                  "categories": [
+                    10021,
+                    10177,
+                    10619
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 1300
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 1300
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 1300
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 1300
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 1600
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 0,
+                    "yearly": 23
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "adidas running shoes",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 15,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=running%20shoes%20adidas&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "popular_products",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 261,
+                  "last_updated_time": "2026-07-31 19:00:03 +00:00",
+                  "previous_updated_time": "2026-05-17 23:10:37 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 227.6,
+                  "dofollow": 146.9,
+                  "referring_pages": 168.2,
+                  "referring_domains": 25.1,
+                  "referring_main_domains": 23.5,
+                  "rank": 121.1,
+                  "main_domain_rank": 545.4,
+                  "last_updated_time": "2026-07-31 19:00:03 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 19:37:27 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "adidas running shoes ultra boost",
+                "running shoes adidas men",
+                "running shoes adidas women",
+                "running shoes adidas evo",
+                "running shoes adidas kids",
+                "adidas shoes running adizero",
+                "adidas running shoes list",
+                "running shoes adidas pink"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "running shoes boys",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-06-12 16:35:38 +00:00",
+                  "competition": null,
+                  "competition_level": null,
+                  "cpc": null,
+                  "search_volume": null,
+                  "low_top_of_page_bid": null,
+                  "high_top_of_page_bid": null,
+                  "categories": [
+                    10014,
+                    10121,
+                    10657
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 0
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 0
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 0
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 0
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 0
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 0
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 0
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 0
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 0
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 0
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 0
+                    },
+                    {
+                      "year": 2025,
+                      "month": 6,
+                      "search_volume": 0
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 0,
+                    "yearly": 0
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "boys running shoes",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": null,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": null,
+                "avg_backlinks_info": null,
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 20:03:05 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4382 @@
+{
+  "version": "0.1.20260806",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "0.1476 sec.",
+  "cost": 0.0156,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "08130616-2208-0387-0000-60a011d729f6",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "0.0828 sec.",
+      "cost": 0.0156,
+      "result_count": 1,
+      "path": [
+        "v3",
+        "dataforseo_labs",
+        "google",
+        "related_keywords",
+        "live"
+      ],
+      "data": {
+        "api": "dataforseo_labs",
+        "function": "related_keywords",
+        "se_type": "google",
+        "location_name": "United States",
+        "language_name": "English",
+        "keyword": "online clothing ",
+        "limit": 30,
+        "depth": 2
+      },
+      "result": [
+        {
+          "se_type": "google",
+          "seed_keyword": "online clothing",
+          "seed_keyword_data": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "total_count": 43,
+          "items_count": 30,
+          "items": [
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "macy's",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-12 17:17:24 +00:00",
+                  "competition": 0.26,
+                  "competition_level": "LOW",
+                  "cpc": 0.21,
+                  "search_volume": 11100000,
+                  "low_top_of_page_bid": 0.84,
+                  "high_top_of_page_bid": 1.45,
+                  "categories": [
+                    13575
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 9140000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 11100000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 11100000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 11100000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 9140000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 11100000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 20400000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 20400000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 11100000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 9140000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 11100000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 11100000
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -18,
+                    "quarterly": -18,
+                    "yearly": -18
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "macys",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 61,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=macy%27s&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "local_pack",
+                    "people_also_ask",
+                    "popular_products",
+                    "perspectives",
+                    "related_searches",
+                    "knowledge_graph",
+                    "images"
+                  ],
+                  "se_results_count": 215,
+                  "last_updated_time": "2026-07-30 03:29:25 +00:00",
+                  "previous_updated_time": "2026-05-14 18:11:27 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 8677.6,
+                  "dofollow": 5880.4,
+                  "referring_pages": 7362.5,
+                  "referring_domains": 1350.9,
+                  "referring_main_domains": 1285.3,
+                  "rank": 247.6,
+                  "main_domain_rank": 708.3,
+                  "last_updated_time": "2026-07-30 03:29:25 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "navigational",
+                  "foreign_intent": [
+                    "informational"
+                  ],
+                  "last_updated_time": "2026-05-05 01:52:51 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "macy's com login",
+                "macy's #clearance sale online today",
+                "macy's department store locations",
+                "macy's com online",
+                "macy's store",
+                "macy's com login payment",
+                "macy's usa sale",
+                "macy's near me"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "shein",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-16 01:59:03 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 0.42,
+                  "search_volume": 9140000,
+                  "low_top_of_page_bid": 45,
+                  "high_top_of_page_bid": 999,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 9140000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 9140000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 9140000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 11100000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 9140000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 9140000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 7480000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 9140000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 9140000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 9140000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 11100000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 11100000
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 0,
+                    "yearly": -18
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 32,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=shein&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "people_also_ask",
+                    "top_stories",
+                    "video",
+                    "perspectives",
+                    "related_searches",
+                    "knowledge_graph"
+                  ],
+                  "se_results_count": 170,
+                  "last_updated_time": "2026-07-30 03:27:24 +00:00",
+                  "previous_updated_time": "2026-05-14 18:12:50 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 563.1,
+                  "dofollow": 278.6,
+                  "referring_pages": 453.6,
+                  "referring_domains": 206.2,
+                  "referring_main_domains": 189.2,
+                  "rank": 155.2,
+                  "main_domain_rank": 921.1,
+                  "last_updated_time": "2026-07-30 03:27:24 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "navigational",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-28 21:48:16 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "shein kuwait",
+                "shein usa",
+                "shein asia",
+                "shein login",
+                "shein dubai",
+                "shein download",
+                "shein app",
+                "shein europe"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "asos",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-12 19:23:19 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 0.52,
+                  "search_volume": 673000,
+                  "low_top_of_page_bid": 0.01,
+                  "high_top_of_page_bid": 1.22,
+                  "categories": [
+                    10021
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 673000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 673000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 673000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 550000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 673000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 673000
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": -18,
+                    "yearly": -18
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 48,
+                  "detected_language": "ca",
+                  "is_another_language": true
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=asos&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "people_also_ask",
+                    "video",
+                    "related_searches",
+                    "knowledge_graph"
+                  ],
+                  "se_results_count": 60400000,
+                  "last_updated_time": "2026-05-14 18:19:16 +00:00",
+                  "previous_updated_time": "2026-03-11 22:26:06 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 642.5,
+                  "dofollow": 313,
+                  "referring_pages": 531.7,
+                  "referring_domains": 168.9,
+                  "referring_main_domains": 157.5,
+                  "rank": 197.5,
+                  "main_domain_rank": 746.6,
+                  "last_updated_time": "2026-05-14 18:19:17 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": [
+                    "navigational",
+                    "informational"
+                  ],
+                  "last_updated_time": "2026-04-29 00:34:22 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "asos india",
+                "asos us",
+                "asos germany",
+                "asos italy",
+                "asos uk sale",
+                "asos near me",
+                "asos sale",
+                "asos us sale"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "women's clothing",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-10 04:54:39 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.56,
+                  "search_volume": 301000,
+                  "low_top_of_page_bid": 0.64,
+                  "high_top_of_page_bid": 5.75,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 301000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 368000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 301000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 301000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 246000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 246000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 301000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 368000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 368000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 368000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 368000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 246000
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -18,
+                    "quarterly": 0,
+                    "yearly": -18
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 44,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=women%27s%20clothing&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "popular_products",
+                    "organic",
+                    "local_pack",
+                    "people_also_ask",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 203,
+                  "last_updated_time": "2026-07-30 03:43:09 +00:00",
+                  "previous_updated_time": "2026-05-14 18:18:51 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 2016,
+                  "dofollow": 1331.2,
+                  "referring_pages": 1869.4,
+                  "referring_domains": 188.7,
+                  "referring_main_domains": 175.3,
+                  "rank": 259.1,
+                  "main_domain_rank": 436,
+                  "last_updated_time": "2026-07-30 03:43:15 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "informational",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-05 16:39:35 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "women's clothing online",
+                "women's clothing trendy",
+                "women's clothing business casual",
+                "trendy women's clothing online",
+                "women's clothing nearby",
+                "women's clothing online sale",
+                "women's clothing walmart",
+                "nordstrom women's clothing new arrivals"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "nasty gal",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-12 01:12:44 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 0.26,
+                  "search_volume": 49500,
+                  "low_top_of_page_bid": 0.16,
+                  "high_top_of_page_bid": 0.55,
+                  "categories": [
+                    10008
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 40500
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 40500
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 49500
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 49500
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 49500
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 60500
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 49500
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 60500
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 49500
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 60500
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 74000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 74000
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": -18,
+                    "yearly": -33
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 34,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=nasty%20gal&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "people_also_ask",
+                    "compare_sites",
+                    "video",
+                    "images",
+                    "related_searches"
+                  ],
+                  "se_results_count": 166,
+                  "last_updated_time": "2026-07-30 04:55:10 +00:00",
+                  "previous_updated_time": "2026-05-14 19:21:29 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 1635.4,
+                  "dofollow": 1192.2,
+                  "referring_pages": 1370.2,
+                  "referring_domains": 192.9,
+                  "referring_main_domains": 175.8,
+                  "rank": 180.1,
+                  "main_domain_rank": 751.8,
+                  "last_updated_time": "2026-07-30 04:55:12 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "informational",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 16:02:19 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "nasty gal owner",
+                "nasty gal vintage",
+                "nasty gal meaning",
+                "nasty gal song",
+                "nasty gal wiki",
+                "nasty gal shoes",
+                "nasty gal europe",
+                "nasty gal app"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "women online clothing",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-13 16:40:33 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 2.33,
+                  "search_volume": 14800,
+                  "low_top_of_page_bid": 0.84,
+                  "high_top_of_page_bid": 5.92,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 12100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 12100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 14800
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 12100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 12100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 12100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 14800
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 18100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 27100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 14800
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -18,
+                    "quarterly": -18,
+                    "yearly": -33
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "online clothing for women",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 43,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=women%20online%20clothing&num=100&hl=en&gl=US&gws_rd=cr&ie=UTF-8&oe=UTF-8&glp=1&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "explore_brands",
+                    "popular_products",
+                    "discussions_and_forums",
+                    "related_searches"
+                  ],
+                  "se_results_count": 962000000,
+                  "last_updated_time": "2024-10-04 13:23:46 +00:00",
+                  "previous_updated_time": "2024-08-25 08:10:47 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 5539.4,
+                  "dofollow": 3216.2,
+                  "referring_pages": 3927.3,
+                  "referring_domains": 727.9,
+                  "referring_main_domains": 640.8,
+                  "rank": 199.9,
+                  "main_domain_rank": 445.6,
+                  "last_updated_time": "2024-10-04 13:24:59 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-30 01:13:05 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "top 10 women's online clothing stores",
+                "best online clothing stores",
+                "asos",
+                "trendy clothing websites",
+                "women's clothing",
+                "shein",
+                "nasty gal"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "women online clothing store",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-14 04:04:02 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.94,
+                  "search_volume": 12100,
+                  "low_top_of_page_bid": 0.76,
+                  "high_top_of_page_bid": 6.14,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 5400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 5400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 6600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 22200
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 60500
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 8100
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 0,
+                    "yearly": -19
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "online women clothing stores",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 30,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=women%20online%20clothing%20store&num=100&hl=en&gl=US&gws_rd=cr&ie=UTF-8&oe=UTF-8&glp=1&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "explore_brands",
+                    "popular_products",
+                    "video",
+                    "images",
+                    "related_searches"
+                  ],
+                  "se_results_count": 493000000,
+                  "last_updated_time": "2024-09-15 03:09:37 +00:00",
+                  "previous_updated_time": "2024-08-04 15:18:11 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 5849,
+                  "dofollow": 3495.4,
+                  "referring_pages": 4218.7,
+                  "referring_domains": 760.7,
+                  "referring_main_domains": 670.3,
+                  "rank": 238,
+                  "main_domain_rank": 388.9,
+                  "last_updated_time": "2024-09-15 03:09:37 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": [
+                    "navigational"
+                  ],
+                  "last_updated_time": "2026-04-30 01:24:24 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "trendy online boutiques",
+                "best online women's boutiques",
+                "best online clothing boutiques",
+                "fashion nova",
+                "online boutiques for women",
+                "trendy plus size clothing"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "online clothing store",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-12 00:37:59 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 2.43,
+                  "search_volume": 9900,
+                  "low_top_of_page_bid": 1.14,
+                  "high_top_of_page_bid": 6.19,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 8100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 12100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 8100
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 8100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 9900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 12100
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 14800
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 14800
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -18,
+                    "quarterly": -18,
+                    "yearly": -33
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "online clothing stores",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 92,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=online%20clothing%20store&num=100&hl=en&gl=US&gws_rd=cr&ie=UTF-8&oe=UTF-8&glp=1&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "explore_brands",
+                    "images",
+                    "related_searches"
+                  ],
+                  "se_results_count": 6730000000,
+                  "last_updated_time": "2024-09-14 22:12:52 +00:00",
+                  "previous_updated_time": "2024-08-04 10:22:09 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 81037.3,
+                  "dofollow": 29666.4,
+                  "referring_pages": 38899.1,
+                  "referring_domains": 2528,
+                  "referring_main_domains": 2293.7,
+                  "rank": 249.5,
+                  "main_domain_rank": 535.6,
+                  "last_updated_time": "2024-09-14 22:12:52 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 17:22:24 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "women online clothing store",
+                "clothing shop online wholesale",
+                "popular clothing stores online",
+                "online clothing stores for men",
+                "macy's",
+                "asos"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "alternative clothing brand",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-11 07:23:36 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 0.93,
+                  "search_volume": 2900,
+                  "low_top_of_page_bid": 0.37,
+                  "high_top_of_page_bid": 3.42,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 1900
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 0,
+                    "yearly": 53
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "alternative clothing brands",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 54,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=alternative%20clothing%20brand&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "perspectives",
+                    "popular_products",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 376000000,
+                  "last_updated_time": "2026-03-14 11:21:35 +00:00",
+                  "previous_updated_time": "2026-01-28 11:01:06 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 133,
+                  "dofollow": 65.7,
+                  "referring_pages": 115.8,
+                  "referring_domains": 48.5,
+                  "referring_main_domains": 47.2,
+                  "rank": 92.1,
+                  "main_domain_rank": 478.1,
+                  "last_updated_time": "2026-03-14 11:21:35 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-28 23:50:31 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "women alternative clothing brand",
+                "alternative clothing stores online",
+                "men alternative clothing brand",
+                "grunge clothing brands",
+                "goth clothing brands",
+                "goth clothing stores online",
+                "alternative clothing brands reddit",
+                "emo clothing brands"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "top 10 women's online clothing stores",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-16 10:55:02 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.86,
+                  "search_volume": 2900,
+                  "low_top_of_page_bid": 0.49,
+                  "high_top_of_page_bid": 4.38,
+                  "categories": [
+                    13575
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 4400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 1900
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -17,
+                    "quarterly": -17,
+                    "yearly": 50
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 41,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=top%2010%20women%27s%20online%20clothing%20stores&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "related_searches"
+                  ],
+                  "se_results_count": 130,
+                  "last_updated_time": "2026-07-30 22:45:15 +00:00",
+                  "previous_updated_time": "2026-05-17 11:53:41 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 9536.5,
+                  "dofollow": 5676.6,
+                  "referring_pages": 6303.4,
+                  "referring_domains": 267.3,
+                  "referring_main_domains": 248.2,
+                  "rank": 231.5,
+                  "main_domain_rank": 522.6,
+                  "last_updated_time": "2026-07-30 22:45:16 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-04 02:04:16 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "top 10 women's online clothing stores in usa",
+                "top 10 women's online clothing stores worldwide",
+                "top 10 women's online clothing stores affordable",
+                "top 10 online clothing stores",
+                "european clothing stores online",
+                "top 10 online clothing stores in usa",
+                "best european clothing stores online",
+                "where can i buy good quality clothes online"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "online clothing stores for men",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-11 20:20:59 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 3.77,
+                  "search_volume": 2400,
+                  "low_top_of_page_bid": 1.33,
+                  "high_top_of_page_bid": 7.51,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 2900
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -21,
+                    "quarterly": -21,
+                    "yearly": -34
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 22,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=online%20clothing%20stores%20for%20men&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "popular_products"
+                  ],
+                  "se_results_count": 145,
+                  "last_updated_time": "2026-05-17 08:24:13 +00:00",
+                  "previous_updated_time": "2026-03-14 00:49:18 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 341.9,
+                  "dofollow": 298.4,
+                  "referring_pages": 319.8,
+                  "referring_domains": 72.8,
+                  "referring_main_domains": 65.8,
+                  "rank": 115.1,
+                  "main_domain_rank": 529.8,
+                  "last_updated_time": "2026-05-17 08:24:14 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 18:08:37 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "best online clothing stores for men",
+                "cheap online clothing stores for men",
+                "stylish men's clothing",
+                "stylish men's clothing online",
+                "stylish men's clothing brands",
+                "top 5 men's online clothing stores",
+                "stylish men's clothing stores",
+                "men's clothing business casual"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "best online clothing stores",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-13 10:08:59 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 3.67,
+                  "search_volume": 2400,
+                  "low_top_of_page_bid": 1.27,
+                  "high_top_of_page_bid": 7.95,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 3600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 3600
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": -21,
+                    "yearly": -47
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "best online clothing store",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 39,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=best%20online%20clothing%20stores&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "related_searches"
+                  ],
+                  "se_results_count": 119,
+                  "last_updated_time": "2026-05-17 10:56:12 +00:00",
+                  "previous_updated_time": "2026-03-13 11:03:08 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 2951.7,
+                  "dofollow": 2309.4,
+                  "referring_pages": 2579.6,
+                  "referring_domains": 364.1,
+                  "referring_main_domains": 336.8,
+                  "rank": 183.8,
+                  "main_domain_rank": 492.2,
+                  "last_updated_time": "2026-05-17 10:56:14 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 02:20:34 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "best online clothing stores near california",
+                "best online clothing stores near texas",
+                "best online clothing stores usa",
+                "top 10 online clothing stores",
+                "best online clothing stores reddit",
+                "affordable clothing brands online",
+                "top 10 online clothing stores in usa",
+                "best european clothing stores online"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "online clothing",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-15 04:13:04 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 3,
+                  "search_volume": 1900,
+                  "low_top_of_page_bid": 1.17,
+                  "high_top_of_page_bid": 6.8,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 2400
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -16,
+                    "quarterly": -16,
+                    "yearly": -33
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "clothing online",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 97,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=online%20clothing&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "ai_overview",
+                    "popular_products",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 206,
+                  "last_updated_time": "2026-07-31 13:42:37 +00:00",
+                  "previous_updated_time": "2026-05-17 13:11:43 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 22251.1,
+                  "dofollow": 15428.8,
+                  "referring_pages": 16937.7,
+                  "referring_domains": 1593.5,
+                  "referring_main_domains": 1500.1,
+                  "rank": 437.2,
+                  "main_domain_rank": 481.9,
+                  "last_updated_time": "2026-07-31 13:42:38 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 17:45:10 +00:00"
+                }
+              },
+              "depth": 0,
+              "related_keywords": [
+                "online clothing store",
+                "affordable clothing brands online",
+                "european clothing stores online",
+                "online clothing stores alternative",
+                "top 10 online clothing stores",
+                "women online clothing",
+                "best online clothing stores usa",
+                "where to buy cheap clothes online"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "affordable clothing brands online",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-14 02:37:11 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.94,
+                  "search_volume": 1900,
+                  "low_top_of_page_bid": 0.78,
+                  "high_top_of_page_bid": 4.41,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 1900
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 0,
+                    "yearly": 50
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 32,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=affordable%20clothing%20brands%20online&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "video",
+                    "perspectives",
+                    "popular_products",
+                    "related_searches"
+                  ],
+                  "se_results_count": 177,
+                  "last_updated_time": "2026-05-17 22:36:01 +00:00",
+                  "previous_updated_time": "2026-03-14 21:07:09 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 370.2,
+                  "dofollow": 216.8,
+                  "referring_pages": 286.7,
+                  "referring_domains": 124.9,
+                  "referring_main_domains": 115.8,
+                  "rank": 135.6,
+                  "main_domain_rank": 585.9,
+                  "last_updated_time": "2026-05-17 22:42:36 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 00:28:16 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "where to buy cheap clothes online",
+                "affordable clothing brands online usa",
+                "best affordable clothing brands online",
+                "high quality affordable clothing brands",
+                "top 10 online clothing stores",
+                "women affordable clothing brands online",
+                "european clothing stores online",
+                "cheap online clothing stores with fast shipping"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "where to buy cheap clothes online",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-14 16:46:42 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 3.71,
+                  "search_volume": 1900,
+                  "low_top_of_page_bid": 1.27,
+                  "high_top_of_page_bid": 7.23,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 2400
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -21,
+                    "quarterly": -21,
+                    "yearly": 0
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "where to buy clothes cheap online",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 15,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=where%20to%20buy%20cheap%20clothes%20online&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "popular_products",
+                    "people_also_ask",
+                    "perspectives",
+                    "related_searches"
+                  ],
+                  "se_results_count": 130,
+                  "last_updated_time": "2026-06-30 11:30:55 +00:00",
+                  "previous_updated_time": "2026-03-29 23:44:05 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 7957.6,
+                  "dofollow": 5555.7,
+                  "referring_pages": 5986.9,
+                  "referring_domains": 537.7,
+                  "referring_main_domains": 508.2,
+                  "rank": 115.3,
+                  "main_domain_rank": 578.7,
+                  "last_updated_time": "2026-06-30 11:31:27 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-30 02:10:40 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "where to buy cheap clothes online near california",
+                "where to buy cheap clothes online near texas",
+                "where to buy cheap clothes online free shipping",
+                "affordable clothing brands online",
+                "where to buy cheap clothes online reddit",
+                "cheap clothes under $5",
+                "where to buy cheap clothes online near me",
+                "where to buy cheap clothes in person"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "alternative clothing stores near me",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-15 15:03:43 +00:00",
+                  "competition": 0.65,
+                  "competition_level": "MEDIUM",
+                  "cpc": 0.73,
+                  "search_volume": 1900,
+                  "low_top_of_page_bid": 0.5,
+                  "high_top_of_page_bid": 3.6,
+                  "categories": [
+                    13575,
+                    13719
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 1600
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 1900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 2400
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 2900
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 2400
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": 0,
+                    "yearly": 26
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 13,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=alternative%20clothing%20stores%20near%20me&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "local_pack",
+                    "people_also_ask",
+                    "organic",
+                    "related_searches"
+                  ],
+                  "se_results_count": 169,
+                  "last_updated_time": "2026-05-17 22:34:40 +00:00",
+                  "previous_updated_time": "2026-03-14 20:57:32 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 555,
+                  "dofollow": 360.6,
+                  "referring_pages": 404.7,
+                  "referring_domains": 50,
+                  "referring_main_domains": 42.8,
+                  "rank": 108.4,
+                  "main_domain_rank": 560.4,
+                  "last_updated_time": "2026-05-17 22:40:59 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "navigational",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 14:13:58 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "alternative clothing near california",
+                "alternative clothing near texas",
+                "alternative clothing brand",
+                "alternative clothing stores online",
+                "best alternative clothing stores near me",
+                "goth clothing stores near me",
+                "goth clothing stores online",
+                "emo stores near me"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "popular clothing stores online",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-10 10:25:20 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.86,
+                  "search_volume": 880,
+                  "low_top_of_page_bid": 0.7,
+                  "high_top_of_page_bid": 5.45,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 1300
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 1300
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 880
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": -12,
+                    "yearly": 22
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "popular online clothing stores",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 75,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=popular%20clothing%20stores%20online&num=100&hl=en&gl=US&gws_rd=cr&ie=UTF-8&oe=UTF-8&glp=1&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "people_also_ask",
+                    "people_also_search",
+                    "discussions_and_forums",
+                    "perspectives",
+                    "images",
+                    "related_searches"
+                  ],
+                  "se_results_count": 871000000,
+                  "last_updated_time": "2025-05-12 01:36:22 +00:00",
+                  "previous_updated_time": "2024-10-13 00:13:19 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 57497.6,
+                  "dofollow": 26514.4,
+                  "referring_pages": 31511.8,
+                  "referring_domains": 2182.7,
+                  "referring_main_domains": 2054.3,
+                  "rank": 255,
+                  "main_domain_rank": 547.2,
+                  "last_updated_time": "2025-05-12 01:36:24 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 17:05:55 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "women popular clothing stores online",
+                "popular clothing stores online usa",
+                "men popular clothing stores online",
+                "most popular clothing stores online",
+                "top 10 women's online clothing stores",
+                "top 10 online clothing stores",
+                "asos",
+                "best cheap online clothing stores",
+                "nordstrom"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "top 10 online clothing stores",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-11 18:27:46 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.56,
+                  "search_volume": 720,
+                  "low_top_of_page_bid": 0.84,
+                  "high_top_of_page_bid": 4.48,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 1300
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 390
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -18,
+                    "quarterly": -28,
+                    "yearly": 85
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 12,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=top%2010%20online%20clothing%20stores&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "discussions_and_forums",
+                    "video",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 133,
+                  "last_updated_time": "2026-08-02 13:45:11 +00:00",
+                  "previous_updated_time": "2026-05-20 19:59:10 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 6671.8,
+                  "dofollow": 4283.2,
+                  "referring_pages": 4360.1,
+                  "referring_domains": 83.2,
+                  "referring_main_domains": 75.7,
+                  "rank": 111.6,
+                  "main_domain_rank": 506.1,
+                  "last_updated_time": "2026-08-02 13:47:03 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-30 00:43:50 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "top 10 online clothing stores in usa",
+                "top 10 online clothing stores for ladies",
+                "most popular clothing stores online",
+                "european clothing stores online",
+                "best online clothing stores usa",
+                "top 10 clothing stores in usa",
+                "affordable clothing brands online",
+                "top 10 online clothing stores for men"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "goth clothing stores online",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-10 06:46:44 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 0.84,
+                  "search_volume": 720,
+                  "low_top_of_page_bid": 0.31,
+                  "high_top_of_page_bid": 2.36,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 1000
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 720
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 23,
+                    "quarterly": -18,
+                    "yearly": 0
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 54,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=goth%20clothing%20stores%20online&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "ai_overview",
+                    "popular_products",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 200,
+                  "last_updated_time": "2026-08-02 17:28:35 +00:00",
+                  "previous_updated_time": "2026-05-21 01:03:32 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 1272.2,
+                  "dofollow": 382.9,
+                  "referring_pages": 1140.7,
+                  "referring_domains": 157.2,
+                  "referring_main_domains": 146.8,
+                  "rank": 241.8,
+                  "main_domain_rank": 331,
+                  "last_updated_time": "2026-08-02 17:30:48 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-28 06:08:02 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "goth clothing stores online usa",
+                "alternative clothing stores online",
+                "alternative clothing brand",
+                "best goth clothing stores online",
+                "women goth clothing stores online",
+                "emo clothing stores online",
+                "goth clothing stores online men",
+                "goth clothing stores near me"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "grunge clothing brands",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-15 15:16:09 +00:00",
+                  "competition": 0.99,
+                  "competition_level": "HIGH",
+                  "cpc": 1.32,
+                  "search_volume": 720,
+                  "low_top_of_page_bid": 0.37,
+                  "high_top_of_page_bid": 2.27,
+                  "categories": [
+                    10013,
+                    10109,
+                    13549,
+                    13554
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 720
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -19,
+                    "quarterly": -34,
+                    "yearly": -34
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 5,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=grunge%20clothing%20brands&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "discussions_and_forums",
+                    "video",
+                    "people_also_ask",
+                    "popular_products",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 219,
+                  "last_updated_time": "2026-05-20 21:11:09 +00:00",
+                  "previous_updated_time": "2026-03-17 11:14:16 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 121.9,
+                  "dofollow": 55.4,
+                  "referring_pages": 107.2,
+                  "referring_domains": 46.3,
+                  "referring_main_domains": 40.9,
+                  "rank": 75.3,
+                  "main_domain_rank": 535.2,
+                  "last_updated_time": "2026-05-20 21:13:58 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-27 21:27:56 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "y2k grunge clothing brands",
+                "grunge clothing brands affordable",
+                "best grunge clothing brands",
+                "grunge clothing brands men",
+                "grunge clothing brands women's",
+                "alternative clothing brand",
+                "goth clothing stores online",
+                "alternative clothing stores online"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "best online shopping sites for clothes",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-14 19:34:16 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 3.77,
+                  "search_volume": 590,
+                  "low_top_of_page_bid": 1.27,
+                  "high_top_of_page_bid": 6.77,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 880
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 320
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 0,
+                    "quarterly": -18,
+                    "yearly": 85
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "best sites for clothing shopping online",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 92,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=best%20online%20shopping%20sites%20for%20clothes&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "related_searches"
+                  ],
+                  "se_results_count": 612000000,
+                  "last_updated_time": "2025-10-24 13:19:35 +00:00",
+                  "previous_updated_time": "2025-08-27 06:07:54 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 26414.2,
+                  "dofollow": 17176.5,
+                  "referring_pages": 18706.9,
+                  "referring_domains": 1786.7,
+                  "referring_main_domains": 1691.1,
+                  "rank": 299.7,
+                  "main_domain_rank": 528.7,
+                  "last_updated_time": "2025-10-24 13:19:36 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 02:35:25 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "best online shopping sites for clothes in usa",
+                "best online shopping sites for clothes women's",
+                "top 10 online clothing stores",
+                "where to buy cheap clothes online",
+                "affordable clothing brands online",
+                "best european clothing stores online",
+                "top 10 online shopping sites in usa",
+                "cheap online clothing stores with fast shipping"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "online clothing stores alternative",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-10 04:17:30 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.21,
+                  "search_volume": 480,
+                  "low_top_of_page_bid": 0.53,
+                  "high_top_of_page_bid": 4.62,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 390
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -19,
+                    "quarterly": -19,
+                    "yearly": 23
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "alternative clothing stores online",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 7,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=online%20clothing%20stores%20alternative&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "ai_overview",
+                    "discussions_and_forums",
+                    "video",
+                    "related_searches"
+                  ],
+                  "se_results_count": 198,
+                  "last_updated_time": "2026-05-21 20:44:57 +00:00",
+                  "previous_updated_time": "2025-12-14 06:27:59 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 127.9,
+                  "dofollow": 60.4,
+                  "referring_pages": 113.1,
+                  "referring_domains": 48.4,
+                  "referring_main_domains": 42.7,
+                  "rank": 93.2,
+                  "main_domain_rank": 457,
+                  "last_updated_time": "2026-05-21 20:44:57 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 19:30:35 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "online clothing stores alternative reddit",
+                "best online clothing stores alternative",
+                "alternative clothing brand",
+                "cheap online clothing stores alternative",
+                "women online clothing stores alternative",
+                "goth clothing stores online",
+                "alternative clothing stores near me",
+                "grunge clothing brands"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "cheap online clothing stores with fast shipping",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-13 21:37:24 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 2.84,
+                  "search_volume": 480,
+                  "low_top_of_page_bid": 1.32,
+                  "high_top_of_page_bid": 5.92,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 390
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -33,
+                    "quarterly": -18,
+                    "yearly": -33
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 24,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=cheap%20online%20clothing%20stores%20with%20fast%20shipping&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "discussions_and_forums",
+                    "related_searches"
+                  ],
+                  "se_results_count": 120,
+                  "last_updated_time": "2026-08-03 20:07:09 +00:00",
+                  "previous_updated_time": "2026-05-21 15:55:27 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 6968,
+                  "dofollow": 4461.8,
+                  "referring_pages": 4596.1,
+                  "referring_domains": 185.7,
+                  "referring_main_domains": 171.4,
+                  "rank": 154.1,
+                  "main_domain_rank": 612,
+                  "last_updated_time": "2026-08-03 20:08:17 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 04:59:05 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "cheap online clothing stores with fast shipping reddit",
+                "affordable clothing brands online",
+                "cheap online clothing stores with fast shipping usa",
+                "cheap online clothing stores with fast shipping near me",
+                "where to buy cheap clothes online",
+                "cheap clothes under $5",
+                "men cheap online clothing stores with fast shipping",
+                "cheap clothes online free shipping"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "european clothing stores online",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-14 08:04:39 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.09,
+                  "search_volume": 390,
+                  "low_top_of_page_bid": 0.59,
+                  "high_top_of_page_bid": 3.52,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 720
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 320
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -18,
+                    "quarterly": -18,
+                    "yearly": 51
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "european online clothing stores",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 33,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=european%20clothing%20stores%20online&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "popular_products",
+                    "related_searches"
+                  ],
+                  "se_results_count": 162,
+                  "last_updated_time": "2026-07-04 05:18:53 +00:00",
+                  "previous_updated_time": "2026-07-04 02:09:23 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 62588.8,
+                  "dofollow": 57886.3,
+                  "referring_pages": 59410.1,
+                  "referring_domains": 1920,
+                  "referring_main_domains": 1821,
+                  "rank": 191.5,
+                  "main_domain_rank": 460.5,
+                  "last_updated_time": "2026-07-04 05:19:40 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 14:03:22 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "best european clothing stores online",
+                "european clothing stores online usa",
+                "women european clothing stores online",
+                "cheap european clothing stores online",
+                "affordable clothing brands online",
+                "where to buy cheap clothes online",
+                "top 10 online clothing stores",
+                "best online shopping sites for clothes"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "trendy clothing websites",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-10 08:28:35 +00:00",
+                  "competition": 0.99,
+                  "competition_level": "HIGH",
+                  "cpc": 1.1,
+                  "search_volume": 260,
+                  "low_top_of_page_bid": 0.62,
+                  "high_top_of_page_bid": 3.83,
+                  "categories": [
+                    10007,
+                    11493,
+                    13418
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 390
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -35,
+                    "quarterly": -35,
+                    "yearly": -47
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 32,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=trendy%20clothing%20websites&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "video",
+                    "popular_products",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 192,
+                  "last_updated_time": "2026-07-05 00:55:11 +00:00",
+                  "previous_updated_time": "2026-07-04 17:31:23 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 3079,
+                  "dofollow": 2105.8,
+                  "referring_pages": 2543.6,
+                  "referring_domains": 579.3,
+                  "referring_main_domains": 538.6,
+                  "rank": 201.6,
+                  "main_domain_rank": 502.9,
+                  "last_updated_time": "2026-07-05 00:55:37 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-05-03 09:57:23 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "affordable clothing brands online",
+                "women trendy clothing websites",
+                "popular clothing stores online",
+                "top 10 online clothing stores",
+                "european clothing stores online",
+                "affordable clothing brands online usa",
+                "where to buy cheap clothes online",
+                "trendy women's clothing online"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "best online clothing stores usa",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-11 23:25:31 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 2.03,
+                  "search_volume": 210,
+                  "low_top_of_page_bid": 0.84,
+                  "high_top_of_page_bid": 5.25,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 390
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 70
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 140
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -56,
+                    "quarterly": -56,
+                    "yearly": 21
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "best usa online clothing stores",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 39,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=best%20online%20clothing%20stores%20usa&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "discussions_and_forums",
+                    "related_searches"
+                  ],
+                  "se_results_count": 173,
+                  "last_updated_time": "2026-07-08 04:06:07 +00:00",
+                  "previous_updated_time": "2026-05-01 02:48:19 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 3890.1,
+                  "dofollow": 2882.2,
+                  "referring_pages": 3336.6,
+                  "referring_domains": 625.9,
+                  "referring_main_domains": 583.3,
+                  "rank": 207.8,
+                  "main_domain_rank": 461.4,
+                  "last_updated_time": "2026-07-08 04:06:07 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 06:36:09 +00:00"
+                }
+              },
+              "depth": 1,
+              "related_keywords": [
+                "women best online clothing stores usa",
+                "affordable clothing brands online",
+                "top 10 online clothing stores",
+                "top 10 online clothing stores in usa",
+                "european clothing stores online",
+                "affordable clothing brands online usa",
+                "men best online clothing stores usa",
+                "best european clothing stores online"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "cheap clothes under $5",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-13 19:25:32 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.77,
+                  "search_volume": 210,
+                  "low_top_of_page_bid": 0.82,
+                  "high_top_of_page_bid": 4.38,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 590
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 480
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 50
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 40
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 40
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 30
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 30
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 23,
+                    "quarterly": 23,
+                    "yearly": 2850
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "cheap clothing under $5",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 0,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=cheap%20clothes%20under%20%245&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "popular_products",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 184,
+                  "last_updated_time": "2026-07-10 12:22:55 +00:00",
+                  "previous_updated_time": "2026-05-05 17:07:08 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 2,
+                  "dofollow": 1.6,
+                  "referring_pages": 2,
+                  "referring_domains": 0.8,
+                  "referring_main_domains": 0.8,
+                  "rank": 8,
+                  "main_domain_rank": 587,
+                  "last_updated_time": "2026-07-10 12:22:59 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "transactional",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 06:20:01 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "cheap clothes under $5 near me",
+                "cheap clothes under $5 wholesale",
+                "cheap clothes under $5 online",
+                "cheap clothes under $5 amazon",
+                "men cheap clothes under $5",
+                "2 for $5 clothing store",
+                "clearance clothes under $10",
+                "women clearance clothes under 5 free shipping"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "clothing shop online wholesale",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-10 09:03:50 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 6.17,
+                  "search_volume": 140,
+                  "low_top_of_page_bid": 1.76,
+                  "high_top_of_page_bid": 6.61,
+                  "categories": [
+                    10021,
+                    10176,
+                    13575,
+                    13719,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 50
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 140
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 120,
+                    "quarterly": 22,
+                    "yearly": 22
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 84,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=clothing%20shop%20online%20wholesale&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "ai_overview",
+                    "popular_products",
+                    "related_searches",
+                    "images"
+                  ],
+                  "se_results_count": 195,
+                  "last_updated_time": "2026-07-11 18:33:31 +00:00",
+                  "previous_updated_time": "2026-05-02 05:37:11 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 2518.1,
+                  "dofollow": 1742.2,
+                  "referring_pages": 1901.1,
+                  "referring_domains": 222,
+                  "referring_main_domains": 185.1,
+                  "rank": 190.4,
+                  "main_domain_rank": 378.8,
+                  "last_updated_time": "2026-07-11 18:33:31 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 06:09:46 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "where to buy clothes in bulk for resale",
+                "wholesale bulk clothing distributors",
+                "clothing shop online wholesale usa",
+                "cheap clothing shop online wholesale",
+                "ladies clothing shop online wholesale",
+                "best clothing shop online wholesale",
+                "wholesale clothing suppliers for retailers",
+                "clothing vendors to start a business"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "best affordable clothing brands online",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-13 22:33:39 +00:00",
+                  "competition": 0.99,
+                  "competition_level": "HIGH",
+                  "cpc": 1.57,
+                  "search_volume": 140,
+                  "low_top_of_page_bid": 1.01,
+                  "high_top_of_page_bid": 5.69,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 110
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 210
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 70
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 140
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 70
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 70
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 70
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": -18,
+                    "quarterly": 27,
+                    "yearly": 250
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": null,
+                  "synonym_clustering_algorithm": null,
+                  "keyword_difficulty": 14,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=best%20affordable%20clothing%20brands%20online&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "ai_overview",
+                    "organic",
+                    "people_also_ask",
+                    "discussions_and_forums",
+                    "video",
+                    "related_searches",
+                    "popular_products"
+                  ],
+                  "se_results_count": 126,
+                  "last_updated_time": "2026-07-11 22:39:15 +00:00",
+                  "previous_updated_time": "2026-05-04 01:10:44 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 359.7,
+                  "dofollow": 207.2,
+                  "referring_pages": 280.8,
+                  "referring_domains": 121.5,
+                  "referring_main_domains": 113.9,
+                  "rank": 117.3,
+                  "main_domain_rank": 538.6,
+                  "last_updated_time": "2026-07-11 22:39:15 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 02:21:43 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "high quality affordable clothing brands",
+                "best affordable clothing brands online reddit",
+                "women best affordable clothing brands online",
+                "affordable clothing brands online usa",
+                "top 10 online clothing stores",
+                "where can i buy good quality clothes online",
+                "european clothing stores online",
+                "cheap online clothing stores with fast shipping"
+              ]
+            },
+            {
+              "se_type": "google",
+              "keyword_data": {
+                "se_type": "google",
+                "keyword": "high quality affordable clothing brands",
+                "location_code": 2840,
+                "language_code": "en",
+                "keyword_info": {
+                  "se_type": "google",
+                  "last_updated_time": "2026-07-15 18:46:25 +00:00",
+                  "competition": 1,
+                  "competition_level": "HIGH",
+                  "cpc": 1.6,
+                  "search_volume": 110,
+                  "low_top_of_page_bid": 0.51,
+                  "high_top_of_page_bid": 3.75,
+                  "categories": [
+                    10021,
+                    10176,
+                    13779
+                  ],
+                  "monthly_searches": [
+                    {
+                      "year": 2026,
+                      "month": 6,
+                      "search_volume": 320
+                    },
+                    {
+                      "year": 2026,
+                      "month": 5,
+                      "search_volume": 260
+                    },
+                    {
+                      "year": 2026,
+                      "month": 4,
+                      "search_volume": 170
+                    },
+                    {
+                      "year": 2026,
+                      "month": 3,
+                      "search_volume": 90
+                    },
+                    {
+                      "year": 2026,
+                      "month": 2,
+                      "search_volume": 50
+                    },
+                    {
+                      "year": 2026,
+                      "month": 1,
+                      "search_volume": 50
+                    },
+                    {
+                      "year": 2025,
+                      "month": 12,
+                      "search_volume": 40
+                    },
+                    {
+                      "year": 2025,
+                      "month": 11,
+                      "search_volume": 40
+                    },
+                    {
+                      "year": 2025,
+                      "month": 10,
+                      "search_volume": 40
+                    },
+                    {
+                      "year": 2025,
+                      "month": 9,
+                      "search_volume": 50
+                    },
+                    {
+                      "year": 2025,
+                      "month": 8,
+                      "search_volume": 50
+                    },
+                    {
+                      "year": 2025,
+                      "month": 7,
+                      "search_volume": 50
+                    }
+                  ],
+                  "search_volume_trend": {
+                    "monthly": 23,
+                    "quarterly": 88,
+                    "yearly": 540
+                  }
+                },
+                "keyword_info_normalized_with_bing": null,
+                "keyword_info_normalized_with_clickstream": null,
+                "clickstream_keyword_info": null,
+                "keyword_properties": {
+                  "se_type": "google",
+                  "core_keyword": "high quality clothing brands affordable",
+                  "synonym_clustering_algorithm": "text_processing",
+                  "keyword_difficulty": 40,
+                  "detected_language": "en",
+                  "is_another_language": false
+                },
+                "serp_info": {
+                  "se_type": "google",
+                  "check_url": "https://www.google.com/search?q=high%20quality%20affordable%20clothing%20brands&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                  "serp_item_types": [
+                    "organic",
+                    "popular_products",
+                    "people_also_ask",
+                    "video",
+                    "perspectives",
+                    "related_searches"
+                  ],
+                  "se_results_count": 167,
+                  "last_updated_time": "2026-08-11 17:57:38 +00:00",
+                  "previous_updated_time": "2026-05-31 00:35:06 +00:00"
+                },
+                "avg_backlinks_info": {
+                  "se_type": "google",
+                  "backlinks": 6743.9,
+                  "dofollow": 4345.7,
+                  "referring_pages": 4429,
+                  "referring_domains": 129.9,
+                  "referring_main_domains": 122.2,
+                  "rank": 190.9,
+                  "main_domain_rank": 583.7,
+                  "last_updated_time": "2026-08-11 17:57:39 +00:00"
+                },
+                "search_intent_info": {
+                  "se_type": "google",
+                  "main_intent": "commercial",
+                  "foreign_intent": null,
+                  "last_updated_time": "2026-04-29 17:03:02 +00:00"
+                }
+              },
+              "depth": 2,
+              "related_keywords": [
+                "high quality affordable clothing brands reddit",
+                "women high quality affordable clothing brands",
+                "affordable clothing brands online",
+                "best affordable clothing brands online",
+                "affordable clothing brands online usa",
+                "where to buy cheap clothes online reddit",
+                "where to buy cheap clothes in person",
+                "classy clothing brands affordable"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
