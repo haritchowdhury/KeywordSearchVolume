@@ -95,7 +95,10 @@ class KeywordPipeline:
         # unbranded store-discovery target.
         clusters = cluster_keywords(active, self.config)
         attach_variants(clusters, deduped)
-        score_and_flag_all(active, self.config)
+        # Score every distinct wording variant so the 3D map can plot all
+        # points meaningfully. Summary/recommendation counts still use the
+        # canonical active set to avoid cross-seed duplication.
+        score_and_flag_all(deduped, self.config, include_merged=True)
         score_all_clusters(clusters, self.config)
 
         # write outputs

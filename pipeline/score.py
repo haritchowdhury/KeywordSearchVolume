@@ -77,10 +77,12 @@ def score_record(rec: KeywordRecord, stats: dict, config: Config) -> None:
     )
 
 
-def score_and_flag_all(records: List[KeywordRecord], config: Config) -> dict:
-    stats = _population_stats(records)
+def score_and_flag_all(records: List[KeywordRecord], config: Config,
+                       *, include_merged: bool = False) -> dict:
+    scoring_rows = records if include_merged else [r for r in records if r.is_active]
+    stats = _population_stats(scoring_rows)
     for rec in records:
-        if not rec.is_active:
+        if not include_merged and not rec.is_active:
             continue
         flag_record(rec, config)
         score_record(rec, stats, config)

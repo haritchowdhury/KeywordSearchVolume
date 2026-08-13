@@ -276,8 +276,11 @@ th.num { text-align: right; }
 .cluster-hero-title h2 { margin: 0 0 3px; font-size: 19px; }
 .cluster-hero-sub { color: var(--muted); font-size: 11px; }
 .cluster-scene-layout { display: flex; flex-direction: column; gap: 10px; margin-top: 12px; }
-.cluster-scene { position: relative; height: 430px; min-width: 0; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: radial-gradient(circle at 50% 32%, var(--primary-soft), var(--bg) 68%); }
-.cluster-scene canvas { display: block; width: 100%; height: 100%; cursor: crosshair; }
+.cluster-scene { position: relative; height: 500px; min-width: 0; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: radial-gradient(circle at 52% 42%, var(--primary-soft), var(--bg) 72%); }
+.cluster-scene canvas { display: block; width: 100%; height: 100%; cursor: grab; touch-action: none; }
+.cluster-view-controls { position: absolute; z-index: 5; top: 10px; right: 10px; display: flex; gap: 5px; }
+.cluster-view-controls button { width: 30px; height: 30px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); color: var(--text); font-weight: 700; cursor: pointer; box-shadow: var(--shadow); }
+.cluster-view-controls button:last-child { width: auto; padding: 0 9px; font-size: 10px; color: var(--muted); }
 .cluster-axis-key { position: absolute; left: 12px; bottom: 10px; display: flex; flex-wrap: wrap; gap: 9px; color: var(--muted); font-size: 10px; pointer-events: none; }
 .cluster-axis-key span { padding: 3px 7px; border: 1px solid var(--border); border-radius: 999px; background: var(--card); }
 .cluster-scene-tooltip { position: absolute; z-index: 4; max-width: 230px; padding: 8px 10px; border-radius: 8px; background: var(--text); color: var(--bg); font-size: 11px; line-height: 1.45; pointer-events: none; box-shadow: var(--shadow); }
@@ -416,7 +419,8 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
       <div class="cluster-scene-legend" id="cluster-scene-legend"></div>
       <div class="cluster-scene">
         <canvas id="cluster-landscape" aria-label="Three-dimensional cluster landscape"></canvas>
-        <div class="cluster-axis-key"><span>X · Opportunity</span><span>Depth · YoY trend momentum</span><span>Height · Search volume</span></div>
+        <div class="cluster-view-controls" aria-label="3D view controls"><button id="cluster-zoom-out" type="button" title="Zoom out">−</button><button id="cluster-zoom-in" type="button" title="Zoom in">+</button><button id="cluster-view-reset" type="button" title="Reset rotation and zoom">Reset</button></div>
+        <div class="cluster-axis-key"><span>Drag · Rotate 360°</span><span>Double-click · Reset view</span><span>X · Opportunity 0–100</span><span>Depth · YoY momentum −1 to +1</span><span>Height + size · Log search volume</span></div>
         <div class="cluster-scene-tooltip hidden" id="cluster-scene-tooltip"></div>
       </div>
     </div>
@@ -553,6 +557,10 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     summary: null,
     loadedAt: null,
     selectedCluster: '',
+    clusterAzimuth: -0.45,
+    clusterZoom: 1,
+    clusterDrag: { active: false, moved: false, startX: 0, startAngle: 0 },
+    clusterPointers: {},
     filters: {
       seed: '', cluster: '', intent: '', lane: '', category: '', audience: '', channel: '',
       minVolume: 0, minOpportunity: 0,
@@ -1968,7 +1976,10 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     sceneLayout.classList.toggle('hidden', !rows.length);
     $('cluster-count').textContent = rows.length + ' cluster' + (rows.length === 1 ? '' : 's') + ' · ' + filtered.length + ' keyword points';
     var landscapeVolume = rows.reduce(function (sum, r) { return sum + r.volume; }, 0);
-    var clusterColors = [palette().primary, palette().amber, palette().green, palette().red, palette().muted];
+    var clusterColors = [
+      '#6366f1', '#f59e0b', '#22c55e', '#ef4444', '#06b6d4', '#a855f7',
+      '#ec4899', '#84cc16', '#f97316', '#14b8a6', '#3b82f6', '#8b5cf6'
+    ];
 
     var inspector = $('cluster-inspector');
     inspector.innerHTML = '';
@@ -2050,47 +2061,93 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     var ctx = canvas.getContext('2d');
     ctx.scale(dpr, dpr);
     var colors = palette();
-    var cameraZoom = 1.72;
-    var cameraFocus = { x: width * 0.52, y: height * 0.57 };
+    // The projection already occupies the available frame. The earlier 1.55x
+    // camera zoom was useful before the ground plane existed, but now clips
+    // high-volume and high-opportunity points at the top/right edges.
+    var cameraZoom = 1;
+    var cameraFocus = { x: width * 0.5, y: height * 0.5 };
+    ctx.save();
     ctx.translate(cameraFocus.x, cameraFocus.y);
     ctx.scale(cameraZoom, cameraZoom);
     ctx.translate(-cameraFocus.x, -cameraFocus.y);
-    var origin = { x: 56, y: height - 58 };
-    var xVec = { x: width * 0.67, y: 0 };
-    var depthVec = { x: width * 0.20, y: -height * 0.37 };
-    var vertical = height * 0.40;
+    var azimuth = state.clusterAzimuth;
+    var viewZoom = state.clusterZoom;
+    var cosA = Math.cos(azimuth), sinA = Math.sin(azimuth);
+    var planeWidth = width * .68 * viewZoom;
+    var planeDepth = height * .31 * viewZoom;
+    var vertical = height * .46 * viewZoom;
+    var groundCenter = { x: width * .50, y: height * .67 };
+    var viewDepth = function (x, depth) {
+      var wx = x - .5, wd = depth - .5;
+      return -sinA * wx + cosA * wd;
+    };
     var project = function (x, depth, z) {
-      return { x: origin.x + xVec.x * x + depthVec.x * depth, y: origin.y + depthVec.y * depth - vertical * z };
+      var wx = x - .5, wd = depth - .5;
+      var horizontal = cosA * wx + sinA * wd;
+      var receding = viewDepth(x, depth);
+      return { x: groundCenter.x + planeWidth * horizontal,
+        y: groundCenter.y + planeDepth * receding - vertical * z };
     };
 
-    var opportunities = records.map(function (r) { return isNum(r.opportunity_score) ? r.opportunity_score : 0; });
-    var trends = records.map(function (r) { return isNum(r.trend_slope) ? r.trend_slope : 0; });
-    var minOpp = Math.min.apply(null, opportunities), maxOpp = Math.max.apply(null, opportunities);
-    var minTrend = Math.min.apply(null, trends), maxTrend = Math.max.apply(null, trends);
-    var oppPad = Math.max(5, (maxOpp - minOpp) * 0.3), trendPad = Math.max(.06, (maxTrend - minTrend) * 0.3);
-    minOpp = Math.max(0, minOpp - oppPad); maxOpp = Math.min(100, maxOpp + oppPad);
-    minTrend -= trendPad; maxTrend += trendPad;
-    var maxVolume = Math.max.apply(null, records.map(function (r) { return isNum(r.search_volume) ? r.search_volume : 0; })) || 1;
+    // Fixed scales keep a keyword in the same place when filters change.
+    // Volume uses a documented log transform because the dataset spans orders
+    // of magnitude; a linear axis would flatten nearly every point.
+    var maxVolume = Math.max.apply(null, distinctKeywordRows(state.keywords).map(function (r) {
+      return isNum(r.search_volume) ? r.search_volume : 0;
+    })) || 1;
     var colorByCluster = {};
     clusters.forEach(function (c, i) { colorByCluster[c.name] = clusterColors[i % clusterColors.length]; });
     var nodes = [];
 
-    var hashUnit = function (text, salt) {
-      var hash = 2166136261;
-      String(text + salt).split('').forEach(function (ch) { hash ^= ch.charCodeAt(0); hash = Math.imul(hash, 16777619); });
-      return ((hash >>> 0) % 1000) / 999;
-    };
+    // A tightly cropped X/depth ground plane makes the 3D encoding legible.
+    // Its front edge intentionally sits just outside the frame so the plane
+    // supports the data instead of creating a large empty foreground.
+    var p00 = project(0, 0, 0), p10 = project(1, 0, 0);
+    var p11 = project(1, 1, 0), p01 = project(0, 1, 0);
+    var planeFill = ctx.createLinearGradient(p00.x, p00.y, p01.x, p01.y);
+    planeFill.addColorStop(0, rgba(colors.primary, .035));
+    planeFill.addColorStop(1, rgba(colors.primary, .11));
+    ctx.fillStyle = planeFill;
+    ctx.beginPath(); ctx.moveTo(p00.x, p00.y); ctx.lineTo(p10.x, p10.y);
+    ctx.lineTo(p11.x, p11.y); ctx.lineTo(p01.x, p01.y); ctx.closePath(); ctx.fill();
+    ctx.strokeStyle = rgba(colors.primary, .30); ctx.lineWidth = .8;
+    ctx.stroke();
+    for (var gx = 0; gx <= 4; gx++) {
+      var x0 = project(gx / 4, 0, 0), x1 = project(gx / 4, 1, 0);
+      ctx.strokeStyle = rgba(colors.primary, gx === 0 || gx === 4 ? .28 : .14);
+      ctx.lineWidth = gx === 0 || gx === 4 ? .8 : .55;
+      ctx.beginPath(); ctx.moveTo(x0.x, x0.y); ctx.lineTo(x1.x, x1.y); ctx.stroke();
+    }
+    for (var gd = 0; gd <= 4; gd++) {
+      var d0 = project(0, gd / 4, 0), d1 = project(1, gd / 4, 0);
+      ctx.strokeStyle = rgba(colors.primary, gd === 0 || gd === 4 ? .28 : .14);
+      ctx.lineWidth = gd === 0 || gd === 4 ? .8 : .55;
+      ctx.beginPath(); ctx.moveTo(d0.x, d0.y); ctx.lineTo(d1.x, d1.y); ctx.stroke();
+    }
+
     var plotted = records.map(function (r) {
-      var nx = maxOpp === minOpp ? .5 : ((r.opportunity_score || 0) - minOpp) / (maxOpp - minOpp);
-      var nd = maxTrend === minTrend ? .5 : (((isNum(r.trend_slope) ? r.trend_slope : 0) - minTrend) / (maxTrend - minTrend));
-      nx += (hashUnit(r.keyword, 'x') - .5) * .035;
-      nd += (hashUnit(r.keyword, 'd') - .5) * .035;
-      nx = .08 + nx * .84; nd = .08 + nd * .84;
+      var nx = Math.max(0, Math.min(1, (isNum(r.opportunity_score) ? r.opportunity_score : 0) / 100));
+      var trend = isNum(r.trend_slope) ? r.trend_slope : 0;
+      var nd = Math.max(0, Math.min(1, (trend + 1) / 2));
       var volume = isNum(r.search_volume) ? r.search_volume : 0;
-      var nz = .04 + Math.sqrt(volume / maxVolume) * .82;
+      var volumeNorm = volume > 0 ? Math.log(volume + 1) / Math.log(maxVolume + 1) : 0;
+      var nz = volumeNorm * .86;
       var top = project(nx, nd, nz);
-      return { record: r, top: top, depth: nd, radius: 4 + Math.sqrt(volume / maxVolume) * 7, color: colorByCluster[r.cluster] || colors.muted };
-    }).sort(function (a, b) { return a.depth - b.depth; });
+      var ground = project(nx, nd, 0);
+      var perspective = 1;
+      return { record: r, top: top, ground: ground, depth: nd,
+        viewDepth: viewDepth(nx, nd), volume: volume,
+        volumeNorm: volumeNorm, radius: (3 + volumeNorm * 6) * perspective,
+        color: colorByCluster[r.cluster] || colors.muted };
+    }).sort(function (a, b) { return a.viewDepth - b.viewDepth; });
+
+    plotted.forEach(function (point) {
+      ctx.strokeStyle = rgba(point.color, state.selectedCluster && state.selectedCluster !== point.record.cluster ? .04 : .20);
+      ctx.lineWidth = .75;
+      ctx.beginPath(); ctx.moveTo(point.ground.x, point.ground.y); ctx.lineTo(point.top.x, point.top.y); ctx.stroke();
+      ctx.fillStyle = rgba(point.color, .10);
+      ctx.beginPath(); ctx.ellipse(point.ground.x, point.ground.y, point.radius * .9, Math.max(1.2, point.radius * .22), 0, 0, Math.PI * 2); ctx.fill();
+    });
 
     plotted.forEach(function (point) {
       var r = point.record, top = point.top, radius = point.radius, color = point.color;
@@ -2102,6 +2159,29 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
       ctx.globalAlpha = 1;
       nodes.push({ x: top.x, y: top.y, radius: Math.max(8, radius + 3), record: r });
     });
+    ctx.restore();
+
+    // Compact orientation glyph rotates with the camera.
+    var axisOrigin = { x: width - 142, y: height - 34 };
+    ctx.lineWidth = 1.25;
+    var axisVector = function (from, to, length) {
+      var dx = to.x - from.x, dy = to.y - from.y;
+      var magnitude = Math.sqrt(dx * dx + dy * dy) || 1;
+      return [dx / magnitude * length, dy / magnitude * length];
+    };
+    var axisBaseWorld = project(0, 0, 0);
+    var xAxis = axisVector(axisBaseWorld, project(1, 0, 0), 90);
+    var dAxis = axisVector(axisBaseWorld, project(0, 1, 0), 62);
+    [[xAxis[0], xAxis[1], 'Opportunity', colors.primary], [dAxis[0], dAxis[1], 'Trend', colors.amber], [0, -62, 'Volume', colors.green]].forEach(function (axis) {
+      var ex = axisOrigin.x + axis[0], ey = axisOrigin.y + axis[1];
+      ctx.strokeStyle = rgba(axis[3], .78); ctx.fillStyle = axis[3];
+      ctx.beginPath(); ctx.moveTo(axisOrigin.x, axisOrigin.y); ctx.lineTo(ex, ey); ctx.stroke();
+      var angle = Math.atan2(axis[1], axis[0]);
+      ctx.beginPath(); ctx.moveTo(ex, ey); ctx.lineTo(ex - 6 * Math.cos(angle - .45), ey - 6 * Math.sin(angle - .45));
+      ctx.lineTo(ex - 6 * Math.cos(angle + .45), ey - 6 * Math.sin(angle + .45)); ctx.closePath(); ctx.fill();
+      ctx.font = '10px system-ui, sans-serif'; ctx.fillStyle = colors.muted;
+      ctx.fillText(axis[2], ex + (axis[0] ? 4 : -18), ey + (axis[1] ? -5 : 13));
+    });
 
     var hit = function (event) {
       var bounds = canvas.getBoundingClientRect();
@@ -2110,9 +2190,72 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
       var y = (displayY - cameraFocus.y) / cameraZoom + cameraFocus.y;
       return nodes.slice().reverse().find(function (n) { var dx = x - n.x, dy = y - n.y; return dx * dx + dy * dy <= n.radius * n.radius; });
     };
+    var pointerValues = function () { return Object.keys(state.clusterPointers).map(function (id) { return state.clusterPointers[id]; }); };
+    var pointerDistance = function (points) {
+      var dx = points[0].x - points[1].x, dy = points[0].y - points[1].y;
+      return Math.sqrt(dx * dx + dy * dy);
+    };
+    canvas.onpointerdown = function (event) {
+      canvas.setPointerCapture(event.pointerId);
+      state.clusterPointers[event.pointerId] = { x: event.clientX, y: event.clientY };
+      var points = pointerValues();
+      state.clusterDrag.active = true;
+      state.clusterDrag.moved = false;
+      if (points.length >= 2) {
+        state.clusterDrag.pinchDistance = pointerDistance(points);
+        state.clusterDrag.pinchZoom = state.clusterZoom;
+      } else {
+        state.clusterDrag.startX = event.clientX;
+        state.clusterDrag.startAngle = state.clusterAzimuth;
+      }
+      canvas.style.cursor = 'grabbing';
+    };
+    canvas.onpointermove = function (event) {
+      if (!state.clusterPointers[event.pointerId]) return;
+      state.clusterPointers[event.pointerId] = { x: event.clientX, y: event.clientY };
+      var points = pointerValues();
+      if (points.length >= 2) {
+        var distance = pointerDistance(points);
+        if (Math.abs(distance - state.clusterDrag.pinchDistance) > 2) state.clusterDrag.moved = true;
+        state.clusterZoom = Math.max(.55, Math.min(1.8,
+          state.clusterDrag.pinchZoom * distance / Math.max(1, state.clusterDrag.pinchDistance)));
+      } else {
+        var dx = event.clientX - state.clusterDrag.startX;
+        if (Math.abs(dx) > 2) state.clusterDrag.moved = true;
+        state.clusterAzimuth = state.clusterDrag.startAngle + dx / Math.max(320, width) * Math.PI * 2;
+      }
+      tooltip.classList.add('hidden');
+      drawClusterLandscape(records, clusters, clusterColors);
+    };
+    var releasePointer = function (event) {
+      delete state.clusterPointers[event.pointerId];
+      var points = pointerValues();
+      if (!points.length) {
+        state.clusterDrag.active = false;
+        canvas.style.cursor = 'grab';
+      } else if (points.length === 1) {
+        state.clusterDrag.startX = points[0].x;
+        state.clusterDrag.startAngle = state.clusterAzimuth;
+        delete state.clusterDrag.pinchDistance;
+      }
+    };
+    canvas.onpointerup = releasePointer;
+    canvas.onpointercancel = releasePointer;
+    canvas.onwheel = function (event) {
+      event.preventDefault();
+      state.clusterZoom = Math.max(.55, Math.min(1.8,
+        state.clusterZoom * Math.exp(-event.deltaY * .0012)));
+      drawClusterLandscape(records, clusters, clusterColors);
+    };
+    canvas.ondblclick = function () {
+      state.clusterAzimuth = -0.45;
+      state.clusterZoom = 1;
+      drawClusterLandscape(records, clusters, clusterColors);
+    };
     canvas.onmousemove = function (event) {
+      if (state.clusterDrag.active) { tooltip.classList.add('hidden'); return; }
       var node = hit(event);
-      canvas.style.cursor = node ? 'pointer' : 'crosshair';
+      canvas.style.cursor = node ? 'pointer' : 'grab';
       tooltip.classList.toggle('hidden', !node);
       if (!node) return;
       var r = node.record;
@@ -2121,7 +2264,10 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
       tooltip.style.top = Math.min(height - 90, Math.max(8, event.offsetY + 14)) + 'px';
     };
     canvas.onmouseleave = function () { tooltip.classList.add('hidden'); };
-    canvas.onclick = function (event) { var node = hit(event); if (node) { state.selectedCluster = node.record.cluster; renderClusters(); } };
+    canvas.onclick = function (event) {
+      if (state.clusterDrag.moved) { state.clusterDrag.moved = false; return; }
+      var node = hit(event); if (node) { state.selectedCluster = node.record.cluster; renderClusters(); }
+    };
   }
 
   function metricItem(label, value, tip) {
@@ -2237,6 +2383,15 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     $('theme-toggle').addEventListener('click', toggleTheme);
     $('export-btn').addEventListener('click', exportCSV);
     $('retry-btn').addEventListener('click', loadData);
+    $('cluster-zoom-out').addEventListener('click', function () {
+      state.clusterZoom = Math.max(.55, state.clusterZoom / 1.2); renderClusters();
+    });
+    $('cluster-zoom-in').addEventListener('click', function () {
+      state.clusterZoom = Math.min(1.8, state.clusterZoom * 1.2); renderClusters();
+    });
+    $('cluster-view-reset').addEventListener('click', function () {
+      state.clusterAzimuth = -0.45; state.clusterZoom = 1; renderClusters();
+    });
     $('page-prev').addEventListener('click', function () {
       if (state.page > 1) { state.page--; renderTable(); }
     });
