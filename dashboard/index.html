@@ -1275,6 +1275,7 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
       return isNum(r.competition) && isNum(r.opportunity_score);
     });
     if (!pts.length) return;
+    var scatterScales = baseScales(colors);
     charts.chartScatter = new Chart($('chartScatter'), {
       type: 'scatter',
       data: {
@@ -1308,8 +1309,15 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
           })
         },
         scales: {
-          x: Object.assign({ title: { display: true, text: 'Competition (0–1)', color: colors.muted }, min: 0, max: 1 }, baseScales(colors).x),
-          y: Object.assign({ title: { display: true, text: 'Opportunity score', color: colors.muted }, min: 0, max: 100 }, baseScales(colors).y)
+          x: Object.assign({}, scatterScales.x, {
+            title: { display: true, text: 'Competition (0–1)', color: colors.muted },
+            min: -0.04,
+            max: 1.04,
+            ticks: Object.assign({}, scatterScales.x.ticks, {
+              callback: function (v) { return v < 0 || v > 1 ? '' : Number(v).toFixed(1); }
+            })
+          }),
+          y: Object.assign({ title: { display: true, text: 'Opportunity score', color: colors.muted }, min: 0, max: 100 }, scatterScales.y)
         }
       }
     });
