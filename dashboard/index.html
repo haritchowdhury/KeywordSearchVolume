@@ -1057,12 +1057,16 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     if (!top.length) {
       wrap.style.height = '380px';
       wrap.style.width = '100%';
+      wrap.style.minWidth = '0';
       $('recommended-keyword-note').textContent = 'No recommended keywords in the filtered set.';
       return;
     }
     var labels = top.map(function (r) { return truncate(r.keyword, 42); });
     wrap.style.height = '420px';
-    wrap.style.width = Math.max(100, top.length * 46) + 'px';
+    // Always fill the full-row card. Only become wider than the viewport when
+    // the keyword labels need it, at which point the existing container scrolls.
+    wrap.style.width = '100%';
+    wrap.style.minWidth = Math.max(100, top.length * 58) + 'px';
     $('recommended-keyword-note').textContent = top.length + ' recommended keyword' + (top.length === 1 ? '' : 's') + ' left-to-right · columns show volume, line and dots show trend momentum.';
     charts.chartTopKeywords = new Chart($('chartTopKeywords'), {
       type: 'bar',
