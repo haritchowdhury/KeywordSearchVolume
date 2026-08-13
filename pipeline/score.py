@@ -8,7 +8,7 @@ from .models import Cluster, KeywordRecord
 from .normalize import normalize_volume, trend_to_zero_one
 
 # Flags that disqualify a keyword from store-discovery recommendation.
-BLOCKING_FLAGS = {"too_little_traffic", "too_broad", "declining_traffic"}
+BLOCKING_FLAGS = {"too_little_traffic", "too_broad", "declining_traffic", "brand_competitor"}
 
 
 def flag_record(rec: KeywordRecord, config: Config) -> None:
@@ -26,6 +26,9 @@ def flag_record(rec: KeywordRecord, config: Config) -> None:
 
     if rec.trend_slope is not None and rec.trend_slope < filters.declining_slope_threshold:
         rec.flags.append("declining_traffic")
+
+    if rec.lane == "brand_competitor":
+        rec.flags.append("brand_competitor")
 
 
 def _population_stats(records: List[KeywordRecord]) -> dict:
@@ -46,9 +49,11 @@ def score_record(rec: KeywordRecord, stats: dict, config: Config) -> None:
     )
     max_cpc = max(stats["max_cpc"], 0.01)
     cpc_norm = max(0.0, min(1.0, (rec.cpc or 0.0) / max_cpc))
-    inv_diff = 1.0 - ((rec.keyword_difficulty or 0) / scfg.difficulty_max)
+    difficulty = rec.keyword_difficulty if rec.keyword_difficulty is not None else scfg.difficulty_max / 2
+    inv_diff = 1.0 - (difficulty / scfg.difficulty_max)
     inv_diff = max(0.0, min(1.0, inv_diff))
-    inv_comp = 1.0 - ((rec.competition or 0.0) / scfg.competition_max)
+    competition = rec.competition if rec.competition is not None else scfg.competition_max / 2
+    inv_comp = 1.0 - (competition / scfg.competition_max)
     inv_comp = max(0.0, min(1.0, inv_comp))
     trend_norm = trend_to_zero_one(rec.trend_slope)
     ci = rec.commercial_intent
@@ -82,41 +87,59 @@ def score_and_flag_all(records: List[KeywordRecord], config: Config) -> dict:
     return stats
 
 
-def score_cluster(cluster: Cluster, config: Config) -> None:
+def _aggregate_cluster(cluster: Cluster) -> float:
     members = cluster.records
     if not members:
-        return
+        return 1.0
     volumes = [m.search_volume or 0 for m in members]
     cpcs = [m.cpc for m in members if m.cpc is not None]
     cis = [m.commercial_intent for m in members]
     trends = [trend_to_zero_one(m.trend_slope) for m in members]
 
-    cluster.combined_volume = int(sum(volumes))
+    canonical_volume = int(sum(volumes))
+    if not cluster.adjusted_cluster_volume:
+        cluster.adjusted_cluster_volume = canonical_volume
+    if not cluster.raw_variant_volume:
+        cluster.raw_variant_volume = canonical_volume
+    cluster.combined_volume = cluster.raw_variant_volume
+    if not cluster.headline_volume:
+        cluster.headline_volume = max(volumes, default=0)
     cluster.avg_cpc = (sum(cpcs) / len(cpcs)) if cpcs else 0.0
     cluster.avg_commercial_intent = (sum(cis) / len(cis)) if cis else 0.0
     cluster.trend_score = (sum(trends) / len(trends)) if trends else 0.0
 
-    blocking_share = sum(
+    return sum(
         1 for m in members if set(m.flags) & BLOCKING_FLAGS
     ) / len(members)
+
+
+def score_cluster(cluster: Cluster, config: Config, stats: dict | None = None) -> None:
+    members = cluster.records
+    if not members:
+        return
+    blocking_share = _aggregate_cluster(cluster)
 
     # Score the cluster as a virtual record using its aggregates.
     weights = config.scoring.weights
     scfg = config.scoring
-    stats = _population_stats(members)
+    if stats is None:
+        stats = {
+        "max_volume": max(float(cluster.raw_variant_volume), 1.0),
+            "max_cpc": max(float(cluster.avg_cpc), 0.01),
+        }
     vol_norm = normalize_volume(
-        cluster.combined_volume, max(stats["max_volume"], 1.0),
+        cluster.raw_variant_volume, max(stats["max_volume"], 1.0),
         scfg.volume_log_base,
     )
     max_cpc = max(stats["max_cpc"], 0.01)
     cpc_norm = max(0.0, min(1.0, (cluster.avg_cpc or 0.0) / max_cpc))
     inv_diff = 1.0 - (
-        (sum(m.keyword_difficulty or 0 for m in members) / len(members))
+        (sum(m.keyword_difficulty if m.keyword_difficulty is not None else scfg.difficulty_max / 2 for m in members) / len(members))
         / scfg.difficulty_max
     )
     inv_diff = max(0.0, min(1.0, inv_diff))
     inv_comp = 1.0 - (
-        sum(m.competition or 0.0 for m in members) / len(members)
+        sum(m.competition if m.competition is not None else scfg.competition_max / 2 for m in members) / len(members)
     ) / scfg.competition_max
     inv_comp = max(0.0, min(1.0, inv_comp))
 
@@ -140,4 +163,10 @@ def score_cluster(cluster: Cluster, config: Config) -> None:
 
 def score_all_clusters(clusters: List[Cluster], config: Config) -> None:
     for cluster in clusters:
-        score_cluster(cluster, config)
+        _aggregate_cluster(cluster)
+    stats = {
+        "max_volume": max((float(c.raw_variant_volume) for c in clusters), default=1.0),
+        "max_cpc": max((float(c.avg_cpc) for c in clusters), default=0.01),
+    }
+    for cluster in clusters:
+        score_cluster(cluster, config, stats)

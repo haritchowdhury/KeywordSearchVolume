@@ -52,3 +52,17 @@ def test_jaccard_units():
     sig_b = _signature("best paddles", strip)
     assert jaccard(sig_a, sig_b) > 0.5
     assert jaccard(_signature("shoes", strip), _signature("paddle", strip)) == 0.0
+
+
+def test_retail_synonyms_are_variants_without_damaging_s_words(cfg):
+    records = [
+        _rec("women activewear", 9000),
+        _rec("women's activewear", 8000),
+        _rec("business dress", 7000),
+        _rec("business dresses", 6000),
+    ]
+    out = dedup_variants(records, cfg)
+    active = [r.keyword for r in out if r.is_active]
+    assert len(active) == 2
+    assert "women activewear" in active
+    assert "business dress" in active

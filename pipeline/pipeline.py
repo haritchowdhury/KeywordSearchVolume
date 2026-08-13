@@ -8,7 +8,7 @@ import logging
 from typing import Dict, List
 
 from .client import DataForSEOClient
-from .cluster import cluster_keywords
+from .cluster import attach_variants, cluster_keywords
 from .config import Config
 from .dedup import dedup_variants
 from .intent import is_informational
@@ -74,6 +74,15 @@ class KeywordPipeline:
                 continue
             kept.append(r)
 
+        # Preserve every expansion path before deduplication chooses one
+        # canonical record. A keyword can legitimately be discovered by many
+        # broad seeds and that provenance is useful in the dashboard.
+        seeds_by_keyword: Dict[str, set] = {}
+        for record in kept:
+            seeds_by_keyword.setdefault(record.keyword.strip().lower(), set()).add(record.seed)
+        for record in kept:
+            record.source_seeds = sorted(seeds_by_keyword[record.keyword.strip().lower()])
+
         # dedup close variants
         deduped = dedup_variants(kept, self.config)
         active = [r for r in deduped if r.is_active]
@@ -81,11 +90,12 @@ class KeywordPipeline:
         merged = [r for r in deduped if not r.is_active]
         dedup_merged = len(merged)
 
-        # score + flag at keyword level
-        score_and_flag_all(active, self.config)
-
-        # cluster, then score clusters
+        # Classify lanes/facets and cluster before recommendation so branded
+        # competitor demand can remain visible without being recommended as an
+        # unbranded store-discovery target.
         clusters = cluster_keywords(active, self.config)
+        attach_variants(clusters, deduped)
+        score_and_flag_all(active, self.config)
         score_all_clusters(clusters, self.config)
 
         # write outputs
@@ -104,12 +114,15 @@ class KeywordPipeline:
         summary_path = out_dir / "summary.json"
         with open(summary_path, "w", encoding="utf-8") as fh:
             json.dump({
+                "schema_version": 2,
                 "seeds": seeds,
                 "raw_items_collected": len(all_records),
                 "items_with_metrics": len(with_metrics),
                 "informational_dropped": informational_dropped,
+                "unique_phrases": len({r.keyword.strip().lower() for r in kept}),
                 "dedup_merged": dedup_merged,
                 "active_keywords": len(active),
+                "variant_groups": sum(len(c.variant_groups) for c in clusters),
                 "clusters": len(clusters),
                 "recommended_keywords": sum(1 for r in active if r.recommended),
                 "recommended_clusters": sum(1 for c in clusters if c.recommended),

@@ -66,6 +66,15 @@ def test_blocking_flags_prevent_recommendation(tmp_cfg):
     assert r.recommended is False
 
 
+def test_brand_competitor_stays_visible_but_is_not_recommended(tmp_cfg):
+    r = _rec("example brand clothing", 50000, 2.0, 0.7, 10,
+             "commercial", 0.95, slope=0.2)
+    r.lane = "brand_competitor"
+    score_and_flag_all([r], tmp_cfg)
+    assert "brand_competitor" in r.flags
+    assert r.recommended is False
+
+
 def test_cluster_scoring_aggregates_members(tmp_cfg):
     members = [
         _rec("pickleball paddles", 201000, 1.34, 1.0, 14, "transactional", 0.95, slope=0.2),

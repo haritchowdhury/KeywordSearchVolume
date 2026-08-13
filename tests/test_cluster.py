@@ -1,7 +1,8 @@
 """Tests for token-overlap clustering."""
 from __future__ import annotations
 
-from pipeline.cluster import cluster_keywords
+from pipeline.cluster import attach_variants, cluster_keywords
+from pipeline.dedup import dedup_variants
 from pipeline.models import KeywordRecord
 
 
@@ -50,3 +51,46 @@ def test_cluster_id_assigned(cfg):
     clusters = cluster_keywords(records, cfg)
     assert all(r.cluster_id is not None for c in clusters for r in c.records)
     assert clusters[0].records[0].cluster_label == clusters[0].label
+
+
+def test_bridge_phrase_does_not_merge_apparel_topics(cfg):
+    records = [
+        _rec("women's active clothing", 90500),
+        _rec("activewear clothing for women", 90500),
+        _rec("streetwear clothing for women", 1600),
+        _rec("supreme streetwear", 673000),
+    ]
+    records[-1].main_intent = "navigational"
+    clusters = cluster_keywords(records, cfg)
+    activewear = next(r for r in records if r.keyword.startswith("activewear"))
+    streetwear = next(r for r in records if r.keyword.startswith("streetwear"))
+    supreme = next(r for r in records if r.keyword.startswith("supreme"))
+    assert activewear.cluster_id != streetwear.cluster_id
+    assert supreme.cluster_id != streetwear.cluster_id
+    assert supreme.lane == "brand_competitor"
+
+
+def test_cluster_ids_are_stable(cfg):
+    first = cluster_keywords([_rec("running shoes"), _rec("best running shoes")], cfg)
+    second = cluster_keywords([_rec("running shoes"), _rec("best running shoes")], cfg)
+    assert first[0].cluster_id == second[0].cluster_id
+
+
+def test_grouped_variants_accumulate_volume_and_report_overlap(cfg):
+    records = [
+        _rec("women activewear", 90000),
+        _rec("women's activewear", 90000),
+        _rec("activewear for ladies", 90000),
+    ]
+    for record in records:
+        record.cpc = 1.2
+        record.competition = 0.5
+        record.keyword_difficulty = 20
+        record.monthly_history = [(2026, month, 90000) for month in range(1, 7)]
+    deduped = dedup_variants(records, cfg)
+    clusters = cluster_keywords([r for r in deduped if r.is_active], cfg)
+    attach_variants(clusters, deduped)
+    cluster = clusters[0]
+    assert cluster.raw_variant_volume == 270000
+    assert cluster.combined_volume == 270000
+    assert cluster.adjusted_cluster_volume == 90000

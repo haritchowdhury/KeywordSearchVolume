@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Keyword Research Analytics</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-treemap@2.0.0/dist/chartjs-chart-treemap.min.js"></script>
@@ -127,11 +130,22 @@ section.filters {
 .card .card-note { font-size: 11px; color: var(--muted); margin-top: 4px; }
 
 .decision-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-bottom: 20px; }
+.overview-package { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; margin-bottom: 20px; box-shadow: var(--shadow); }
+.overview-package-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+.overview-package-head h2 { margin: 0; font-size: 17px; }
+.overview-package-head p { margin: 0; color: var(--muted); font-size: 11px; }
+.overview-flow { display: grid; gap: 10px; margin-bottom: 12px; }
+.overview-flow .decision-panel { box-shadow: none; background: var(--bg); }
+.overview-signals { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.overview-signals .chart-card { box-shadow: none; padding: 12px; min-width: 0; background: var(--bg); }
+.overview-signals .chart-wrap { height: 285px; }
+.overview-signals .chart-title { font-size: 13px; }
 .decision-panel {
   background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
   padding: 14px 16px; box-shadow: var(--shadow); min-width: 0;
 }
 .decision-panel.wide { grid-column: 1 / -1; }
+.decision-panel.seed-analysis { margin-bottom: 20px; }
 .decision-panel h2 { margin: 0 0 4px; font-size: 15px; }
 .panel-note { color: var(--muted); font-size: 11px; margin-bottom: 12px; }
 .funnel { display: flex; align-items: stretch; gap: 7px; overflow-x: auto; padding-bottom: 3px; }
@@ -144,10 +158,48 @@ section.filters {
 .segment-name { font-size: 11px; color: var(--muted); }
 .segment-value { font-weight: 700; font-size: 17px; margin-top: 2px; }
 .segment-sub { color: var(--muted); font-size: 10px; }
+.decision-panel.discovery-panel { padding-top: 10px; padding-bottom: 10px; }
+.discovery-panel .compact-panel-head { display: flex; align-items: baseline; gap: 9px; margin-bottom: 8px; }
+.discovery-panel .compact-panel-head h2 { white-space: nowrap; }
+.discovery-panel .compact-panel-head .panel-note { margin: 0; }
+.discovery-panel .segment-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.discovery-panel .segment { display: grid; grid-template-columns: 1fr auto; align-items: baseline; column-gap: 10px; padding: 7px 10px; }
+.discovery-panel .segment-value { grid-row: 1 / span 2; grid-column: 2; font-size: 16px; margin: 0; }
+.overlap-summary { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 8px; margin-bottom: 12px; }
+.overlap-stat { background: var(--bg); border: 1px solid var(--border); border-radius: 9px; padding: 9px 11px; min-width: 0; }
+.overlap-stat.primary { background: var(--amber-soft); border-color: var(--amber); }
+.overlap-stat-label { color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: .04em; }
+.overlap-stat-value { font-size: 20px; font-weight: 700; line-height: 1.25; margin-top: 2px; }
+.overlap-stat.primary .overlap-stat-value { color: var(--amber); }
+.overlap-stat-note { color: var(--muted); font-size: 10px; margin-top: 2px; }
+.overlap-total-track { display: flex; height: 9px; overflow: hidden; border-radius: 999px; background: var(--border); margin-bottom: 7px; }
+.overlap-total-track .shared { background: var(--primary); }
+.overlap-total-track .duplicate { background: var(--amber); }
+.overlap-legend { display: flex; flex-wrap: wrap; gap: 12px; color: var(--muted); font-size: 10px; margin-bottom: 11px; }
+.overlap-legend span { display: inline-flex; align-items: center; gap: 5px; }
+.overlap-legend i { width: 8px; height: 8px; border-radius: 2px; display: inline-block; }
+.overlap-legend .shared { background: var(--primary); }
+.overlap-legend .duplicate { background: var(--amber); }
 .compact-table { min-width: 700px; }
 .compact-table th, .compact-table td { padding: 7px 9px; }
-.warning-list { display: grid; gap: 7px; max-height: 220px; overflow: auto; }
-.warning-item { border-left: 3px solid var(--amber); background: var(--amber-soft); border-radius: 6px; padding: 7px 9px; font-size: 12px; }
+.seed-performance-chart { height: 310px; }
+.warning-list { display: grid; gap: 9px; }
+.warning-item { border: 1px solid var(--border); background: var(--bg); border-radius: 9px; padding: 9px 10px 5px; font-size: 11px; }
+.warning-group-summary { display: grid; grid-template-columns: minmax(170px, 1.1fr) minmax(240px, 2fr); gap: 12px; align-items: center; margin-bottom: 7px; }
+.warning-copy { min-width: 0; }
+.warning-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+.warning-heading strong { font-size: 12px; }
+.warning-risk { color: var(--amber); font-weight: 700; white-space: nowrap; }
+.warning-seed { color: var(--muted); margin-top: 2px; }
+.warning-bar-track { height: 22px; background: var(--gray-soft); border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+.warning-bar { display: flex; height: 100%; min-width: 3px; border-radius: 5px; overflow: hidden; }
+.warning-bar .shared { background: var(--primary); }
+.warning-bar .duplicate { background: var(--amber); }
+.overlap-variants { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 5px; border-top: 1px solid var(--border); padding-top: 6px; }
+.overlap-variant { display: grid; grid-template-columns: 22px minmax(0, 1fr) auto; gap: 7px; align-items: center; min-width: 0; padding: 5px 7px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; }
+.variant-index { color: var(--muted); font-variant-numeric: tabular-nums; text-align: right; }
+.variant-keyword { color: var(--text); overflow-wrap: anywhere; }
+.variant-volume { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .history-toolbar { display: flex; gap: 10px; align-items: center; margin-bottom: 8px; }
 .history-toolbar select { flex: 1; min-width: 0; border: 1px solid var(--border); background: var(--bg); color: var(--text); border-radius: 8px; padding: 7px 10px; }
 .cluster-card { cursor: pointer; }
@@ -160,6 +212,8 @@ section.filters {
   background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
   padding: 14px 16px; box-shadow: var(--shadow); display: flex; flex-direction: column;
 }
+.chart-card.wide { grid-column: 1 / -1; }
+.chart-pair { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
 .chart-title { margin: 0 0 4px; font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 6px; }
 .chart-sub { color: var(--muted); font-size: 11px; margin: 0 0 10px; }
 .chart-wrap { position: relative; height: 300px; }
@@ -217,11 +271,32 @@ th.num { text-align: right; }
 .page-info { color: var(--muted); font-size: 12px; }
 
 .cluster-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 14px; }
+.cluster-section.cluster-hero { padding: 18px; margin-bottom: 20px; border-color: rgba(99, 102, 241, .4); background: linear-gradient(135deg, var(--card), var(--primary-soft)); }
+.cluster-hero .section-head { align-items: flex-start; }
+.cluster-hero-title h2 { margin: 0 0 3px; font-size: 19px; }
+.cluster-hero-sub { color: var(--muted); font-size: 11px; }
+.cluster-scene-layout { display: flex; flex-direction: column; gap: 10px; margin-top: 12px; }
+.cluster-scene { position: relative; height: 430px; min-width: 0; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: radial-gradient(circle at 50% 32%, var(--primary-soft), var(--bg) 68%); }
+.cluster-scene canvas { display: block; width: 100%; height: 100%; cursor: crosshair; }
+.cluster-axis-key { position: absolute; left: 12px; bottom: 10px; display: flex; flex-wrap: wrap; gap: 9px; color: var(--muted); font-size: 10px; pointer-events: none; }
+.cluster-axis-key span { padding: 3px 7px; border: 1px solid var(--border); border-radius: 999px; background: var(--card); }
+.cluster-scene-tooltip { position: absolute; z-index: 4; max-width: 230px; padding: 8px 10px; border-radius: 8px; background: var(--text); color: var(--bg); font-size: 11px; line-height: 1.45; pointer-events: none; box-shadow: var(--shadow); }
+.cluster-scene-tooltip strong { display: block; font-size: 12px; margin-bottom: 3px; }
+.cluster-scene-legend { display: flex; flex-wrap: wrap; gap: 8px; }
+.cluster-legend-item { flex: 1 1 210px; width: auto; text-align: left; color: var(--text); background: var(--card); border: 1px solid var(--border); border-radius: 9px; padding: 8px 10px; cursor: pointer; }
+.cluster-legend-item:hover, .cluster-legend-item.selected { border-color: var(--primary); box-shadow: 0 0 0 1px var(--primary); }
+.cluster-legend-head { display: flex; align-items: center; gap: 7px; font-weight: 700; font-size: 12px; }
+.cluster-dot { width: 9px; height: 9px; border-radius: 50%; flex: 0 0 auto; }
+.cluster-legend-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 8px; margin-top: 7px; color: var(--muted); font-size: 10px; }
 .cluster-card {
   border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px;
-  background: var(--bg);
+  background: var(--card);
 }
 .cluster-card h3 { margin: 0 0 10px; font-size: 14px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.cluster-rank { color: var(--muted); font-size: 11px; font-weight: 600; }
+.cluster-volume-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; margin-bottom: 11px; }
+.cluster-volume { font-size: 25px; font-weight: 750; letter-spacing: -.03em; line-height: 1; }
+.cluster-share { color: var(--primary); font-size: 12px; font-weight: 700; white-space: nowrap; }
 .cluster-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 14px; }
 .metric .metric-label { font-size: 11px; color: var(--muted); }
 .metric .metric-value { font-weight: 600; font-size: 13px; margin-top: 1px; }
@@ -246,10 +321,18 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
   header { padding: 14px 16px; }
   main { padding: 14px 14px 40px; }
   .charts { grid-template-columns: 1fr; }
+  .chart-pair { grid-template-columns: 1fr; }
+  .overview-signals { grid-template-columns: 1fr; }
+  .cluster-scene { height: 380px; }
   .card-value { font-size: 20px; }
   .filter input[type="search"] { min-width: 100%; }
   .decision-grid { grid-template-columns: 1fr; }
   .decision-panel.wide { grid-column: auto; }
+  .discovery-panel .compact-panel-head { display: block; }
+  .discovery-panel .segment-grid { grid-template-columns: repeat(2, 1fr); }
+  .overlap-summary { grid-template-columns: 1fr; }
+  .warning-group-summary { grid-template-columns: 1fr; gap: 5px; }
+  .overlap-variants { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -279,6 +362,14 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
         <select id="f-cluster"></select></label>
       <label class="filter"><span class="tip" data-tip="Filter by search intent: commercial, transactional, navigational or informational">Intent</span>
         <select id="f-intent"></select></label>
+      <label class="filter"><span class="tip" data-tip="Filter by the role the query plays in retail discovery">Lane</span>
+        <select id="f-lane"></select></label>
+      <label class="filter"><span class="tip" data-tip="Filter by extracted apparel category">Category</span>
+        <select id="f-category"></select></label>
+      <label class="filter"><span class="tip" data-tip="Filter by extracted shopper audience">Audience</span>
+        <select id="f-audience"></select></label>
+      <label class="filter"><span class="tip" data-tip="Filter by online, store, or local channel">Channel</span>
+        <select id="f-channel"></select></label>
       <label class="filter"><span class="tip" data-tip="Only show keywords with a search volume at or above this value">Min volume</span>
         <input type="number" id="f-minvol" min="0" step="1000" placeholder="0"></label>
       <label class="filter"><span class="tip" data-tip="Only show keywords with an opportunity score at or above this value (0–100)">Min opportunity</span>
@@ -297,38 +388,92 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     <button id="empty-reset" class="btn">Reset filters</button>
   </div>
 
+  <section class="decision-panel seed-analysis" aria-label="Seed phrase analysis">
+    <h2>Seed performance</h2>
+    <div class="panel-note">Search volume by seed, split into recommended, declining, and remaining keywords. Hover for active count, median volume, and commercial share.</div>
+    <div class="chart-wrap seed-performance-chart"><canvas id="chartSeeds"></canvas><div class="chart-empty hidden">No data</div></div>
+  </section>
+
   <section class="cards" aria-label="Summary">
     <div class="card"><div class="card-label tip" data-tip="Total keywords in the dataset, including merged duplicates">Total keywords</div><div class="card-value" id="c-total">—</div></div>
     <div class="card"><div class="card-label tip" data-tip="Keywords that were not merged into a duplicate — the canonical research set">Active keywords</div><div class="card-value" id="c-active">—</div></div>
     <div class="card"><div class="card-label tip" data-tip="Active keywords flagged as recommended by the scoring pipeline">Recommended</div><div class="card-value" id="c-rec">—</div></div>
     <div class="card"><div class="card-label tip" data-tip="Number of keyword clusters present in the filtered set">Clusters</div><div class="card-value" id="c-clusters">—</div></div>
-    <div class="card"><div class="card-label tip" data-tip="Sum of search volume across active keywords (merged duplicates excluded to avoid double counting)">Combined search volume</div><div class="card-value" id="c-volume">—</div></div>
+    <div class="card"><div class="card-label tip" data-tip="Cumulative search volume across every distinct keyword phrase; exact cross-seed repeats are counted once">Cumulative search volume</div><div class="card-value" id="c-volume">—</div></div>
     <div class="card"><div class="card-label tip" data-tip="Average CPC across active keywords that have a CPC value">Average CPC</div><div class="card-value" id="c-cpc">—</div></div>
   </section>
 
+  <section class="cluster-section cluster-hero" aria-label="Cluster landscape">
+    <div class="section-head">
+      <div class="cluster-hero-title">
+        <h2 class="tip" data-tip="A filtered market map of the keyword clusters. Volume, CPC, and commercial intent are recomputed from visible keywords; trend and opportunity come from the clustering pipeline.">Cluster landscape</h2>
+        <div class="cluster-hero-sub">See where demand concentrates, which themes are recommended, and how strong each opportunity is.</div>
+      </div>
+      <div class="table-meta" id="cluster-count"></div>
+    </div>
+    <div id="empty-clusters" class="hidden" style="color:var(--muted);padding:12px 0;">No clusters match the current filters.</div>
+    <div class="cluster-scene-layout" id="cluster-scene-layout">
+      <div class="cluster-scene-legend" id="cluster-scene-legend"></div>
+      <div class="cluster-scene">
+        <canvas id="cluster-landscape" aria-label="Three-dimensional cluster landscape"></canvas>
+        <div class="cluster-axis-key"><span>X · Opportunity</span><span>Depth · YoY trend momentum</span><span>Height · Search volume</span></div>
+        <div class="cluster-scene-tooltip hidden" id="cluster-scene-tooltip"></div>
+      </div>
+    </div>
+    <div id="cluster-inspector" class="cluster-inspector hidden"></div>
+  </section>
+
+  <section class="overview-package" aria-label="Market overview">
+    <div class="overview-package-head">
+      <h2>Market overview</h2>
+      <p>From collection quality to intent, recommendation, opportunity, and risk signals.</p>
+    </div>
+    <div class="overview-flow">
+      <div class="decision-panel wide">
+        <h2>Collection funnel</h2>
+        <div class="panel-note">Shows what survived collection, intent filtering, deduplication, and recommendation.</div>
+        <div class="funnel" id="collection-funnel"></div>
+      </div>
+      <div class="decision-panel discovery-panel wide">
+        <div class="compact-panel-head">
+          <h2>Store-discovery mix</h2>
+          <div class="panel-note">Local/store queries, known-brand searches, and product/category demand.</div>
+        </div>
+        <div class="segment-grid" id="discovery-segments"></div>
+      </div>
+    </div>
+    <div class="overview-signals">
+      <div class="chart-card">
+        <h3 class="chart-title tip" data-tip="Share of active keywords by search intent label">Search Intent Mix</h3>
+        <div class="chart-wrap"><canvas id="chartIntent"></canvas><div class="chart-empty hidden">No data</div></div>
+      </div>
+      <div class="chart-card">
+        <h3 class="chart-title tip" data-tip="Share of active keywords that the pipeline recommends targeting vs rejects">Recommended vs Rejected</h3>
+        <div class="chart-wrap"><canvas id="chartRecommended"></canvas><div class="chart-empty hidden">No data</div></div>
+      </div>
+      <div class="chart-card">
+        <h3 class="chart-title tip" data-tip="Distribution of opportunity scores in 10-point buckets (0–10 … 90–100)">Opportunity-Score Distribution</h3>
+        <div class="chart-sub" id="histogram-note"></div>
+        <div class="chart-wrap"><canvas id="chartHistogram"></canvas><div class="chart-empty hidden">No data</div></div>
+      </div>
+      <div class="chart-card">
+        <h3 class="chart-title tip" data-tip="How many active keywords carry each quality flag: declining traffic, too broad, or too little traffic">Flag Breakdown</h3>
+        <div class="chart-wrap"><canvas id="chartFlags"></canvas><div class="chart-empty hidden">No data</div></div>
+      </div>
+    </div>
+  </section>
+
   <section class="decision-grid" aria-label="Decision summary">
-    <div class="decision-panel wide">
-      <h2>Collection funnel</h2>
-      <div class="panel-note">Shows what survived collection, intent filtering, deduplication, and recommendation.</div>
-      <div class="funnel" id="collection-funnel"></div>
-    </div>
-    <div class="decision-panel">
-      <h2>Store-discovery mix</h2>
-      <div class="panel-note">Separates local/store queries, known-brand searches, and product/category demand.</div>
-      <div class="segment-grid" id="discovery-segments"></div>
-    </div>
-    <div class="decision-panel">
+    <div class="decision-panel wide overlap-panel">
       <h2>Possible volume overlap</h2>
-      <div class="panel-note">Close variants with identical reported volume may share one Google volume bucket; do not blindly add them.</div>
+      <div class="panel-note">Variants with the same reported metrics and monthly history are treated as a likely shared Google volume bucket. The raw and adjusted totals remain visible.</div>
+      <div class="overlap-summary" id="overlap-summary"></div>
+      <div class="overlap-total-track" id="overlap-total-track" aria-label="Shared bucket volume versus possible double-counted volume"></div>
+      <div class="overlap-legend">
+        <span><i class="shared"></i>Likely shared bucket</span>
+        <span><i class="duplicate"></i>Possible double-counted volume</span>
+      </div>
       <div class="warning-list" id="overlap-warnings"></div>
-    </div>
-    <div class="decision-panel wide">
-      <h2>Seed performance</h2>
-      <div class="panel-note">Compare which input seeds produce high-volume, commercially useful, non-declining keywords.</div>
-      <div class="table-scroll"><table class="compact-table">
-        <thead><tr><th>Seed</th><th class="num">Active</th><th class="num">Total volume</th><th class="num">Median volume</th><th class="num">Commercial</th><th class="num">Recommended</th><th class="num">Declining</th></tr></thead>
-        <tbody id="seed-performance"></tbody>
-      </table></div>
     </div>
     <div class="decision-panel wide">
       <h2>Actual monthly search history</h2>
@@ -339,50 +484,20 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
   </section>
 
   <section class="charts" aria-label="Charts">
-    <div class="chart-card">
-      <h3 class="chart-title tip" data-tip="Top 20 active keywords ranked by monthly search volume (largest first). Amber bars mark high-volume commercial keywords.">Top 20 Keywords by Search Volume</h3>
-      <div class="chart-wrap tall"><canvas id="chartTopKeywords"></canvas><div class="chart-empty hidden">No data</div></div>
+    <div class="chart-card wide">
+      <h3 class="chart-title tip" data-tip="Every recommended keyword runs left-to-right along the horizontal axis. Columns use the left volume axis; the line uses seasonality-adjusted year-over-year momentum.">Recommended Keywords · Search Volume and Trend</h3>
+      <div class="chart-sub" id="recommended-keyword-note">All recommended keywords left-to-right, ranked by search volume.</div>
+      <div class="table-scroll"><div class="chart-wrap tall" id="recommended-keyword-chart"><canvas id="chartTopKeywords"></canvas><div class="chart-empty hidden">No recommended keywords</div></div></div>
     </div>
-    <div class="chart-card">
-      <h3 class="chart-title tip" data-tip="Combined search volume per cluster, computed from the filtered keyword set">Cluster Combined Search Volume</h3>
-      <div class="chart-wrap tall"><canvas id="chartClusterVolume"></canvas><div class="chart-empty hidden">No data</div></div>
-    </div>
-    <div class="chart-card">
-      <h3 class="chart-title tip" data-tip="Each bubble is a keyword: X = keyword difficulty (0–100), Y = search volume, bubble size = CPC, color = commercial intent (blue = low, red = high)">Volume vs Keyword Difficulty</h3>
-      <div class="chart-wrap"><canvas id="chartBubble"></canvas><div class="chart-empty hidden">No data</div></div>
-    </div>
-    <div class="chart-card">
-      <h3 class="chart-title tip" data-tip="Each point is a keyword: X = competition (0–1), Y = opportunity score (0–100). Points in the top-left quadrant are attractive low-competition opportunities.">Competition vs Opportunity Score</h3>
-      <div class="chart-wrap"><canvas id="chartScatter"></canvas><div class="chart-empty hidden">No data</div></div>
-    </div>
-    <div class="chart-card">
-      <h3 class="chart-title tip" data-tip="Monthly trend slope of the top 10 keywords by volume. Green points = rising demand, red = declining demand.">Trend Slope by Top Keyword</h3>
-      <div class="chart-wrap"><canvas id="chartTrend"></canvas><div class="chart-empty hidden">No data</div></div>
-    </div>
-    <div class="chart-card">
-      <h3 class="chart-title tip" data-tip="Share of active keywords by search intent label">Search Intent Mix</h3>
-      <div class="chart-wrap"><canvas id="chartIntent"></canvas><div class="chart-empty hidden">No data</div></div>
-    </div>
-    <div class="chart-card">
-      <h3 class="chart-title tip" data-tip="Share of active keywords that the pipeline recommends targeting vs rejects">Recommended vs Rejected</h3>
-      <div class="chart-wrap"><canvas id="chartRecommended"></canvas><div class="chart-empty hidden">No data</div></div>
-    </div>
-    <div class="chart-card">
-      <h3 class="chart-title tip" data-tip="Per seed group: keyword count and combined search volume. Read volume on the left axis, count on the right axis.">Keyword Count and Volume by Seed</h3>
-      <div class="chart-wrap"><canvas id="chartSeeds"></canvas><div class="chart-empty hidden">No data</div></div>
-    </div>
-    <div class="chart-card">
-      <h3 class="chart-title tip" data-tip="Distribution of opportunity scores in 10-point buckets (0–10 … 90–100)">Opportunity-Score Distribution</h3>
-      <div class="chart-sub" id="histogram-note"></div>
-      <div class="chart-wrap"><canvas id="chartHistogram"></canvas><div class="chart-empty hidden">No data</div></div>
-    </div>
-    <div class="chart-card">
-      <h3 class="chart-title tip" data-tip="Proportional share of each cluster in the total search volume of the filtered set. Larger tiles = larger share.">Cluster Share of Total Volume</h3>
-      <div class="chart-wrap tall"><canvas id="chartTreemap"></canvas><div class="chart-empty hidden">No data</div></div>
-    </div>
-    <div class="chart-card">
-      <h3 class="chart-title tip" data-tip="How many active keywords carry each quality flag: declining traffic, too broad, or too little traffic">Flag Breakdown</h3>
-      <div class="chart-wrap"><canvas id="chartFlags"></canvas><div class="chart-empty hidden">No data</div></div>
+    <div class="chart-pair">
+      <div class="chart-card">
+        <h3 class="chart-title tip" data-tip="Each bubble is a keyword: X = keyword difficulty (0–100), Y = search volume, bubble size = CPC, color = commercial intent (blue = low, red = high)">Volume vs Keyword Difficulty</h3>
+        <div class="chart-wrap"><canvas id="chartBubble"></canvas><div class="chart-empty hidden">No data</div></div>
+      </div>
+      <div class="chart-card">
+        <h3 class="chart-title tip" data-tip="Each point is a keyword: X = competition (0–1), Y = opportunity score (0–100). Points in the top-left quadrant are attractive low-competition opportunities.">Competition vs Opportunity Score</h3>
+        <div class="chart-wrap"><canvas id="chartScatter"></canvas><div class="chart-empty hidden">No data</div></div>
+      </div>
     </div>
   </section>
 
@@ -417,16 +532,6 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     </div>
   </section>
 
-  <section class="cluster-section" aria-label="Cluster view">
-    <div class="section-head">
-      <h2 class="tip" data-tip="Each cluster card shows combined volume, average CPC, commercial intent, trend score, opportunity score and recommendation. Volume/CPC/intent are recomputed from the filtered keywords; trend and opportunity come from the clustering output.">Clusters</h2>
-      <div class="table-meta" id="cluster-count"></div>
-    </div>
-    <div id="cluster-inspector" class="cluster-inspector hidden"></div>
-    <div id="empty-clusters" class="hidden" style="color:var(--muted);padding:12px 0;">No clusters match the current filters.</div>
-    <div class="cluster-grid" id="cluster-grid"></div>
-  </section>
-
   <footer>Data loaded from <code>data/output/keywords.json</code> and <code>data/output/clusters.json</code> — rerun the pipeline and refresh to update.</footer>
 </main>
 
@@ -441,8 +546,6 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
 
   var HVOL = 500000;
   var HCI = 0.8;
-  var TOP_N = 20;
-  var TREND_N = 10;
 
   var state = {
     keywords: [],
@@ -451,7 +554,8 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     loadedAt: null,
     selectedCluster: '',
     filters: {
-      seed: '', cluster: '', intent: '', minVolume: 0, minOpportunity: 0,
+      seed: '', cluster: '', intent: '', lane: '', category: '', audience: '', channel: '',
+      minVolume: 0, minOpportunity: 0,
       flags: [], recommendedOnly: false, search: ''
     },
     sortKey: 'search_volume',
@@ -463,9 +567,10 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
   var charts = {};
 
   var FLAG_META = {
-    declining_traffic: { label: 'Declining', cls: 'flag-declining', tip: 'Trend slope below the declining threshold — demand is falling' },
+    declining_traffic: { label: 'Declining', cls: 'flag-declining', tip: 'Seasonality-adjusted momentum is below the declining threshold' },
     too_broad: { label: 'Too broad', cls: 'flag-broad', tip: 'Short, high-volume keyword that is too generic to target' },
     too_little_traffic: { label: 'Low traffic', cls: 'flag-low', tip: 'Search volume too low to be worth targeting' },
+    brand_competitor: { label: 'Brand / competitor', cls: 'flag-broad', tip: 'Useful competitor demand, separated from unbranded targeting recommendations' },
     informational_dropped: { label: 'Informational', cls: 'flag-low', tip: 'Dropped from the pipeline as informational intent' }
   };
 
@@ -480,6 +585,12 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     if (cls) n.className = cls;
     if (text != null) n.textContent = text;
     return n;
+  }
+
+  function escapeHTML(value) {
+    return String(value).replace(/[&<>'"]/g, function (ch) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[ch];
+    });
   }
 
   function cssVar(name) {
@@ -564,6 +675,24 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     return rows.filter(function (r) { return !r.merged_into; });
   }
 
+  function distinctKeywordRows(rows) {
+    var byKeyword = {};
+    rows.forEach(function (r) {
+      var key = String(r.keyword || '').trim().toLowerCase();
+      if (!key) return;
+      var current = byKeyword[key];
+      if (!current || (!r.merged_into && current.merged_into) ||
+          ((r.search_volume || 0) > (current.search_volume || 0))) byKeyword[key] = r;
+    });
+    return Object.keys(byKeyword).map(function (k) { return byKeyword[k]; });
+  }
+
+  function cumulativeVolume(rows) {
+    return distinctKeywordRows(rows).reduce(function (sum, r) {
+      return sum + (isNum(r.search_volume) ? r.search_volume : 0);
+    }, 0);
+  }
+
   function isHighVolumeCommercial(r) {
     return (r.search_volume != null && r.search_volume >= HVOL) &&
            (r.commercial_intent != null && r.commercial_intent >= HCI);
@@ -572,6 +701,8 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
   function haystack(r) {
     return [
       r.keyword, r.seed, r.cluster, r.main_intent,
+      (r.source_seeds || []).join(' '), r.lane,
+      Object.keys(r.facets || {}).reduce(function (a, k) { return a.concat(r.facets[k] || []); }, []).join(' '),
       (r.flags || []).join(' '), r.recommended ? 'recommended' : ''
     ].join(' ').toLowerCase();
   }
@@ -580,9 +711,13 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     var f = state.filters;
     var q = f.search.trim().toLowerCase();
     return state.keywords.filter(function (r) {
-      if (f.seed && r.seed !== f.seed) return false;
+      if (f.seed && r.seed !== f.seed && (r.source_seeds || []).indexOf(f.seed) === -1) return false;
       if (f.cluster && r.cluster !== f.cluster) return false;
       if (f.intent && (r.main_intent || '').toLowerCase() !== f.intent) return false;
+      if (f.lane && (r.lane || discoveryLane(r)) !== f.lane) return false;
+      if (f.category && (((r.facets || {}).category || []).indexOf(f.category) === -1)) return false;
+      if (f.audience && (((r.facets || {}).audience || []).indexOf(f.audience) === -1)) return false;
+      if (f.channel && (((r.facets || {}).channel || []).indexOf(f.channel) === -1)) return false;
       if (f.minVolume > 0 && (r.search_volume == null || r.search_volume < f.minVolume)) return false;
       if (f.minOpportunity > 0 && (r.opportunity_score == null || r.opportunity_score < f.minOpportunity)) return false;
       if (f.recommendedOnly && !r.recommended) return false;
@@ -605,15 +740,19 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     return map;
   }
 
-  function aggregateBySeed(rows) {
-    var map = {};
+  function metricFingerprint(r) {
+    var history = (r.monthly_history || []).map(function (m) { return m.search_volume || 0; }).join(',');
+    return [r.search_volume || 0, history, r.cpc, r.competition, r.keyword_difficulty].join('|');
+  }
+
+  function adjustedVolume(rows) {
+    var buckets = {};
     rows.forEach(function (r) {
-      var k = r.seed || 'Unknown';
-      var g = map[k] || (map[k] = { volume: 0, count: 0 });
-      g.count++;
-      g.volume += isNum(r.search_volume) ? r.search_volume : 0;
+      if (!isNum(r.search_volume) || r.search_volume <= 0) return;
+      var key = metricFingerprint(r);
+      buckets[key] = Math.max(buckets[key] || 0, r.search_volume);
     });
-    return map;
+    return Object.keys(buckets).reduce(function (sum, k) { return sum + buckets[k]; }, 0);
   }
 
   function median(values) {
@@ -623,12 +762,19 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     return sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
   }
 
-  function discoveryType(r) {
+  function discoveryLane(r) {
     var text = String(r.keyword || '').toLowerCase();
-    if ((r.main_intent || '').toLowerCase() === 'navigational') return 'Brand / navigational';
-    if (/\b(near me|close to me|closest|nearest|in [a-z]+)\b/.test(text)) return 'Local store';
-    if (/\b(store|stores|shop|shops|boutique|boutiques|outlet|online)\b/.test(text)) return 'Store / online';
-    return 'Product / category';
+    if ((r.main_intent || '').toLowerCase() === 'navigational') return 'brand_competitor';
+    if (/\b(near me|close to me|closest|nearest|in [a-z]+)\b/.test(text)) return 'local_discovery';
+    if (/\b(store|stores|shop|shops|boutique|boutiques|outlet|online)\b/.test(text)) return 'store_discovery';
+    return 'category_discovery';
+  }
+
+  function laneLabel(lane) {
+    return ({
+      store_discovery: 'Store / online', local_discovery: 'Local store',
+      category_discovery: 'Product / category', brand_competitor: 'Brand / competitor'
+    })[lane] || lane || 'Product / category';
   }
 
   function renderFunnel() {
@@ -636,11 +782,14 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     var total = state.keywords.length;
     var active = activeRows(state.keywords).length;
     var recommended = activeRows(state.keywords).filter(function (r) { return r.recommended; }).length;
+    var variantGroups = isNum(s.variant_groups) ? s.variant_groups : new Set(state.keywords.map(function (r) { return r.variant_group_id; }).filter(Boolean)).size;
     var stages = [
       { label: 'Raw collected', value: isNum(s.raw_items_collected) ? s.raw_items_collected : total, note: state.summary ? 'API rows' : 'output rows (summary unavailable)' },
       { label: 'With metrics', value: isNum(s.items_with_metrics) ? s.items_with_metrics : total, note: 'usable volume data' },
       { label: 'After intent filter', value: isNum(s.informational_dropped) && isNum(s.items_with_metrics) ? s.items_with_metrics - s.informational_dropped : total, note: (s.informational_dropped || 0) + ' informational removed' },
-      { label: 'After dedupe', value: isNum(s.active_keywords) ? s.active_keywords : active, note: (isNum(s.dedup_merged) ? s.dedup_merged : total - active) + ' variants merged' },
+      { label: 'Unique phrases', value: isNum(s.unique_phrases) ? s.unique_phrases : total, note: 'cross-seed repeats combined' },
+      { label: 'Variant groups', value: variantGroups || active, note: (isNum(s.dedup_merged) ? s.dedup_merged : total - active) + ' rows organised into canonicals' },
+      { label: 'Topic clusters', value: isNum(s.clusters) ? s.clusters : state.clusters.length, note: 'non-transitive market topics' },
       { label: 'Recommended', value: isNum(s.recommended_keywords) ? s.recommended_keywords : recommended, note: 'passed score + flags' }
     ];
     var root = $('collection-funnel');
@@ -658,12 +807,12 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
   function renderDiscoverySegments(rows) {
     var map = {};
     rows.forEach(function (r) {
-      var type = discoveryType(r);
+      var type = laneLabel(r.lane || discoveryLane(r));
       var g = map[type] || (map[type] = { count: 0, volume: 0 });
       g.count++;
       g.volume += isNum(r.search_volume) ? r.search_volume : 0;
     });
-    var order = ['Store / online', 'Local store', 'Product / category', 'Brand / navigational'];
+    var order = ['Store / online', 'Local store', 'Product / category', 'Brand / competitor'];
     var root = $('discovery-segments');
     root.innerHTML = '';
     order.forEach(function (type) {
@@ -680,49 +829,99 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     var groups = {};
     rows.forEach(function (r) {
       if (!isNum(r.search_volume) || r.search_volume <= 0) return;
-      var key = (r.seed || '') + '|' + r.search_volume;
+      var key = r.cluster_id ? r.cluster_id + '|' + metricFingerprint(r) : (r.seed || '') + '|' + r.search_volume;
       (groups[key] || (groups[key] = [])).push(r);
     });
-    var overlaps = Object.keys(groups).map(function (k) { return groups[k]; })
+    var overlaps = Object.keys(groups).map(function (k) {
+        var seen = {};
+        return groups[k].filter(function (r) {
+          var kw = String(r.keyword || '').toLowerCase();
+          if (seen[kw]) return false;
+          seen[kw] = true; return true;
+        });
+      })
       .filter(function (g) { return g.length >= 2; })
-      .sort(function (a, b) { return (b[0].search_volume * b.length) - (a[0].search_volume * a.length); })
-      .slice(0, 6);
+      .sort(function (a, b) { return (b[0].search_volume * (b.length - 1)) - (a[0].search_volume * (a.length - 1)); });
+    var sharedVolume = overlaps.reduce(function (sum, g) { return sum + g[0].search_volume; }, 0);
+    var reportedVolume = overlaps.reduce(function (sum, g) { return sum + (g[0].search_volume * g.length); }, 0);
+    var overlapVolume = reportedVolume - sharedVolume;
+    var variantCount = overlaps.reduce(function (sum, g) { return sum + g.length; }, 0);
+    var summary = $('overlap-summary');
+    var totalTrack = $('overlap-total-track');
     var root = $('overlap-warnings');
+    summary.innerHTML = '';
+    totalTrack.innerHTML = '';
     root.innerHTML = '';
     if (!overlaps.length) {
+      summary.classList.add('hidden');
+      totalTrack.classList.add('hidden');
+      totalTrack.nextElementSibling.classList.add('hidden');
       root.appendChild(el('div', 'panel-note', 'No identical-volume variant groups in the filtered data.'));
       return;
     }
-    overlaps.forEach(function (g) {
-      var item = el('div', 'warning-item');
-      item.appendChild(el('strong', null, fmtNum(g[0].search_volume) + ' each · ' + g.length + ' variants'));
-      item.appendChild(document.createTextNode(' — ' + g.map(function (r) { return r.keyword; }).slice(0, 4).join(', ') + (g.length > 4 ? '…' : '')));
-      root.appendChild(item);
-    });
-  }
+    summary.classList.remove('hidden');
+    totalTrack.classList.remove('hidden');
+    totalTrack.nextElementSibling.classList.remove('hidden');
 
-  function renderSeedPerformance(rows) {
-    var grouped = {};
-    rows.forEach(function (r) { (grouped[r.seed || 'Unknown'] || (grouped[r.seed || 'Unknown'] = [])).push(r); });
-    var body = $('seed-performance');
-    body.innerHTML = '';
-    Object.keys(grouped).map(function (seed) {
-      var rs = grouped[seed];
-      return {
-        seed: seed,
-        count: rs.length,
-        volume: rs.reduce(function (s, r) { return s + (r.search_volume || 0); }, 0),
-        median: median(rs.map(function (r) { return r.search_volume || 0; })),
-        commercial: rs.filter(function (r) { return ['commercial', 'transactional'].indexOf((r.main_intent || '').toLowerCase()) !== -1; }).length,
-        recommended: rs.filter(function (r) { return r.recommended; }).length,
-        declining: rs.filter(function (r) { return (r.flags || []).indexOf('declining_traffic') !== -1; }).length
-      };
-    }).sort(function (a, b) { return b.volume - a.volume; }).forEach(function (g) {
-      var tr = el('tr');
-      [g.seed, g.count, fmtNum(g.volume), fmtNum(g.median), Math.round(g.commercial / g.count * 100) + '%', g.recommended, g.declining].forEach(function (v, i) {
-        tr.appendChild(el('td', i ? 'num' : '', String(v)));
+    [
+      { label: 'Possible double-counted volume', value: overlapVolume, note: 'Extra volume if every variant is added', cls: ' primary' },
+      { label: 'Reported across variants', value: reportedVolume, note: variantCount + ' variants in ' + overlaps.length + ' groups', cls: '' },
+      { label: 'Likely shared-bucket volume', value: sharedVolume, note: 'Counting each group once', cls: '' }
+    ].forEach(function (stat) {
+      var box = el('div', 'overlap-stat' + stat.cls);
+      box.appendChild(el('div', 'overlap-stat-label', stat.label));
+      box.appendChild(el('div', 'overlap-stat-value', fmtNum(stat.value)));
+      box.appendChild(el('div', 'overlap-stat-note', stat.note));
+      summary.appendChild(box);
+    });
+
+    var shared = el('div', 'shared');
+    shared.style.width = (sharedVolume / reportedVolume * 100) + '%';
+    var duplicate = el('div', 'duplicate');
+    duplicate.style.width = (overlapVolume / reportedVolume * 100) + '%';
+    totalTrack.appendChild(shared);
+    totalTrack.appendChild(duplicate);
+
+    var visible = overlaps;
+    var maxReported = visible.reduce(function (max, g) { return Math.max(max, g[0].search_volume * g.length); }, 0);
+    visible.forEach(function (g) {
+      var volume = g[0].search_volume;
+      var reported = volume * g.length;
+      var risk = volume * (g.length - 1);
+      var item = el('div', 'warning-item');
+      var groupSummary = el('div', 'warning-group-summary');
+      var copy = el('div', 'warning-copy');
+      var heading = el('div', 'warning-heading');
+      heading.appendChild(el('strong', null, fmtNum(volume) + ' each · ' + g.length + ' variants'));
+      heading.appendChild(el('span', 'warning-risk', '+' + fmtNum(risk) + ' at risk'));
+      copy.appendChild(heading);
+      copy.appendChild(el('div', 'warning-seed', (g[0].cluster ? 'Cluster: ' + g[0].cluster : 'Seed: ' + (g[0].seed || 'Unknown'))));
+      groupSummary.appendChild(copy);
+
+      var track = el('div', 'warning-bar-track');
+      var bar = el('div', 'warning-bar');
+      bar.style.width = (reported / maxReported * 100) + '%';
+      var barShared = el('div', 'shared');
+      barShared.style.width = (100 / g.length) + '%';
+      var barDuplicate = el('div', 'duplicate');
+      barDuplicate.style.width = ((g.length - 1) / g.length * 100) + '%';
+      bar.appendChild(barShared);
+      bar.appendChild(barDuplicate);
+      track.appendChild(bar);
+      track.title = fmtNum(volume) + ' likely shared + ' + fmtNum(risk) + ' possibly duplicated';
+      groupSummary.appendChild(track);
+      item.appendChild(groupSummary);
+
+      var variants = el('div', 'overlap-variants');
+      g.forEach(function (r, i) {
+        var row = el('div', 'overlap-variant');
+        row.appendChild(el('span', 'variant-index', String(i + 1)));
+        row.appendChild(el('span', 'variant-keyword', r.keyword || '—'));
+        row.appendChild(el('span', 'variant-volume', fmtNum(volume)));
+        variants.appendChild(row);
       });
-      body.appendChild(tr);
+      item.appendChild(variants);
+      root.appendChild(item);
     });
   }
 
@@ -731,12 +930,17 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
   }
 
   function populateFilterOptions() {
-    var seeds = uniqueSorted(state.keywords.map(function (r) { return r.seed; }));
+    var seeds = uniqueSorted(state.keywords.reduce(function (a, r) { return a.concat(r.source_seeds || [r.seed]); }, []));
     var clusters = uniqueSorted(state.clusters.map(function (c) { return c.cluster; }));
     var intents = ['commercial', 'transactional', 'navigational', 'informational'];
+    var lanes = uniqueSorted(state.keywords.map(function (r) { return r.lane || discoveryLane(r); }));
+    var facetValues = function (name) {
+      return uniqueSorted(state.keywords.reduce(function (a, r) { return a.concat(((r.facets || {})[name]) || []); }, []));
+    };
+    var categories = facetValues('category'), audiences = facetValues('audience'), channels = facetValues('channel');
     var flags = uniqueSorted(state.keywords.reduce(function (acc, r) { return acc.concat(r.flags || []); }, []));
 
-    ['f-seed', 'f-cluster', 'f-intent'].forEach(function (id) {
+    ['f-seed', 'f-cluster', 'f-intent', 'f-lane', 'f-category', 'f-audience', 'f-channel'].forEach(function (id) {
       var sel = $(id);
       sel.innerHTML = '';
       var def = el('option', '', 'All');
@@ -758,6 +962,10 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
       o.value = i;
       $('f-intent').appendChild(o);
     });
+    lanes.forEach(function (v) { var o = el('option', '', laneLabel(v)); o.value = v; $('f-lane').appendChild(o); });
+    categories.forEach(function (v) { var o = el('option', '', v); o.value = v; $('f-category').appendChild(o); });
+    audiences.forEach(function (v) { var o = el('option', '', v); o.value = v; $('f-audience').appendChild(o); });
+    channels.forEach(function (v) { var o = el('option', '', v); o.value = v; $('f-channel').appendChild(o); });
 
     var fg = $('f-flags');
     fg.innerHTML = '';
@@ -779,6 +987,10 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     f.seed = $('f-seed').value;
     f.cluster = $('f-cluster').value;
     f.intent = $('f-intent').value;
+    f.lane = $('f-lane').value;
+    f.category = $('f-category').value;
+    f.audience = $('f-audience').value;
+    f.channel = $('f-channel').value;
     f.minVolume = parseInt($('f-minvol').value, 10) || 0;
     f.minOpportunity = parseInt($('f-minopp').value, 10) || 0;
     f.recommendedOnly = $('f-rec').checked;
@@ -792,7 +1004,7 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     var active = activeRows(filtered);
     var recommended = active.filter(function (r) { return r.recommended; }).length;
     var clusters = new Set(active.map(function (r) { return r.cluster; }).filter(Boolean)).size;
-    var volume = active.reduce(function (s, r) { return s + (isNum(r.search_volume) ? r.search_volume : 0); }, 0);
+    var volume = cumulativeVolume(filtered);
     var cpcList = active.map(function (r) { return r.cpc; }).filter(isNum);
     var avgCpc = cpcList.length ? cpcList.reduce(function (a, b) { return a + b; }, 0) / cpcList.length : null;
 
@@ -805,11 +1017,11 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
   }
 
   function renderDecisionPanels() {
-    var active = activeRows(getFiltered());
+    var filtered = getFiltered();
+    var active = activeRows(filtered);
     renderFunnel();
     renderDiscoverySegments(active);
-    renderOverlapWarnings(active);
-    renderSeedPerformance(active);
+    renderOverlapWarnings(filtered);
   }
 
   function baseScales(colors) {
@@ -831,43 +1043,110 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
   }
 
   function chartTopKeywords(colors, rows) {
-    var top = rows.slice().sort(function (a, b) { return (b.search_volume || 0) - (a.search_volume || 0); }).slice(0, TOP_N);
-    if (!top.length) return;
-    var labels = top.map(function (r) { return truncate(r.keyword, 26); });
-    var data = top.map(function (r) { return r.search_volume || 0; });
-    var bg = top.map(function (r) { return isHighVolumeCommercial(r) ? colors.amber : colors.primary; });
+    var top = rows.filter(function (r) { return r.recommended; })
+      .sort(function (a, b) { return (b.search_volume || 0) - (a.search_volume || 0); });
+    var wrap = $('recommended-keyword-chart');
+    if (!top.length) {
+      wrap.style.height = '380px';
+      wrap.style.width = '100%';
+      $('recommended-keyword-note').textContent = 'No recommended keywords in the filtered set.';
+      return;
+    }
+    var labels = top.map(function (r) { return truncate(r.keyword, 42); });
+    wrap.style.height = '420px';
+    wrap.style.width = Math.max(100, top.length * 46) + 'px';
+    $('recommended-keyword-note').textContent = top.length + ' recommended keyword' + (top.length === 1 ? '' : 's') + ' left-to-right · columns show volume, line and dots show trend momentum.';
     charts.chartTopKeywords = new Chart($('chartTopKeywords'), {
       type: 'bar',
       data: {
         labels: labels,
-        datasets: [{
-          data: data,
-          backgroundColor: bg,
-          borderRadius: 4,
-          barThickness: 'flex'
-        }]
+        datasets: [
+          {
+            type: 'bar',
+            label: 'Search volume',
+            data: top.map(function (r) { return r.search_volume || 0; }),
+            backgroundColor: rgba(colors.primary, 0.78),
+            borderColor: colors.primary,
+            borderWidth: 1,
+            borderRadius: 4,
+            xAxisID: 'x',
+            yAxisID: 'yVolume',
+            order: 2,
+            barThickness: 'flex'
+          },
+          {
+            type: 'line',
+            label: 'Trend momentum',
+            data: top.map(function (r) { return isNum(r.trend_slope) ? r.trend_slope : null; }),
+            showLine: true,
+            spanGaps: true,
+            tension: 0.15,
+            borderColor: rgba(colors.amber, 0.8),
+            borderWidth: 2,
+            backgroundColor: top.map(function (r) {
+              if (!isNum(r.trend_slope)) return colors.muted;
+              return r.trend_slope > 0 ? colors.green : (r.trend_slope < 0 ? colors.red : colors.muted);
+            }),
+            pointBorderColor: top.map(function (r) {
+              if (!isNum(r.trend_slope)) return colors.muted;
+              return r.trend_slope > 0 ? colors.green : (r.trend_slope < 0 ? colors.red : colors.muted);
+            }),
+            pointBackgroundColor: top.map(function (r) {
+              if (!isNum(r.trend_slope)) return colors.muted;
+              return r.trend_slope > 0 ? colors.green : (r.trend_slope < 0 ? colors.red : colors.muted);
+            }),
+            pointBorderWidth: 1,
+            pointRadius: 5,
+            pointHoverRadius: 7,
+            xAxisID: 'x',
+            yAxisID: 'yTrend',
+            order: 1
+          }
+        ]
       },
       options: {
-        indexAxis: 'y',
         maintainAspectRatio: false,
         plugins: {
-          legend: { display: false },
+          legend: { position: 'bottom', labels: { color: colors.text, boxWidth: 12, padding: 14 } },
           tooltip: Object.assign({}, tooltipBase(), {
             callbacks: {
               title: function (items) { return top[items[0].dataIndex].keyword; },
               label: function (item) {
                 var r = top[item.dataIndex];
-                var l = ['Volume: ' + fmtNum(r.search_volume)];
-                if (isNum(r.cpc)) l.push('CPC: ' + fmtCPC(r.cpc));
-                if (isNum(r.commercial_intent)) l.push('Commercial intent: ' + fmtPct(r.commercial_intent));
-                return l;
+                if (item.datasetIndex === 1) {
+                  var trend = 'Trend momentum: ' + fmtSlope(r.trend_slope);
+                  if (isNum(r.trend_slope)) trend += ' ' + (r.trend_slope > 0 ? '(rising)' : r.trend_slope < 0 ? '(declining)' : '(flat)');
+                  return trend;
+                }
+                return 'Search volume: ' + fmtNum(r.search_volume);
+              },
+              afterBody: function (items) {
+                if (!items.length) return [];
+                var r = top[items[0].dataIndex];
+                var details = [];
+                if (isNum(r.cpc)) details.push('CPC: ' + fmtCPC(r.cpc));
+                if (isNum(r.commercial_intent)) details.push('Commercial intent: ' + fmtPct(r.commercial_intent));
+                return details;
               }
             }
           })
         },
         scales: {
-          x: { grid: { color: colors.grid }, ticks: { color: colors.muted, callback: function (v) { return fmtNum(v); } } },
-          y: { grid: { display: false }, ticks: { color: colors.text, autoSkip: false } }
+          x: {
+            grid: { display: false },
+            ticks: { color: colors.text, autoSkip: false, maxRotation: 55, minRotation: 55, font: { size: 10 } },
+            title: { display: true, text: 'Recommended keywords', color: colors.muted }
+          },
+          yVolume: {
+            position: 'left', beginAtZero: true, grid: { color: colors.grid },
+            ticks: { color: colors.muted, callback: function (v) { return fmtNum(v); } },
+            title: { display: true, text: 'Monthly search volume', color: colors.muted }
+          },
+          yTrend: {
+            position: 'right', grid: { display: false },
+            ticks: { color: colors.muted, callback: function (v) { return fmtSlope(v); } },
+            title: { display: true, text: 'Trend momentum', color: colors.muted }
+          }
         }
       }
     });
@@ -1024,57 +1303,6 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     });
   }
 
-  function chartTrend(colors, rows) {
-    var top = rows.slice().sort(function (a, b) { return (b.search_volume || 0) - (a.search_volume || 0); }).slice(0, TREND_N);
-    if (!top.length) return;
-    charts.chartTrend = new Chart($('chartTrend'), {
-      type: 'line',
-      data: {
-        labels: top.map(function (r) { return truncate(r.keyword, 20); }),
-        datasets: [{
-          data: top.map(function (r) { return isNum(r.trend_slope) ? r.trend_slope : null; }),
-          borderColor: colors.primary,
-          backgroundColor: rgba(colors.primary, 0.1),
-          pointBackgroundColor: top.map(function (r) {
-            if (!isNum(r.trend_slope)) return colors.muted;
-            return r.trend_slope > 0 ? colors.green : (r.trend_slope < 0 ? colors.red : colors.muted);
-          }),
-          pointBorderColor: top.map(function (r) {
-            if (!isNum(r.trend_slope)) return colors.muted;
-            return r.trend_slope > 0 ? colors.green : (r.trend_slope < 0 ? colors.red : colors.muted);
-          }),
-          pointRadius: 5,
-          pointHoverRadius: 7,
-          borderWidth: 2,
-          tension: 0.3,
-          spanGaps: true,
-          fill: true
-        }]
-      },
-      options: {
-        maintainAspectRatio: false,
-        plugins: {
-          legend: { display: false },
-          tooltip: Object.assign({}, tooltipBase(), {
-            callbacks: {
-              title: function (items) { return top[items[0].dataIndex].keyword; },
-              label: function (item) {
-                var r = top[item.dataIndex];
-                var trend = 'Trend slope: ' + fmtSlope(r.trend_slope);
-                if (isNum(r.trend_slope)) trend += ' ' + (r.trend_slope > 0 ? '(rising)' : r.trend_slope < 0 ? '(declining)' : '(flat)');
-                return [trend, 'Volume: ' + fmtNum(r.search_volume)];
-              }
-            }
-          })
-        },
-        scales: {
-          x: { grid: { display: false }, ticks: { color: colors.text, maxRotation: 45, autoSkip: true, maxTicksLimit: 10 } },
-          y: { grid: { color: colors.grid }, ticks: { color: colors.muted } }
-        }
-      }
-    });
-  }
-
   function doughnut(rows, colors, id, datasets, emptyEl) {
     var total = datasets.reduce(function (s, d) { return s + d.value; }, 0);
     if (!total) { emptyEl.classList.remove('hidden'); return; }
@@ -1136,7 +1364,30 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
   }
 
   function chartSeeds(colors, rows) {
-    var agg = aggregateBySeed(rows);
+    var agg = {};
+    rows.forEach(function (r) {
+      var key = r.seed || 'Unknown';
+      var g = agg[key] || (agg[key] = {
+        count: 0, volume: 0, recommendedCount: 0, recommendedVolume: 0,
+        decliningCount: 0, decliningVolume: 0, otherVolume: 0,
+        commercial: 0, volumes: []
+      });
+      var volume = isNum(r.search_volume) ? r.search_volume : 0;
+      var declining = (r.flags || []).indexOf('declining_traffic') !== -1;
+      g.count++;
+      g.volume += volume;
+      g.volumes.push(volume);
+      if (['commercial', 'transactional'].indexOf((r.main_intent || '').toLowerCase()) !== -1) g.commercial++;
+      if (r.recommended) {
+        g.recommendedCount++;
+        g.recommendedVolume += volume;
+      } else if (declining) {
+        g.decliningCount++;
+        g.decliningVolume += volume;
+      } else {
+        g.otherVolume += volume;
+      }
+    });
     var keys = Object.keys(agg).sort(function (a, b) { return agg[b].volume - agg[a].volume; });
     if (!keys.length) return;
     charts.chartSeeds = new Chart($('chartSeeds'), {
@@ -1145,24 +1396,30 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
         labels: keys,
         datasets: [
           {
-            label: 'Combined volume',
-            data: keys.map(function (k) { return agg[k].volume; }),
-            backgroundColor: rgba(colors.primary, 0.85),
-            borderRadius: 4,
-            yAxisID: 'y',
-            barThickness: 'flex'
+            label: 'Recommended volume',
+            data: keys.map(function (k) { return agg[k].recommendedVolume; }),
+            backgroundColor: rgba(colors.green, 0.88),
+            borderRadius: 3,
+            borderSkipped: false
           },
           {
-            label: 'Keyword count',
-            data: keys.map(function (k) { return agg[k].count; }),
-            backgroundColor: rgba(colors.amber, 0.85),
-            borderRadius: 4,
-            yAxisID: 'y1',
-            barThickness: 'flex'
+            label: 'Declining volume',
+            data: keys.map(function (k) { return agg[k].decliningVolume; }),
+            backgroundColor: rgba(colors.red, 0.82),
+            borderRadius: 3,
+            borderSkipped: false
+          },
+          {
+            label: 'Remaining volume',
+            data: keys.map(function (k) { return agg[k].otherVolume; }),
+            backgroundColor: rgba(colors.gray, 0.48),
+            borderRadius: 3,
+            borderSkipped: false
           }
         ]
       },
       options: {
+        indexAxis: 'y',
         maintainAspectRatio: false,
         plugins: {
           legend: { position: 'bottom', labels: { color: colors.text, boxWidth: 12, padding: 12 } },
@@ -1170,16 +1427,28 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
             callbacks: {
               label: function (item) {
                 var k = keys[item.dataIndex];
-                if (item.datasetIndex === 0) return 'Combined volume: ' + fmtNum(agg[k].volume);
-                return 'Keyword count: ' + agg[k].count;
+                var value = item.raw || 0;
+                var pct = agg[k].volume ? Math.round(value / agg[k].volume * 100) : 0;
+                return item.dataset.label + ': ' + fmtNum(value) + ' (' + pct + '%)';
+              },
+              afterBody: function (items) {
+                if (!items.length) return [];
+                var g = agg[keys[items[0].dataIndex]];
+                return [
+                  'Total volume: ' + fmtNum(g.volume),
+                  'Active keywords: ' + g.count,
+                  'Median volume: ' + fmtNum(median(g.volumes)),
+                  'Commercial: ' + g.commercial + ' (' + Math.round(g.commercial / g.count * 100) + '%)',
+                  'Recommended: ' + g.recommendedCount,
+                  'Declining: ' + g.decliningCount
+                ];
               }
             }
           })
         },
         scales: {
-          x: { grid: { display: false }, ticks: { color: colors.text, maxRotation: 45, autoSkip: false } },
-          y: { position: 'left', beginAtZero: true, grid: { color: colors.grid }, ticks: { color: colors.muted, callback: function (v) { return fmtNum(v); } } },
-          y1: { position: 'right', beginAtZero: true, grid: { display: false }, ticks: { color: colors.muted } }
+          x: { stacked: true, beginAtZero: true, grid: { color: colors.grid }, ticks: { color: colors.muted, callback: function (v) { return fmtNum(v); } }, title: { display: true, text: 'Search volume', color: colors.muted } },
+          y: { stacked: true, grid: { display: false }, ticks: { color: colors.text, autoSkip: false } }
         }
       }
     });
@@ -1476,26 +1745,21 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     var filtered = getFiltered();
     var active = activeRows(filtered);
     var agg = aggregateByCluster(active);
-    var clusterMeta = {};
-    state.clusters.forEach(function (c) { clusterMeta[c.cluster] = c; });
 
     document.querySelectorAll('.chart-empty').forEach(function (n) { n.classList.add('hidden'); });
 
     chartTopKeywords(colors, active);
-    chartClusterVolume(colors, agg, clusterMeta);
     chartBubble(colors, active);
     chartScatter(colors, active);
-    chartTrend(colors, active);
     chartIntent(colors, active);
     chartRecommended(colors, active);
     chartSeeds(colors, active);
     chartHistogram(colors, active);
-    chartTreemap(colors, agg);
     chartFlags(colors, active);
     chartMonthlyHistory(colors, active);
 
-    ['chartTopKeywords', 'chartClusterVolume', 'chartBubble', 'chartScatter', 'chartTrend',
-     'chartIntent', 'chartRecommended', 'chartSeeds', 'chartHistogram', 'chartTreemap', 'chartFlags', 'chartHistory'].forEach(function (id) {
+    ['chartTopKeywords', 'chartBubble', 'chartScatter', 'chartIntent', 'chartRecommended',
+     'chartSeeds', 'chartHistogram', 'chartFlags', 'chartHistory'].forEach(function (id) {
       var canvas = $(id);
       var empty = canvas.parentElement.querySelector('.chart-empty');
       if (!charts[id]) empty.classList.remove('hidden');
@@ -1506,13 +1770,14 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     { key: 'keyword', label: 'Keyword', type: 'string', tip: 'The keyword phrase' },
     { key: 'seed', label: 'Seed', type: 'string', tip: 'Seed keyword group it was gathered from' },
     { key: 'cluster', label: 'Cluster', type: 'string', tip: 'Semantic cluster assigned by the pipeline' },
+    { key: 'lane', label: 'Lane', type: 'string', tip: 'Category, store, local, or brand/competitor demand' },
     { key: 'search_volume', label: 'Volume', type: 'number', tip: 'Monthly search volume' },
     { key: 'cpc', label: 'CPC', type: 'number', tip: 'Average cost-per-click in USD' },
     { key: 'competition', label: 'Competition', type: 'number', tip: 'Ad competition, 0–1' },
     { key: 'keyword_difficulty', label: 'Difficulty', type: 'number', tip: 'Keyword difficulty, 0–100' },
     { key: 'main_intent', label: 'Intent', type: 'string', tip: 'Dominant search intent label' },
     { key: 'commercial_intent', label: 'Comm. intent', type: 'number', tip: 'Commercial intent strength, 0–1' },
-    { key: 'trend_slope', label: 'Trend', type: 'number', tip: 'Monthly trend slope — green is rising, red is declining' },
+    { key: 'trend_slope', label: 'Trend', type: 'number', tip: 'Seasonality-adjusted momentum — green is rising, red is declining' },
     { key: 'opportunity_score', label: 'Opportunity', type: 'number', tip: 'Opportunity score, 0–100' },
     { key: 'flags', label: 'Flags', type: 'string', tip: 'Quality flags: declining, too broad, low traffic' },
     { key: 'recommended', label: 'Recommendation', type: 'boolean', tip: 'Whether the pipeline recommends targeting this keyword' }
@@ -1583,7 +1848,7 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     var cls = r.trend_slope > 0 ? 'trend-up' : (r.trend_slope < 0 ? 'trend-down' : 'trend-flat');
     var arrow = r.trend_slope > 0 ? '▲' : (r.trend_slope < 0 ? '▼' : '•');
     var span = el('span', 'mono ' + cls, arrow + ' ' + fmtSlope(r.trend_slope));
-    span.title = 'Trend slope: ' + fmtSlope(r.trend_slope) +
+    span.title = 'Trend momentum: ' + fmtSlope(r.trend_slope) +
       (r.trend_slope > 0 ? ' (rising demand)' : r.trend_slope < 0 ? ' (declining demand)' : ' (flat)');
     return span;
   }
@@ -1645,6 +1910,7 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
               td.appendChild(el('span', 'badge ' + (v ? 'rec' : 'no'), v ? 'Recommended' : 'Rejected'));
               break;
             case 'cluster': td.textContent = v || '—'; break;
+            case 'lane': td.textContent = laneLabel(v || discoveryLane(r)); break;
             default: td.textContent = v == null ? '—' : String(v);
           }
           if (col.key === 'keyword') td.title = r.keyword;
@@ -1661,34 +1927,48 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
   }
 
   function renderClusters() {
-    var filtered = activeRows(getFiltered());
+    var filtered = distinctKeywordRows(getFiltered());
     var agg = aggregateByCluster(filtered);
     var rows = [];
     state.clusters.forEach(function (c) {
       var g = agg[c.cluster];
       if (!g) return;
+      var clusterRecords = filtered.filter(function (r) { return r.cluster === c.cluster; });
       rows.push({
         name: c.cluster,
         count: g.count,
-        volume: g.volume,
+        volume: cumulativeVolume(clusterRecords),
+        adjustedVolume: adjustedVolume(clusterRecords),
+        rawVolume: g.volume,
+        pipelineAdjustedVolume: isNum(c.adjusted_cluster_volume) ? c.adjusted_cluster_volume : c.combined_volume,
+        headlineVolume: isNum(c.headline_volume) ? c.headline_volume : 0,
         cpc: g.cpcN ? g.cpcSum / g.cpcN : c.avg_cpc,
         ci: g.ciN ? g.ciSum / g.ciN : c.commercial_intent,
         trendScore: c.trend_score,
         opportunity: c.opportunity_score,
         recommended: !!c.recommended_for_store_discovery,
-        keywords: c.keywords
+        variantGroups: c.variant_groups || [],
+        laneCounts: c.lane_counts || {},
+        facets: c.facets || {},
+        keywords: clusterRecords
+          .sort(function (a, b) { return (b.search_volume || 0) - (a.search_volume || 0); })
+          .map(function (r) { return r.keyword; })
       });
     });
     rows.sort(function (a, b) { return b.volume - a.volume; });
 
-    if (rows.length && !rows.some(function (r) { return r.name === state.selectedCluster; })) {
-      state.selectedCluster = rows[0].name;
+    if (state.selectedCluster && !rows.some(function (r) { return r.name === state.selectedCluster; })) {
+      state.selectedCluster = '';
     }
 
-    var grid = $('cluster-grid');
-    grid.innerHTML = '';
+    var sceneLayout = $('cluster-scene-layout');
+    var legend = $('cluster-scene-legend');
+    legend.innerHTML = '';
     $('empty-clusters').classList.toggle('hidden', rows.length > 0);
-    $('cluster-count').textContent = rows.length + ' cluster' + (rows.length === 1 ? '' : 's');
+    sceneLayout.classList.toggle('hidden', !rows.length);
+    $('cluster-count').textContent = rows.length + ' cluster' + (rows.length === 1 ? '' : 's') + ' · ' + filtered.length + ' keyword points';
+    var landscapeVolume = rows.reduce(function (sum, r) { return sum + r.volume; }, 0);
+    var clusterColors = [palette().primary, palette().amber, palette().green, palette().red, palette().muted];
 
     var inspector = $('cluster-inspector');
     inspector.innerHTML = '';
@@ -1710,8 +1990,11 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
         .sort(function (a, b) { return tokenCounts[b] - tokenCounts[a]; });
       inspector.appendChild(el('div', '', 'Selected cluster: '));
       inspector.lastChild.appendChild(el('strong', '', selected.name));
+      var laneCopy = Object.keys(selected.laneCounts).map(function (k) { return laneLabel(k) + ' ' + selected.laneCounts[k]; }).join(' · ');
       inspector.appendChild(el('div', 'panel-note', 'Common words: ' + (shared.join(', ') || 'none across at least half the members') +
-        ' · ' + selectedRecords.length + ' filtered keywords · ' + fmtNum(selected.volume) + ' combined reported volume'));
+        ' · ' + selectedRecords.length + ' distinct keywords · ' + fmtNum(selected.volume) + ' cumulative volume' +
+        (selected.volume > selected.adjustedVolume ? ' · ' + fmtNum(selected.volume - selected.adjustedVolume) + ' possible overlap' : '') +
+        (laneCopy ? ' · ' + laneCopy : '')));
       var list = el('div', 'cluster-keywords');
       selectedRecords.slice().sort(function (a, b) { return (b.search_volume || 0) - (a.search_volume || 0); }).forEach(function (r) {
         var chip = el('span', 'chip', r.keyword + ' · ' + fmtNum(r.search_volume));
@@ -1720,34 +2003,125 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
         list.appendChild(chip);
       });
       inspector.appendChild(list);
+      if (selected.variantGroups.length) {
+        inspector.appendChild(el('div', 'panel-note', selected.variantGroups.length + ' variant groups · canonical phrase followed by its wording variants'));
+        var variants = el('div', 'overlap-variants');
+        selected.variantGroups.forEach(function (group, i) {
+          var row = el('div', 'overlap-variant');
+          row.appendChild(el('span', 'variant-index', String(i + 1)));
+          row.appendChild(el('span', 'variant-keyword', group.canonical + (group.variants.length > 1 ? ' → ' + group.variants.filter(function (v) { return v !== group.canonical; }).join(', ') : '')));
+          row.appendChild(el('span', 'variant-volume', fmtNum(group.volume)));
+          variants.appendChild(row);
+        });
+        inspector.appendChild(variants);
+      }
     }
 
-    rows.forEach(function (c) {
-      var card = el('article', 'cluster-card');
-      if (c.name === state.selectedCluster) card.classList.add('selected');
-      card.addEventListener('click', function () { state.selectedCluster = c.name; renderClusters(); });
-      var h3 = el('h3');
-      h3.appendChild(el('span', null, truncate(c.name, 40)));
-      h3.title = c.name;
-      h3.appendChild(el('span', 'badge ' + (c.recommended ? 'rec' : 'no'), c.recommended ? 'Recommended' : 'Not recommended'));
-      card.appendChild(h3);
-
-      var metrics = el('div', 'cluster-metrics');
-      metrics.appendChild(metricItem('Combined volume', fmtNum(c.volume), 'Sum of search volume of the keywords in this cluster'));
-      metrics.appendChild(metricItem('Keywords', String(c.count), 'Number of active keywords in this cluster'));
-      metrics.appendChild(metricItem('Avg CPC', fmtCPC(c.cpc), 'Average cost-per-click across cluster keywords'));
-      metrics.appendChild(metricItem('Comm. intent', fmtPct(c.ci), 'Average commercial-intent strength, 0–1'));
-      metrics.appendChild(metricBar('Trend score', c.trendScore, 1, 'Trend strength, 0–1 — higher is better', c.trendScore >= 0.5 ? 'var(--c-green)' : 'var(--c-red)'));
-      metrics.appendChild(metricBar('Opportunity', c.opportunity, 100, 'Opportunity score, 0–100', 'var(--c-primary)'));
-      card.appendChild(metrics);
-
-      var chips = el('div', 'cluster-keywords');
-      c.keywords.forEach(function (k) {
-        chips.appendChild(el('span', 'chip', k));
-      });
-      card.appendChild(chips);
-      grid.appendChild(card);
+    rows.forEach(function (c, index) {
+      var button = el('button', 'cluster-legend-item' + (c.name === state.selectedCluster ? ' selected' : ''));
+      button.type = 'button';
+      var head = el('div', 'cluster-legend-head');
+      var dot = el('span', 'cluster-dot');
+      dot.style.background = clusterColors[index % clusterColors.length];
+      head.appendChild(dot);
+      head.appendChild(el('span', null, '#' + (index + 1) + ' ' + truncate(c.name, 28)));
+      button.appendChild(head);
+      var stats = el('div', 'cluster-legend-stats');
+      stats.appendChild(el('span', null, fmtNum(c.volume) + ' cumulative volume'));
+      stats.appendChild(el('span', null, (landscapeVolume ? (c.volume / landscapeVolume * 100).toFixed(1) : '0') + '% share'));
+      stats.appendChild(el('span', null, 'Opp. ' + Math.round(c.opportunity || 0)));
+      stats.appendChild(el('span', null, 'Trend ' + fmtPct(c.trendScore)));
+      button.appendChild(stats);
+      button.addEventListener('click', function () { state.selectedCluster = c.name; renderClusters(); });
+      legend.appendChild(button);
     });
+    drawClusterLandscape(filtered, rows, clusterColors);
+  }
+
+  function drawClusterLandscape(records, clusters, clusterColors) {
+    var canvas = $('cluster-landscape');
+    var tooltip = $('cluster-scene-tooltip');
+    var rect = canvas.parentElement.getBoundingClientRect();
+    var width = Math.max(520, Math.round(rect.width));
+    var height = Math.max(360, Math.round(rect.height));
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    canvas.width = width * dpr;
+    canvas.height = height * dpr;
+    var ctx = canvas.getContext('2d');
+    ctx.scale(dpr, dpr);
+    var colors = palette();
+    var cameraZoom = 1.72;
+    var cameraFocus = { x: width * 0.52, y: height * 0.57 };
+    ctx.translate(cameraFocus.x, cameraFocus.y);
+    ctx.scale(cameraZoom, cameraZoom);
+    ctx.translate(-cameraFocus.x, -cameraFocus.y);
+    var origin = { x: 56, y: height - 58 };
+    var xVec = { x: width * 0.67, y: 0 };
+    var depthVec = { x: width * 0.20, y: -height * 0.37 };
+    var vertical = height * 0.40;
+    var project = function (x, depth, z) {
+      return { x: origin.x + xVec.x * x + depthVec.x * depth, y: origin.y + depthVec.y * depth - vertical * z };
+    };
+
+    var opportunities = records.map(function (r) { return isNum(r.opportunity_score) ? r.opportunity_score : 0; });
+    var trends = records.map(function (r) { return isNum(r.trend_slope) ? r.trend_slope : 0; });
+    var minOpp = Math.min.apply(null, opportunities), maxOpp = Math.max.apply(null, opportunities);
+    var minTrend = Math.min.apply(null, trends), maxTrend = Math.max.apply(null, trends);
+    var oppPad = Math.max(5, (maxOpp - minOpp) * 0.3), trendPad = Math.max(.06, (maxTrend - minTrend) * 0.3);
+    minOpp = Math.max(0, minOpp - oppPad); maxOpp = Math.min(100, maxOpp + oppPad);
+    minTrend -= trendPad; maxTrend += trendPad;
+    var maxVolume = Math.max.apply(null, records.map(function (r) { return isNum(r.search_volume) ? r.search_volume : 0; })) || 1;
+    var colorByCluster = {};
+    clusters.forEach(function (c, i) { colorByCluster[c.name] = clusterColors[i % clusterColors.length]; });
+    var nodes = [];
+
+    var hashUnit = function (text, salt) {
+      var hash = 2166136261;
+      String(text + salt).split('').forEach(function (ch) { hash ^= ch.charCodeAt(0); hash = Math.imul(hash, 16777619); });
+      return ((hash >>> 0) % 1000) / 999;
+    };
+    var plotted = records.map(function (r) {
+      var nx = maxOpp === minOpp ? .5 : ((r.opportunity_score || 0) - minOpp) / (maxOpp - minOpp);
+      var nd = maxTrend === minTrend ? .5 : (((isNum(r.trend_slope) ? r.trend_slope : 0) - minTrend) / (maxTrend - minTrend));
+      nx += (hashUnit(r.keyword, 'x') - .5) * .035;
+      nd += (hashUnit(r.keyword, 'd') - .5) * .035;
+      nx = .08 + nx * .84; nd = .08 + nd * .84;
+      var volume = isNum(r.search_volume) ? r.search_volume : 0;
+      var nz = .04 + Math.sqrt(volume / maxVolume) * .82;
+      var top = project(nx, nd, nz);
+      return { record: r, top: top, depth: nd, radius: 4 + Math.sqrt(volume / maxVolume) * 7, color: colorByCluster[r.cluster] || colors.muted };
+    }).sort(function (a, b) { return a.depth - b.depth; });
+
+    plotted.forEach(function (point) {
+      var r = point.record, top = point.top, radius = point.radius, color = point.color;
+      var glow = ctx.createRadialGradient(top.x - radius * .3, top.y - radius * .35, 2, top.x, top.y, radius);
+      glow.addColorStop(0, '#ffffff'); glow.addColorStop(.18, color); glow.addColorStop(1, rgba(color, .42));
+      ctx.globalAlpha = state.selectedCluster && state.selectedCluster !== r.cluster ? .22 : .92;
+      ctx.fillStyle = glow; ctx.strokeStyle = r.recommended ? colors.green : rgba(color, .85); ctx.lineWidth = r.recommended ? 2 : 1;
+      ctx.beginPath(); ctx.arc(top.x, top.y, radius, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+      ctx.globalAlpha = 1;
+      nodes.push({ x: top.x, y: top.y, radius: Math.max(8, radius + 3), record: r });
+    });
+
+    var hit = function (event) {
+      var bounds = canvas.getBoundingClientRect();
+      var displayX = event.clientX - bounds.left, displayY = event.clientY - bounds.top;
+      var x = (displayX - cameraFocus.x) / cameraZoom + cameraFocus.x;
+      var y = (displayY - cameraFocus.y) / cameraZoom + cameraFocus.y;
+      return nodes.slice().reverse().find(function (n) { var dx = x - n.x, dy = y - n.y; return dx * dx + dy * dy <= n.radius * n.radius; });
+    };
+    canvas.onmousemove = function (event) {
+      var node = hit(event);
+      canvas.style.cursor = node ? 'pointer' : 'crosshair';
+      tooltip.classList.toggle('hidden', !node);
+      if (!node) return;
+      var r = node.record;
+      tooltip.innerHTML = '<strong>' + escapeHTML(r.keyword) + '</strong>Cluster: ' + escapeHTML(r.cluster || 'Unknown') + '<br>Lane: ' + escapeHTML(laneLabel(r.lane || discoveryLane(r))) + '<br>Volume ' + fmtNum(r.search_volume) + ' · Opportunity ' + (isNum(r.opportunity_score) ? Math.round(r.opportunity_score) : '—') + '<br>Trend momentum ' + fmtSlope(r.trend_slope) + ' · CPC ' + fmtCPC(r.cpc) + '<br>' + (r.recommended ? 'Recommended' : 'Not recommended');
+      tooltip.style.left = Math.min(width - 240, Math.max(8, event.offsetX + 14)) + 'px';
+      tooltip.style.top = Math.min(height - 90, Math.max(8, event.offsetY + 14)) + 'px';
+    };
+    canvas.onmouseleave = function () { tooltip.classList.add('hidden'); };
+    canvas.onclick = function (event) { var node = hit(event); if (node) { state.selectedCluster = node.record.cluster; renderClusters(); } };
   }
 
   function metricItem(label, value, tip) {
@@ -1778,7 +2152,7 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
   function exportCSV() {
     var rows = activeRows(getFiltered()).slice().sort(compareRows);
     if (!rows.length) return;
-    var cols = ['keyword', 'seed', 'cluster', 'search_volume', 'cpc', 'competition',
+    var cols = ['keyword', 'seed', 'source_seeds', 'cluster', 'lane', 'search_volume', 'cpc', 'competition',
       'competition_level', 'keyword_difficulty', 'main_intent', 'commercial_intent',
       'trend_slope', 'flags', 'opportunity_score', 'recommended'];
     var esc = function (v) {
@@ -1791,6 +2165,7 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     rows.forEach(function (r) {
       lines.push(cols.map(function (c) {
         if (c === 'flags') return esc((r.flags || []).join(';'));
+        if (c === 'source_seeds') return esc((r.source_seeds || [r.seed]).join(';'));
         return esc(r[c]);
       }).join(','));
     });
@@ -1824,9 +2199,10 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
 
   function resetFilters() {
     var f = state.filters;
-    f.seed = ''; f.cluster = ''; f.intent = ''; f.minVolume = 0; f.minOpportunity = 0;
+    f.seed = ''; f.cluster = ''; f.intent = ''; f.lane = ''; f.category = ''; f.audience = ''; f.channel = '';
+    f.minVolume = 0; f.minOpportunity = 0;
     f.flags = []; f.recommendedOnly = false; f.search = '';
-    $('f-seed').value = ''; $('f-cluster').value = ''; $('f-intent').value = '';
+    ['f-seed', 'f-cluster', 'f-intent', 'f-lane', 'f-category', 'f-audience', 'f-channel'].forEach(function (id) { $(id).value = ''; });
     $('f-minvol').value = ''; $('f-minopp').value = ''; $('f-rec').checked = false;
     $('f-search').value = '';
     $('f-flags').querySelectorAll('input:checked').forEach(function (i) { i.checked = false; });
@@ -1846,7 +2222,7 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
   }
 
   function wireEvents() {
-    ['f-seed', 'f-cluster', 'f-intent'].forEach(function (id) {
+    ['f-seed', 'f-cluster', 'f-intent', 'f-lane', 'f-category', 'f-audience', 'f-channel'].forEach(function (id) {
       $(id).addEventListener('change', applyFilters);
     });
     ['f-minvol', 'f-minopp'].forEach(function (id) {

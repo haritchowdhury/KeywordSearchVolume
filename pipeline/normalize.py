@@ -25,22 +25,39 @@ def _least_squares_slope(values: List[float]) -> float:
 
 
 def compute_trend_slope(monthly_history: List, periods: int) -> Optional[float]:
-    """Relative linear slope of the last `periods` months of volume.
-    Normalised by the mean volume so the value is scale-free (~[-1, 1])."""
+    """Seasonality-aware momentum for the latest `periods` months.
+
+    When year-over-year matches exist, most of the signal compares the recent
+    window with the same calendar months one year earlier. A smaller linear
+    component keeps genuine recent acceleration visible. The legacy field name
+    is retained for output compatibility.
+    """
     if not monthly_history:
         return None
     # monthly_history: list of {"year","month","search_volume"}
-    series = sorted(
-        (m.get("year", 0), m.get("month", 0), m.get("search_volume") or 0)
-        for m in monthly_history
-    )
-    volumes = [float(v) for _, _, v in series]
+    series = sorted((int(m.get("year", 0)), int(m.get("month", 0)),
+                     float(m.get("search_volume") or 0)) for m in monthly_history)
+    volumes = [v for _, _, v in series]
     tail = volumes[-periods:] if len(volumes) >= periods else volumes
     slope = _least_squares_slope(tail)
     mean_vol = (sum(tail) / len(tail)) if tail else 0.0
     if mean_vol <= 0:
         return 0.0
-    rel = slope / mean_vol
+    recent_linear = slope / mean_vol
+
+    by_month = {(year, month): volume for year, month, volume in series}
+    yoy_pairs = [
+        (volume, by_month[(year - 1, month)])
+        for year, month, volume in series[-periods:]
+        if (year - 1, month) in by_month
+    ]
+    if len(yoy_pairs) >= min(3, periods):
+        recent_mean = sum(now for now, _ in yoy_pairs) / len(yoy_pairs)
+        prior_mean = sum(prior for _, prior in yoy_pairs) / len(yoy_pairs)
+        yoy = (recent_mean - prior_mean) / prior_mean if prior_mean > 0 else 0.0
+        rel = 0.85 * yoy + 0.15 * recent_linear
+    else:
+        rel = recent_linear
     # clamp to [-1, 1]
     return max(-1.0, min(1.0, rel))
 

@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field, asdict
-from typing import List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple
 
 
 @dataclass
@@ -25,6 +25,11 @@ class KeywordRecord:
     recommended: bool = False
     raw_ref: Optional[str] = None              # path to verbatim raw API response
     merged_into: Optional[str] = None          # set when deduped into a canonical keyword
+    source_seeds: List[str] = field(default_factory=list)
+    variant_group_id: Optional[str] = None
+    variant_canonical: Optional[str] = None
+    lane: str = "category_discovery"
+    facets: Dict[str, List[str]] = field(default_factory=dict)
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -45,6 +50,14 @@ class Cluster:
     trend_score: float = 0.0
     opportunity_score: int = 0
     recommended: bool = False
+    cluster_id: str = ""
+    headline_volume: int = 0
+    adjusted_cluster_volume: int = 0
+    raw_variant_volume: int = 0
+    variant_groups: List[dict] = field(default_factory=list)
+    source_seeds: List[str] = field(default_factory=list)
+    lane_counts: Dict[str, int] = field(default_factory=dict)
+    facets: Dict[str, List[str]] = field(default_factory=dict)
 
     @property
     def keywords(self) -> List[str]:
@@ -53,8 +66,16 @@ class Cluster:
     def to_dict(self) -> dict:
         return {
             "cluster": self.label,
+            "cluster_id": self.cluster_id,
             "keywords": self.keywords,
             "combined_volume": self.combined_volume,
+            "headline_volume": self.headline_volume,
+            "adjusted_cluster_volume": self.adjusted_cluster_volume,
+            "raw_variant_volume": self.raw_variant_volume,
+            "variant_groups": self.variant_groups,
+            "source_seeds": self.source_seeds,
+            "lane_counts": self.lane_counts,
+            "facets": self.facets,
             "avg_cpc": round(self.avg_cpc, 2),
             "commercial_intent": round(self.avg_commercial_intent, 2),
             "trend_score": round(self.trend_score, 2),

@@ -92,7 +92,7 @@ def main(argv: list[str] | None = None) -> int:
     top = sorted(cluster_dicts, key=lambda c: c["opportunity_score"], reverse=True)
     for c in top[:8]:
         print(f"  [{c['opportunity_score']:3d}] {'REC ' if c['recommended_for_store_discovery'] else '    '} "
-              f"{c['cluster']}  (vol={c['combined_volume']}, cpc={c['avg_cpc']}, "
+              f"{c['cluster']}  (adjusted_vol={c.get('adjusted_cluster_volume', c['combined_volume'])}, cpc={c['avg_cpc']}, "
               f"ci={c['commercial_intent']}, trend={c['trend_score']})")
     print("\noutputs:")
     for k, v in result["outputs"].items():
