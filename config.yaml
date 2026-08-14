@@ -16,6 +16,20 @@ api:
     retryable_api_codes: [40601, 40602, 50001, 50002, 40107]  # rate/queue/server
 
 search:
+  default_market: "all"
+  # Country-level Google demand markets shown in the dashboard. Location codes
+  # follow Google Ads geo targets supported by DataForSEO Labs.
+  markets:
+    - {code: "US", name: "United States", location_code: 2840, language_code: "en", language_name: "English"}
+    - {code: "GB", name: "United Kingdom", location_code: 2826, language_code: "en", language_name: "English"}
+    - {code: "CA", name: "Canada", location_code: 2124, language_code: "en", language_name: "English"}
+    - {code: "AU", name: "Australia", location_code: 2036, language_code: "en", language_name: "English"}
+    - {code: "NZ", name: "New Zealand", location_code: 2554, language_code: "en", language_name: "English"}
+    - {code: "DE", name: "Germany", location_code: 2276, language_code: "de", language_name: "German"}
+    - {code: "FR", name: "France", location_code: 2250, language_code: "fr", language_name: "French"}
+    - {code: "IN", name: "India", location_code: 2356, language_code: "en", language_name: "English"}
+    - {code: "AE", name: "United Arab Emirates", location_code: 2784, language_code: "en", language_name: "English"}
+  # Legacy single-market defaults retained for older callers and fixtures.
   location_name: "United States"
   language_name: "English"
 

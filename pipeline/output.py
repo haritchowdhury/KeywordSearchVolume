@@ -5,7 +5,7 @@ from __future__ import annotations
 import csv
 import json
 from pathlib import Path
-from typing import List
+from typing import Dict, List
 
 from .models import Cluster, KeywordRecord
 
@@ -75,6 +75,7 @@ def write_keywords_json(records: List[KeywordRecord], path: Path) -> Path:
             "recommended": r.recommended,
             "merged_into": r.merged_into,
             "raw_ref": r.raw_ref,
+            "available_markets": sorted(r.market_metrics),
         }
         for r in records
     ]
@@ -92,6 +93,7 @@ def write_keywords_csv(records: List[KeywordRecord], path: Path) -> Path:
         "facets", "variant_group_id", "variant_canonical", "flags",
         "opportunity_score", "recommended", "merged_into", "raw_ref",
         "monthly_history",
+        "available_markets",
     ]
     with open(path, "w", encoding="utf-8", newline="") as fh:
         w = csv.writer(fh)
@@ -113,5 +115,37 @@ def write_keywords_csv(records: List[KeywordRecord], path: Path) -> Path:
                     {"year": year, "month": month, "search_volume": volume}
                     for year, month, volume in r.monthly_history
                 ], separators=(",", ":")),
+                "|".join(sorted(r.market_metrics)),
             ])
+    return path
+
+
+def write_markets_manifest(markets: List[dict], path: Path) -> Path:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as fh:
+        json.dump({"schema_version": 3, "default_market": "all", "markets": markets},
+                  fh, ensure_ascii=False, indent=2)
+    return path
+
+
+def write_market_json(records: List[KeywordRecord], market: dict,
+                      cluster_metrics: Dict[str, dict], summary: dict,
+                      path: Path) -> Path:
+    """Write one lazily loadable country metric payload."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    code = market["code"]
+    keyword_metrics = {}
+    for record in records:
+        metric = record.market_metrics.get(code)
+        if metric is not None:
+            keyword_metrics[record.keyword.strip().lower()] = metric.to_dict()
+    payload = {
+        "schema_version": 3,
+        "market": market,
+        "summary": summary,
+        "keywords": keyword_metrics,
+        "clusters": cluster_metrics,
+    }
+    with open(path, "w", encoding="utf-8") as fh:
+        json.dump(payload, fh, ensure_ascii=False, indent=2)
     return path

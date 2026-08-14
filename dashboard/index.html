@@ -11,22 +11,22 @@
 <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-treemap@2.0.0/dist/chartjs-chart-treemap.min.js"></script>
 <style>
 :root {
-  --bg: #f4f6fb;
-  --card: #ffffff;
-  --text: #0f172a;
-  --muted: #64748b;
-  --border: #e2e8f0;
-  --grid: #e2e8f0;
-  --primary: #6366f1;
-  --primary-soft: #eef2ff;
-  --green: #16a34a;
-  --green-soft: #dcfce7;
+  --bg: #f4f5ea;
+  --card: #fbfcf7;
+  --text: #082d2e;
+  --muted: #687b77;
+  --border: #dfe5d8;
+  --grid: #dfe5d8;
+  --primary: #b6ef32;
+  --primary-soft: #effbd3;
+  --green: #25714c;
+  --green-soft: #e1f3df;
   --red: #dc2626;
   --red-soft: #fee2e2;
   --amber: #d97706;
   --amber-soft: #fef3c7;
   --gray-soft: #f1f5f9;
-  --shadow: 0 1px 3px rgba(15, 23, 42, .08);
+  --shadow: 0 8px 30px rgba(20, 42, 35, .055);
   --radius: 12px;
   --c-bg: var(--bg);
   --c-card: var(--card);
@@ -91,9 +91,52 @@ header .subtitle { color: var(--muted); font-size: 12px; margin-top: 2px; }
 }
 .btn:hover { background: var(--gray-soft); }
 .btn.primary { background: var(--primary); color: #fff; border-color: transparent; }
+.btn.primary { color: #092d2e; font-weight: 700; }
 .btn.primary:hover { opacity: .9; }
 .btn:disabled { opacity: .45; cursor: not-allowed; }
 main { padding: 20px 24px 48px; max-width: 1500px; margin: 0 auto; }
+.research-hero {
+  position: relative; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(440px, .9fr);
+  gap: clamp(38px, 7vw, 110px); align-items: center; min-height: 590px; padding: 28px 38px 44px;
+  margin-bottom: 24px; overflow: hidden;
+}
+.hero-copy { position: relative; z-index: 1; max-width: 650px; }
+.service-pill { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--border); border-radius: 999px; padding: 7px 12px; font-size: 11px; font-weight: 700; }
+.service-pill::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: #91a09b; }
+.hero-eyebrow { margin-top: 22px; color: var(--green); font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.research-hero h1 { max-width: 650px; margin: 13px 0 18px; font-size: clamp(46px, 5.2vw, 74px); line-height: .94; letter-spacing: -.065em; }
+.hero-highlight { text-decoration: underline; text-decoration-color: var(--primary); text-decoration-thickness: .18em; text-underline-offset: -.06em; text-decoration-skip-ink: none; }
+.hero-copy > p { max-width: 590px; color: #36514e; font-size: 16px; line-height: 1.65; }
+.hero-benefits { display: flex; flex-wrap: wrap; gap: 12px 22px; margin-top: 20px; color: #294846; font-size: 11px; font-weight: 700; }
+.hero-benefits span::before { content: '✓'; display: inline-grid; place-items: center; width: 16px; height: 16px; margin-right: 7px; border-radius: 50%; background: #082d2e; color: var(--primary); font-size: 10px; }
+.hero-orbit { position: absolute; left: 8%; bottom: -215px; width: 420px; height: 420px; border: 1px solid rgba(37,113,76,.1); border-radius: 50%; }
+.hero-orbit::before, .hero-orbit::after { content: ''; position: absolute; inset: 45px; border: 1px solid rgba(37,113,76,.1); border-radius: 50%; }
+.hero-orbit::after { inset: 100px; background: radial-gradient(circle at 38% 32%, rgba(182,239,50,.24), rgba(37,113,76,.06) 58%, transparent 59%); }
+.seed-card {
+  position: relative; z-index: 2; min-height: 535px; padding: 34px 32px 28px; border: 1px solid rgba(223,229,216,.9);
+  border-radius: 19px; background: rgba(251,252,247,.94); color: #082d2e; box-shadow: 11px 12px 0 rgba(8,45,46,.06), 0 28px 75px rgba(8,45,46,.09);
+}
+.seed-card::before, .seed-card::after { content: ''; position: absolute; border: 1px solid rgba(37,113,76,.1); border-radius: 50%; pointer-events: none; }
+.seed-card::before { width: 360px; height: 360px; top: -125px; right: -130px; }
+.seed-card::after { width: 240px; height: 240px; top: -55px; right: -65px; }
+.seed-card-head { position: relative; display: flex; justify-content: space-between; gap: 20px; z-index: 1; }
+.seed-card h2 { max-width: 410px; margin: 10px 0 22px; font-size: 30px; line-height: 1.08; letter-spacing: -.045em; }
+.seed-step { flex: 0 0 auto; display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--primary); font-size: 11px; font-weight: 800; }
+.seed-field-label { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 8px; font-size: 12px; font-weight: 700; }
+.seed-field-label small { color: var(--muted); font-weight: 500; }
+.seed-chip-field { position: relative; min-height: 210px; max-height: 255px; overflow-y: auto; display: flex; align-content: flex-start; flex-wrap: wrap; gap: 8px; padding: 13px; border: 1px solid var(--border); border-radius: 13px; background: #f7f8f1; }
+.research-chip { display: inline-flex; align-items: center; gap: 6px; height: 31px; padding: 0 7px 0 11px; border: 1px solid #dce4d5; border-radius: 999px; background: #fff; color: #173c3a; font-size: 11px; font-weight: 650; }
+.research-chip.is-manual { border-color: #c8dd8f; background: #f2fbd9; }
+.chip-edit, .chip-delete { border: 0; background: transparent; color: #71827e; padding: 2px; cursor: pointer; line-height: 1; }
+.chip-edit:hover, .chip-delete:hover { color: #082d2e; }
+.manual-keyword-row { display: flex; gap: 8px; margin-top: 10px; }
+#manual-keyword-input { flex: 1; min-width: 0; border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; background: #fff; color: #082d2e; font: inherit; }
+#manual-keyword-input:focus { outline: 2px solid var(--primary); outline-offset: 1px; }
+.seed-form-meta { display: flex; justify-content: space-between; gap: 15px; margin-top: 8px; color: var(--muted); font-size: 11px; }
+.seed-form-footer { display: flex; align-items: center; justify-content: space-between; gap: 16px; border-top: 1px solid var(--border); margin-top: 18px; padding-top: 18px; }
+.seed-form-footer p { margin: 0; max-width: 270px; color: var(--muted); font-size: 11px; }
+.seed-form-footer .btn { padding: 11px 17px; }
+.seed-empty { width: 100%; color: #9aa8a2; padding: 12px 3px; font-size: 12px; }
 .banner {
   border: 1px solid var(--red); background: var(--red-soft); color: var(--red);
   border-radius: var(--radius); padding: 12px 16px; margin-bottom: 18px;
@@ -115,6 +158,9 @@ section.filters {
 }
 .filter input[type="search"] { min-width: 200px; }
 .filter input:focus, .filter select:focus { outline: 2px solid var(--primary); outline-offset: 1px; }
+.market-context { display: flex; align-items: center; gap: 8px; margin: -6px 0 18px; color: var(--muted); font-size: 12px; }
+.market-context strong { color: var(--text); }
+.market-context-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--primary); box-shadow: 0 0 0 4px var(--primary-soft); }
 .filter.checkbox { flex-direction: row; align-items: center; gap: 7px; padding-bottom: 7px; cursor: pointer; user-select: none; }
 .flag-group { display: flex; flex-wrap: wrap; gap: 8px; max-width: 420px; }
 .flag-group label { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; color: var(--text); cursor: pointer; white-space: nowrap; }
@@ -227,6 +273,60 @@ section.filters {
   background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
   padding: 14px 16px; margin-bottom: 20px; box-shadow: var(--shadow);
 }
+.keyword-tools { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.selection-status { color: var(--muted); font-size: 12px; margin-right: 2px; }
+.row-check, #select-all-keywords { width: 15px; height: 15px; accent-color: var(--primary); cursor: pointer; }
+.select-col { width: 38px; text-align: center !important; padding-left: 5px !important; padding-right: 5px !important; }
+tbody tr.is-selected { background: var(--primary-soft); }
+tbody tr.is-selected:hover { background: var(--primary-soft); }
+.row-edit {
+  border: 0; background: transparent; color: var(--muted); cursor: pointer; border-radius: 6px;
+  padding: 5px 7px; font: inherit; white-space: nowrap;
+}
+.row-edit:hover { color: var(--text); background: var(--primary-soft); }
+.keyword-dialog {
+  position: fixed; inset: 0; z-index: 100; display: grid; place-items: center;
+  padding: 22px; background: rgba(7, 34, 34, .34); backdrop-filter: blur(5px);
+}
+.keyword-dialog-card {
+  position: relative; width: min(100%, 570px); max-height: calc(100vh - 44px); overflow: auto;
+  padding: 32px; border: 1px solid rgba(223, 229, 216, .92); border-radius: 20px;
+  background: rgba(251, 252, 247, .98); color: #082d2e;
+  box-shadow: 10px 12px 0 rgba(8, 45, 46, .07), 0 28px 80px rgba(8, 45, 46, .18);
+}
+.keyword-dialog-card::before, .keyword-dialog-card::after {
+  content: ''; position: absolute; border: 1px solid rgba(37, 113, 76, .11); border-radius: 50%; pointer-events: none;
+}
+.keyword-dialog-card::before { width: 260px; height: 260px; right: -120px; top: -90px; }
+.keyword-dialog-card::after { width: 170px; height: 170px; right: -65px; top: -45px; }
+.dialog-topline { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.dialog-eyebrow { color: #25714c; font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.dialog-step {
+  display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%;
+  background: var(--primary); color: #082d2e; font-size: 11px; font-weight: 800;
+}
+.dialog-close { position: absolute; top: 14px; right: 14px; border: 0; background: transparent; color: #687b77; font-size: 22px; cursor: pointer; z-index: 2; }
+.keyword-dialog h2 { margin: 0 44px 22px 0; max-width: 390px; font-size: 29px; line-height: 1.05; letter-spacing: -.045em; }
+.composer-label { display: flex; justify-content: space-between; gap: 12px; font-size: 12px; font-weight: 700; margin-bottom: 8px; }
+.composer-label small { color: #687b77; font-weight: 500; }
+#keyword-input {
+  width: 100%; min-height: 190px; resize: vertical; border: 1px solid #dfe5d8; border-radius: 13px;
+  padding: 16px; background: #f7f8f1; color: #082d2e; font: inherit; line-height: 1.65;
+}
+#keyword-input:focus { outline: 2px solid var(--primary); outline-offset: 2px; border-color: transparent; }
+#keyword-input::placeholder { color: #9aa8a2; }
+.composer-meta { display: flex; justify-content: space-between; color: #71827e; font-size: 11px; margin-top: 7px; }
+.inspiration { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
+.inspiration-label { color: #71827e; font-size: 11px; margin-right: 2px; }
+.suggestion-chip { border: 1px solid #e1e5dd; background: #fff; color: #294846; border-radius: 999px; padding: 7px 10px; font-size: 11px; cursor: pointer; }
+.suggestion-chip:hover { border-color: #b6ef32; background: #f4fbdc; }
+.dialog-footer { display: flex; align-items: center; justify-content: space-between; gap: 18px; border-top: 1px solid #e1e5dd; margin-top: 22px; padding-top: 18px; }
+.dialog-footer p { margin: 0; max-width: 250px; color: #71827e; font-size: 11px; }
+.dialog-footer .btn { padding: 11px 17px; }
+.toast {
+  position: fixed; right: 22px; bottom: 22px; z-index: 120; padding: 12px 16px; border-radius: 10px;
+  color: #082d2e; background: var(--primary); font-weight: 700; box-shadow: 0 12px 35px rgba(8,45,46,.2);
+}
 .section-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
 .section-head h2 { margin: 0; font-size: 16px; }
 .table-meta { color: var(--muted); font-size: 12px; }
@@ -275,7 +375,7 @@ th.num { text-align: right; }
 .cluster-hero .section-head { align-items: flex-start; }
 .cluster-hero-title h2 { margin: 0 0 3px; font-size: 19px; }
 .cluster-hero-sub { color: var(--muted); font-size: 11px; }
-.cluster-scene-layout { display: flex; flex-direction: column; gap: 10px; margin-top: 12px; }
+.cluster-scene-layout { display: flex; flex-direction: column; gap: 12px; margin-top: 12px; }
 .cluster-scene { position: relative; height: 500px; min-width: 0; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: radial-gradient(circle at 52% 42%, var(--primary-soft), var(--bg) 72%); }
 .cluster-scene canvas { display: block; width: 100%; height: 100%; cursor: grab; touch-action: none; }
 .cluster-view-controls { position: absolute; z-index: 5; top: 10px; right: 10px; display: flex; gap: 5px; }
@@ -285,12 +385,28 @@ th.num { text-align: right; }
 .cluster-axis-key span { padding: 3px 7px; border: 1px solid var(--border); border-radius: 999px; background: var(--card); }
 .cluster-scene-tooltip { position: absolute; z-index: 4; max-width: 230px; padding: 8px 10px; border-radius: 8px; background: var(--text); color: var(--bg); font-size: 11px; line-height: 1.45; pointer-events: none; box-shadow: var(--shadow); }
 .cluster-scene-tooltip strong { display: block; font-size: 12px; margin-bottom: 3px; }
-.cluster-scene-legend { display: flex; flex-wrap: wrap; gap: 8px; }
-.cluster-legend-item { flex: 1 1 210px; width: auto; text-align: left; color: var(--text); background: var(--card); border: 1px solid var(--border); border-radius: 9px; padding: 8px 10px; cursor: pointer; }
+.cluster-list-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-top: 3px; }
+.cluster-list-head strong { font-size: 13px; }
+.cluster-list-head span { color: var(--muted); font-size: 10px; }
+.cluster-scene-legend {
+  position: relative; display: flex; align-content: flex-start; flex-wrap: wrap; gap: 6px;
+  max-height: 178px; overflow-y: auto; padding: 2px 5px 10px 2px; scrollbar-width: thin;
+}
+.cluster-legend-item {
+  flex: 0 0 auto; max-width: 230px; text-align: left; color: var(--text); background: var(--card);
+  border: 1px solid var(--border); border-radius: 999px; padding: 5px 9px; cursor: pointer;
+}
+.cluster-legend-item.tip { border-bottom: 1px solid var(--border); }
 .cluster-legend-item:hover, .cluster-legend-item.selected { border-color: var(--primary); box-shadow: 0 0 0 1px var(--primary); }
-.cluster-legend-head { display: flex; align-items: center; gap: 7px; font-weight: 700; font-size: 12px; }
-.cluster-dot { width: 9px; height: 9px; border-radius: 50%; flex: 0 0 auto; }
-.cluster-legend-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 8px; margin-top: 7px; color: var(--muted); font-size: 10px; }
+.cluster-legend-head { display: flex; align-items: center; gap: 6px; min-width: 0; font-weight: 700; font-size: 10px; }
+.cluster-legend-head span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cluster-dot { width: 7px; height: 7px; border-radius: 50%; flex: 0 0 auto; }
+.cluster-legend-stats { display: none; }
+.cluster-pill-tooltip {
+  position: fixed; z-index: 200; width: 310px; max-width: calc(100vw - 24px); padding: 10px 12px;
+  border-radius: 9px; background: var(--text); color: var(--bg); font-size: 11px; line-height: 1.5;
+  white-space: pre-line; pointer-events: none; box-shadow: 0 16px 42px rgba(8, 45, 46, .22);
+}
 .cluster-card {
   border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px;
   background: var(--card);
@@ -336,6 +452,17 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
   .overlap-summary { grid-template-columns: 1fr; }
   .warning-group-summary { grid-template-columns: 1fr; gap: 5px; }
   .overlap-variants { grid-template-columns: 1fr; }
+  .keyword-dialog { padding: 10px; align-items: end; }
+  .keyword-dialog-card { padding: 26px 20px 20px; border-radius: 18px 18px 10px 10px; max-height: calc(100vh - 20px); }
+  .keyword-dialog h2 { font-size: 25px; }
+  .dialog-footer { align-items: stretch; flex-direction: column; }
+  .dialog-footer .btn { justify-content: center; }
+}
+@media (max-width: 980px) {
+  .research-hero { grid-template-columns: 1fr; min-height: 0; padding: 24px 4px 38px; gap: 34px; }
+  .research-hero h1 { font-size: clamp(42px, 11vw, 64px); }
+  .seed-card { min-height: 0; }
+  .hero-orbit { display: none; }
 }
 </style>
 </head>
@@ -357,8 +484,53 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     <button id="retry-btn" class="btn">Retry</button>
   </div>
 
+  <section class="research-hero" aria-label="Keyword research workspace">
+    <div class="hero-copy">
+      <span class="service-pill">Keyword intelligence ready</span>
+      <div class="hero-eyebrow">Smarter keyword decisions start here</div>
+      <h1>Meet the searches your business was <span class="hero-highlight">made for.</span></h1>
+      <p>Start with seed phrases, review the suggested opportunities below, and keep only the keywords that deserve a place in your strategy.</p>
+      <div class="hero-benefits">
+        <span>Find better-fit searches</span>
+        <span>See real demand signals</span>
+        <span>Build a focused keyword set</span>
+      </div>
+      <div class="hero-orbit" aria-hidden="true"></div>
+    </div>
+
+    <form id="seed-phrase-form" class="seed-card">
+      <div class="seed-card-head">
+        <div>
+          <div class="dialog-eyebrow">Build your research set</div>
+          <h2>Which seed phrases and keywords do you want to explore?</h2>
+        </div>
+        <span class="seed-step">01</span>
+      </div>
+      <div class="seed-field-label">
+        <span>Your selected phrases</span>
+        <small>Add, update, or remove</small>
+      </div>
+      <div id="seed-chip-field" class="seed-chip-field" aria-live="polite"></div>
+      <div class="manual-keyword-row">
+        <input id="manual-keyword-input" type="text" autocomplete="off" placeholder="Add a seed phrase or manual keyword…" aria-label="Manual seed phrase or keyword">
+        <button id="manual-keyword-action" class="btn" type="button">＋ Add</button>
+        <button id="manual-keyword-cancel" class="btn hidden" type="button">Cancel</button>
+      </div>
+      <div class="seed-form-meta">
+        <span id="seed-market-note">Suggestions selected below appear here automatically.</span>
+        <strong id="seed-chip-count">0 selected</strong>
+      </div>
+      <div class="seed-form-footer">
+        <p>Your selection is saved in this browser while you refine the dashboard.</p>
+        <button class="btn primary" type="submit">Review my keywords&nbsp; →</button>
+      </div>
+    </form>
+  </section>
+
   <section class="filters" aria-label="Global filters">
     <div class="filter-row">
+      <label class="filter"><span class="tip" data-tip="Switch every metric, chart, score, and recommendation between cumulative demand and one country">Market</span>
+        <select id="f-market"><option value="all">All markets — cumulative</option></select></label>
       <label class="filter"><span class="tip" data-tip="Filter to a single seed keyword group (e.g. Clothing, Fashion, Dresses, Suits, Skirts)">Seed</span>
         <select id="f-seed"></select></label>
       <label class="filter"><span class="tip" data-tip="Filter to a single keyword cluster">Cluster</span>
@@ -385,6 +557,7 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
       <button id="f-reset" class="btn" data-tip="Clear every filter and restore the full dataset">Reset filters</button>
     </div>
   </section>
+  <div class="market-context"><span class="market-context-dot"></span><span id="market-context-text">Viewing the current dataset</span></div>
 
   <div id="empty-state" class="banner hidden">
     <span>No keywords match the current filters. Try widening the criteria or resetting the filters.</span>
@@ -402,8 +575,8 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     <div class="card"><div class="card-label tip" data-tip="Keywords that were not merged into a duplicate — the canonical research set">Active keywords</div><div class="card-value" id="c-active">—</div></div>
     <div class="card"><div class="card-label tip" data-tip="Active keywords flagged as recommended by the scoring pipeline">Recommended</div><div class="card-value" id="c-rec">—</div></div>
     <div class="card"><div class="card-label tip" data-tip="Number of keyword clusters present in the filtered set">Clusters</div><div class="card-value" id="c-clusters">—</div></div>
-    <div class="card"><div class="card-label tip" data-tip="Cumulative search volume across every distinct keyword phrase; exact cross-seed repeats are counted once">Cumulative search volume</div><div class="card-value" id="c-volume">—</div></div>
-    <div class="card"><div class="card-label tip" data-tip="Average CPC across active keywords that have a CPC value">Average CPC</div><div class="card-value" id="c-cpc">—</div></div>
+    <div class="card"><div class="card-label tip" id="c-volume-label" data-tip="Cumulative search volume across every distinct keyword phrase; exact cross-seed repeats are counted once">Cumulative search volume</div><div class="card-value" id="c-volume">—</div></div>
+    <div class="card"><div class="card-label tip" id="c-cpc-label" data-tip="Average CPC across active keywords that have a CPC value">Average CPC · cumulative</div><div class="card-value" id="c-cpc">—</div></div>
   </section>
 
   <section class="cluster-section cluster-hero" aria-label="Cluster landscape">
@@ -416,13 +589,14 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     </div>
     <div id="empty-clusters" class="hidden" style="color:var(--muted);padding:12px 0;">No clusters match the current filters.</div>
     <div class="cluster-scene-layout" id="cluster-scene-layout">
-      <div class="cluster-scene-legend" id="cluster-scene-legend"></div>
       <div class="cluster-scene">
         <canvas id="cluster-landscape" aria-label="Three-dimensional cluster landscape"></canvas>
         <div class="cluster-view-controls" aria-label="3D view controls"><button id="cluster-zoom-out" type="button" title="Zoom out">−</button><button id="cluster-zoom-in" type="button" title="Zoom in">+</button><button id="cluster-view-reset" type="button" title="Reset rotation and zoom">Reset</button></div>
         <div class="cluster-axis-key"><span>Drag · Rotate 360°</span><span>Double-click · Reset view</span><span>X · Opportunity 0–100</span><span>Depth · YoY momentum −1 to +1</span><span>Height + size · Log search volume</span></div>
         <div class="cluster-scene-tooltip hidden" id="cluster-scene-tooltip"></div>
       </div>
+      <div class="cluster-list-head"><strong>Clusters</strong><span>Hover or focus a cluster for full details · click to inspect its keywords</span></div>
+      <div class="cluster-scene-legend" id="cluster-scene-legend"></div>
     </div>
     <div id="cluster-inspector" class="cluster-inspector hidden"></div>
   </section>
@@ -507,10 +681,15 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
 
   <section class="table-section" aria-label="Keyword table">
     <div class="section-head">
-      <h2 class="tip" data-tip="Active keywords only (merged duplicates are excluded). Click a column header to sort; results are paginated.">Keyword Table</h2>
-      <div class="table-meta">
-        <span id="table-count"></span>
-        &nbsp;·&nbsp; <span class="tip" data-tip="Amber rows are high-volume commercial keywords: search volume ≥ 500K and commercial intent ≥ 80%">Amber rows = high-volume commercial</span>
+      <div>
+        <h2 class="tip" data-tip="Active keywords only (merged duplicates are excluded). Select rows to edit your keyword set.">Keyword workspace</h2>
+        <div class="table-meta"><span id="table-count"></span> · Select a row to edit it, or add a new keyword set</div>
+      </div>
+      <div class="keyword-tools">
+        <span class="selection-status" id="selection-status">No keywords selected</span>
+        <button id="clear-selection" class="btn hidden" type="button">Clear</button>
+        <button id="edit-keyword-btn" class="btn" type="button" disabled>Update selected</button>
+        <button id="add-keyword-btn" class="btn primary" type="button">＋ Manual keyword</button>
       </div>
     </div>
     <div class="table-scroll">
@@ -539,6 +718,43 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
   <footer>Data loaded from <code>data/output/keywords.json</code> and <code>data/output/clusters.json</code> — rerun the pipeline and refresh to update.</footer>
 </main>
 
+<div id="keyword-dialog" class="keyword-dialog hidden" role="dialog" aria-modal="true" aria-labelledby="keyword-dialog-title">
+  <div class="keyword-dialog-card">
+    <button id="keyword-dialog-close" class="dialog-close" type="button" aria-label="Close">×</button>
+    <div class="dialog-topline">
+      <span id="dialog-eyebrow" class="dialog-eyebrow">Grow your keyword set</span>
+      <span class="dialog-step">01</span>
+    </div>
+    <h2 id="keyword-dialog-title">What searches do you want to discover?</h2>
+    <form id="keyword-form">
+      <label class="composer-label" for="keyword-input">
+        <span id="composer-label-text">Describe your target searches</span>
+        <small>One keyword per line</small>
+      </label>
+      <textarea id="keyword-input" placeholder="e.g. Sustainable clothing&#10;Independent eyewear&#10;Organic baby food"></textarea>
+      <div class="composer-meta">
+        <span>Focused phrases make the opportunity analysis stronger.</span>
+        <strong id="keyword-line-count">0 keywords</strong>
+      </div>
+      <div class="inspiration" aria-label="Keyword suggestions">
+        <span class="inspiration-label">Need inspiration?</span>
+        <button class="suggestion-chip" type="button" data-keyword="online clothing stores">＋ Clothing</button>
+        <button class="suggestion-chip" type="button" data-keyword="independent eyewear brands">＋ Eyewear</button>
+        <button class="suggestion-chip" type="button" data-keyword="home decor shops">＋ Home decor</button>
+        <button class="suggestion-chip" type="button" data-keyword="pet supply stores">＋ Pet supplies</button>
+        <button class="suggestion-chip" type="button" data-keyword="skincare brands">＋ Skincare</button>
+        <button class="suggestion-chip" type="button" data-keyword="handmade jewelry stores">＋ Jewelry</button>
+      </div>
+      <div class="dialog-footer">
+        <p id="dialog-footnote">New keywords are saved to this browser and added to the active table.</p>
+        <button id="keyword-submit" class="btn primary" type="submit">Add to keyword set&nbsp; →</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div id="keyword-toast" class="toast hidden" role="status" aria-live="polite"></div>
+<div id="cluster-pill-tooltip" class="cluster-pill-tooltip hidden" role="tooltip"></div>
+
 <script>
 (function () {
   'use strict';
@@ -555,6 +771,10 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     keywords: [],
     clusters: [],
     summary: null,
+    market: 'all',
+    marketManifest: [],
+    marketCache: {},
+    marketLoading: false,
     loadedAt: null,
     selectedCluster: '',
     clusterAzimuth: -0.45,
@@ -569,7 +789,14 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     sortKey: 'search_volume',
     sortDir: 'desc',
     page: 1,
-    pageSize: 25
+    pageSize: 25,
+    selectedKeywordIds: {},
+    keywordEdits: {},
+    researchPhrases: [],
+    researchPhrasesByMarket: {},
+    editingPhraseId: '',
+    dialogMode: 'add',
+    editingKeywordId: ''
   };
 
   var charts = {};
@@ -579,7 +806,8 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     too_broad: { label: 'Too broad', cls: 'flag-broad', tip: 'Short, high-volume keyword that is too generic to target' },
     too_little_traffic: { label: 'Low traffic', cls: 'flag-low', tip: 'Search volume too low to be worth targeting' },
     brand_competitor: { label: 'Brand / competitor', cls: 'flag-broad', tip: 'Useful competitor demand, separated from unbranded targeting recommendations' },
-    informational_dropped: { label: 'Informational', cls: 'flag-low', tip: 'Dropped from the pipeline as informational intent' }
+    informational_dropped: { label: 'Informational', cls: 'flag-low', tip: 'Dropped from the pipeline as informational intent' },
+    manually_added: { label: 'New', cls: 'rec', tip: 'Added manually from the keyword workspace' }
   };
 
   function flagMeta(f) {
@@ -715,10 +943,61 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     ].join(' ').toLowerCase();
   }
 
+  function marketMeta(code) {
+    return state.marketManifest.find(function (market) { return market.code === code; }) || null;
+  }
+
+  function marketLabel() {
+    if (state.market === 'all') return state.marketManifest.length
+      ? 'All ' + state.marketManifest.length + ' markets · cumulative demand'
+      : 'Current dataset';
+    var market = marketMeta(state.market);
+    return market ? market.name + ' · ' + (market.language_name || 'English') + '-language Google demand' : state.market;
+  }
+
+  function marketKeywordKey(row) {
+    return String(row.keyword || '').trim().toLowerCase();
+  }
+
+  function projectMarketRow(row) {
+    if (state.market === 'all') return row;
+    var payload = state.marketCache[state.market];
+    var metric = payload && payload.keywords ? payload.keywords[marketKeywordKey(row)] : null;
+    var projected = Object.assign({}, row);
+    projected._marketMissing = !metric;
+    ['search_volume', 'cpc', 'competition', 'competition_level', 'keyword_difficulty',
+     'main_intent', 'commercial_intent', 'monthly_history', 'trend_slope', 'flags',
+     'opportunity_score', 'recommended'].forEach(function (key) {
+      projected[key] = metric ? metric[key] : (key === 'flags' ? [] : key === 'recommended' ? false : null);
+    });
+    return projected;
+  }
+
+  function currentSummary() {
+    if (state.market === 'all') return state.summary || {};
+    var payload = state.marketCache[state.market];
+    return payload && payload.summary ? payload.summary : {};
+  }
+
+  function currentClusterMetric(cluster) {
+    if (state.market === 'all') return cluster;
+    var payload = state.marketCache[state.market];
+    var metric = payload && payload.clusters ? payload.clusters[cluster.cluster_id] : null;
+    return metric ? Object.assign({}, cluster, metric) : cluster;
+  }
+
+  function updateMarketContext() {
+    $('market-context-text').innerHTML = 'Viewing: <strong>' + escapeHTML(marketLabel()) + '</strong>';
+    var country = state.market === 'all' ? 'cumulative' : (marketMeta(state.market) || {}).name || state.market;
+    $('c-volume-label').textContent = state.market === 'all' ? 'Cumulative search volume' : country + ' search volume';
+    $('c-cpc-label').textContent = 'Average CPC · ' + country;
+  }
+
   function getFiltered() {
     var f = state.filters;
     var q = f.search.trim().toLowerCase();
-    return state.keywords.filter(function (r) {
+    return state.keywords.map(projectMarketRow).filter(function (r) {
+      if (state.market !== 'all' && r._marketMissing) return false;
       if (f.seed && r.seed !== f.seed && (r.source_seeds || []).indexOf(f.seed) === -1) return false;
       if (f.cluster && r.cluster !== f.cluster) return false;
       if (f.intent && (r.main_intent || '').toLowerCase() !== f.intent) return false;
@@ -786,10 +1065,11 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
   }
 
   function renderFunnel() {
-    var s = state.summary || {};
-    var total = state.keywords.length;
-    var active = activeRows(state.keywords).length;
-    var recommended = activeRows(state.keywords).filter(function (r) { return r.recommended; }).length;
+    var s = currentSummary();
+    var marketRows = state.keywords.map(projectMarketRow).filter(function (r) { return !r._marketMissing; });
+    var total = marketRows.length;
+    var active = activeRows(marketRows).length;
+    var recommended = activeRows(marketRows).filter(function (r) { return r.recommended; }).length;
     var variantGroups = isNum(s.variant_groups) ? s.variant_groups : new Set(state.keywords.map(function (r) { return r.variant_group_id; }).filter(Boolean)).size;
     var stages = [
       { label: 'Raw collected', value: isNum(s.raw_items_collected) ? s.raw_items_collected : total, note: state.summary ? 'API rows' : 'output rows (summary unavailable)' },
@@ -938,6 +1218,18 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
   }
 
   function populateFilterOptions() {
+    var marketSelect = $('f-market');
+    marketSelect.innerHTML = '';
+    var allMarkets = el('option', '', state.marketManifest.length ? 'All markets — cumulative' : 'Current dataset');
+    allMarkets.value = 'all';
+    marketSelect.appendChild(allMarkets);
+    state.marketManifest.forEach(function (market) {
+      var option = el('option', '', market.name);
+      option.value = market.code;
+      marketSelect.appendChild(option);
+    });
+    marketSelect.value = state.market;
+
     var seeds = uniqueSorted(state.keywords.reduce(function (a, r) { return a.concat(r.source_seeds || [r.seed]); }, []));
     var clusters = uniqueSorted(state.clusters.map(function (c) { return c.cluster; }));
     var intents = ['commercial', 'transactional', 'navigational', 'informational'];
@@ -1786,6 +2078,272 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     });
   }
 
+  function keywordId(row) {
+    return row && row._keywordId ? row._keywordId : '';
+  }
+
+  function saveResearchPhrases() {
+    state.researchPhrasesByMarket[state.market] = state.researchPhrases.slice();
+    try {
+      localStorage.setItem('research-phrases-v2', JSON.stringify({
+        version: 2,
+        markets: state.researchPhrasesByMarket
+      }));
+    } catch (e) {}
+  }
+
+  function renderResearchPhrases() {
+    var root = $('seed-chip-field');
+    if (!root) return;
+    root.innerHTML = '';
+    if (!state.researchPhrases.length) root.appendChild(el('div', 'seed-empty', 'Select a suggested keyword below or add a phrase manually.'));
+    state.researchPhrases.forEach(function (phrase) {
+      var chip = el('span', 'research-chip' + (phrase.source === 'manual' ? ' is-manual' : ''));
+      chip.appendChild(el('span', null, phrase.label));
+      var edit = el('button', 'chip-edit', '✎');
+      edit.type = 'button';
+      edit.title = 'Update ' + phrase.label;
+      edit.addEventListener('click', function () { beginPhraseEdit(phrase.id); });
+      var remove = el('button', 'chip-delete', '×');
+      remove.type = 'button';
+      remove.title = 'Remove ' + phrase.label;
+      remove.addEventListener('click', function () { removeResearchPhrase(phrase.id); });
+      chip.appendChild(edit);
+      chip.appendChild(remove);
+      root.appendChild(chip);
+    });
+    $('seed-chip-count').textContent = state.researchPhrases.length + ' selected';
+    $('seed-market-note').textContent = state.market === 'all'
+      ? 'Cumulative recommendations and table selections appear here.'
+      : marketLabel() + ' · selections are saved separately.';
+  }
+
+  function defaultResearchPhrasesForMarket() {
+    return activeRows(state.keywords.map(projectMarketRow))
+      .filter(function (row) { return !row._marketMissing && row.recommended; })
+      .map(function (row) {
+        return { id: keywordId(row), label: row.keyword, source: 'suggestion' };
+      });
+  }
+
+  function activateResearchMarket(code) {
+    state.market = code;
+    var saved = state.researchPhrasesByMarket[code];
+    state.researchPhrases = Array.isArray(saved)
+      ? saved.filter(function (phrase) { return phrase && phrase.id && phrase.label; })
+      : defaultResearchPhrasesForMarket();
+    state.researchPhrasesByMarket[code] = state.researchPhrases.slice();
+    state.selectedKeywordIds = {};
+    state.researchPhrases.forEach(function (phrase) {
+      if (String(phrase.id).indexOf('source-') === 0 || String(phrase.id).indexOf('custom-') === 0) state.selectedKeywordIds[phrase.id] = true;
+    });
+    if ($('manual-keyword-input')) cancelPhraseEdit();
+    renderResearchPhrases();
+  }
+
+  function initializeResearchPhrases() {
+    var savedV2 = null;
+    var savedV1 = null;
+    try {
+      savedV2 = JSON.parse(localStorage.getItem('research-phrases-v2') || 'null');
+      savedV1 = JSON.parse(localStorage.getItem('research-phrases-v1') || 'null');
+    } catch (e) {}
+    state.researchPhrasesByMarket = savedV2 && savedV2.markets && typeof savedV2.markets === 'object'
+      ? savedV2.markets : {};
+    if (!state.researchPhrasesByMarket.all && Array.isArray(savedV1)) {
+      state.researchPhrasesByMarket.all = savedV1;
+    }
+    activateResearchMarket(state.market);
+    saveResearchPhrases();
+  }
+
+  function syncResearchPhrase(row, selected) {
+    var id = keywordId(row);
+    var index = state.researchPhrases.findIndex(function (phrase) { return phrase.id === id; });
+    if (selected && index === -1) state.researchPhrases.push({ id: id, label: row.keyword, source: 'suggestion' });
+    if (!selected && index !== -1) state.researchPhrases.splice(index, 1);
+    saveResearchPhrases();
+    renderResearchPhrases();
+  }
+
+  function removeResearchPhrase(id) {
+    state.researchPhrases = state.researchPhrases.filter(function (phrase) { return phrase.id !== id; });
+    if (state.selectedKeywordIds[id]) delete state.selectedKeywordIds[id];
+    if (state.editingPhraseId === id) cancelPhraseEdit();
+    saveResearchPhrases();
+    renderResearchPhrases();
+    renderTable();
+  }
+
+  function beginPhraseEdit(id) {
+    var phrase = state.researchPhrases.find(function (item) { return item.id === id; });
+    if (!phrase) return;
+    state.editingPhraseId = id;
+    $('manual-keyword-input').value = phrase.label;
+    $('manual-keyword-action').textContent = 'Update';
+    $('manual-keyword-cancel').classList.remove('hidden');
+    $('manual-keyword-input').focus();
+  }
+
+  function cancelPhraseEdit() {
+    state.editingPhraseId = '';
+    $('manual-keyword-input').value = '';
+    $('manual-keyword-action').textContent = '＋ Add';
+    $('manual-keyword-cancel').classList.add('hidden');
+  }
+
+  function commitManualPhrase() {
+    var input = $('manual-keyword-input');
+    var label = input.value.trim();
+    if (!label) return input.focus();
+    var duplicate = state.researchPhrases.some(function (phrase) {
+      return phrase.id !== state.editingPhraseId && phrase.label.toLowerCase() === label.toLowerCase();
+    });
+    if (duplicate) return showKeywordToast('That phrase is already selected');
+    if (state.editingPhraseId) {
+      var phrase = state.researchPhrases.find(function (item) { return item.id === state.editingPhraseId; });
+      if (phrase) {
+        phrase.label = label;
+        var row = state.keywords.find(function (item) { return keywordId(item) === phrase.id; });
+        if (row) {
+          row.keyword = label;
+          if (String(phrase.id).indexOf('custom-') !== 0) state.keywordEdits[phrase.id] = label;
+          saveKeywordWorkspace();
+        }
+      }
+      showKeywordToast('Phrase updated');
+    } else {
+      state.researchPhrases.push({ id: 'manual-' + Date.now(), label: label, source: 'manual' });
+      showKeywordToast('Manual keyword added');
+    }
+    saveResearchPhrases();
+    cancelPhraseEdit();
+    renderResearchPhrases();
+    renderAll();
+  }
+
+  function selectedKeywordRows() {
+    return state.keywords.filter(function (row) { return !!state.selectedKeywordIds[keywordId(row)]; });
+  }
+
+  function parseKeywordLines(value) {
+    var seen = {};
+    return String(value || '').split(/\r?\n/).map(function (line) { return line.trim(); }).filter(function (line) {
+      var key = line.toLowerCase();
+      if (!key || seen[key]) return false;
+      seen[key] = true;
+      return true;
+    });
+  }
+
+  function updateKeywordLineCount() {
+    var count = parseKeywordLines($('keyword-input').value).length;
+    $('keyword-line-count').textContent = count + ' keyword' + (count === 1 ? '' : 's');
+  }
+
+  function updateSelectionUI() {
+    var count = selectedKeywordRows().length;
+    $('selection-status').textContent = count ? count + ' keyword' + (count === 1 ? '' : 's') + ' selected' : 'No keywords selected';
+    $('edit-keyword-btn').disabled = count !== 1;
+    $('clear-selection').classList.toggle('hidden', count === 0);
+  }
+
+  function openKeywordDialog(mode, row) {
+    state.dialogMode = mode;
+    state.editingKeywordId = row ? keywordId(row) : '';
+    $('dialog-eyebrow').textContent = mode === 'edit' ? 'Refine this keyword' : 'Grow your keyword set';
+    $('keyword-dialog-title').textContent = mode === 'edit' ? 'Make this search phrase work harder.' : 'What searches do you want to discover?';
+    $('composer-label-text').textContent = mode === 'edit' ? 'Edit the selected keyword' : 'Describe your target searches';
+    $('keyword-input').value = row ? row.keyword : '';
+    $('keyword-submit').innerHTML = mode === 'edit' ? 'Save keyword&nbsp; →' : 'Add to keyword set&nbsp; →';
+    $('dialog-footnote').textContent = mode === 'edit'
+      ? 'Your edit updates the table, filters, and dashboard views immediately.'
+      : 'New keywords are saved to this browser and added to the active table.';
+    $('keyword-dialog').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    updateKeywordLineCount();
+    setTimeout(function () { $('keyword-input').focus(); }, 0);
+  }
+
+  function closeKeywordDialog() {
+    $('keyword-dialog').classList.add('hidden');
+    document.body.style.overflow = '';
+    state.editingKeywordId = '';
+  }
+
+  function showKeywordToast(message) {
+    var toast = $('keyword-toast');
+    toast.textContent = message;
+    toast.classList.remove('hidden');
+    clearTimeout(showKeywordToast.timer);
+    showKeywordToast.timer = setTimeout(function () { toast.classList.add('hidden'); }, 2600);
+  }
+
+  function saveKeywordWorkspace() {
+    var custom = state.keywords.filter(function (row) { return String(keywordId(row)).indexOf('custom-') === 0; });
+    try {
+      localStorage.setItem('keyword-workspace-v1', JSON.stringify({ custom: custom, edits: state.keywordEdits }));
+    } catch (e) {}
+  }
+
+  function restoreKeywordWorkspace(rows) {
+    rows.forEach(function (row, index) { row._keywordId = 'source-' + index; });
+    var saved = null;
+    try { saved = JSON.parse(localStorage.getItem('keyword-workspace-v1') || 'null'); } catch (e) {}
+    if (!saved || typeof saved !== 'object') return rows;
+    state.keywordEdits = saved.edits || {};
+    rows.forEach(function (row) {
+      if (state.keywordEdits[row._keywordId]) row.keyword = state.keywordEdits[row._keywordId];
+    });
+    (Array.isArray(saved.custom) ? saved.custom : []).forEach(function (row) {
+      if (row && row.keyword) rows.push(row);
+    });
+    return rows;
+  }
+
+  function submitKeywordForm(event) {
+    event.preventDefault();
+    var lines = parseKeywordLines($('keyword-input').value);
+    if (!lines.length) {
+      $('keyword-input').focus();
+      return;
+    }
+    if (state.dialogMode === 'edit') {
+      var row = state.keywords.find(function (item) { return keywordId(item) === state.editingKeywordId; });
+      if (!row) return closeKeywordDialog();
+      row.keyword = lines[0];
+      if (String(keywordId(row)).indexOf('custom-') !== 0) state.keywordEdits[keywordId(row)] = lines[0];
+      showKeywordToast('Keyword updated');
+    } else {
+      var stamp = Date.now();
+      lines.forEach(function (line, index) {
+        state.keywords.push({
+          _keywordId: 'custom-' + stamp + '-' + index,
+          keyword: line,
+          seed: 'Custom',
+          cluster: 'Unassigned',
+          lane: 'category',
+          search_volume: null,
+          cpc: null,
+          competition: null,
+          keyword_difficulty: null,
+          main_intent: 'commercial',
+          commercial_intent: null,
+          trend_slope: null,
+          opportunity_score: null,
+          flags: ['manually_added'],
+          recommended: false
+        });
+      });
+      showKeywordToast(lines.length + ' keyword' + (lines.length === 1 ? '' : 's') + ' added');
+    }
+    saveKeywordWorkspace();
+    state.page = 1;
+    populateFilterOptions();
+    renderAll();
+    closeKeywordDialog();
+  }
+
   var TABLE_COLS = [
     { key: 'keyword', label: 'Keyword', type: 'string', tip: 'The keyword phrase' },
     { key: 'seed', label: 'Seed', type: 'string', tip: 'Seed keyword group it was gathered from' },
@@ -1807,6 +2365,13 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     var head = $('table-head');
     head.innerHTML = '';
     var row = el('tr');
+    var selectTh = el('th', 'select-col');
+    var selectAll = document.createElement('input');
+    selectAll.type = 'checkbox';
+    selectAll.id = 'select-all-keywords';
+    selectAll.setAttribute('aria-label', 'Select all keywords on this page');
+    selectTh.appendChild(selectAll);
+    row.appendChild(selectTh);
     TABLE_COLS.forEach(function (col) {
       var th = el('th');
       if (col.type === 'number') th.classList.add('num');
@@ -1820,9 +2385,11 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
       th.appendChild(arrow);
       row.appendChild(th);
     });
+    var actionTh = el('th', null, 'Action');
+    row.appendChild(actionTh);
     head.appendChild(row);
 
-    head.querySelectorAll('th').forEach(function (th) {
+    head.querySelectorAll('th[data-key]').forEach(function (th) {
       th.addEventListener('click', function () {
         var k = th.dataset.key;
         if (state.sortKey === k) {
@@ -1833,6 +2400,14 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
         }
         renderTable();
       });
+    });
+    selectAll.addEventListener('change', function () {
+      document.querySelectorAll('#table-body .row-check').forEach(function (input) {
+        state.selectedKeywordIds[input.dataset.keywordId] = selectAll.checked;
+        var selectedRow = state.keywords.find(function (row) { return keywordId(row) === input.dataset.keywordId; });
+        if (selectedRow) syncResearchPhrase(selectedRow, selectAll.checked);
+      });
+      renderTable();
     });
   }
 
@@ -1901,7 +2476,7 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     if (!total) {
       var tr = el('tr');
       var td = el('td', null, 'No keywords match the current filters.');
-      td.colSpan = TABLE_COLS.length;
+      td.colSpan = TABLE_COLS.length + 2;
       td.style.textAlign = 'center';
       td.style.color = 'var(--muted)';
       td.style.padding = '24px';
@@ -1910,7 +2485,23 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     } else {
       pageRows.forEach(function (r) {
         var tr = el('tr');
+        var id = keywordId(r);
+        if (state.selectedKeywordIds[id]) tr.classList.add('is-selected');
         if (isHighVolumeCommercial(r)) tr.classList.add('hl-vol');
+        var selectTd = el('td', 'select-col');
+        var checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.className = 'row-check';
+        checkbox.dataset.keywordId = id;
+        checkbox.checked = !!state.selectedKeywordIds[id];
+        checkbox.setAttribute('aria-label', 'Select ' + r.keyword);
+        checkbox.addEventListener('change', function () {
+          state.selectedKeywordIds[id] = checkbox.checked;
+          syncResearchPhrase(r, checkbox.checked);
+          renderTable();
+        });
+        selectTd.appendChild(checkbox);
+        tr.appendChild(selectTd);
         TABLE_COLS.forEach(function (col) {
           var td = el('td');
           if (col.type === 'number') td.classList.add('num');
@@ -1936,9 +2527,32 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
           if (col.key === 'keyword') td.title = r.keyword;
           tr.appendChild(td);
         });
+        var actionTd = el('td');
+        var edit = el('button', 'row-edit', state.selectedKeywordIds[id] ? 'In form ✓' : 'Add to form →');
+        edit.type = 'button';
+        edit.setAttribute('aria-label', (state.selectedKeywordIds[id] ? 'Update ' : 'Add ') + r.keyword);
+        edit.addEventListener('click', function () {
+          if (!state.selectedKeywordIds[id]) {
+            state.selectedKeywordIds[id] = true;
+            syncResearchPhrase(r, true);
+            renderTable();
+          }
+          beginPhraseEdit(id);
+          $('seed-phrase-form').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+        actionTd.appendChild(edit);
+        tr.appendChild(actionTd);
         body.appendChild(tr);
       });
     }
+
+    var selectAll = $('select-all-keywords');
+    if (selectAll) {
+      var selectedOnPage = pageRows.filter(function (row) { return !!state.selectedKeywordIds[keywordId(row)]; }).length;
+      selectAll.checked = pageRows.length > 0 && selectedOnPage === pageRows.length;
+      selectAll.indeterminate = selectedOnPage > 0 && selectedOnPage < pageRows.length;
+    }
+    updateSelectionUI();
 
     $('table-count').textContent = total + ' row' + (total === 1 ? '' : 's');
     $('page-info').textContent = 'Page ' + state.page + ' of ' + pageCount;
@@ -1946,11 +2560,34 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     $('page-next').disabled = state.page >= pageCount;
   }
 
+  function showClusterPillTooltip(button) {
+    var tooltip = $('cluster-pill-tooltip');
+    var detail = button.getAttribute('data-cluster-detail');
+    if (!tooltip || !detail) return;
+    tooltip.textContent = detail;
+    tooltip.classList.remove('hidden');
+    var rect = button.getBoundingClientRect();
+    var width = tooltip.offsetWidth;
+    var height = tooltip.offsetHeight;
+    var left = Math.max(12, Math.min(window.innerWidth - width - 12,
+      rect.left + rect.width / 2 - width / 2));
+    var top = rect.top - height - 10;
+    if (top < 12) top = Math.min(window.innerHeight - height - 12, rect.bottom + 10);
+    tooltip.style.left = left + 'px';
+    tooltip.style.top = Math.max(12, top) + 'px';
+  }
+
+  function hideClusterPillTooltip() {
+    var tooltip = $('cluster-pill-tooltip');
+    if (tooltip) tooltip.classList.add('hidden');
+  }
+
   function renderClusters() {
     var filtered = distinctKeywordRows(getFiltered());
     var agg = aggregateByCluster(filtered);
     var rows = [];
     state.clusters.forEach(function (c) {
+      c = currentClusterMetric(c);
       var g = agg[c.cluster];
       if (!g) return;
       var clusterRecords = filtered.filter(function (r) { return r.cluster === c.cluster; });
@@ -1984,6 +2621,7 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     var sceneLayout = $('cluster-scene-layout');
     var legend = $('cluster-scene-legend');
     legend.innerHTML = '';
+    legend.onscroll = hideClusterPillTooltip;
     $('empty-clusters').classList.toggle('hidden', rows.length > 0);
     sceneLayout.classList.toggle('hidden', !rows.length);
     $('cluster-count').textContent = rows.length + ' cluster' + (rows.length === 1 ? '' : 's') + ' · ' + filtered.length + ' keyword points';
@@ -2055,7 +2693,23 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
       stats.appendChild(el('span', null, 'Opp. ' + Math.round(c.opportunity || 0)));
       stats.appendChild(el('span', null, 'Trend ' + fmtPct(c.trendScore)));
       button.appendChild(stats);
-      button.addEventListener('click', function () { state.selectedCluster = c.name; renderClusters(); });
+      var clusterDetail = c.name + '\n' + c.count + ' keywords · ' + fmtNum(c.volume) + ' search volume · ' +
+        (landscapeVolume ? (c.volume / landscapeVolume * 100).toFixed(1) : '0') + '% market share\n' +
+        'Opportunity ' + Math.round(c.opportunity || 0) + ' · Trend ' + fmtPct(c.trendScore) +
+        ' · CPC ' + fmtCPC(c.cpc) + ' · Commercial intent ' + fmtPct(c.ci) + '\n' +
+        (c.recommended ? 'Recommended for this market' : 'Not currently recommended');
+      button.setAttribute('data-cluster-detail', clusterDetail);
+      button.setAttribute('aria-label', clusterDetail.replace(/\n/g, '. '));
+      button.setAttribute('aria-describedby', 'cluster-pill-tooltip');
+      button.addEventListener('mouseenter', function () { showClusterPillTooltip(button); });
+      button.addEventListener('mouseleave', hideClusterPillTooltip);
+      button.addEventListener('focus', function () { showClusterPillTooltip(button); });
+      button.addEventListener('blur', hideClusterPillTooltip);
+      button.addEventListener('click', function () {
+        hideClusterPillTooltip();
+        state.selectedCluster = c.name;
+        renderClusters();
+      });
       legend.appendChild(button);
     });
     drawClusterLandscape(filtered, rows, clusterColors);
@@ -2310,7 +2964,7 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
   function exportCSV() {
     var rows = activeRows(getFiltered()).slice().sort(compareRows);
     if (!rows.length) return;
-    var cols = ['keyword', 'seed', 'source_seeds', 'cluster', 'lane', 'search_volume', 'cpc', 'competition',
+    var cols = ['market', 'keyword', 'seed', 'source_seeds', 'cluster', 'lane', 'search_volume', 'cpc', 'competition',
       'competition_level', 'keyword_difficulty', 'main_intent', 'commercial_intent',
       'trend_slope', 'flags', 'opportunity_score', 'recommended'];
     var esc = function (v) {
@@ -2322,6 +2976,7 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     var lines = [cols.join(',')];
     rows.forEach(function (r) {
       lines.push(cols.map(function (c) {
+        if (c === 'market') return esc(state.market === 'all' ? 'all_markets_cumulative' : state.market);
         if (c === 'flags') return esc((r.flags || []).join(';'));
         if (c === 'source_seeds') return esc((r.source_seeds || [r.seed]).join(';'));
         return esc(r[c]);
@@ -2330,7 +2985,7 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     var blob = new Blob([lines.join('\n')], { type: 'text/csv;charset=utf-8' });
     var a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = 'keywords-filtered.csv';
+    a.download = 'keywords-' + (state.market === 'all' ? 'all-markets' : state.market.toLowerCase()) + '-filtered.csv';
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -2368,6 +3023,7 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
   }
 
   function renderAll() {
+    updateMarketContext();
     var filtered = getFiltered();
     var empty = filtered.length === 0;
     $('empty-state').classList.toggle('hidden', !empty);
@@ -2380,6 +3036,7 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
   }
 
   function wireEvents() {
+    $('f-market').addEventListener('change', function () { changeMarket(this.value); });
     ['f-seed', 'f-cluster', 'f-intent', 'f-lane', 'f-category', 'f-audience', 'f-channel'].forEach(function (id) {
       $(id).addEventListener('change', applyFilters);
     });
@@ -2395,6 +3052,54 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     $('theme-toggle').addEventListener('click', toggleTheme);
     $('export-btn').addEventListener('click', exportCSV);
     $('retry-btn').addEventListener('click', loadData);
+    $('add-keyword-btn').addEventListener('click', function () {
+      cancelPhraseEdit();
+      $('seed-phrase-form').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      setTimeout(function () { $('manual-keyword-input').focus(); }, 350);
+    });
+    $('edit-keyword-btn').addEventListener('click', function () {
+      var rows = selectedKeywordRows();
+      if (rows.length === 1) {
+        beginPhraseEdit(keywordId(rows[0]));
+        $('seed-phrase-form').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    });
+    $('clear-selection').addEventListener('click', function () {
+      Object.keys(state.selectedKeywordIds).forEach(function (id) {
+        var row = state.keywords.find(function (item) { return keywordId(item) === id; });
+        if (row) syncResearchPhrase(row, false);
+      });
+      state.selectedKeywordIds = {};
+      renderTable();
+    });
+    $('manual-keyword-action').addEventListener('click', commitManualPhrase);
+    $('manual-keyword-cancel').addEventListener('click', cancelPhraseEdit);
+    $('manual-keyword-input').addEventListener('keydown', function (event) {
+      if (event.key === 'Enter') { event.preventDefault(); commitManualPhrase(); }
+    });
+    $('seed-phrase-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      document.querySelector('.table-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    $('keyword-dialog-close').addEventListener('click', closeKeywordDialog);
+    $('keyword-dialog').addEventListener('click', function (event) {
+      if (event.target === $('keyword-dialog')) closeKeywordDialog();
+    });
+    $('keyword-input').addEventListener('input', updateKeywordLineCount);
+    $('keyword-form').addEventListener('submit', submitKeywordForm);
+    document.querySelectorAll('.suggestion-chip').forEach(function (button) {
+      button.addEventListener('click', function () {
+        var current = parseKeywordLines($('keyword-input').value);
+        var suggestion = button.dataset.keyword;
+        if (!current.some(function (line) { return line.toLowerCase() === suggestion.toLowerCase(); })) current.push(suggestion);
+        $('keyword-input').value = current.join('\n');
+        updateKeywordLineCount();
+        $('keyword-input').focus();
+      });
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && !$('keyword-dialog').classList.contains('hidden')) closeKeywordDialog();
+    });
     $('cluster-zoom-out').addEventListener('click', function () {
       state.clusterZoom = Math.max(.55, state.clusterZoom / 1.2); renderClusters();
     });
@@ -2513,6 +3218,41 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     });
   }
 
+  function changeMarket(code) {
+    if (code === 'all') {
+      activateResearchMarket('all');
+      state.page = 1;
+      renderAll();
+      return;
+    }
+    if (state.marketCache[code]) {
+      activateResearchMarket(code);
+      state.page = 1;
+      renderAll();
+      return;
+    }
+    var select = $('f-market');
+    state.marketLoading = true;
+    select.disabled = true;
+    $('market-context-text').textContent = 'Loading ' + ((marketMeta(code) || {}).name || code) + ' metrics…';
+    fetchFirst(dataUrls('markets/' + code + '.json')).then(function (response) {
+      return response.json();
+    }).then(function (payload) {
+      state.marketCache[code] = payload;
+      activateResearchMarket(code);
+      state.page = 1;
+      hideError();
+      renderAll();
+    }).catch(function (error) {
+      select.value = state.market;
+      showError('Could not load ' + code + ' market data (' + (error && error.message || error) + '). Run the schema-v3 multi-market pipeline first.');
+    }).then(function () {
+      state.marketLoading = false;
+      select.disabled = false;
+      select.value = state.market;
+    });
+  }
+
   function loadData() {
     hideError();
     if (location.protocol === 'file:') {
@@ -2527,15 +3267,22 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px
     Promise.all([
       fetchFirst(dataUrls('keywords.json')).then(function (r) { return r.json(); }),
       fetchFirst(dataUrls('clusters.json')).then(function (r) { return r.json(); }),
-      fetchFirst(dataUrls('summary.json')).then(function (r) { return r.json(); }).catch(function () { return null; })
+      fetchFirst(dataUrls('summary.json')).then(function (r) { return r.json(); }).catch(function () { return null; }),
+      fetchFirst(dataUrls('markets.json')).then(function (r) { return r.json(); }).catch(function () { return null; })
     ]).then(function (res) {
-      state.keywords = Array.isArray(res[0]) ? res[0] : [];
+      state.keywords = restoreKeywordWorkspace(Array.isArray(res[0]) ? res[0] : []);
       state.clusters = Array.isArray(res[1]) ? res[1] : [];
       state.summary = res[2] && typeof res[2] === 'object' ? res[2] : null;
+      state.marketManifest = res[3] && Array.isArray(res[3].markets)
+        ? res[3].markets
+        : (state.summary && Array.isArray(state.summary.markets) ? state.summary.markets : []);
+      state.market = 'all';
+      state.marketCache = {};
       if (!state.keywords.length && !state.clusters.length) {
         throw new Error('both JSON files are empty or not arrays');
       }
       state.loadedAt = Date.now();
+      initializeResearchPhrases();
       var ms = performance.now() - t0;
       $('last-updated').textContent = 'Last updated: ' + state.loadedAt.toLocaleString() + ' (loaded in ' + Math.round(ms) + 'ms)';
       populateFilterOptions();

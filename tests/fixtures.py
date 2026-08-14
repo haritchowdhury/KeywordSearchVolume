@@ -94,12 +94,12 @@ class OfflineClient:
         self.config = config
         self.cache = cache
 
-    def expand(self, seed: str) -> List[str]:
+    def expand(self, seed: str, market: dict | None = None) -> List[str]:
         items = _FIXTURES.get(seed, [])
         keywords = [it["keyword"] for it in items]
         return keywords or [seed]
 
-    def keyword_overview(self, keywords: List[str]) -> List[dict]:
+    def keyword_overview(self, keywords: List[str], market: dict | None = None) -> List[dict]:
         wanted = set(keywords)
         out: List[dict] = []
         for items in _FIXTURES.values():

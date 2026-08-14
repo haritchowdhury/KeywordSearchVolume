@@ -34,6 +34,8 @@ def main(argv: list[str] | None = None) -> int:
                         help="bypass the local response cache")
     parser.add_argument("--clear-cache", action="store_true",
                         help="clear the response cache before running")
+    parser.add_argument("--markets",
+                        help="comma-separated country codes to run (for example US,GB,IN)")
     parser.add_argument("-v", "--verbose", action="store_true")
     args = parser.parse_args(argv)
 
@@ -42,6 +44,14 @@ def main(argv: list[str] | None = None) -> int:
 
     root = Path(args.config).resolve().parent
     config = load_config(args.config)
+    if args.markets:
+        wanted = {code.strip().upper() for code in args.markets.split(",") if code.strip()}
+        configured = list(config.search.get("markets") or [])
+        selected = [market for market in configured if market.get("code") in wanted]
+        missing = wanted - {market.get("code") for market in selected}
+        if missing:
+            parser.error("unknown market code(s): " + ", ".join(sorted(missing)))
+        config.search.markets = selected
     if args.offline:
         config.run_cfg.offline_mode = True
     if args.no_cache:

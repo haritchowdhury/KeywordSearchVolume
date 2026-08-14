@@ -6,6 +6,51 @@ from typing import Dict, List, Optional, Tuple
 
 
 @dataclass
+class MarketMetrics:
+    """Location-specific demand and recommendation data for one keyword."""
+
+    country_code: str
+    location_code: int
+    location_name: str
+    language_name: str = "English"
+    search_volume: Optional[int] = None
+    cpc: Optional[float] = None
+    competition: Optional[float] = None
+    competition_level: Optional[str] = None
+    keyword_difficulty: Optional[int] = None
+    main_intent: Optional[str] = None
+    commercial_intent: float = 0.0
+    monthly_history: List[Tuple[int, int, int]] = field(default_factory=list)
+    trend_slope: Optional[float] = None
+    flags: List[str] = field(default_factory=list)
+    opportunity_score: Optional[int] = None
+    recommended: bool = False
+
+    def to_dict(self) -> dict:
+        return {
+            "country_code": self.country_code,
+            "location_code": self.location_code,
+            "location_name": self.location_name,
+            "language_name": self.language_name,
+            "search_volume": self.search_volume,
+            "cpc": self.cpc,
+            "competition": self.competition,
+            "competition_level": self.competition_level,
+            "keyword_difficulty": self.keyword_difficulty,
+            "main_intent": self.main_intent,
+            "commercial_intent": round(self.commercial_intent, 2),
+            "monthly_history": [
+                {"year": year, "month": month, "search_volume": volume}
+                for year, month, volume in self.monthly_history
+            ],
+            "trend_slope": round(self.trend_slope, 3) if self.trend_slope is not None else None,
+            "flags": self.flags,
+            "opportunity_score": self.opportunity_score,
+            "recommended": self.recommended,
+        }
+
+
+@dataclass
 class KeywordRecord:
     keyword: str
     seed: str
@@ -30,6 +75,7 @@ class KeywordRecord:
     variant_canonical: Optional[str] = None
     lane: str = "category_discovery"
     facets: Dict[str, List[str]] = field(default_factory=dict)
+    market_metrics: Dict[str, MarketMetrics] = field(default_factory=dict)
 
     def to_dict(self) -> dict:
         return asdict(self)

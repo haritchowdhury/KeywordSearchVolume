@@ -8,7 +8,7 @@ from .models import Cluster, KeywordRecord
 from .normalize import normalize_volume, trend_to_zero_one
 
 # Flags that disqualify a keyword from store-discovery recommendation.
-BLOCKING_FLAGS = {"too_little_traffic", "too_broad", "declining_traffic", "brand_competitor"}
+BLOCKING_FLAGS = {"too_little_traffic", "too_broad", "declining_traffic", "brand_competitor", "informational_dropped"}
 
 
 def flag_record(rec: KeywordRecord, config: Config) -> None:
@@ -29,6 +29,9 @@ def flag_record(rec: KeywordRecord, config: Config) -> None:
 
     if rec.lane == "brand_competitor":
         rec.flags.append("brand_competitor")
+
+    if (rec.main_intent or "").lower() == "informational":
+        rec.flags.append("informational_dropped")
 
 
 def _population_stats(records: List[KeywordRecord]) -> dict:

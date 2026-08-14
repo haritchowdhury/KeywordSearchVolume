@@ -184,14 +184,33 @@ class DataForSEOClient:
     # ------------------------------------------------------------------ #
     # Higher-level helpers returning extracted, schema-stable results.
     # ------------------------------------------------------------------ #
-    def keyword_overview(self, keywords: List[str]) -> List[dict]:
+    def _market_payload(self, market: Optional[dict] = None) -> dict:
+        """Return a DataForSEO location/language payload.
+
+        ``market`` is optional to preserve the original single-market client
+        API used by integrations and tests.
+        """
+        if market:
+            location_code = market.get("location_code")
+            payload = ({"location_code": int(location_code)} if location_code
+                       else {"location_name": market.get("name") or market.get("location_name")})
+            if location_code:
+                payload["language_code"] = market.get("language_code") or "en"
+            else:
+                payload["language_name"] = market.get("language_name") or self.config.search.language_name
+            return payload
+        return {
+            "location_name": self.config.search.location_name,
+            "language_name": self.config.search.language_name,
+        }
+
+    def keyword_overview(self, keywords: List[str], market: Optional[dict] = None) -> List[dict]:
         """Return list of keyword_overview items for the given keywords.
         Keywords with no data are omitted from the result (partial failure
         isolation: the call still succeeds for the rest)."""
         payload = {
             "keywords": keywords,
-            "location_name": self.config.search.location_name,
-            "language_name": self.config.search.language_name,
+            **self._market_payload(market),
         }
         parsed = self.post("keyword_overview", payload)
         tasks = parsed.get("tasks") or []
@@ -203,16 +222,13 @@ class DataForSEOClient:
             items.extend(block.get("items") or [])
         return items
 
-    def expand(self, seed: str) -> List[str]:
+    def expand(self, seed: str, market: Optional[dict] = None) -> List[str]:
         """Expand a seed into related keywords via suggestions + related."""
         if not self.config.expansion.enabled:
             return [seed]
         out: List[str] = []
         seen = set()
-        common = {
-            "location_name": self.config.search.location_name,
-            "language_name": self.config.search.language_name,
-        }
+        common = self._market_payload(market)
         # suggestions
         try:
             parsed = self.post("keyword_suggestions",
@@ -223,7 +239,8 @@ class DataForSEOClient:
                     seen.add(kw)
                     out.append(kw)
         except (DataForSEOError, PartialFailure) as exc:
-            logger.warning("suggestions failed for '%s': %s", seed, exc)
+            logger.warning("suggestions failed market=%s seed='%s': %s",
+                           (market or {}).get("code", "default"), seed, exc)
         # related
         try:
             parsed = self.post("related_keywords",
@@ -235,7 +252,8 @@ class DataForSEOClient:
                     seen.add(kw)
                     out.append(kw)
         except (DataForSEOError, PartialFailure) as exc:
-            logger.warning("related failed for '%s': %s", seed, exc)
+            logger.warning("related failed market=%s seed='%s': %s",
+                           (market or {}).get("code", "default"), seed, exc)
 
         if seed not in seen:
             out.insert(0, seed)
@@ -248,7 +266,10 @@ class DataForSEOClient:
         for task in parsed.get("tasks") or []:
             for block in task.get("result") or []:
                 for item in block.get("items") or []:
-                    kw = item.get("keyword") or item.get("key")
+                    # Suggestions expose `keyword` directly; related-keyword
+                    # results wrap the same field in `keyword_data`.
+                    kw = (item.get("keyword") or item.get("key")
+                          or (item.get("keyword_data") or {}).get("keyword"))
                     if kw:
                         keywords.append(kw)
         return keywords
